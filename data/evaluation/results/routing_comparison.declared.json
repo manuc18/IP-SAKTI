@@ -1,0 +1,515 @@
+{
+  "experiments": {
+    "bm25": {
+      "experiment": "A",
+      "retriever": "bm25",
+      "retriever_config": {
+        "retriever": "bm25",
+        "version": "0.1.0",
+        "k1": 1.2,
+        "b": 0.75,
+        "indexed_field": "text",
+        "stemming": false,
+        "stopwords": false,
+        "documents_indexed": 3073,
+        "vocabulary": 18699,
+        "mean_document_length_tokens": 207.91
+      },
+      "timestamp": "2026-08-29T19:44:20+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.3423,
+        "recall@5": 0.6937,
+        "recall@10": 0.8288,
+        "mrr": 0.4967,
+        "ndcg@5": 0.5322,
+        "ndcg@10": 0.5747,
+        "document_recall@1": 0.7297,
+        "document_recall@5": 0.9369,
+        "document_recall@10": 0.955
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.3441,
+          "recall@5": 0.7097,
+          "recall@10": 0.8495,
+          "mrr": 0.5077,
+          "ndcg@5": 0.5442,
+          "ndcg@10": 0.5899
+        },
+        "identifier": {
+          "recall@1": 0.3333,
+          "recall@5": 0.6111,
+          "recall@10": 0.7222,
+          "mrr": 0.4398,
+          "ndcg@5": 0.4703,
+          "ndcg@10": 0.4957
+        }
+      }
+    },
+    "dense": {
+      "experiment": "B",
+      "retriever": "dense",
+      "retriever_config": {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      },
+      "timestamp": "2026-08-29T19:44:43+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.7027,
+        "recall@5": 0.9009,
+        "recall@10": 0.9369,
+        "mrr": 0.7914,
+        "ndcg@5": 0.8103,
+        "ndcg@10": 0.8242,
+        "document_recall@1": 0.8919,
+        "document_recall@5": 0.973,
+        "document_recall@10": 0.973
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.7312,
+          "recall@5": 0.9032,
+          "recall@10": 0.9355,
+          "mrr": 0.8086,
+          "ndcg@5": 0.8244,
+          "ndcg@10": 0.8359
+        },
+        "identifier": {
+          "recall@1": 0.5556,
+          "recall@5": 0.8889,
+          "recall@10": 0.9444,
+          "mrr": 0.7025,
+          "ndcg@5": 0.7377,
+          "ndcg@10": 0.7637
+        }
+      }
+    },
+    "bm25_boost": {
+      "experiment": "C",
+      "retriever": "bm25_boost",
+      "retriever_config": {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18699,
+          "mean_document_length_tokens": 207.91
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      },
+      "timestamp": "2026-08-29T19:44:44+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.4414,
+        "recall@5": 0.7477,
+        "recall@10": 0.8649,
+        "mrr": 0.58,
+        "ndcg@5": 0.6101,
+        "ndcg@10": 0.6487,
+        "document_recall@1": 0.7928,
+        "document_recall@5": 0.9459,
+        "document_recall@10": 0.964
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.3548,
+          "recall@5": 0.7097,
+          "recall@10": 0.8495,
+          "mrr": 0.5167,
+          "ndcg@5": 0.5508,
+          "ndcg@10": 0.5969
+        },
+        "identifier": {
+          "recall@1": 0.8889,
+          "recall@5": 0.9444,
+          "recall@10": 0.9444,
+          "mrr": 0.9074,
+          "ndcg@5": 0.9167,
+          "ndcg@10": 0.9167
+        }
+      }
+    },
+    "hybrid": {
+      "experiment": "D",
+      "retriever": "hybrid",
+      "retriever_config": {
+        "retriever": "hybrid",
+        "version": "0.1.0",
+        "fusion": "reciprocal_rank_fusion",
+        "k": 60,
+        "depth": 50,
+        "weights": [
+          1.0,
+          1.0
+        ],
+        "components": [
+          {
+            "retriever": "bm25",
+            "version": "0.1.0",
+            "k1": 1.2,
+            "b": 0.75,
+            "indexed_field": "text",
+            "stemming": false,
+            "stopwords": false,
+            "documents_indexed": 3073,
+            "vocabulary": 18699,
+            "mean_document_length_tokens": 207.91
+          },
+          {
+            "retriever": "dense",
+            "version": "0.1.0",
+            "model_name": "BAAI/bge-m3",
+            "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+            "normalize_embeddings": true,
+            "embedding_dimension": 1024,
+            "max_seq_length": 1024,
+            "batch_size": 8,
+            "device": "mps",
+            "dtype": "float32",
+            "corpus_version": "0c94db57932c046d",
+            "chunking_version": "65e4770bc530156b",
+            "chunk_count": 3073
+          }
+        ]
+      },
+      "timestamp": "2026-08-29T19:44:44+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.5676,
+        "recall@5": 0.8559,
+        "recall@10": 0.9279,
+        "mrr": 0.6845,
+        "ndcg@5": 0.7159,
+        "ndcg@10": 0.7387,
+        "document_recall@1": 0.8378,
+        "document_recall@5": 0.964,
+        "document_recall@10": 0.973
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.5699,
+          "recall@5": 0.8817,
+          "recall@10": 0.957,
+          "mrr": 0.6994,
+          "ndcg@5": 0.738,
+          "ndcg@10": 0.7606
+        },
+        "identifier": {
+          "recall@1": 0.5556,
+          "recall@5": 0.7222,
+          "recall@10": 0.7778,
+          "mrr": 0.6074,
+          "ndcg@5": 0.6017,
+          "ndcg@10": 0.6256
+        }
+      }
+    },
+    "hybrid_boost": {
+      "experiment": "D-prime",
+      "retriever": "hybrid_boost",
+      "retriever_config": {
+        "retriever": "hybrid_boost",
+        "version": "0.1.0",
+        "fusion": "reciprocal_rank_fusion",
+        "k": 60,
+        "depth": 50,
+        "weights": [
+          1.0,
+          1.0
+        ],
+        "components": [
+          {
+            "retriever": "bm25_boost",
+            "version": "0.1.0",
+            "base": {
+              "retriever": "bm25",
+              "version": "0.1.0",
+              "k1": 1.2,
+              "b": 0.75,
+              "indexed_field": "text",
+              "stemming": false,
+              "stopwords": false,
+              "documents_indexed": 3073,
+              "vocabulary": 18699,
+              "mean_document_length_tokens": 207.91
+            },
+            "boost_weight": 1.0,
+            "boost_scale": "max BM25 score for the same query",
+            "document_aliases": 70
+          },
+          {
+            "retriever": "dense",
+            "version": "0.1.0",
+            "model_name": "BAAI/bge-m3",
+            "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+            "normalize_embeddings": true,
+            "embedding_dimension": 1024,
+            "max_seq_length": 1024,
+            "batch_size": 8,
+            "device": "mps",
+            "dtype": "float32",
+            "corpus_version": "0c94db57932c046d",
+            "chunking_version": "65e4770bc530156b",
+            "chunk_count": 3073
+          }
+        ]
+      },
+      "timestamp": "2026-08-29T19:44:45+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.6126,
+        "recall@5": 0.8919,
+        "recall@10": 0.955,
+        "mrr": 0.7301,
+        "ndcg@5": 0.7647,
+        "ndcg@10": 0.7839,
+        "document_recall@1": 0.8739,
+        "document_recall@5": 0.964,
+        "document_recall@10": 0.973
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.5699,
+          "recall@5": 0.8817,
+          "recall@10": 0.957,
+          "mrr": 0.703,
+          "ndcg@5": 0.7406,
+          "ndcg@10": 0.7635
+        },
+        "identifier": {
+          "recall@1": 0.8333,
+          "recall@5": 0.9444,
+          "recall@10": 0.9444,
+          "mrr": 0.8704,
+          "ndcg@5": 0.8889,
+          "ndcg@10": 0.8889
+        }
+      }
+    },
+    "routed": {
+      "experiment": "E",
+      "retriever": "routed",
+      "retriever_config": {
+        "retriever": "routed",
+        "version": "0.1.0",
+        "policy": {
+          "IDENTIFIER": "bm25_boost",
+          "CONCEPTUAL": "dense",
+          "GENERAL": "dense"
+        },
+        "fallbacks": {
+          "identifier_no_locator_match": "dense",
+          "dense_empty": "bm25"
+        },
+        "paths": [
+          "identifier",
+          "identifier_fallback_dense",
+          "conceptual_dense",
+          "conceptual_fallback_lexical",
+          "general_dense",
+          "general_fallback_lexical"
+        ],
+        "classifier": "deterministic regex + regime lexicon; no model",
+        "regime_terms": 62,
+        "components": {
+          "identifier": {
+            "retriever": "bm25_boost",
+            "version": "0.1.0",
+            "base": {
+              "retriever": "bm25",
+              "version": "0.1.0",
+              "k1": 1.2,
+              "b": 0.75,
+              "indexed_field": "text",
+              "stemming": false,
+              "stopwords": false,
+              "documents_indexed": 3073,
+              "vocabulary": 18699,
+              "mean_document_length_tokens": 207.91
+            },
+            "boost_weight": 1.0,
+            "boost_scale": "max BM25 score for the same query",
+            "document_aliases": 70
+          },
+          "dense": {
+            "retriever": "dense",
+            "version": "0.1.0",
+            "model_name": "BAAI/bge-m3",
+            "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+            "normalize_embeddings": true,
+            "embedding_dimension": 1024,
+            "max_seq_length": 1024,
+            "batch_size": 8,
+            "device": "mps",
+            "dtype": "float32",
+            "corpus_version": "0c94db57932c046d",
+            "chunking_version": "65e4770bc530156b",
+            "chunk_count": 3073
+          },
+          "lexical": {
+            "retriever": "bm25",
+            "version": "0.1.0",
+            "k1": 1.2,
+            "b": 0.75,
+            "indexed_field": "text",
+            "stemming": false,
+            "stopwords": false,
+            "documents_indexed": 3073,
+            "vocabulary": 18699,
+            "mean_document_length_tokens": 207.91
+          }
+        }
+      },
+      "timestamp": "2026-08-29T19:44:45+00:00",
+      "corpus_version": "0c94db57932c046d",
+      "chunking_version": "65e4770bc530156b",
+      "chunker_version": "0.2.0",
+      "chunks_indexed": 3073,
+      "questions": 111,
+      "questions_human_verified": 0,
+      "top_k": 10,
+      "filter_mode": "declared",
+      "python": "3.14.3",
+      "overall": {
+        "recall@1": 0.7568,
+        "recall@5": 0.9099,
+        "recall@10": 0.9369,
+        "mrr": 0.8261,
+        "ndcg@5": 0.8406,
+        "ndcg@10": 0.8502,
+        "document_recall@1": 0.9099,
+        "document_recall@5": 0.973,
+        "document_recall@10": 0.973
+      },
+      "by_family": {
+        "conceptual": {
+          "recall@1": 0.7312,
+          "recall@5": 0.9032,
+          "recall@10": 0.9355,
+          "mrr": 0.8086,
+          "ndcg@5": 0.8244,
+          "ndcg@10": 0.8359
+        },
+        "identifier": {
+          "recall@1": 0.8889,
+          "recall@5": 0.9444,
+          "recall@10": 0.9444,
+          "mrr": 0.9167,
+          "ndcg@5": 0.9239,
+          "ndcg@10": 0.9239
+        }
+      }
+    }
+  },
+  "router": {
+    "by_query_type": {
+      "IDENTIFIER": 17,
+      "CONCEPTUAL": 80,
+      "GENERAL": 14
+    },
+    "golden_family_vs_router": {
+      "conceptual -> CONCEPTUAL": 79,
+      "conceptual -> GENERAL": 14,
+      "identifier -> CONCEPTUAL": 1,
+      "identifier -> IDENTIFIER": 17
+    },
+    "identifier_disagreements": [
+      {
+        "question_id": "Q029",
+        "query": "How does the Geographical Indications Act, 1999 define a geographical indication?",
+        "golden_family": "identifier",
+        "router_query_type": "CONCEPTUAL",
+        "reason": "no provision named, but the query states its subject (geographical_indications); the answer is a passage about that regime, which is a semantic-similarity problem"
+      }
+    ]
+  },
+  "retrieval_paths": {
+    "bm25": {
+      "unrouted": 111
+    },
+    "dense": {
+      "unrouted": 111
+    },
+    "bm25_boost": {
+      "unrouted": 111
+    },
+    "hybrid": {
+      "unrouted": 111
+    },
+    "hybrid_boost": {
+      "unrouted": 111
+    },
+    "routed": {
+      "identifier": 17,
+      "conceptual_dense": 79,
+      "general_dense": 14,
+      "unrouted": 1
+    }
+  },
+  "questions": 111,
+  "questions_human_verified": 0,
+  "filter_mode": "declared",
+  "top_k": 10
+}

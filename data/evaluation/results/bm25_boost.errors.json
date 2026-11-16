@@ -1,0 +1,3165 @@
+{
+  "retriever": "bm25_boost",
+  "at": 5,
+  "failures": 26,
+  "questions": 111,
+  "categories": [
+    "metadata-filtering problem",
+    "corpus incompleteness",
+    "chunking problem",
+    "duplicate evidence",
+    "exact-term failure",
+    "document mismatch",
+    "semantic mismatch",
+    "unclassified"
+  ],
+  "by_category": {
+    "semantic mismatch": 22,
+    "document mismatch": 3,
+    "chunking problem": 1
+  },
+  "cases": [
+    {
+      "question_id": "Q003",
+      "query": "How long does a patent remain in force in India?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PATENTS-ACT-1970"
+      ],
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-viii-section-53"
+      ],
+      "expected_locators": [
+        "Section 53"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Patents Act, 1970 \u2014 Section 55",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 2,
+          "locator": "Patents Act, 1970 \u2014 Section 37",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 3,
+          "locator": "Patents Act, 1970 \u2014 Schedule, item 26",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 4,
+          "locator": "Patents Act, 1970 \u2014 Section 120",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 5,
+          "locator": "Patents Act, 1970 \u2014 Section 25",
+          "document_id": "IN-PATENTS-ACT-1970"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-PATENTS-ACT-1970::chapter-ix-section-55', 'IN-PATENTS-ACT-1970::chapter-vii-section-37', 'IN-PATENTS-ACT-1970::chapter-xxiii-schedule-item-26']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ix-section-55",
+          "locator": "Patents Act, 1970 \u2014 Section 55",
+          "score": 14.259775,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-37",
+          "locator": "Patents Act, 1970 \u2014 Section 37",
+          "score": 13.467968,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-schedule-item-26",
+          "locator": "Patents Act, 1970 \u2014 Schedule, item 26",
+          "score": 12.339036,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xx-section-120",
+          "locator": "Patents Act, 1970 \u2014 Section 120",
+          "score": 11.984766,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-v-section-25-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 25",
+          "score": 11.817638,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-i-section-1-2",
+          "locator": "Patents Act, 1970 \u2014 Section 1",
+          "score": 11.694284,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 64",
+          "score": 11.659103,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DC-RULES-1945::part-i-rule-2",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 2",
+          "score": 11.627287,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vi-section-54",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 54",
+          "score": 11.523505,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxii-section-134",
+          "locator": "Patents Act, 1970 \u2014 Section 134",
+          "score": 11.429336,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q004",
+      "query": "When may a compulsory licence be granted on a patent in India?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PATENTS-ACT-1970"
+      ],
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xv-section-84-c1"
+      ],
+      "expected_locators": [
+        "Section 84"
+      ],
+      "rank_of_expected": 9,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Patents Act, 1970 \u2014 Section 94",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 2,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 50",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 3,
+          "locator": "Patents Act, 1970 \u2014 Section 85",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 4,
+          "locator": "Patents Act, 1970 \u2014 Section 92A",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 49",
+          "document_id": "IN-PPVFR-ACT-2001"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-PATENTS-ACT-1970::chapter-xv-section-94', 'IN-PPVFR-ACT-2001::chapter-vii-section-50', 'IN-PATENTS-ACT-1970::chapter-xv-section-85']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-94",
+          "locator": "Patents Act, 1970 \u2014 Section 94",
+          "score": 23.806288,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-50",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 50",
+          "score": 20.392683,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-85",
+          "locator": "Patents Act, 1970 \u2014 Section 85",
+          "score": 20.095357,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-92a",
+          "locator": "Patents Act, 1970 \u2014 Section 92A",
+          "score": 18.752878,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-49",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 49",
+          "score": 18.705012,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-91",
+          "locator": "Patents Act, 1970 \u2014 Section 91",
+          "score": 18.685274,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-88",
+          "locator": "Patents Act, 1970 \u2014 Section 88",
+          "score": 18.453853,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-92",
+          "locator": "Patents Act, 1970 \u2014 Section 92",
+          "score": 18.289553,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-84-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 84",
+          "score": 18.180411,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-second-schedule",
+          "locator": "Patents Rules, 2003 \u2014 Second Schedule",
+          "score": 17.306503,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q020",
+      "query": "What amounts to infringement of a registered trade mark?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-TM-ACT-1999"
+      ],
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-iv-section-29"
+      ],
+      "expected_locators": [
+        "Section 29"
+      ],
+      "rank_of_expected": 7,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 142",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 2,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 75",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 3,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 135",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 4,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 134",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 5,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 76",
+          "document_id": "IN-TM-ACT-1999"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-TM-ACT-1999::chapter-xiii-section-142', 'IN-TM-ACT-1999::chapter-ix-section-75', 'IN-TM-ACT-1999::chapter-xiii-section-135']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-142",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 142",
+          "score": 19.704156,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ix-section-75",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 75",
+          "score": 19.213404,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-135",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 135",
+          "score": 18.891325,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-134",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 134",
+          "score": 18.824778,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ix-section-76",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 76",
+          "score": 18.436063,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iv-section-30",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 30",
+          "score": 18.32687,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iv-section-29",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 29",
+          "score": 18.092361,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iv-section-28",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 28",
+          "score": 18.078656,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-159",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 159",
+          "score": 17.936109,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-26",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 26",
+          "score": 16.728173,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q025",
+      "query": "How is a notice of opposition to a trade mark application filed?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-TM-RULES-2017"
+      ],
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-42"
+      ],
+      "expected_locators": [
+        "Rule 42"
+      ],
+      "rank_of_expected": 7,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 74",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 2,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11(9)",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 3,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 23",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 4,
+          "locator": "Trade Marks Rules, 2017 \u2014 Third Schedule",
+          "document_id": "IN-TM-RULES-2017"
+        },
+        {
+          "rank": 5,
+          "locator": "Trade Marks Rules, 2017 \u2014 Part C",
+          "document_id": "IN-TM-RULES-2017"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-TM-ACT-1999::chapter-ix-section-74', 'IN-TM-ACT-1999::chapter-ii-section-11-c2', 'IN-TM-ACT-1999::chapter-iii-section-23']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ix-section-74",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 74",
+          "score": 23.567651,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-11-c2",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11(9)",
+          "score": 23.287674,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iii-section-23",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 23",
+          "score": 22.25312,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-c-third-schedule-c1",
+          "locator": "Trade Marks Rules, 2017 \u2014 Third Schedule",
+          "score": 21.357501,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-TM-RULES-2017::part-c-c3",
+          "locator": "Trade Marks Rules, 2017 \u2014 Part C",
+          "score": 19.411378,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vii-section-59",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 59",
+          "score": 19.404961,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-42",
+          "locator": "Trade Marks Rules, 2017 \u2014 Rule 42",
+          "score": 19.36308,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-148",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 148",
+          "score": 18.637533,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-40",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 40",
+          "score": 18.377613,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-133",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 133",
+          "score": 18.130114,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q026",
+      "query": "How does the Registrar determine that a trade mark is well known?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-TM-RULES-2017"
+      ],
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-viii-rule-124"
+      ],
+      "expected_locators": [
+        "Rule 124"
+      ],
+      "rank_of_expected": 7,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": true,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11(9)",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 2,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 3,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 36",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 4,
+          "locator": "Trade Marks Act, 1999 \u2014 Schedule",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 5,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 9",
+          "document_id": "IN-TM-ACT-1999"
+        }
+      ],
+      "category": "document mismatch",
+      "evidence": "top 5 came from ['IN-TM-ACT-1999'], expected ['IN-TM-RULES-2017']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-11-c2",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11(9)",
+          "score": 29.639693,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-11-c1",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 11",
+          "score": 27.491978,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iv-section-36",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 36",
+          "score": 20.044677,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-schedule",
+          "locator": "Trade Marks Act, 1999 \u2014 Schedule",
+          "score": 19.307507,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-9",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 9",
+          "score": 18.814098,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vii-section-59",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 59",
+          "score": 18.545693,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-viii-rule-124",
+          "locator": "Trade Marks Rules, 2017 \u2014 Rule 124",
+          "score": 18.51834,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vi-section-46",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 46",
+          "score": 18.477496,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-26",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 26",
+          "score": 17.654115,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ix-section-74",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 74",
+          "score": 17.459508,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q030",
+      "query": "Which geographical indications are prohibited from registration in India?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-GI-ACT-1999"
+      ],
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-ii-section-9"
+      ],
+      "expected_locators": [
+        "Section 9"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Third Schedule",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 2,
+          "locator": "Trade Marks Act, 1999 \u2014 Section 9",
+          "document_id": "IN-TM-ACT-1999"
+        },
+        {
+          "rank": 3,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Fifth Schedule, item 5",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 4,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 87(3)",
+          "document_id": "IN-GI-ACT-1999"
+        },
+        {
+          "rank": 5,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 77",
+          "document_id": "IN-GI-ACT-1999"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-GI-RULES-2002::part-ii-third-schedule', 'IN-TM-ACT-1999::chapter-ii-section-9', 'IN-GI-RULES-2002::part-ii-fifth-schedule-item-5-c3']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-third-schedule",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Third Schedule",
+          "score": 18.812152,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-9",
+          "locator": "Trade Marks Act, 1999 \u2014 Section 9",
+          "score": 18.685298,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-fifth-schedule-item-5-c3",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Fifth Schedule, item 5",
+          "score": 18.162624,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-87-c2",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 87(3)",
+          "score": 17.457043,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-77",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 77",
+          "score": 17.273835,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule-item-9-c1",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Schedule, item 9",
+          "score": 17.271475,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iv-section-21",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 21",
+          "score": 17.243891,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-fifth-schedule-item-5-c2",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Fifth Schedule, item 5",
+          "score": 17.138439,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 1",
+          "score": 17.066142,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule-item-6-c1",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Schedule, item 6",
+          "score": 16.798021,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q032",
+      "query": "For how long is the registration of a geographical indication valid?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-GI-ACT-1999"
+      ],
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iii-section-18"
+      ],
+      "expected_locators": [
+        "Section 18"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 56",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 2,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 31",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 3,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 21",
+          "document_id": "IN-GI-ACT-1999"
+        },
+        {
+          "rank": 4,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 11",
+          "document_id": "IN-GI-ACT-1999"
+        },
+        {
+          "rank": 5,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 48",
+          "document_id": "IN-GI-ACT-1999"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-GI-RULES-2002::part-1-chapter-iii-rule-56', 'IN-GI-RULES-2002::part-1-chapter-ii-rule-31', 'IN-GI-ACT-1999::chapter-iv-section-21']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iii-rule-56",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 56",
+          "score": 20.25762,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-31",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 31",
+          "score": 19.236978,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iv-section-21",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 21",
+          "score": 18.837982,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-11",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 11",
+          "score": 18.131414,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-48",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 48",
+          "score": 17.444294,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-third-schedule",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Third Schedule",
+          "score": 17.316284,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-viii-rule-97",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 97",
+          "score": 16.779059,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-24",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 24",
+          "score": 16.484884,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iv-rule-61",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 61",
+          "score": 16.41581,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-42",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 42",
+          "score": 16.379988,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q037",
+      "query": "How must a geographical indication be represented in an application?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-GI-RULES-2002"
+      ],
+      "expected_chunks": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-26"
+      ],
+      "expected_locators": [
+        "Rule 26"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 23",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 2,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 56",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 3,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 60",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 4,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 24",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 5,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 31",
+          "document_id": "IN-GI-RULES-2002"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-GI-RULES-2002::part-1-chapter-ii-rule-23', 'IN-GI-RULES-2002::part-1-chapter-iii-rule-56', 'IN-GI-RULES-2002::part-1-chapter-iv-rule-60']",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 23",
+          "score": 21.698792,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iii-rule-56",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 56",
+          "score": 20.723789,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iv-rule-60",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 60",
+          "score": 20.184879,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-24",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 24",
+          "score": 19.02549,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-31",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 31",
+          "score": 18.990725,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-11",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 11",
+          "score": 16.758328,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule-item-9-c1",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Schedule, item 9",
+          "score": 16.153096,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-27",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 27",
+          "score": 15.645398,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule-item-6-c3",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Schedule, item 6",
+          "score": 15.387423,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-v-rule-65",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 65",
+          "score": 15.279768,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q043",
+      "query": "What is piracy of a registered design and what does it cost the infringer?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-DESIGNS-ACT-2000"
+      ],
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-v-section-22"
+      ],
+      "expected_locators": [
+        "Section 22"
+      ],
+      "rank_of_expected": 9,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Designs Act, 2000 \u2014 Section 18",
+          "document_id": "IN-DESIGNS-ACT-2000"
+        },
+        {
+          "rank": 2,
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 42",
+          "document_id": "IN-GI-RULES-2002"
+        },
+        {
+          "rank": 3,
+          "locator": "Designs Rules, 2001 \u2014 First Schedule, item 12",
+          "document_id": "IN-DESIGNS-RULES-2001"
+        },
+        {
+          "rank": 4,
+          "locator": "Patents Act, 1970 \u2014 Section 64",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 5,
+          "locator": "Designs Act, 2000 \u2014 Section 14",
+          "document_id": "IN-DESIGNS-ACT-2000"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-DESIGNS-ACT-2000::chapter-iii-section-18', 'IN-GI-RULES-2002::part-1-chapter-ii-rule-42', 'IN-DESIGNS-RULES-2001::first-schedule-item-12']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-18",
+          "locator": "Designs Act, 2000 \u2014 Section 18",
+          "score": 21.224171,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-42",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 42",
+          "score": 19.98668,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DESIGNS-RULES-2001::first-schedule-item-12",
+          "locator": "Designs Rules, 2001 \u2014 First Schedule, item 12",
+          "score": 19.915166,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 64",
+          "score": 18.336507,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-14",
+          "locator": "Designs Act, 2000 \u2014 Section 14",
+          "score": 17.761379,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-8",
+          "locator": "Designs Act, 2000 \u2014 Section 8",
+          "score": 17.741382,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::front-matter-u0-c4",
+          "locator": "National IPR Policy, 2016 \u2014 unlocated text (physical p. 16)",
+          "score": 17.298552,
+          "citable": false
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-xi-section-48",
+          "locator": "Designs Act, 2000 \u2014 Section 48",
+          "score": 16.871514,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-v-section-22",
+          "locator": "Designs Act, 2000 \u2014 Section 22",
+          "score": 16.786089,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DESIGNS-RULES-2001::first-schedule",
+          "locator": "Designs Rules, 2001 \u2014 First Schedule",
+          "score": 15.285416,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q045",
+      "query": "Can a lapsed design registration be restored?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-DESIGNS-ACT-2000"
+      ],
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-12"
+      ],
+      "expected_locators": [
+        "Section 12"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Designs Act, 2000 \u2014 Section 14",
+          "document_id": "IN-DESIGNS-ACT-2000"
+        },
+        {
+          "rank": 2,
+          "locator": "Patents Act, 1970 \u2014 Section 62",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 3,
+          "locator": "Designs Act, 2000 \u2014 Section 13",
+          "document_id": "IN-DESIGNS-ACT-2000"
+        },
+        {
+          "rank": 4,
+          "locator": "Designs Rules, 2001 \u2014 Second Schedule",
+          "document_id": "IN-DESIGNS-RULES-2001"
+        },
+        {
+          "rank": 5,
+          "locator": "Designs Rules, 2001 \u2014 First Schedule, item 4",
+          "document_id": "IN-DESIGNS-RULES-2001"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-DESIGNS-ACT-2000::chapter-iii-section-14', 'IN-PATENTS-ACT-1970::chapter-xi-section-62', 'IN-DESIGNS-ACT-2000::chapter-iii-section-13']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-14",
+          "locator": "Designs Act, 2000 \u2014 Section 14",
+          "score": 25.047666,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xi-section-62",
+          "locator": "Patents Act, 1970 \u2014 Section 62",
+          "score": 15.900415,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-13",
+          "locator": "Designs Act, 2000 \u2014 Section 13",
+          "score": 14.095583,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-RULES-2001::second-schedule",
+          "locator": "Designs Rules, 2001 \u2014 Second Schedule",
+          "score": 14.05475,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-RULES-2001::first-schedule-item-4",
+          "locator": "Designs Rules, 2001 \u2014 First Schedule, item 4",
+          "score": 14.050973,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-12",
+          "locator": "Designs Act, 2000 \u2014 Section 12",
+          "score": 12.900169,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Schedule",
+          "score": 11.326107,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-xi-section-48",
+          "locator": "Designs Act, 2000 \u2014 Section 48",
+          "score": 11.206899,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-6",
+          "locator": "Designs Act, 2000 \u2014 Section 6",
+          "score": 10.177107,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DC-RULES-1945::part-ii-c25",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Part II",
+          "score": 10.124313,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q050",
+      "query": "What does copyright in a literary work actually mean?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-COPYRIGHT-ACT-1957"
+      ],
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iii-section-14"
+      ],
+      "expected_locators": [
+        "Section 14"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Copyright Rules, 2013 \u2014 Rule 54",
+          "document_id": "IN-COPYRIGHT-RULES-2013"
+        },
+        {
+          "rank": 2,
+          "locator": "Copyright Rules, 2013 \u2014 Second Schedule, item 9",
+          "document_id": "IN-COPYRIGHT-RULES-2013"
+        },
+        {
+          "rank": 3,
+          "locator": "Copyright Rules, 2013 \u2014 Second Schedule, item 10",
+          "document_id": "IN-COPYRIGHT-RULES-2013"
+        },
+        {
+          "rank": 4,
+          "locator": "Copyright Act, 1957 \u2014 Section 51",
+          "document_id": "IN-COPYRIGHT-ACT-1957"
+        },
+        {
+          "rank": 5,
+          "locator": "Copyright Act, 1957 \u2014 Section 22",
+          "document_id": "IN-COPYRIGHT-ACT-1957"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-COPYRIGHT-RULES-2013::chapter-xi-rule-54', 'IN-COPYRIGHT-RULES-2013::chapter-xviii-second-schedule-item-9', 'IN-COPYRIGHT-RULES-2013::chapter-xviii-second-schedule-item-10']",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xi-rule-54",
+          "locator": "Copyright Rules, 2013 \u2014 Rule 54",
+          "score": 17.847033,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-second-schedule-item-9",
+          "locator": "Copyright Rules, 2013 \u2014 Second Schedule, item 9",
+          "score": 17.39244,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-second-schedule-item-10",
+          "locator": "Copyright Rules, 2013 \u2014 Second Schedule, item 10",
+          "score": 17.126764,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-51",
+          "locator": "Copyright Act, 1957 \u2014 Section 51",
+          "score": 17.074698,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-22",
+          "locator": "Copyright Act, 1957 \u2014 Section 22",
+          "score": 16.685837,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-24",
+          "locator": "Copyright Act, 1957 \u2014 Section 24",
+          "score": 16.338426,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iii-section-13",
+          "locator": "Copyright Act, 1957 \u2014 Section 13",
+          "score": 16.304724,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-20",
+          "locator": "Copyright Act, 1957 \u2014 Section 20",
+          "score": 16.102775,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-19-c6",
+          "locator": "Copyright Rules, 2013 \u2014 Rule 19(e)",
+          "score": 15.811916,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-18",
+          "locator": "Copyright Act, 1957 \u2014 Section 18",
+          "score": 15.784799,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q056",
+      "query": "What is the punishment for knowingly infringing copyright?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-COPYRIGHT-ACT-1957"
+      ],
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63"
+      ],
+      "expected_locators": [
+        "Section 63"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Copyright Act, 1957 \u2014 Section 65",
+          "document_id": "IN-COPYRIGHT-ACT-1957"
+        },
+        {
+          "rank": 2,
+          "locator": "TRIPS \u2014 Section 2",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 3,
+          "locator": "Copyright Act, 1957 \u2014 Section 63B",
+          "document_id": "IN-COPYRIGHT-ACT-1957"
+        },
+        {
+          "rank": 4,
+          "locator": "Copyright Act, 1957 \u2014 Section 58",
+          "document_id": "IN-COPYRIGHT-ACT-1957"
+        },
+        {
+          "rank": 5,
+          "locator": "Copyright Rules, 2013 \u2014 Rule 19(1)",
+          "document_id": "IN-COPYRIGHT-RULES-2013"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65', 'WTO-TRIPS::part-iii-section-2-article-45', 'IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63b']",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65",
+          "locator": "Copyright Act, 1957 \u2014 Section 65",
+          "score": 21.398412,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-iii-section-2-article-45",
+          "locator": "TRIPS \u2014 Section 2",
+          "score": 17.438402,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63b",
+          "locator": "Copyright Act, 1957 \u2014 Section 63B",
+          "score": 15.238445,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-58",
+          "locator": "Copyright Act, 1957 \u2014 Section 58",
+          "score": 14.295487,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-19-c9",
+          "locator": "Copyright Rules, 2013 \u2014 Rule 19(1)",
+          "score": 14.100644,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-66",
+          "locator": "Copyright Act, 1957 \u2014 Section 66",
+          "score": 13.847196,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiv-rule-75",
+          "locator": "Copyright Rules, 2013 \u2014 Rule 75",
+          "score": 13.137478,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-19-c8",
+          "locator": "Copyright Rules, 2013 \u2014 Rule 19(e)",
+          "score": 12.993488,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-51",
+          "locator": "Copyright Act, 1957 \u2014 Section 51",
+          "score": 12.307982,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "WTO-TRIPS::part-vii-article-69",
+          "locator": "TRIPS \u2014 Article 69",
+          "score": 11.995966,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q062",
+      "query": "What approval must a foreign company obtain before accessing Indian biological resources?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-BDA-2002-AMD-2023"
+      ],
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-19"
+      ],
+      "expected_locators": [
+        "Section 19"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": true,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 2,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        },
+        {
+          "rank": 3,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 4,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 13",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 5,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        }
+      ],
+      "category": "document mismatch",
+      "evidence": "top 5 came from ['IN-ABS-REGULATIONS-2025', 'IN-BD-RULES-2024'], expected ['IN-BDA-2002-AMD-2023']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::rule-20",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "score": 22.935134,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-8-c3",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "score": 21.147147,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c10",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 19.725778,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-13",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 13",
+          "score": 18.466582,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-8-c1",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "score": 17.920081,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii",
+          "locator": "Biological Diversity Act, 2002 \u2014 Chapter II",
+          "score": 17.251513,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-form-12-item-2-c1",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Form 12, item 2",
+          "score": 16.162893,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-6",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 6",
+          "score": 15.992223,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-2",
+          "locator": "Nagoya Protocol \u2014 Article 2",
+          "score": 15.965442,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-form-12-item-2-c2",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Form 12, item 2",
+          "score": 15.576549,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q063",
+      "query": "Can the results of research on Indian biological resources be transferred abroad?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-BDA-2002-AMD-2023"
+      ],
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-20"
+      ],
+      "expected_locators": [
+        "Section 20"
+      ],
+      "rank_of_expected": 8,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 2,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 3,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        },
+        {
+          "rank": 4,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 4",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 5,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 13",
+          "document_id": "IN-BD-RULES-2024"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-BD-RULES-2024::first-schedule-item-16-c3', 'IN-BD-RULES-2024::rule-20', 'IN-ABS-REGULATIONS-2025::regulation-8-c4']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c3",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 25.116649,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-BD-RULES-2024::rule-20",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "score": 24.074843,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-8-c4",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "score": 23.890544,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-4",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 4",
+          "score": 21.277627,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-13",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 13",
+          "score": 20.417349,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-7",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 7",
+          "score": 19.357871,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-12",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 12",
+          "score": 19.31397,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-v-section-20",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 20",
+          "score": 18.879628,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+          "locator": "Nagoya Protocol \u2014 Article 32",
+          "score": 18.543315,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-form-12-item-2-c1",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Form 12, item 2",
+          "score": 18.056924,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q068",
+      "query": "What is the procedure for obtaining access to biological resources and associated knowledge?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-BD-RULES-2024"
+      ],
+      "expected_chunks": [
+        "IN-BD-RULES-2024::rule-13"
+      ],
+      "expected_locators": [
+        "Rule 13"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 14",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 2,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 3,
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 3)",
+          "document_id": "UN-NAGOYA-PROTOCOL-2010"
+        },
+        {
+          "rank": 4,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 5,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-BD-RULES-2024::rule-14', 'IN-BD-RULES-2024::rule-18', 'UN-NAGOYA-PROTOCOL-2010::preamble-u0-c2']",
+      "flags": [
+        "a non-citable chunk appears in the evaluated window"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::rule-14",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 14",
+          "score": 28.878067,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-BD-RULES-2024::rule-18",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "score": 26.800896,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c2",
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 3)",
+          "score": 26.720063,
+          "citable": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c2",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 26.345629,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c1",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 26.082313,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 1)",
+          "score": 25.749956,
+          "citable": false
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-1",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 1",
+          "score": 25.45885,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-12",
+          "locator": "Nagoya Protocol \u2014 Article 12",
+          "score": 25.27025,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-10",
+          "locator": "Nagoya Protocol \u2014 Article 10",
+          "score": 25.197189,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-2",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 2",
+          "score": 25.064026,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q072",
+      "query": "What collection fee is charged for accessing biological resources?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-ABS-REGULATIONS-2025"
+      ],
+      "expected_chunks": [
+        "IN-ABS-REGULATIONS-2025::regulation-6"
+      ],
+      "expected_locators": [
+        "Regulation 6"
+      ],
+      "rank_of_expected": 9,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        },
+        {
+          "rank": 2,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 3,
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 4,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 3",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        },
+        {
+          "rank": 5,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 11",
+          "document_id": "IN-BD-RULES-2024"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-ABS-REGULATIONS-2025::regulation-8-c1', 'IN-BD-RULES-2024::first-schedule-item-16-c2', 'IN-BD-RULES-2024::first-schedule-item-16-c10']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-8-c1",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "score": 21.354413,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c2",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 17.534451,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c10",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 16.93619,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-3",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 3",
+          "score": 16.062668,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::rule-11",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 11",
+          "score": 15.381269,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c3",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 15.19812,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-x-section-41",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 41",
+          "score": 15.163744,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-form-12-item-2-c1",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Form 12, item 2",
+          "score": 14.289242,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-6",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 6",
+          "score": 14.22053,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-2",
+          "locator": "Nagoya Protocol \u2014 Article 2",
+          "score": 13.839171,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q076",
+      "query": "What is the duration of a certificate of registration for a plant variety?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PPVFR-ACT-2001"
+      ],
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-24"
+      ],
+      "expected_locators": [
+        "Section 24"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": true,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 2,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 3,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 4,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        }
+      ],
+      "category": "document mismatch",
+      "evidence": "top 5 came from ['IN-PPVFR-RULES-2003'], expected ['IN-PPVFR-ACT-2001']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 21.411634,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c17",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 21.395142,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 20.704567,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c16",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 19.602432,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 19.600197,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-iv-rule-40",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 40",
+          "score": 19.462806,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c10",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 19.15759,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-rule-76",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 76",
+          "score": 18.824906,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-iv-rule-37",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 37",
+          "score": 18.664101,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-v-rule-50",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 50",
+          "score": 17.626663,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q078",
+      "query": "What rights does a breeder get on registration of a plant variety?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PPVFR-ACT-2001"
+      ],
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1",
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c2"
+      ],
+      "expected_locators": [
+        "Section 28"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 2,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 32",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 3,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 4,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Form 0",
+          "document_id": "IN-PPVFR-RULES-2003"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15', 'IN-PPVFR-ACT-2001::chapter-iv-section-32', 'IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 25.072713,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 32",
+          "score": 24.448159,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 23.582782,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 23.460053,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Form 0",
+          "score": 23.060031,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c10",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 22.961731,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iii-section-23",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 23",
+          "score": 22.158848,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c17",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 22.074187,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-ii-rule-23",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 23",
+          "score": 21.158458,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c9",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 21.134716,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q079",
+      "query": "When can a compulsory licence be granted over a registered plant variety?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PPVFR-ACT-2001"
+      ],
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-vii-section-47"
+      ],
+      "expected_locators": [
+        "Section 47"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 50",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 2,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 49",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 3,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "document_id": "IN-PPVFR-RULES-2003"
+        },
+        {
+          "rank": 4,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 51",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 76",
+          "document_id": "IN-PPVFR-RULES-2003"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-PPVFR-ACT-2001::chapter-vii-section-50', 'IN-PPVFR-ACT-2001::chapter-vii-section-49', 'IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c13']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-50",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 50",
+          "score": 24.226603,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-49",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 49",
+          "score": 23.998572,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c13",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 22.254237,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-51",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 51",
+          "score": 20.686155,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-rule-76",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 76",
+          "score": 20.635358,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-v-rule-71",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 71",
+          "score": 20.399456,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c12",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 19.990609,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "score": 18.971378,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-94",
+          "locator": "Patents Act, 1970 \u2014 Section 94",
+          "score": 18.919153,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-92a",
+          "locator": "Patents Act, 1970 \u2014 Section 92A",
+          "score": 18.456996,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q080",
+      "query": "What amounts to infringement of a breeder's right in a registered variety?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-PPVFR-ACT-2001"
+      ],
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-x-section-64"
+      ],
+      "expected_locators": [
+        "Section 64"
+      ],
+      "rank_of_expected": 7,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 31",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 2,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 65",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 3,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 28",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 4,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 15",
+          "document_id": "IN-PPVFR-ACT-2001"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 13",
+          "document_id": "IN-PPVFR-ACT-2001"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-PPVFR-ACT-2001::chapter-iv-section-31', 'IN-PPVFR-ACT-2001::chapter-x-section-65', 'IN-PPVFR-ACT-2001::chapter-iv-section-28-c1']",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-31",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 31",
+          "score": 22.773306,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-x-section-65",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 65",
+          "score": 20.832767,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 28",
+          "score": 18.200671,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iii-section-15",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 15",
+          "score": 16.941774,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ii-section-13",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 13",
+          "score": 16.708606,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-v-rule-64",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 64",
+          "score": 15.504698,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-x-section-64",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 64",
+          "score": 15.332195,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-27",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 27",
+          "score": 14.946066,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-v-section-38",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 38",
+          "score": 14.901089,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iii-section-21",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 21",
+          "score": 14.843397,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q085",
+      "query": "How does Indian drug law define an Ayurvedic, Siddha or Unani drug?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-DC-ACT-1940"
+      ],
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-i-section-3"
+      ],
+      "expected_locators": [
+        "Section 3"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 162A",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 2,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 167",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 3,
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33EEC",
+          "document_id": "IN-DC-ACT-1940"
+        },
+        {
+          "rank": 4,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 161A",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 5,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 164",
+          "document_id": "IN-DC-RULES-1945"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-DC-RULES-1945::part-xv-rule-162a', 'IN-DC-RULES-1945::part-xv-rule-167', 'IN-DC-ACT-1940::chapter-iv-section-33eec']",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 162A",
+          "score": 32.269664,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 167",
+          "score": 29.998445,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33EEC",
+          "score": 29.507655,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-161a",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 161A",
+          "score": 29.233914,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 164",
+          "score": 29.185287,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 3",
+          "score": 28.944378,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eeb",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33EEB",
+          "score": 28.396927,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eed",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33EED",
+          "score": 28.354275,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33k",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33K",
+          "score": 26.625002,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eea",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33EEA",
+          "score": 26.45462,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q093",
+      "query": "How does the Drugs and Cosmetics Rules define an Inspector?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-DC-RULES-1945"
+      ],
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "expected_locators": [
+        "Rule 2"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 7",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 2,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 14A, item 7",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 3,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 4,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 158",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 5,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 5",
+          "document_id": "IN-DC-RULES-1945"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-7', 'IN-DC-RULES-1945::part-xv-a-schedule-form-14a-item-7-c1', 'IN-DC-RULES-1945::part-v-rule-52']",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-7",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 7",
+          "score": 24.094393,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-14a-item-7-c1",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 14A, item 7",
+          "score": 23.83875,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-52",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "score": 21.800765,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-158-c1",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 158",
+          "score": 21.104765,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-5-c2",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 5",
+          "score": 20.516938,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-k-schedule-item-5a",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 K Schedule, item 5A",
+          "score": 20.403266,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-13-item-7",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 13, item 7",
+          "score": 20.330851,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-k-schedule-item-24",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 K Schedule, item 24",
+          "score": 19.994169,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DC-RULES-1945::part-ii-c55",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Part II",
+          "score": 19.416917,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-150",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 150",
+          "score": 19.255363,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q098",
+      "query": "What is the minimum term of patent protection under the TRIPS Agreement?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "WTO-TRIPS"
+      ],
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-33"
+      ],
+      "expected_locators": [
+        "Article 33"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "TRIPS \u2014 Article 1",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 2,
+          "locator": "TRIPS \u2014 Article 70",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 3,
+          "locator": "TRIPS \u2014 Article 71",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 4,
+          "locator": "TRIPS \u2014 unlocated text (physical p. 1)",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 5,
+          "locator": "TRIPS \u2014 Article 4",
+          "document_id": "WTO-TRIPS"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['WTO-TRIPS::part-i-article-1', 'WTO-TRIPS::part-vii-article-70', 'WTO-TRIPS::part-vii-article-71']",
+      "flags": [
+        "expected evidence comes from a stale source",
+        "a non-citable chunk appears in the evaluated window"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::part-i-article-1",
+          "locator": "TRIPS \u2014 Article 1",
+          "score": 26.422186,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-vii-article-70",
+          "locator": "TRIPS \u2014 Article 70",
+          "score": 25.229035,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-vii-article-71",
+          "locator": "TRIPS \u2014 Article 71",
+          "score": 24.64809,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::preamble-u0",
+          "locator": "TRIPS \u2014 unlocated text (physical p. 1)",
+          "score": 23.609908,
+          "citable": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-i-article-4",
+          "locator": "TRIPS \u2014 Article 4",
+          "score": 22.667308,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "WTO-TRIPS::part-i-article-3",
+          "locator": "TRIPS \u2014 Article 3",
+          "score": 20.863694,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "WTO-TRIPS::part-v-article-64",
+          "locator": "TRIPS \u2014 Article 64",
+          "score": 20.004164,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-24",
+          "locator": "TRIPS \u2014 Section 3",
+          "score": 19.868034,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "WTO-TRIPS::part-vi-article-65",
+          "locator": "TRIPS \u2014 Article 65",
+          "score": 19.508026,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "WTO-TRIPS::part-ii-section-1-article-12",
+          "locator": "TRIPS \u2014 Section 1",
+          "score": 18.959625,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q107",
+      "query": "Who is the depositary of the Convention on Biological Diversity?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "UN-CBD-1992"
+      ],
+      "expected_chunks": [
+        "UN-CBD-1992::article-41"
+      ],
+      "expected_locators": [
+        "Article 41"
+      ],
+      "rank_of_expected": 7,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "CBD \u2014 unlocated text (physical p. 1)",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 2,
+          "locator": "CBD \u2014 unlocated text (physical p. 4)",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 3,
+          "locator": "CBD \u2014 Article 38",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 4,
+          "locator": "CBD \u2014 Article 35",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 5,
+          "locator": "CBD \u2014 Article 30",
+          "document_id": "UN-CBD-1992"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['UN-CBD-1992::preamble-u0-c1', 'UN-CBD-1992::preamble-u0-c2', 'UN-CBD-1992::article-38']",
+      "flags": [
+        "a non-citable chunk appears in the evaluated window",
+        "rank 1 is not citable"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c1",
+          "locator": "CBD \u2014 unlocated text (physical p. 1)",
+          "score": 29.911371,
+          "citable": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c2",
+          "locator": "CBD \u2014 unlocated text (physical p. 4)",
+          "score": 28.974815,
+          "citable": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::article-38",
+          "locator": "CBD \u2014 Article 38",
+          "score": 25.855654,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "UN-CBD-1992::article-35",
+          "locator": "CBD \u2014 Article 35",
+          "score": 25.384073,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "UN-CBD-1992::article-30",
+          "locator": "CBD \u2014 Article 30",
+          "score": 24.909453,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "UN-CBD-1992::article-25",
+          "locator": "CBD \u2014 Article 25",
+          "score": 24.737533,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "UN-CBD-1992::article-41",
+          "locator": "CBD \u2014 Article 41",
+          "score": 24.330038,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "UN-CBD-1992::article-34",
+          "locator": "CBD \u2014 Article 34",
+          "score": 24.013934,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "UN-CBD-1992::article-6",
+          "locator": "CBD \u2014 Article 6",
+          "score": 23.586111,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "UN-CBD-1992::article-22",
+          "locator": "CBD \u2014 Article 22",
+          "score": 23.006635,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q108",
+      "query": "How is an arbitral tribunal constituted for a dispute under the CBD?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "UN-CBD-1992"
+      ],
+      "expected_chunks": [
+        "UN-CBD-1992::ii-article-2"
+      ],
+      "expected_locators": [
+        "Article 2"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "CBD \u2014 Annexure II, Article 13",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 2,
+          "locator": "CBD \u2014 Annexure II, Article 9",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 3,
+          "locator": "CBD \u2014 Annexure II, Article 15",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 4,
+          "locator": "CBD \u2014 Annexure II, Article 5",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 5,
+          "locator": "CBD \u2014 Annexure II, Article 1",
+          "document_id": "UN-CBD-1992"
+        }
+      ],
+      "category": "chunking problem",
+      "evidence": "rank 1 UN-CBD-1992::ii-article-13 shares ['annexure'] with the expected chunk",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::ii-article-13",
+          "locator": "CBD \u2014 Annexure II, Article 13",
+          "score": 32.153634,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "UN-CBD-1992::ii-article-9",
+          "locator": "CBD \u2014 Annexure II, Article 9",
+          "score": 30.681271,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::ii-article-15",
+          "locator": "CBD \u2014 Annexure II, Article 15",
+          "score": 30.555568,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "UN-CBD-1992::ii-article-5",
+          "locator": "CBD \u2014 Annexure II, Article 5",
+          "score": 30.31896,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "UN-CBD-1992::ii-article-1",
+          "locator": "CBD \u2014 Annexure II, Article 1",
+          "score": 30.165022,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "UN-CBD-1992::ii-article-2",
+          "locator": "CBD \u2014 Annexure II, Article 2",
+          "score": 29.550696,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "UN-CBD-1992::ii-article-17",
+          "locator": "CBD \u2014 Annexure II, Article 17",
+          "score": 29.421246,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "UN-CBD-1992::ii-article-7",
+          "locator": "CBD \u2014 Annexure II, Article 7",
+          "score": 28.954829,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "UN-CBD-1992::ii-article-3",
+          "locator": "CBD \u2014 Annexure II, Article 3",
+          "score": 28.285374,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "UN-CBD-1992::ii-article-8",
+          "locator": "CBD \u2014 Annexure II, Article 8",
+          "score": 25.612727,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q109",
+      "query": "In an Ayurveda Aahara recipe, what quantity is meant by Q.S.?",
+      "retriever": "bm25_boost",
+      "expected_documents": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022"
+      ],
+      "expected_chunks": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022::regulation-1"
+      ],
+      "expected_locators": [
+        "Regulation 1"
+      ],
+      "rank_of_expected": 9,
+      "retrieval_path": null,
+      "routing": null,
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 1)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 2,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 47)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 3,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 37)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 4,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 76)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 5,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 130)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        }
+      ],
+      "category": "semantic mismatch",
+      "evidence": "the expected document is in the top 5 but not the expected provision; retrieved ['IN-FSSAI-AYURVEDA-AAHARA-2022::front-matter-u0', 'IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c5', 'IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c4']",
+      "flags": [
+        "a non-citable chunk appears in the evaluated window",
+        "rank 1 is not citable"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::front-matter-u0",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 1)",
+          "score": 24.984812,
+          "citable": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c5",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 47)",
+          "score": 18.901948,
+          "citable": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c4",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 37)",
+          "score": 17.04694,
+          "citable": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c7",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 76)",
+          "score": 16.519868,
+          "citable": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c12",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 130)",
+          "score": 16.369076,
+          "citable": false
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c6",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 61)",
+          "score": 15.988504,
+          "citable": false
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c13",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 138)",
+          "score": 15.723516,
+          "citable": false
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c1",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 148)",
+          "score": 15.500413,
+          "citable": false
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::regulation-1",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 Regulation 1",
+          "score": 15.239358,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c9",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 98)",
+          "score": 14.900081,
+          "citable": false
+        }
+      ]
+    }
+  ]
+}

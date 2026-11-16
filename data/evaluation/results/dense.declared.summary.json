@@ -1,0 +1,58 @@
+{
+  "experiment": "B",
+  "retriever": "dense",
+  "retriever_config": {
+    "retriever": "dense",
+    "version": "0.1.0",
+    "model_name": "BAAI/bge-m3",
+    "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+    "normalize_embeddings": true,
+    "embedding_dimension": 1024,
+    "max_seq_length": 1024,
+    "batch_size": 8,
+    "device": "mps",
+    "dtype": "float32",
+    "corpus_version": "0c94db57932c046d",
+    "chunking_version": "65e4770bc530156b",
+    "chunk_count": 3073
+  },
+  "timestamp": "2026-08-29T19:44:43+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "declared",
+  "python": "3.14.3",
+  "overall": {
+    "recall@1": 0.7027,
+    "recall@5": 0.9009,
+    "recall@10": 0.9369,
+    "mrr": 0.7914,
+    "ndcg@5": 0.8103,
+    "ndcg@10": 0.8242,
+    "document_recall@1": 0.8919,
+    "document_recall@5": 0.973,
+    "document_recall@10": 0.973
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.7312,
+      "recall@5": 0.9032,
+      "recall@10": 0.9355,
+      "mrr": 0.8086,
+      "ndcg@5": 0.8244,
+      "ndcg@10": 0.8359
+    },
+    "identifier": {
+      "recall@1": 0.5556,
+      "recall@5": 0.8889,
+      "recall@10": 0.9444,
+      "mrr": 0.7025,
+      "ndcg@5": 0.7377,
+      "ndcg@10": 0.7637
+    }
+  }
+}

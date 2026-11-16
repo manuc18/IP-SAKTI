@@ -1,0 +1,41 @@
+{
+  "document_id": "IN-DC-ACT-1940",
+  "chunking_version": "0.2.0",
+  "units": 92,
+  "chunks": 94,
+  "rejected": 3,
+  "rejected_by_reason": {
+    "structural heading with no body text": 3
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 93,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 91,
+  "chunks_from_ocr": 0,
+  "characters": 117071,
+  "mean_chunk_characters": 1245.4,
+  "max_chunk_characters": 4916,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-DC-ACT-1940",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 23
+    },
+    {
+      "document_id": "IN-DC-ACT-1940",
+      "unit_order": 14,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-DC-ACT-1940",
+      "unit_order": 25,
+      "reason": "structural heading with no body text",
+      "character_count": 74
+    }
+  ]
+}

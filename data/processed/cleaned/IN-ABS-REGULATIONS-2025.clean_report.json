@@ -1,0 +1,24 @@
+{
+  "document_id": "IN-ABS-REGULATIONS-2025",
+  "pages": 28,
+  "boilerplate_patterns": [
+    "# THE GAZETTE OF INDIA : EXTRAORDINARY [PART III—SEC.#]",
+    "***",
+    "[भाग III—खण् ड #] भारत का राजपत्र : असाधारण #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 16,
+    "thin_residue": 3,
+    "hindi_only": 9
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 19,
+    "HI_CORRUPT": 9
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 549,
+  "pages_with_tables": 0,
+  "characters_raw": 83674,
+  "characters_cleaned": 44140
+}

@@ -1,0 +1,460 @@
+{
+  "generated_from": "artifacts in data/evaluation/results; no figure is typed in by hand except the corpus PDF and page counts, which are cited to docs/CORPUS_AUDIT.md",
+  "corpus": {
+    "pdfs": 21,
+    "instruments": 22,
+    "pages_in_source_pdfs": 1782,
+    "pages_carrying_retrievable_text": 1585,
+    "chunks": 3073,
+    "provenance_levels": {
+      "B": 1155,
+      "C": 191,
+      "A": 1727
+    },
+    "temporal_status": {
+      "CURRENT": 1356,
+      "STALE": 1717
+    },
+    "document_types": {
+      "regulations": 25,
+      "rules": 1912,
+      "act": 904,
+      "regulations_with_covering_order": 29,
+      "policy": 19,
+      "treaty": 184
+    },
+    "extraction_damaged_chunks": {
+      "n": 211,
+      "of": 3073,
+      "rate": 0.0687
+    },
+    "instruments_with_no_damaged_chunk": {
+      "n": 12,
+      "of": 22,
+      "rate": 0.5455
+    },
+    "damaged_by_document": {
+      "IN-DC-RULES-1945": 115,
+      "IN-TM-RULES-2017": 41,
+      "IN-PATENTS-RULES-2003": 30,
+      "IN-FSSAI-AYURVEDA-AAHARA-2022": 9,
+      "IN-DC-ACT-1940": 7,
+      "IN-PPVFR-RULES-2003": 5,
+      "IN-ABS-REGULATIONS-2025": 1,
+      "IN-BD-RULES-2024": 1,
+      "IN-COPYRIGHT-ACT-1957": 1,
+      "UN-NAGOYA-PROTOCOL-2010": 1
+    }
+  },
+  "retrieval_curated_111": {
+    "questions": 111,
+    "recall@1": {
+      "n": 94,
+      "of": 111,
+      "rate": 0.8468
+    },
+    "recall@5": {
+      "n": 110,
+      "of": 111,
+      "rate": 0.991
+    },
+    "recall@10": {
+      "n": 111,
+      "of": 111,
+      "rate": 1.0
+    },
+    "mrr": 0.8995,
+    "human_verified": 0,
+    "note": "hand-written questions; the only benchmark in this project not derived from the chunk it is scored against"
+  },
+  "evaluation_set": {
+    "questions": 1000,
+    "answerable": 960,
+    "expected_abstention": 40,
+    "label": "AI-generated corpus-grounded evaluation set",
+    "human_verified": false
+  },
+  "retrieval_synthetic_960": {
+    "questions": 960,
+    "strict": {
+      "recall@1": {
+        "n": 673,
+        "of": 960,
+        "rate": 0.701
+      },
+      "recall@5": {
+        "n": 839,
+        "of": 960,
+        "rate": 0.874
+      },
+      "recall@10": {
+        "n": 903,
+        "of": 960,
+        "rate": 0.9406
+      },
+      "mrr": 0.7784
+    },
+    "equivalence_adjusted": {
+      "recall@1": {
+        "n": 767,
+        "of": 960,
+        "rate": 0.799
+      },
+      "recall@5": {
+        "n": 897,
+        "of": 960,
+        "rate": 0.9344
+      },
+      "recall@10": {
+        "n": 920,
+        "of": 960,
+        "rate": 0.9583
+      },
+      "mrr": 0.8552,
+      "questions_widened": {
+        "n": 255,
+        "of": 960,
+        "rate": 0.2656
+      }
+    },
+    "rank_buckets": {
+      "rank 1": 673,
+      "rank 2-5": 166,
+      "rank 6-10": 64,
+      ">10 / missing": 57
+    },
+    "median_candidates": 80,
+    "reranked_evidence_count": 10,
+    "median_retrieval_latency_ms": 56.14,
+    "both_figures_reported": "strict scores against the single chunk the question was written from; adjusted scores against every chunk that answers it"
+  },
+  "evidence_sufficiency": {
+    "at_5": {
+      "sufficient": {
+        "n": 853,
+        "of": 960,
+        "rate": 0.8885
+      },
+      "insufficient": {
+        "n": 21,
+        "of": 960,
+        "rate": 0.0219
+      },
+      "uncertain": {
+        "n": 86,
+        "of": 960,
+        "rate": 0.0896
+      },
+      "target_retrieved_but_insufficient": 44,
+      "target_not_retrieved": 63,
+      "sufficient_without_exact_target": 14
+    },
+    "at_10": {
+      "sufficient": {
+        "n": 911,
+        "of": 960,
+        "rate": 0.949
+      },
+      "insufficient": {
+        "n": 5,
+        "of": 960,
+        "rate": 0.0052
+      },
+      "uncertain": {
+        "n": 44,
+        "of": 960,
+        "rate": 0.0458
+      },
+      "target_retrieved_but_insufficient": 9,
+      "target_not_retrieved": 40,
+      "sufficient_without_exact_target": 8
+    },
+    "deterministic": true,
+    "provider_calls": 0,
+    "not_legal_accuracy": true
+  },
+  "ai_judged_sample": {
+    "judge_provider": "claude_code_session",
+    "sample": {
+      "n": 98,
+      "of": 960,
+      "rate": 0.1021
+    },
+    "rank_hidden_from_judge": true,
+    "expected_answer_supported": {
+      "n": 87,
+      "of": 98,
+      "rate": 0.8878
+    },
+    "supported_partial": {
+      "n": 1,
+      "of": 98,
+      "rate": 0.0102
+    },
+    "supported_no": {
+      "n": 10,
+      "of": 98,
+      "rate": 0.102
+    },
+    "evidence_sufficient": {
+      "n": 69,
+      "of": 98,
+      "rate": 0.7041
+    },
+    "top1_supported": {
+      "n": 72,
+      "of": 98,
+      "rate": 0.7347
+    },
+    "top5_supported": {
+      "n": 88,
+      "of": 98,
+      "rate": 0.898
+    },
+    "contradictions": {
+      "n": 0,
+      "of": 98,
+      "rate": 0.0
+    },
+    "human_verified": false,
+    "claim_safety": "AI audit of retrieved evidence against an AI-generated expected answer. Not independent legal verification and not human-verified ground truth."
+  },
+  "live_generation_sample": {
+    "sample": 30,
+    "provider_calls": 30,
+    "cache_used": false,
+    "retries": 0,
+    "answered": {
+      "n": 4,
+      "of": 30,
+      "rate": 0.1333
+    },
+    "abstained": {
+      "n": 2,
+      "of": 30,
+      "rate": 0.0667
+    },
+    "unavailable": {
+      "n": 24,
+      "of": 30,
+      "rate": 0.8
+    },
+    "citation_validation_passed": {
+      "n": 4,
+      "of": 4,
+      "rate": 1.0
+    },
+    "grounding_passed": {
+      "n": 4,
+      "of": 4,
+      "rate": 1.0
+    },
+    "unsupported_claims_published": {
+      "n": 0,
+      "of": 4,
+      "rate": 0.0
+    },
+    "confidence_distribution": {
+      "LOW": 4
+    },
+    "median_latency_ms": 571.1,
+    "typo_questions": {
+      "count": 4,
+      "spelling_applied": 4,
+      "target_retrieved": 3
+    }
+  },
+  "live_generation_earlier_60": {
+    "sample": 60,
+    "answered": 41,
+    "abstained": 4,
+    "unavailable": 0,
+    "grounded": {
+      "n": 41,
+      "of": 41,
+      "rate": 1.0
+    },
+    "citation_supported": {
+      "n": 41,
+      "of": 41,
+      "rate": 1.0
+    },
+    "out_of_domain_abstention": {
+      "n": 15,
+      "of": 15,
+      "rate": 1.0
+    },
+    "answered_despite_wrong_evidence": 7,
+    "median_latency_ms": 2203.8,
+    "cache_hits": 10,
+    "cache_hits_denominator": 60
+  },
+  "rank1_failure_analysis": {
+    "target_in_top5_not_top1": 166,
+    "clusters": {
+      "target_equivalence": 50,
+      "dense_confusion": 41,
+      "other": 35,
+      "identifier_ambiguity": 15,
+      "boilerplate_heading": 13,
+      "corpus_extraction": 8,
+      "broad_lexical": 3,
+      "same_provision_split": 1
+    },
+    "share": {
+      "target_equivalence": 0.3012,
+      "dense_confusion": 0.247,
+      "other": 0.2108,
+      "identifier_ambiguity": 0.0904,
+      "boilerplate_heading": 0.0783,
+      "corpus_extraction": 0.0482,
+      "broad_lexical": 0.0181,
+      "same_provision_split": 0.006
+    },
+    "already_correct_at_rank_1": 50,
+    "note": "the largest cluster is the benchmark's single label being narrower than the corpus, not a ranking defect"
+  },
+  "typo_tolerance": {
+    "check": "typo_tolerance",
+    "questions": 111,
+    "seed": 20260916,
+    "denominator_note": "every rate is out of 111 benchmark questions; 111 of them received an injected misspelling and 0 had no word long enough to break",
+    "injection": {
+      "questions_injected": 111,
+      "edits": [
+        "patentability->paatentability",
+        "patentable->patentabble",
+        "patent->ptent",
+        "compulsory->complusory",
+        "infringement->infringemment",
+        "application->applicatioon",
+        "infringement->infringemeent",
+        "Government->Goverrnment",
+        "principles->priciples",
+        "inventions->invenitons",
+        "patentee->patenteee",
+        "documents->documenst",
+        "specification->specificatino",
+        "examination->examinatino",
+        "applications->appilcations",
+        "accompanying->accompanyying",
+        "registration->regstration",
+        "identical->identcial",
+        "registered->registerde",
+        "infringement->ifringement"
+      ],
+      "policy": "one edit (drop/swap/double) in the longest content word of at least six letters; identifiers and structural words are never touched"
+    },
+    "repair": {
+      "restored_to_original": 89,
+      "of_injected": 111,
+      "clean_questions_altered_by_correction": 0,
+      "clean_rank1_unchanged": "111/111"
+    },
+    "clarifier_interceptions": {
+      "clean": 0,
+      "typo_uncorrected": 0,
+      "typo_corrected": 0,
+      "denominator": 111,
+      "note": "questions app/clarify.py would answer with a clarifying question instead of running the pipeline; a misspelled regime name anchors on nothing, which Recall@k cannot see because the benchmark harness does not run the clarifier"
+    },
+    "runs": {
+      "clean": {
+        "aggregate": {
+          "recall@1": 0.8468,
+          "recall@5": 0.991,
+          "recall@10": 1.0,
+          "mrr": 0.8995,
+          "ndcg@5": 0.918,
+          "ndcg@10": 0.9206
+        },
+        "counts": {
+          "recall@1": 94,
+          "recall@5": 110,
+          "recall@10": 111
+        }
+      },
+      "clean_corrected": {
+        "aggregate": {
+          "recall@1": 0.8468,
+          "recall@5": 0.991,
+          "recall@10": 1.0,
+          "mrr": 0.8995,
+          "ndcg@5": 0.918,
+          "ndcg@10": 0.9206
+        },
+        "counts": {
+          "recall@1": 94,
+          "recall@5": 110,
+          "recall@10": 111
+        }
+      },
+      "typo_uncorrected": {
+        "aggregate": {
+          "recall@1": 0.8198,
+          "recall@5": 0.9459,
+          "recall@10": 0.982,
+          "mrr": 0.877,
+          "ndcg@5": 0.8872,
+          "ndcg@10": 0.8991
+        },
+        "counts": {
+          "recall@1": 91,
+          "recall@5": 105,
+          "recall@10": 109
+        }
+      },
+      "typo_corrected": {
+        "aggregate": {
+          "recall@1": 0.8108,
+          "recall@5": 0.982,
+          "recall@10": 0.991,
+          "mrr": 0.8785,
+          "ndcg@5": 0.9002,
+          "ndcg@10": 0.9028
+        },
+        "counts": {
+          "recall@1": 90,
+          "recall@5": 109,
+          "recall@10": 110
+        }
+      }
+    }
+  },
+  "safety": {
+    "out_of_domain_correctly_abstained": {
+      "n": 15,
+      "of": 15,
+      "rate": 1.0
+    },
+    "invalid_citation_published": {
+      "n": 0,
+      "of": 41,
+      "rate": 0.0
+    },
+    "unsupported_claim_published": {
+      "n": 0,
+      "of": 41,
+      "rate": 0.0
+    },
+    "cache_disabled_run": {
+      "citation_validation_passed": {
+        "n": 4,
+        "of": 4,
+        "rate": 1.0
+      },
+      "grounding_passed": {
+        "n": 4,
+        "of": 4,
+        "rate": 1.0
+      },
+      "unsupported_claim_published": {
+        "n": 0,
+        "of": 4,
+        "rate": 0.0
+      }
+    },
+    "corrupted_source_handling": "detected and labelled, never repaired; the excerpt shown is a substring of the stored chunk and a damaged one is surfaced as a source-integrity warning rather than presented as authoritative wording"
+  },
+  "claim_safety": "Retrieval figures are evidence recall, not answer accuracy and not legal accuracy. Evidence sufficiency is a property of the retrieved evidence set. The AI-judged sample is an AI audit, not independent legal verification. No benchmark in this project is human-verified legal ground truth."
+}

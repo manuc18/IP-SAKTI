@@ -1,0 +1,6 @@
+{
+  "name": "empty",
+  "description": "No evidence at all. The engine must abstain with `no_evidence` and must never answer from model knowledge (Phase 7 §14).",
+  "query": "What is the penalty for infringing a plant variety right?",
+  "results": []
+}

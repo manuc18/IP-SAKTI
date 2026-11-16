@@ -1,0 +1,488 @@
+{
+  "phase": "7.7",
+  "experiment_mode": "LEXICAL_ONLY",
+  "purpose": "one controlled live request: does prompt 0.3.0's 1-4 sentence, every-sentence-cited contract change the under-citation behaviour Phase 7.5 recorded on this exact question and this exact evidence?",
+  "requests_used": 1,
+  "retries": 0,
+  "requested_at": "2026-08-30T18:25:17+00:00",
+  "question_id": "Q027",
+  "query": "Rule 23 of the Trade Marks Rules, 2017 — form and signing of an application",
+  "query_family": "identifier",
+  "domain": "trademarks",
+  "jurisdiction": "india",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_completion_tokens": 800,
+  "timeout_seconds": 15.0,
+  "versions": {
+    "prompt": "0.3.0",
+    "policy": "0.2.0",
+    "validator": "0.2.0",
+    "grounding": "0.2.0"
+  },
+  "dense_arm": "disabled",
+  "reranker": "features",
+  "top_k": 5,
+  "policy": {
+    "policy_version": "0.2.0",
+    "minimum_evidence_level": "C",
+    "require_citable_authority": true,
+    "require_relevance": true,
+    "relevance_min_overlap": 1,
+    "stale_only_is_insufficient": false,
+    "abstain_on_conflict": false,
+    "require_full_grounding": true,
+    "max_citations": 5
+  },
+  "candidate_count": 50,
+  "reranked_evidence_count": 5,
+  "evidence_fingerprint": "02813c7fcc2d8371",
+  "evidence": [
+    {
+      "marker": 1,
+      "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+      "citation": "Trade Marks Rules, 2017 — Rule 23",
+      "citable": true,
+      "temporal_status": "CURRENT",
+      "source_evidence_level": "B"
+    },
+    {
+      "marker": 2,
+      "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+      "citation": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 3,
+      "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+      "citation": "Designs Rules, 2001 — Rule 23",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 4,
+      "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+      "citation": "Drugs and Cosmetics Rules, 1945 — Rule 23",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 5,
+      "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+      "citation": "Patents Rules, 2003 — Rule 23",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "B"
+    }
+  ],
+  "provider_status": "completion returned",
+  "provider_calls": 1,
+  "provider_diagnostics": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "0.3.0",
+    "requests": 1,
+    "retries": 0,
+    "finish_reason": "stop",
+    "prompt_tokens": 1980,
+    "completion_tokens": 210,
+    "total_tokens": 2190,
+    "reasoning_tokens": 174
+  },
+  "latency_ms": 1286.2,
+  "model_text_raw": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+  "text_after_normalisation": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+  "marker_normalisation_applied": false,
+  "aliased_markers_in_raw": [],
+  "citation_markers": [
+    1
+  ],
+  "shape": {
+    "sentences": 1,
+    "propositions": 1,
+    "cited_propositions": 1,
+    "uncited_propositions": [],
+    "sentence_rows": [
+      {
+        "n": 1,
+        "is_proposition": true,
+        "markers": [
+          1
+        ],
+        "sentence": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1]."
+      }
+    ],
+    "within_one_to_four_sentence_contract": true
+  },
+  "subdivision_observations": [],
+  "citation_validation": {
+    "ok": true,
+    "citations": [
+      {
+        "marker": 1,
+        "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+        "document_id": "IN-TM-RULES-2017",
+        "locator": "Rule 23",
+        "pages": [
+          59
+        ],
+        "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+        "source_evidence_level": "B",
+        "temporal_status": "CURRENT",
+        "locator_unavailable": false,
+        "source_document": {
+          "document_id": "IN-TM-RULES-2017",
+          "filename": "Trademarks rules 2017.pdf",
+          "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+          "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+          "source_version_id": "IN-TM-RULES-2017@undated",
+          "consolidated_as_of": null
+        }
+      }
+    ],
+    "failures": [],
+    "version": "0.2.0"
+  },
+  "grounding": {
+    "grounded": true,
+    "citation_support": true,
+    "claims": 1,
+    "supported_claims": 1,
+    "supported_claim_rate": 1.0,
+    "unresolved_markers": [],
+    "unsupported_claims": [],
+    "uncited_evidence": [
+      "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+      "IN-DESIGNS-RULES-2001::rule-23",
+      "IN-DC-RULES-1945::part-iv-rule-23",
+      "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+    ],
+    "weakly_grounded": [],
+    "sentences": [
+      {
+        "sentence": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+        "markers": [
+          1
+        ],
+        "is_claim": true,
+        "supported": true,
+        "weak": false,
+        "shared_terms": [
+          "agent",
+          "applicant",
+          "application",
+          "form",
+          "his",
+          "made",
+          "registration",
+          "signed",
+          "trademark"
+        ]
+      }
+    ],
+    "version": "0.2.0"
+  },
+  "published": true,
+  "final_answer": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+  "abstention_reasons": [],
+  "answer": {
+    "answer": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+    "citations": [
+      {
+        "marker": 1,
+        "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+        "document_id": "IN-TM-RULES-2017",
+        "locator": "Rule 23",
+        "pages": [
+          59
+        ],
+        "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+        "source_evidence_level": "B",
+        "temporal_status": "CURRENT",
+        "locator_unavailable": false,
+        "source_document": {
+          "document_id": "IN-TM-RULES-2017",
+          "filename": "Trademarks rules 2017.pdf",
+          "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+          "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+          "source_version_id": "IN-TM-RULES-2017@undated",
+          "consolidated_as_of": null
+        }
+      }
+    ],
+    "confidence": "MODERATE",
+    "grounded": true,
+    "insufficient_evidence": false,
+    "insufficient_evidence_reasons": [],
+    "conflict_detected": false,
+    "conflict_chunks": [],
+    "cautions": [
+      "4 of 5 cited sources are marked STALE and may have been amended.",
+      "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+    ],
+    "validation_failures": [],
+    "unsupported_claims": [],
+    "uncited_evidence": [
+      "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+      "IN-DESIGNS-RULES-2001::rule-23",
+      "IN-DC-RULES-1945::part-iv-rule-23",
+      "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+    ],
+    "evidence_fingerprint": "02813c7fcc2d8371",
+    "provider": "groq",
+    "policy": {
+      "policy_version": "0.2.0",
+      "minimum_evidence_level": "C",
+      "require_citable_authority": true,
+      "require_relevance": true,
+      "relevance_min_overlap": 1,
+      "stale_only_is_insufficient": false,
+      "abstain_on_conflict": false,
+      "require_full_grounding": true,
+      "max_citations": 5
+    },
+    "diagnostics": {
+      "policy_report": {
+        "assessments": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+            "addresses_query": true,
+            "overlap_terms": [
+              "23",
+              "application",
+              "form",
+              "rule",
+              "signing"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "B",
+            "current": true,
+            "temporal_status": "CURRENT",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": []
+          },
+          {
+            "marker": 2,
+            "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+            "addresses_query": true,
+            "overlap_terms": [
+              "23",
+              "application",
+              "form",
+              "signing"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+            "addresses_query": true,
+            "overlap_terms": [
+              "23",
+              "application",
+              "form"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 4,
+            "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+            "addresses_query": true,
+            "overlap_terms": [
+              "23",
+              "form"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 5,
+            "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+            "addresses_query": true,
+            "overlap_terms": [
+              "23",
+              "rules"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "B",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "cautions": [
+          "4 of 5 cited sources are marked STALE and may have been amended.",
+          "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+        ],
+        "insufficient_reasons": []
+      },
+      "validation": {
+        "ok": true,
+        "citations": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+            "document_id": "IN-TM-RULES-2017",
+            "locator": "Rule 23",
+            "pages": [
+              59
+            ],
+            "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+            "source_evidence_level": "B",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-TM-RULES-2017",
+              "filename": "Trademarks rules 2017.pdf",
+              "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+              "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+              "source_version_id": "IN-TM-RULES-2017@undated",
+              "consolidated_as_of": null
+            }
+          }
+        ],
+        "failures": [],
+        "version": "0.2.0"
+      },
+      "grounding": {
+        "grounded": true,
+        "citation_support": true,
+        "claims": 1,
+        "supported_claims": 1,
+        "supported_claim_rate": 1.0,
+        "unresolved_markers": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+          "IN-DESIGNS-RULES-2001::rule-23",
+          "IN-DC-RULES-1945::part-iv-rule-23",
+          "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+        ],
+        "weakly_grounded": [],
+        "sentences": [
+          {
+            "sentence": "An application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].",
+            "markers": [
+              1
+            ],
+            "is_claim": true,
+            "supported": true,
+            "weak": false,
+            "shared_terms": [
+              "agent",
+              "applicant",
+              "application",
+              "form",
+              "his",
+              "made",
+              "registration",
+              "signed",
+              "trademark"
+            ]
+          }
+        ],
+        "version": "0.2.0"
+      },
+      "provider_config": {
+        "provider": "groq",
+        "version": "0.1.0",
+        "prompt_version": "0.3.0",
+        "requires_network": true,
+        "implemented": true,
+        "api_key_configured": true,
+        "model": "openai/gpt-oss-120b",
+        "timeout_seconds": 15.0,
+        "max_completion_tokens": 800,
+        "temperature": 0.0,
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "stream": false,
+        "retries": 0
+      },
+      "provider_diagnostics": {
+        "model": "openai/gpt-oss-120b",
+        "prompt_version": "0.3.0",
+        "requests": 1,
+        "retries": 0,
+        "finish_reason": "stop",
+        "prompt_tokens": 1980,
+        "completion_tokens": 210,
+        "total_tokens": 2190,
+        "reasoning_tokens": 174
+      },
+      "marker_normalisation_applied": false
+    },
+    "version": "0.1.0"
+  },
+  "rendered": "Answer\n\nAn application for the registration of a trademark must be made in Form TM‑A and signed by the applicant or his agent [1].\n\nSource(s)\n\n[1] Trade Marks Rules, 2017 — Rule 23, p. 59\n\nCaution\n\n- 4 of 5 cited sources are marked STALE and may have been amended.\n- The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict.\n\nConfidence: MODERATE (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+  "golden_target": {
+    "documents": [
+      "IN-TM-RULES-2017"
+    ],
+    "locators": [
+      "Rule 23"
+    ]
+  },
+  "scores": {
+    "lexical_candidate_recall": true,
+    "lexical_candidate_rank": 1,
+    "reranked_evidence_recall": true,
+    "reranked_evidence_rank": 1,
+    "citation_valid": true,
+    "citation_count": 1,
+    "citation_markers": [
+      1
+    ],
+    "answer_grounded": true,
+    "insufficient_evidence": false
+  },
+  "baseline_phase_7_5": {
+    "phase": "7.5",
+    "prompt_version": "0.2.0",
+    "sentences": 9,
+    "propositions": 9,
+    "cited_propositions": 6,
+    "citation_validation": "FAIL",
+    "grounding": "not reached",
+    "published": false,
+    "truncated": true
+  },
+  "caveat": "Lexical-only candidate generation; retrieval figures are lexical_candidate_recall and are not comparable with Phase 6. Nothing here measures legal accuracy."
+}

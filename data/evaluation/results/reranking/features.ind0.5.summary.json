@@ -1,0 +1,362 @@
+{
+  "experiment": "F1",
+  "reranker": "features",
+  "reranker_config": {
+    "reranker": "features",
+    "version": "0.1.0",
+    "trained": false,
+    "features": [
+      "dense_percentile",
+      "lexical_percentile",
+      "locator_exactness",
+      "locator_referenced",
+      "document_match",
+      "idf_coverage",
+      "phrase_overlap"
+    ],
+    "normalization": "min_max",
+    "normalization_rationale": "min-max within the candidate pool, selected over rank percentile on measured behaviour (Phase 6 section 7); BM25 and cosine scores are never added on a shared scale",
+    "weights": {
+      "IDENTIFIER": {
+        "locator_exactness": 0.5,
+        "lexical_percentile": 0.25,
+        "dense_percentile": 0.1,
+        "document_match": 0.1,
+        "phrase_overlap": 0.05,
+        "idf_coverage": 0.0,
+        "locator_referenced": 0.0
+      },
+      "CONCEPTUAL": {
+        "dense_percentile": 0.6,
+        "lexical_percentile": 0.15,
+        "phrase_overlap": 0.1,
+        "idf_coverage": 0.1,
+        "locator_exactness": 0.025,
+        "document_match": 0.025,
+        "locator_referenced": 0.0
+      },
+      "GENERAL": {
+        "dense_percentile": 0.6,
+        "lexical_percentile": 0.15,
+        "phrase_overlap": 0.1,
+        "idf_coverage": 0.1,
+        "locator_exactness": 0.025,
+        "document_match": 0.025,
+        "locator_referenced": 0.0
+      }
+    },
+    "weights_provenance": "declared a priori from the Phase 5 per-family Recall@1 tables; not fitted to the golden questions",
+    "instrument_name_discount": {
+      "value": 0.5,
+      "applies_to": "query tokens that only name a document the query already matched, in idf_coverage and in phrase_overlap runs made entirely of them",
+      "form": "the tokens' weight is scaled by 1 - value; at 0.0 the two features are computed exactly as before",
+      "rationale": "document selection is already scored by document_match; scoring the instrument's name again as content counts one signal twice, and hands rank 1 to whichever provision recites the instrument's own title",
+      "guard": {
+        "min_retained_query_mass": 0.25,
+        "effect": "no discount is applied at all when the instrument's name carries most of the query's IDF mass, so a question about the words that name an instrument is left intact"
+      }
+    },
+    "structural_penalty": {
+      "value": 0.25,
+      "applies_to": [
+        "front_matter",
+        "heading",
+        "preamble"
+      ],
+      "read_from": "chunk unit_type, set at chunking",
+      "form": "subtracted from relevance_score after the weighted sum, so the declared weights and the ordering among operative candidates are unchanged",
+      "rationale": "a title page, a chapter heading and a preamble carry no operative rule, so none can be the provision an answer must cite",
+      "filter": false
+    },
+    "heading_bonus": {
+      "value": 0.25,
+      "read_from": "chunk heading, set at chunking",
+      "form": "added to relevance_score after the weighted sum, so the declared weights are unchanged and a chunk with no heading is scored exactly as it was before",
+      "rationale": "a heading is the drafter's own one-line statement of what a provision governs, so a question that accounts for all of it has named that provision rather than merely mentioned its subject",
+      "stemming": "local suffix stripper, not the project tokenizer",
+      "filter": false
+    },
+    "authority": {
+      "kept_separate_from_relevance": true,
+      "evidence_level_score": {
+        "A": 1.0,
+        "B": 0.6,
+        "C": 0.3
+      },
+      "temporal_score": {
+        "CURRENT": 1.0,
+        "UNKNOWN": 0.5,
+        "STALE": 0.4
+      },
+      "weights": {
+        "evidence_level": 0.6,
+        "temporal": 0.4
+      }
+    },
+    "citability": "reported, never scored",
+    "query_family_classifier": "ai.retrieval.router.classify (deterministic)",
+    "idf_terms": 18697
+  },
+  "candidate_generator_config": {
+    "candidate_generator": "union",
+    "version": "0.1.0",
+    "mode": "expanded",
+    "order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "rrf_k": null,
+    "deduplication": "by chunk_id, first appearance wins",
+    "components": {
+      "dense": {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      },
+      "lexical": {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18697,
+          "mean_document_length_tokens": 208.07
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      }
+    }
+  },
+  "timestamp": "2026-09-15T20:51:42+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "none",
+  "python": "3.14.3",
+  "candidate_recall": {
+    "candidate_recall@10": 0.964,
+    "candidate_recall@20": 0.991,
+    "candidate_recall@30": 0.991,
+    "candidate_recall@50": 1.0,
+    "candidate_recall@pool": 1.0
+  },
+  "pool_size": {
+    "mean": 77.1,
+    "min": 58,
+    "max": 93
+  },
+  "overall": {
+    "recall@1": 0.8468,
+    "recall@5": 0.991,
+    "recall@10": 1.0,
+    "mrr": 0.8995,
+    "ndcg@5": 0.918,
+    "ndcg@10": 0.9206,
+    "document_recall@1": 0.9279,
+    "document_recall@5": 1.0,
+    "document_recall@10": 1.0
+  },
+  "conditional": {
+    "questions": 111,
+    "mrr": 0.8995,
+    "recall@1": 0.8468,
+    "recall@5": 0.991
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.8172,
+      "recall@5": 0.9892,
+      "recall@10": 1.0,
+      "mrr": 0.8801,
+      "ndcg@5": 0.9021,
+      "ndcg@10": 0.9052,
+      "candidate_recall@10": 0.957,
+      "candidate_recall@20": 0.9892,
+      "candidate_recall@30": 0.9892,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 93,
+      "conditional": {
+        "questions": 93,
+        "mrr": 0.8801,
+        "recall@1": 0.8172,
+        "recall@5": 0.9892
+      }
+    },
+    "identifier": {
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 18,
+      "conditional": {
+        "questions": 18,
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "by_router_family": {
+    "CONCEPTUAL": {
+      "recall@1": 0.8243,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.8858,
+      "ndcg@5": 0.9087,
+      "ndcg@10": 0.9087,
+      "candidate_recall@10": 0.973,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 74,
+      "conditional": {
+        "questions": 74,
+        "mrr": 0.8858,
+        "recall@1": 0.8243,
+        "recall@5": 1.0
+      }
+    },
+    "GENERAL": {
+      "recall@1": 0.8,
+      "recall@5": 0.95,
+      "recall@10": 1.0,
+      "mrr": 0.865,
+      "ndcg@5": 0.8824,
+      "ndcg@10": 0.8969,
+      "candidate_recall@10": 0.9,
+      "candidate_recall@20": 0.95,
+      "candidate_recall@30": 0.95,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 20,
+      "conditional": {
+        "questions": 20,
+        "mrr": 0.865,
+        "recall@1": 0.8,
+        "recall@5": 0.95
+      }
+    },
+    "IDENTIFIER": {
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 17,
+      "conditional": {
+        "questions": 17,
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "latency": {
+    "candidate_generation": {
+      "median_ms": 33.95,
+      "mean_ms": 38.02,
+      "p95_ms": 49.74,
+      "n": 111
+    },
+    "reranking": {
+      "median_ms": 19.72,
+      "mean_ms": 20.35,
+      "p95_ms": 26.11,
+      "n": 111
+    },
+    "total_pipeline": {
+      "median_ms": 54.54,
+      "mean_ms": 58.37,
+      "p95_ms": 80.82,
+      "n": 111
+    },
+    "measurement_note": "one process, fresh retriever and model instances, warmed with a throwaway query before the loop; each benchmark question is seen once, so no dense query-embedding cache hit is timed. Candidate pools are shared across rerankers in a run, so candidate latency is measured once and repeated in each summary."
+  },
+  "leakage_audit": {
+    "questions_audited": 111,
+    "clean": true,
+    "failing_questions": [],
+    "findings": [],
+    "checks": [
+      "chunk_id never rendered",
+      "forbidden metadata never rendered",
+      "no label outside Document/Locator/Heading/Text",
+      "expected chunk ids absent from query and candidates",
+      "expected document ids absent from query and candidates",
+      "golden `notes` absent from query and candidates"
+    ]
+  },
+  "cli": {
+    "candidate_mode": "expanded",
+    "candidate_order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "normalization": "min_max",
+    "cross_encoder": "bge-m3",
+    "batch_size": 16,
+    "max_length": 512,
+    "authority_lambda": 0.05,
+    "heading_bonus": null,
+    "instrument_name_discount": 0.5,
+    "structural_penalty": null,
+    "text_budget": null
+  },
+  "failure_analysis": {
+    "at": 5,
+    "questions": 111,
+    "failures": 1,
+    "types": {
+      "A": 0,
+      "B": 1,
+      "C": 0
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 1,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 0,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": []
+  }
+}

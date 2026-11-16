@@ -1,0 +1,65 @@
+{
+  "metric": "B_answer_behaviour",
+  "deterministic": false,
+  "sample_size": 60,
+  "sampled_from": 1000,
+  "denominator_note": "behavioural rates are out of 45 answerable questions that reached a verdict; 0 were UNAVAILABLE (provider/service, excluded) and 15 are EXPECTED_ABSTENTION probes counted separately",
+  "counts": {
+    "answered": 41,
+    "abstained": 4,
+    "unavailable": 0,
+    "errors": 0
+  },
+  "grounded_answer_rate": {
+    "numerator": 41,
+    "denominator": 41
+  },
+  "citation_supported_answer_rate": {
+    "numerator": 41,
+    "denominator": 41
+  },
+  "retrieval_correct_in_evidence": {
+    "numerator": 37,
+    "denominator": 45
+  },
+  "abstention_precision_on_probes": {
+    "numerator": 15,
+    "denominator": 15
+  },
+  "answered_despite_wrong_evidence": 7,
+  "abstained_despite_correct_evidence": 3,
+  "citation_validation_failures": 3,
+  "grounding_failures": 1,
+  "latency_ms": {
+    "total": {
+      "median": 2203.8,
+      "mean": 3080.11,
+      "p90": 7115.0,
+      "p95": 11206.0,
+      "max": 14743.1
+    },
+    "retrieval": {
+      "median": 505.1,
+      "mean": 1663.13,
+      "p90": 4018.4,
+      "p95": 8334.2,
+      "max": 12600.0
+    },
+    "reranking": {
+      "median": 23.85,
+      "mean": 90.02,
+      "p90": 207.6,
+      "p95": 419.0,
+      "max": 842.6
+    },
+    "answering": {
+      "median": 1267.65,
+      "mean": 1277.71,
+      "p90": 2195.2,
+      "p95": 2645.3,
+      "max": 3996.2
+    }
+  },
+  "answer_correctness": "NOT MEASURED HERE - requires the AI judge; see scripts/evaluation/prepare_synthetic_judgement.py",
+  "claim_safety": "Evaluation uses a synthetic, AI-generated and AI-judged benchmark derived from the fixed corpus. It is an engineering evaluation and not human-verified legal ground truth."
+}

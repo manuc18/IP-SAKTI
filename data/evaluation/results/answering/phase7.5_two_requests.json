@@ -1,0 +1,398 @@
+{
+  "phase": "7.5",
+  "experiment_mode": "LEXICAL_ONLY",
+  "purpose": "controlled validation of the Phase 7.4 answer-layer fixes F1 (prompt contract), F2 (safe hierarchical locators) and F3 (marker normalisation)",
+  "request_budget": 2,
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_completion_tokens": 800,
+  "timeout_seconds": 15.0,
+  "retries": 0,
+  "dense_arm": "disabled",
+  "reranker": "features",
+  "top_k": 5,
+  "prompt_version": "0.2.0",
+  "policy": {
+    "policy_version": "0.2.0",
+    "minimum_evidence_level": "C",
+    "require_citable_authority": true,
+    "require_relevance": true,
+    "relevance_min_overlap": 1,
+    "stale_only_is_insufficient": false,
+    "abstain_on_conflict": false,
+    "require_full_grounding": true,
+    "max_citations": 5
+  },
+  "caveat": "Lexical-only candidate generation. Retrieval figures are lexical_candidate_recall and are NOT comparable with the Phase 6 hybrid results. Nothing here measures legal accuracy.",
+  "questions": [
+    {
+      "question_id": "Q027",
+      "validates": "F1",
+      "phase_7_3_failure": "under-citation: the opening topic sentence carried no marker and the grounding gate refused the whole answer",
+      "query": "Rule 23 of the Trade Marks Rules, 2017 — form and signing of an application",
+      "query_family": "identifier",
+      "domain": "trademarks",
+      "jurisdiction": "india",
+      "requested_at": "2026-08-30T17:31:03+00:00",
+      "provider_calls": 1,
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence_fingerprint": "02813c7fcc2d8371",
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+          "citation": "Trade Marks Rules, 2017 — Rule 23",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+          "citation": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+          "citation": "Designs Rules, 2001 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+          "citation": "Patents Rules, 2003 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "B"
+        }
+      ],
+      "latency_ms": 2471.3,
+      "model_text_raw": "Rule 23 of the Trade Marks Rules, 2017 governs the form and signing of a trademark application.  \n\nAn application for registration of a trademark in respect of a specification of goods or services must be made in Form TM‑A and must be signed by the applicant or his authorised agent [1].  \n\nThe application must (a) contain a precise description by words of the trademark where necessary to determine the applicant’s right, (b) be capable of depicting the graphical representation of the trademark, (c) be treated as a three‑dimensional trademark only if the application includes a statement to that effect, and (d) be treated as a colour‑combination trademark only if the application includes a statement to that effect [1].  \n\nIf an amendment is required to divide an application under the proviso to section 22, the amendment must be filed in Form TM‑M [1].  \n\nA non‑series application must relate to one trademark only, although it may cover as many classes of goods or services as are desired [1].  \n\nWhere an application seeks registration of all goods or services in a class, or a large variety of goods or services in a class, the Registrar may refuse to accept the application unless he is satisfied that the specification is justified by the use (or intended use) of the trademark; the names of goods and services must, as far as possible, correspond to those in the classification published by the Registrar under sub‑rule (2) of Rule 20 [1].  \n\nIf a single application is filed and the Registrar determines that the goods or services fall in additional class(es) beyond those applied for, the applicant must either restrict the specification to the originally applied class(es) or amend the application to add the additional class(es) by filing a request on Form TM‑M and paying the appropriate fee; where all goods or services fall in a different class, the Registrar may permit correction of the class by filing the request on Form TM‑M [1].  \n\nThus, Rule 23 specifies that the prescribed form is TM‑A, the signature must be that of the applicant or agent, and any amendments or class corrections must use Form TM‑M, with the Registrar retaining discretion to refuse overly broad specifications.  \n\n(For comparison, Rule 23 in the Geographical Indications Rules 2002 also requires a prescribed",
+      "text_after_normalisation": "Rule 23 of the Trade Marks Rules, 2017 governs the form and signing of a trademark application.  \n\nAn application for registration of a trademark in respect of a specification of goods or services must be made in Form TM‑A and must be signed by the applicant or his authorised agent [1].  \n\nThe application must (a) contain a precise description by words of the trademark where necessary to determine the applicant’s right, (b) be capable of depicting the graphical representation of the trademark, (c) be treated as a three‑dimensional trademark only if the application includes a statement to that effect, and (d) be treated as a colour‑combination trademark only if the application includes a statement to that effect [1].  \n\nIf an amendment is required to divide an application under the proviso to section 22, the amendment must be filed in Form TM‑M [1].  \n\nA non‑series application must relate to one trademark only, although it may cover as many classes of goods or services as are desired [1].  \n\nWhere an application seeks registration of all goods or services in a class, or a large variety of goods or services in a class, the Registrar may refuse to accept the application unless he is satisfied that the specification is justified by the use (or intended use) of the trademark; the names of goods and services must, as far as possible, correspond to those in the classification published by the Registrar under sub‑rule (2) of Rule 20 [1].  \n\nIf a single application is filed and the Registrar determines that the goods or services fall in additional class(es) beyond those applied for, the applicant must either restrict the specification to the originally applied class(es) or amend the application to add the additional class(es) by filing a request on Form TM‑M and paying the appropriate fee; where all goods or services fall in a different class, the Registrar may permit correction of the class by filing the request on Form TM‑M [1].  \n\nThus, Rule 23 specifies that the prescribed form is TM‑A, the signature must be that of the applicant or agent, and any amendments or class corrections must use Form TM‑M, with the Registrar retaining discretion to refuse overly broad specifications.  \n\n(For comparison, Rule 23 in the Geographical Indications Rules 2002 also requires a prescribed",
+      "marker_normalisation_applied": false,
+      "aliased_markers_in_raw": [],
+      "published_answer": "",
+      "first_sentence": null,
+      "uncited_claims": [],
+      "subdivision_observations": [],
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "citation_validation_failed",
+            "detail": "2 citation rule(s) failed; the answer was not published",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "4 of 5 cited sources are marked STALE and may have been amended.",
+          "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+        ],
+        "validation_failures": [
+          {
+            "code": "unsupported_locator_in_prose",
+            "detail": "the answer names rule 20, which is neither a supplied provision nor named by any supplied passage",
+            "marker": null,
+            "chunk_id": null
+          },
+          {
+            "code": "unsupported_locator_in_prose",
+            "detail": "the answer names rule 2002, which is neither a supplied provision nor named by any supplied passage",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "02813c7fcc2d8371",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.2.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "rule",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "rules"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "4 of 5 cited sources are marked STALE and may have been amended.",
+              "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": false,
+            "citations": [],
+            "failures": [
+              {
+                "code": "unsupported_locator_in_prose",
+                "detail": "the answer names rule 20, which is neither a supplied provision nor named by any supplied passage",
+                "marker": null,
+                "chunk_id": null
+              },
+              {
+                "code": "unsupported_locator_in_prose",
+                "detail": "the answer names rule 2002, which is neither a supplied provision nor named by any supplied passage",
+                "marker": null,
+                "chunk_id": null
+              }
+            ],
+            "version": "0.2.0"
+          },
+          "provider_diagnostics": {
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.2.0",
+            "requests": 1,
+            "retries": 0
+          },
+          "rejected_draft": "Rule 23 of the Trade Marks Rules, 2017 governs the form and signing of a trademark application.  \n\nAn application for registration of a trademark in respect of a specification of goods or services must be made in Form TM‑A and must be signed by the applicant or his authorised agent [1].  \n\nThe application must (a) contain a precise description by words of the trademark where necessary to determine the applicant’s right, (b) be capable of depicting the graphical representation of the trademark, (c) be treated as a three‑dimensional trademark only if the application includes a statement to that effect, and (d) be treated as a colour‑combination trademark only if the application includes a statement to that effect [1].  \n\nIf an amendment is required to divide an application under the proviso to section 22, the amendment must be filed in Form TM‑M [1].  \n\nA non‑series application must relate to one trademark only, although it may cover as many classes of goods or services as are desired [1].  \n\nWhere an application seeks registration of all goods or services in a class, or a large variety of goods or services in a class, the Registrar may refuse to accept the application unless he is satisfied that the specification is justified by the use (or intended use) of the trademark; the names of goods and services must, as far as possible, correspond to those in the classification published by the Registrar under sub‑rule (2) of Rule 20 [1].  \n\nIf a single application is filed and the Registrar determines that the goods or services fall in additional class(es) beyond those applied for, the applicant must either restrict the specification to the originally applied class(es) or amend the application to add the additional class(es) by filing a request on Form TM‑M and paying the appropriate fee; where all goods or services fall in a different class, the Registrar may permit correction of the class by filing the request on Form TM‑M [1].  \n\nThus, Rule 23 specifies that the prescribed form is TM‑A, the signature must be that of the applicant or agent, and any amendments or class corrections must use Form TM‑M, with the Registrar retaining discretion to refuse overly broad specifications.  \n\n(For comparison, Rule 23 in the Geographical Indications Rules 2002 also requires a prescribed"
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- 2 citation rule(s) failed; the answer was not published\n- unsupported_locator_in_prose: the answer names rule 20, which is neither a supplied provision nor named by any supplied passage\n- unsupported_locator_in_prose: the answer names rule 2002, which is neither a supplied provision nor named by any supplied passage\n",
+      "golden_target": {
+        "documents": [
+          "IN-TM-RULES-2017"
+        ],
+        "locators": [
+          "Rule 23"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": false,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      },
+      "post_hoc_observations": {
+        "note": "Computed offline from the recorded completion after the run. No further request was made, and none of this influenced the pipeline's own verdict, which is recorded in `answer`.",
+        "grounding_ran": false,
+        "grounding_not_run_because": "citation validation failed first; the engine abstains at the first gate that refuses",
+        "sentences_offline": [
+          {
+            "n": 1,
+            "is_claim": true,
+            "markers": [],
+            "sentence": "Rule 23 of the Trade Marks Rules, 2017 governs the form and signing of a trademark application."
+          },
+          {
+            "n": 2,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "An application for registration of a trademark in respect of a specification of goods or services must be made in Form TM‑A and must be signed by the applicant or his authorised agent [1]."
+          },
+          {
+            "n": 3,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "The application must (a) contain a precise description by words of the trademark where necessary to determine the applicant’s right, (b) be capable of depicting the graphical representation of the trademark, (c) be treated as a three‑dimensional trademark only if the application includes a statement to that effect, and (d) be treated as a colour‑combination trademark only if the application includes a statement to that effect [1]."
+          },
+          {
+            "n": 4,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "If an amendment is required to divide an application under the proviso to section 22, the amendment must be filed in Form TM‑M [1]."
+          },
+          {
+            "n": 5,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "A non‑series application must relate to one trademark only, although it may cover as many classes of goods or services as are desired [1]."
+          },
+          {
+            "n": 6,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "Where an application seeks registration of all goods or services in a class, or a large variety of goods or services in a class, the Registrar may refuse to accept the application unless he is satisfied that the specification is justified by the use (or intended use) of the trademark; the names of goods and services must, as far as possible, correspond to those in the classification published by the Registrar under sub‑rule (2) of Rule 20 [1]."
+          },
+          {
+            "n": 7,
+            "is_claim": true,
+            "markers": [
+              1
+            ],
+            "sentence": "If a single application is filed and the Registrar determines that the goods or services fall in additional class(es) beyond those applied for, the applicant must either restrict the specification to the originally applied class(es) or amend the application to add the additional class(es) by filing a request on Form TM‑M and paying the appropriate fee; where all goods or services fall in a different class, the Registrar may permit correction of the class by filing the request on Form TM‑M [1]."
+          },
+          {
+            "n": 8,
+            "is_claim": true,
+            "markers": [],
+            "sentence": "Thus, Rule 23 specifies that the prescribed form is TM‑A, the signature must be that of the applicant or agent, and any amendments or class corrections must use Form TM‑M, with the Registrar retaining discretion to refuse overly broad specifications."
+          },
+          {
+            "n": 9,
+            "is_claim": true,
+            "markers": [],
+            "sentence": "(For comparison, Rule 23 in the Geographical Indications Rules 2002 also requires a prescribed"
+          }
+        ],
+        "claims_without_marker": [
+          "Rule 23 of the Trade Marks Rules, 2017 governs the form and signing of a trademark application.",
+          "Thus, Rule 23 specifies that the prescribed form is TM‑A, the signature must be that of the applicant or agent, and any amendments or class corrections must use Form TM‑M, with the Registrar retaining discretion to refuse overly broad specifications.",
+          "(For comparison, Rule 23 in the Geographical Indications Rules 2002 also requires a prescribed"
+        ],
+        "f1_opening_sentence_cited": false,
+        "completion_truncated": true,
+        "locator_false_positives": [
+          {
+            "written": "rule 20",
+            "in_supplied_text": true,
+            "why_refused": "the supplied Rule 23 chunk says 'sub-rule (2) of rule 20', which parses as ('rule','20',('2',)). The answer wrote 'sub‑rule (2) of Rule 20' with U+2011 NON-BREAKING HYPHEN, which the identifier parser does not read as 'sub-rule', so the same reference parsed as ('rule','20',()) and the two keys did not match."
+          },
+          {
+            "written": "rule 2002",
+            "in_supplied_text": false,
+            "why_refused": "'Geographical Indications Rules 2002' was parsed as a rule numbered 2002. The year of an instrument's short title is being read as a rule number."
+          }
+        ]
+      }
+    }
+  ],
+  "requests_used": 1,
+  "updated_at": "2026-08-30T17:31:03+00:00",
+  "outcome": "Q027 failed at citation validation. Per the phase's stopping rule the run stopped here and Q001 was not requested.",
+  "stopped_after": "Q027"
+}

@@ -1,0 +1,95 @@
+{
+  "document_id": "IN-TM-ACT-1999",
+  "chunking_version": "0.2.0",
+  "units": 185,
+  "chunks": 179,
+  "rejected": 12,
+  "rejected_by_reason": {
+    "structural heading with no body text": 12
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 178,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 101,
+  "chunks_from_ocr": 0,
+  "characters": 183728,
+  "mean_chunk_characters": 1026.4,
+  "max_chunk_characters": 4951,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 4,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 20,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 30,
+      "reason": "structural heading with no body text",
+      "character_count": 34
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 48,
+      "reason": "structural heading with no body text",
+      "character_count": 38
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 58,
+      "reason": "structural heading with no body text",
+      "character_count": 51
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 70,
+      "reason": "structural heading with no body text",
+      "character_count": 57
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 75,
+      "reason": "structural heading with no body text",
+      "character_count": 30
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 84,
+      "reason": "structural heading with no body text",
+      "character_count": 37
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 99,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 119,
+      "reason": "structural heading with no body text",
+      "character_count": 46
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "unit_order": 143,
+      "reason": "structural heading with no body text",
+      "character_count": 27
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "document_id": "IN-PATENTS-ACT-1970",
+  "pages": 72,
+  "boilerplate_patterns": [
+    "#",
+    "IndiaCode"
+  ],
+  "table_of_contents_pages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "pages_by_content_type": {
+    "front_matter": 2,
+    "table_of_contents": 6,
+    "content": 64
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 72
+  },
+  "amendment_notes_extracted": 222,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 251809,
+  "characters_cleaned": 233270
+}

@@ -1,0 +1,83 @@
+{
+  "document_id": "IN-BDA-2002-AMD-2023",
+  "chunking_version": "0.2.0",
+  "units": 86,
+  "chunks": 77,
+  "rejected": 10,
+  "rejected_by_reason": {
+    "structural heading with no body text": 10
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 76,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "C",
+  "source_status": "PROVENANCE_UNVERIFIED",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 77,
+  "chunks_from_ocr": 0,
+  "characters": 75916,
+  "mean_chunk_characters": 985.9,
+  "max_chunk_characters": 4864,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 12,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 24,
+      "reason": "structural heading with no body text",
+      "character_count": 71
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 26,
+      "reason": "structural heading with no body text",
+      "character_count": 58
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 30,
+      "reason": "structural heading with no body text",
+      "character_count": 36
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 40,
+      "reason": "structural heading with no body text",
+      "character_count": 69
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 46,
+      "reason": "structural heading with no body text",
+      "character_count": 59
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 54,
+      "reason": "structural heading with no body text",
+      "character_count": 45
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 56,
+      "reason": "structural heading with no body text",
+      "character_count": 35
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "unit_order": 63,
+      "reason": "structural heading with no body text",
+      "character_count": 26
+    }
+  ]
+}

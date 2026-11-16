@@ -1,0 +1,20 @@
+{
+  "document_id": "UN-NAGOYA-PROTOCOL-2010",
+  "pages": 15,
+  "boilerplate_patterns": [
+    "#",
+    "Nagoya Protocol on Access and Benefit-sharing"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 15
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 15
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 56757,
+  "characters_cleaned": 55578
+}

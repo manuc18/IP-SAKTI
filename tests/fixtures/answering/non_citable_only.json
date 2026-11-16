@@ -1,0 +1,56 @@
+{
+  "name": "non_citable_only",
+  "description": "A single non-citable chunk (locator_unavailable). Retrievable and readable, but it may never become a citation, so the engine must abstain with `no_citable_authority` rather than quote it.",
+  "query": "Where were the Geographical Indications Rules, 2002 published?",
+  "results": [
+    {
+      "chunk_id": "IN-GI-RULES-2002::front-matter-u0",
+      "document_id": "IN-GI-RULES-2002",
+      "score": 0.72,
+      "rank": 1,
+      "text": "[Text of The Geographical Indications of Goods (Registration and Protection) Rules, 2002 published in the Gazette of India, Extraordinary, Part II Section 3, Sub-Section (i) Extraordinary, Dated 8th March, 2002 ) MINISTRY OF COMMERCE & INDUSTRY (DEPARTMENT OF INDUSTRIAL POLICY AND PROMOTION) NOTIFICATION New Delhi, the 8th March, 2002 The Geographical Indications of Goods (Registration and Protection) Rules, 2002 G.S.R.176(E).- In the exercise of the powers conferred by sub-section 87 of Geographical Indications of Goods(Registration & Protection)Act,1999, the Central Government makes the following rules, namely:",
+      "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — unlocated text (physical p. 1)",
+      "citable": false,
+      "metadata": {
+        "domain": "geographical_indications",
+        "jurisdiction": "IN",
+        "document_type": "rules",
+        "temporal_status": "STALE",
+        "source_evidence_level": "A",
+        "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+        "citability_reason": "locator_unavailable",
+        "locator_unavailable": true,
+        "locator_fields": {
+          "part": null,
+          "chapter": null,
+          "section": null,
+          "subsection": null,
+          "clause": null,
+          "rule": null,
+          "sub_rule": null,
+          "regulation": null,
+          "article": null,
+          "paragraph": null,
+          "subparagraph": null,
+          "schedule": null,
+          "form": null,
+          "annexure": null,
+          "item": null
+        },
+        "physical_pages": [
+          1
+        ],
+        "title": "The Geographical Indications of Goods (Registration and Protection) Rules, 2002 (Gazette of India, Extraordinary, Part II Sec. 3(i), dated 8th March 2002)",
+        "short_title": "Geographical Indications of Goods (Registration and Protection) Rules, 2002",
+        "heading": null,
+        "unit_type": "front_matter",
+        "structural_path": "",
+        "official_source_url": "https://ipindia.gov.in/geographical-indications-resources-rules",
+        "consolidated_as_of": "2002-03-08",
+        "source_version_id": "IN-GI-RULES-2002@2002-03-08",
+        "source_filename": "Geographical Indications.pdf",
+        "source_sha256": "81dc9dc2f864317cbc239d5870e7fd0b9614ab2dfe6bf8b80c7a0ede2458b8b4"
+      }
+    }
+  ]
+}

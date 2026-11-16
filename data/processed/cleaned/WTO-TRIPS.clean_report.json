@@ -1,0 +1,19 @@
+{
+  "document_id": "WTO-TRIPS",
+  "pages": 31,
+  "boilerplate_patterns": [
+    "Article #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 31
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 31
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 87544,
+  "characters_cleaned": 87452
+}

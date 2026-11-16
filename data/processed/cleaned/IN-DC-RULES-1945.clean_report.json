@@ -1,0 +1,20 @@
+{
+  "document_id": "IN-DC-RULES-1945",
+  "pages": 597,
+  "boilerplate_patterns": [
+    "#",
+    "Drugs and Cosmetics Rules #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 597
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 597
+  },
+  "amendment_notes_extracted": 102,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 2,
+  "characters_raw": 1640892,
+  "characters_cleaned": 1604679
+}

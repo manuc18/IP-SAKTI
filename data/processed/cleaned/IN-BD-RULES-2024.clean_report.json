@@ -1,0 +1,24 @@
+{
+  "document_id": "IN-BD-RULES-2024",
+  "pages": 86,
+  "boilerplate_patterns": [
+    "# THE GAZETTE OF INDIA : EXTRAORDINARY [PART II—SEC. #(i)]",
+    "IndiaCode",
+    "[भाग II—खण् ड #(i)] भारत का रािपत्र : असाधारण #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 40,
+    "hindi_only": 38,
+    "thin_residue": 8
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 48,
+    "HI_CORRUPT": 38
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 1647,
+  "pages_with_tables": 0,
+  "characters_raw": 201451,
+  "characters_cleaned": 101667
+}

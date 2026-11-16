@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-PPVFR-RULES-2003",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 56,
+  "pages_excluded": {},
+  "units": 94,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 6,
+    "provision": 76,
+    "schedule": 1,
+    "schedule_item": 9,
+    "form": 1
+  },
+  "units_with_locator": 93,
+  "units_locator_downgraded": 0,
+  "characters": 143443
+}

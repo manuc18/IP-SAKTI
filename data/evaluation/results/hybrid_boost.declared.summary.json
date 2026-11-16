@@ -1,0 +1,90 @@
+{
+  "experiment": "D-prime",
+  "retriever": "hybrid_boost",
+  "retriever_config": {
+    "retriever": "hybrid_boost",
+    "version": "0.1.0",
+    "fusion": "reciprocal_rank_fusion",
+    "k": 60,
+    "depth": 50,
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "components": [
+      {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18699,
+          "mean_document_length_tokens": 207.91
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      },
+      {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      }
+    ]
+  },
+  "timestamp": "2026-08-29T19:44:45+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "declared",
+  "python": "3.14.3",
+  "overall": {
+    "recall@1": 0.6126,
+    "recall@5": 0.8919,
+    "recall@10": 0.955,
+    "mrr": 0.7301,
+    "ndcg@5": 0.7647,
+    "ndcg@10": 0.7839,
+    "document_recall@1": 0.8739,
+    "document_recall@5": 0.964,
+    "document_recall@10": 0.973
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.5699,
+      "recall@5": 0.8817,
+      "recall@10": 0.957,
+      "mrr": 0.703,
+      "ndcg@5": 0.7406,
+      "ndcg@10": 0.7635
+    },
+    "identifier": {
+      "recall@1": 0.8333,
+      "recall@5": 0.9444,
+      "recall@10": 0.9444,
+      "mrr": 0.8704,
+      "ndcg@5": 0.8889,
+      "ndcg@10": 0.8889
+    }
+  }
+}

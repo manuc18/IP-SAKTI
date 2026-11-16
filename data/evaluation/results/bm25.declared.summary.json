@@ -1,0 +1,55 @@
+{
+  "experiment": "A",
+  "retriever": "bm25",
+  "retriever_config": {
+    "retriever": "bm25",
+    "version": "0.1.0",
+    "k1": 1.2,
+    "b": 0.75,
+    "indexed_field": "text",
+    "stemming": false,
+    "stopwords": false,
+    "documents_indexed": 3073,
+    "vocabulary": 18699,
+    "mean_document_length_tokens": 207.91
+  },
+  "timestamp": "2026-08-29T19:44:20+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "declared",
+  "python": "3.14.3",
+  "overall": {
+    "recall@1": 0.3423,
+    "recall@5": 0.6937,
+    "recall@10": 0.8288,
+    "mrr": 0.4967,
+    "ndcg@5": 0.5322,
+    "ndcg@10": 0.5747,
+    "document_recall@1": 0.7297,
+    "document_recall@5": 0.9369,
+    "document_recall@10": 0.955
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.3441,
+      "recall@5": 0.7097,
+      "recall@10": 0.8495,
+      "mrr": 0.5077,
+      "ndcg@5": 0.5442,
+      "ndcg@10": 0.5899
+    },
+    "identifier": {
+      "recall@1": 0.3333,
+      "recall@5": 0.6111,
+      "recall@10": 0.7222,
+      "mrr": 0.4398,
+      "ndcg@5": 0.4703,
+      "ndcg@10": 0.4957
+    }
+  }
+}

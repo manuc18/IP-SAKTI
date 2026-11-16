@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+  "parser": "statutory",
+  "provision_label": "Paragraph",
+  "pages_ingested": 24,
+  "pages_excluded": {
+    "front_matter": 10,
+    "table_of_contents": 1,
+    "empty": 1
+  },
+  "units": 9,
+  "units_by_type": {
+    "front_matter": 1,
+    "provision": 8
+  },
+  "units_with_locator": 8,
+  "units_locator_downgraded": 0,
+  "characters": 65244
+}

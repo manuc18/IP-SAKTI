@@ -1,0 +1,89 @@
+{
+  "document_id": "IN-DESIGNS-ACT-2000",
+  "chunking_version": "0.2.0",
+  "units": 59,
+  "chunks": 50,
+  "rejected": 11,
+  "rejected_by_reason": {
+    "structural heading with no body text": 11
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 49,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 8,
+  "chunks_from_ocr": 0,
+  "characters": 54350,
+  "mean_chunk_characters": 1087.0,
+  "max_chunk_characters": 4800,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 4,
+      "reason": "structural heading with no body text",
+      "character_count": 35
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 13,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 24,
+      "reason": "structural heading with no body text",
+      "character_count": 52
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 26,
+      "reason": "structural heading with no body text",
+      "character_count": 28
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 29,
+      "reason": "structural heading with no body text",
+      "character_count": 25
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 38,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 44,
+      "reason": "structural heading with no body text",
+      "character_count": 28
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 51,
+      "reason": "structural heading with no body text",
+      "character_count": 18
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 53,
+      "reason": "structural heading with no body text",
+      "character_count": 46
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "unit_order": 57,
+      "reason": "structural heading with no body text",
+      "character_count": 29
+    }
+  ]
+}

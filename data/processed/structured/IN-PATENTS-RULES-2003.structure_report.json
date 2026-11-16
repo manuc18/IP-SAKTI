@@ -1,0 +1,23 @@
+{
+  "document_id": "IN-PATENTS-RULES-2003",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 100,
+  "pages_excluded": {
+    "front_matter": 1,
+    "table_of_contents": 1
+  },
+  "units": 302,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 15,
+    "provision": 146,
+    "schedule": 1,
+    "unstructured": 88,
+    "schedule_item": 26,
+    "form": 25
+  },
+  "units_with_locator": 301,
+  "units_locator_downgraded": 88,
+  "characters": 187925
+}

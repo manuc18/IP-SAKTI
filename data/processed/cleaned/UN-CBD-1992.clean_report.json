@@ -1,0 +1,23 @@
+{
+  "document_id": "UN-CBD-1992",
+  "pages": 36,
+  "boilerplate_patterns": [
+    "#",
+    "Article",
+    "Convention on Biological Diversity"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 34,
+    "empty": 2
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 34,
+    "UNKNOWN": 2
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 66991,
+  "characters_cleaned": 65857
+}

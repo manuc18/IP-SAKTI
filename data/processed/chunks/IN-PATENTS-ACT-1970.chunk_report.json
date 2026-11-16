@@ -1,0 +1,210 @@
+{
+  "document_id": "IN-PATENTS-ACT-1970",
+  "chunking_version": "0.2.0",
+  "units": 225,
+  "chunks": 197,
+  "rejected": 31,
+  "rejected_by_reason": {
+    "structural heading with no body text": 21,
+    "below the minimum retrievable length": 10
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 196,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 176,
+  "chunks_from_ocr": 0,
+  "characters": 220123,
+  "mean_chunk_characters": 1117.4,
+  "max_chunk_characters": 4975,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 5,
+      "reason": "structural heading with no body text",
+      "character_count": 37
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 9,
+      "reason": "structural heading with no body text",
+      "character_count": 37
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 16,
+      "reason": "structural heading with no body text",
+      "character_count": 58
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 32,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 37,
+      "reason": "structural heading with no body text",
+      "character_count": 24
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 44,
+      "reason": "structural heading with no body text",
+      "character_count": 57
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 53,
+      "reason": "structural heading with no body text",
+      "character_count": 62
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 65,
+      "reason": "structural heading with no body text",
+      "character_count": 31
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 69,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 73,
+      "reason": "structural heading with no body text",
+      "character_count": 41
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 77,
+      "reason": "structural heading with no body text",
+      "character_count": 48
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 82,
+      "reason": "structural heading with no body text",
+      "character_count": 33
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 89,
+      "reason": "structural heading with no body text",
+      "character_count": 48
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 94,
+      "reason": "structural heading with no body text",
+      "character_count": 42
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 114,
+      "reason": "structural heading with no body text",
+      "character_count": 111
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 120,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 145,
+      "reason": "structural heading with no body text",
+      "character_count": 26
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 155,
+      "reason": "structural heading with no body text",
+      "character_count": 26
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 164,
+      "reason": "structural heading with no body text",
+      "character_count": 40
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 172,
+      "reason": "structural heading with no body text",
+      "character_count": 28
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 199,
+      "reason": "below the minimum retrievable length",
+      "character_count": 36
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 200,
+      "reason": "below the minimum retrievable length",
+      "character_count": 34
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 203,
+      "reason": "below the minimum retrievable length",
+      "character_count": 15
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 206,
+      "reason": "below the minimum retrievable length",
+      "character_count": 27
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 208,
+      "reason": "below the minimum retrievable length",
+      "character_count": 21
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 209,
+      "reason": "below the minimum retrievable length",
+      "character_count": 36
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 213,
+      "reason": "below the minimum retrievable length",
+      "character_count": 20
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 217,
+      "reason": "below the minimum retrievable length",
+      "character_count": 20
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 218,
+      "reason": "below the minimum retrievable length",
+      "character_count": 29
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "unit_order": 221,
+      "reason": "below the minimum retrievable length",
+      "character_count": 20
+    }
+  ]
+}

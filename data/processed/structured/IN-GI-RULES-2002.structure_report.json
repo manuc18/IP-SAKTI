@@ -1,0 +1,18 @@
+{
+  "document_id": "IN-GI-RULES-2002",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 71,
+  "pages_excluded": {},
+  "units": 139,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 10,
+    "provision": 107,
+    "schedule": 6,
+    "schedule_item": 15
+  },
+  "units_with_locator": 138,
+  "units_locator_downgraded": 0,
+  "characters": 183228
+}

@@ -1,0 +1,20 @@
+{
+  "document_id": "IN-GI-RULES-2002",
+  "pages": 71,
+  "boilerplate_patterns": [
+    "#",
+    "IndiaCode"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 71
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 71
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 184244,
+  "characters_cleaned": 183307
+}

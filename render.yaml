@@ -1,0 +1,17 @@
+# render.yaml — Render Blueprint for IP-SAKTI Python AI backend
+# Docs: https://render.com/docs/blueprint-spec
+#
+# Deploy with: connect your GitHub repo at render.com → "New Blueprint"
+# or just create a Web Service manually and Render auto-detects the Dockerfile.
+
+services:
+  - type: web
+    name: ip-sakti-api
+    runtime: docker              # Render will use the Dockerfile in project root
+    dockerfilePath: ./Dockerfile # explicit path (optional, auto-detected)
+    plan: free                   # free tier — 512 MB RAM, spins down after 15 min idle
+    region: singapore            # closest to India
+    healthCheckPath: /api/health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false              # secret — set this in the Render dashboard manually

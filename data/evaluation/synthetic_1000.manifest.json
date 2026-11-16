@@ -1,0 +1,91 @@
+{
+  "generator_version": "1.0.0",
+  "seed": 20260915,
+  "count": 1000,
+  "questions_sha256": "cdea3fd4aac83686b3129905c27fb9a328f705e4dadcf59d854e379160521032",
+  "corpus_chunks": 3073,
+  "summary": {
+    "total": 1000,
+    "answerable": 960,
+    "expected_abstention": 40,
+    "multi_chunk_questions": 30,
+    "distinct_target_chunks": 975,
+    "distinct_documents": 21,
+    "by_answer_type": {
+      "identifier": 173,
+      "conceptual": 117,
+      "timeline": 112,
+      "power": 98,
+      "prohibition": 94,
+      "procedure": 66,
+      "multi_part": 54,
+      "exception": 54,
+      "fee": 51,
+      "definition": 49,
+      "out_of_corpus": 40,
+      "penalty": 32,
+      "eligibility": 30,
+      "cross_reference": 30
+    },
+    "by_difficulty": {
+      "easy": 356,
+      "hard": 343,
+      "medium": 301
+    },
+    "by_register": {
+      "neutral": 459,
+      "practitioner": 414,
+      "beginner": 127
+    },
+    "by_domain": {
+      "patents": 140,
+      "copyright": 138,
+      "trademarks": 136,
+      "biodiversity_abs": 133,
+      "geographical_indications": 132,
+      "drug_regulation": 109,
+      "designs": 80,
+      "plant_varieties": 77,
+      "international_ip": 53,
+      "ip_policy": 2
+    },
+    "by_document": {
+      "IN-COPYRIGHT-ACT-1957": 74,
+      "IN-GI-ACT-1999": 72,
+      "IN-PATENTS-RULES-2003": 67,
+      "IN-PATENTS-ACT-1970": 65,
+      "IN-TM-ACT-1999": 64,
+      "IN-TM-RULES-2017": 61,
+      "IN-COPYRIGHT-RULES-2013": 59,
+      "IN-PPVFR-RULES-2003": 59,
+      "IN-GI-RULES-2002": 58,
+      "IN-BDA-2002-AMD-2023": 54,
+      "IN-DC-ACT-1940": 51,
+      "WTO-TRIPS": 51,
+      "IN-DC-RULES-1945": 49,
+      "IN-DESIGNS-ACT-2000": 43,
+      "None": 40,
+      "UN-CBD-1992": 36,
+      "IN-DESIGNS-RULES-2001": 35,
+      "IN-BD-RULES-2024": 25,
+      "IN-PPVFR-ACT-2001": 18,
+      "IN-ABS-REGULATIONS-2025": 9,
+      "UN-NAGOYA-PROTOCOL-2010": 8,
+      "IN-NATIONAL-IPR-POLICY-2016": 2
+    },
+    "by_document_type": {
+      "act": 441,
+      "rules": 413,
+      "treaty": 95,
+      "None": 40,
+      "regulations": 9,
+      "policy": 2
+    },
+    "by_temporal_status": {
+      "CURRENT": 575,
+      "STALE": 385,
+      "None": 40
+    }
+  },
+  "claim_safety": "Synthetic, AI-generated benchmark derived from the fixed corpus. Labels are corpus-derived and template-authored; expected answers are verbatim spans of the target chunk. This is an engineering evaluation and NOT human-verified legal ground truth."
+}

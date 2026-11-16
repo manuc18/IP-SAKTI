@@ -1,0 +1,333 @@
+{
+  "experiment": "F2",
+  "reranker": "cross_encoder:minilm",
+  "reranker_config": {
+    "reranker": "cross_encoder:minilm",
+    "version": "0.1.0",
+    "trained_by_us": false,
+    "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "license": "apache-2.0",
+    "parameters": "22.7M",
+    "languages": "English",
+    "selection_note": "The cheap end of the trade-off, and the honest control on model size: 22M parameters trained on MS MARCO web passages. If a model this small closes most of the gap, a 568M model is hard to justify for a local deployment.",
+    "device": "mps",
+    "max_seq_length": 512,
+    "batch_size": 16,
+    "truncation_strategy": "longest_first",
+    "truncation_note": "the pair is truncated, longest member first; the passage is longer than the query in every observed case, so the provision's tail is what is dropped",
+    "activation": "none \u2014 raw relevance logit; ranking is invariant to a monotone squashing, so none is applied",
+    "candidate_format": {
+      "representation": "labelled lines: Document / Locator / [Heading] / Text",
+      "fields": [
+        "document",
+        "locator",
+        "heading",
+        "text"
+      ],
+      "heading_omitted_when_absent": true,
+      "text_budget_chars": null,
+      "whitespace": "runs of spaces and tabs collapsed; line breaks preserved",
+      "excluded": [
+        "chunk_id",
+        "citable",
+        "source_evidence_level",
+        "temporal_status",
+        "source_status",
+        "physical_pages",
+        "retrieval scores",
+        "retrieval path",
+        "golden labels"
+      ]
+    },
+    "model_disk_bytes": 183644200,
+    "model_disk_mb": 183.6,
+    "rejected_alternatives": [
+      {
+        "model": "jinaai/jina-reranker-v2-base-multilingual",
+        "reason": "CC-BY-NC-4.0. Non-commercial licences are not a base this project can build on, independent of how the model performs."
+      },
+      {
+        "model": "Alibaba-NLP/gte-multilingual-reranker-base",
+        "reason": "Requires trust_remote_code=True, which executes code fetched from a model repository at load time. Not acceptable in a pipeline that handles a provenance-controlled corpus."
+      },
+      {
+        "model": "any hosted reranking API (Cohere Rerank, Voyage, Jina API)",
+        "reason": "Phase 6 forbids paid external APIs, and sending the corpus to a third party would breach the same rule that keeps embedding local."
+      }
+    ],
+    "truncation_observed": {
+      "pairs_scored": 8577,
+      "pairs_truncated": 2726,
+      "truncated_fraction": 0.3178,
+      "longest_pair_tokens": 2665,
+      "tokens_dropped_total": 1160444
+    }
+  },
+  "candidate_generator_config": {
+    "candidate_generator": "union",
+    "version": "0.1.0",
+    "mode": "expanded",
+    "order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "rrf_k": null,
+    "deduplication": "by chunk_id, first appearance wins",
+    "components": {
+      "dense": {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      },
+      "lexical": {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18699,
+          "mean_document_length_tokens": 207.91
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      }
+    }
+  },
+  "timestamp": "2026-08-29T20:11:53+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "none",
+  "python": "3.14.3",
+  "candidate_recall": {
+    "candidate_recall@10": 0.964,
+    "candidate_recall@20": 0.991,
+    "candidate_recall@30": 0.991,
+    "candidate_recall@50": 1.0,
+    "candidate_recall@pool": 1.0
+  },
+  "pool_size": {
+    "mean": 77.3,
+    "min": 58,
+    "max": 93
+  },
+  "overall": {
+    "recall@1": 0.7207,
+    "recall@5": 0.9369,
+    "recall@10": 0.955,
+    "mrr": 0.8119,
+    "ndcg@5": 0.8408,
+    "ndcg@10": 0.846,
+    "document_recall@1": 0.9369,
+    "document_recall@5": 1.0,
+    "document_recall@10": 1.0
+  },
+  "conditional": {
+    "questions": 111,
+    "mrr": 0.8119,
+    "recall@1": 0.7207,
+    "recall@5": 0.9369
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.6989,
+      "recall@5": 0.9462,
+      "recall@10": 0.9677,
+      "mrr": 0.8023,
+      "ndcg@5": 0.836,
+      "ndcg@10": 0.8422,
+      "candidate_recall@10": 0.957,
+      "candidate_recall@20": 0.9892,
+      "candidate_recall@30": 0.9892,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 93,
+      "conditional": {
+        "questions": 93,
+        "mrr": 0.8023,
+        "recall@1": 0.6989,
+        "recall@5": 0.9462
+      }
+    },
+    "identifier": {
+      "recall@1": 0.8333,
+      "recall@5": 0.8889,
+      "recall@10": 0.8889,
+      "mrr": 0.8611,
+      "ndcg@5": 0.8654,
+      "ndcg@10": 0.8654,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 18,
+      "conditional": {
+        "questions": 18,
+        "mrr": 0.8611,
+        "recall@1": 0.8333,
+        "recall@5": 0.8889
+      }
+    }
+  },
+  "by_router_family": {
+    "CONCEPTUAL": {
+      "recall@1": 0.6892,
+      "recall@5": 0.9324,
+      "recall@10": 0.9595,
+      "mrr": 0.7899,
+      "ndcg@5": 0.8224,
+      "ndcg@10": 0.8302,
+      "candidate_recall@10": 0.973,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 74,
+      "conditional": {
+        "questions": 74,
+        "mrr": 0.7899,
+        "recall@1": 0.6892,
+        "recall@5": 0.9324
+      }
+    },
+    "GENERAL": {
+      "recall@1": 0.7,
+      "recall@5": 0.95,
+      "recall@10": 0.95,
+      "mrr": 0.8083,
+      "ndcg@5": 0.8446,
+      "ndcg@10": 0.8446,
+      "candidate_recall@10": 0.9,
+      "candidate_recall@20": 0.95,
+      "candidate_recall@30": 0.95,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 20,
+      "conditional": {
+        "questions": 20,
+        "mrr": 0.8083,
+        "recall@1": 0.7,
+        "recall@5": 0.95
+      }
+    },
+    "IDENTIFIER": {
+      "recall@1": 0.8824,
+      "recall@5": 0.9412,
+      "recall@10": 0.9412,
+      "mrr": 0.9118,
+      "ndcg@5": 0.9163,
+      "ndcg@10": 0.9163,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 17,
+      "conditional": {
+        "questions": 17,
+        "mrr": 0.9118,
+        "recall@1": 0.8824,
+        "recall@5": 0.9412
+      }
+    }
+  },
+  "latency": {
+    "candidate_generation": {
+      "median_ms": 35.03,
+      "mean_ms": 40.14,
+      "p95_ms": 51.16,
+      "n": 111
+    },
+    "reranking": {
+      "median_ms": 620.99,
+      "mean_ms": 634.27,
+      "p95_ms": 773.66,
+      "n": 111
+    },
+    "total_pipeline": {
+      "median_ms": 660.1,
+      "mean_ms": 674.41,
+      "p95_ms": 819.78,
+      "n": 111
+    },
+    "measurement_note": "one process, fresh retriever and model instances, warmed with a throwaway query before the loop; each benchmark question is seen once, so no dense query-embedding cache hit is timed. Candidate pools are shared across rerankers in a run, so candidate latency is measured once and repeated in each summary."
+  },
+  "leakage_audit": {
+    "questions_audited": 111,
+    "clean": true,
+    "failing_questions": [],
+    "findings": [],
+    "checks": [
+      "chunk_id never rendered",
+      "forbidden metadata never rendered",
+      "no label outside Document/Locator/Heading/Text",
+      "expected chunk ids absent from query and candidates",
+      "expected document ids absent from query and candidates",
+      "golden `notes` absent from query and candidates"
+    ]
+  },
+  "cli": {
+    "candidate_mode": "expanded",
+    "candidate_order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "normalization": "rank_percentile",
+    "cross_encoder": "minilm",
+    "batch_size": 16,
+    "max_length": 512,
+    "authority_lambda": 0.05,
+    "text_budget": null
+  },
+  "failure_analysis": {
+    "at": 5,
+    "questions": 111,
+    "failures": 7,
+    "types": {
+      "A": 0,
+      "B": 6,
+      "C": 1
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 7,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 1,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": [
+      {
+        "question_id": "Q029",
+        "flags": [
+          "query_family_disagreement"
+        ]
+      }
+    ]
+  }
+}

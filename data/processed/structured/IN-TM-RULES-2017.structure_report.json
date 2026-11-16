@@ -1,0 +1,21 @@
+{
+  "document_id": "IN-TM-RULES-2017",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 50,
+  "pages_excluded": {
+    "hindi_only": 44,
+    "thin_residue": 3
+  },
+  "units": 186,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 18,
+    "provision": 158,
+    "schedule": 4,
+    "schedule_item": 5
+  },
+  "units_with_locator": 185,
+  "units_locator_downgraded": 0,
+  "characters": 179406
+}

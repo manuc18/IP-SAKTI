@@ -1,0 +1,1309 @@
+{
+  "phase": "7.3",
+  "experiment_mode": "LEXICAL_ONLY",
+  "timestamp": "2026-08-30T16:45:02+00:00",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_completion_tokens": 800,
+  "timeout_seconds": 15.0,
+  "retries": 0,
+  "requests_attempted": 5,
+  "dense_arm": "disabled",
+  "dense_calls_returning_empty": 5,
+  "reranker": "features",
+  "top_k": 5,
+  "policy": {
+    "policy_version": "0.1.0",
+    "minimum_evidence_level": "C",
+    "require_citable_authority": true,
+    "require_relevance": true,
+    "relevance_min_overlap": 1,
+    "stale_only_is_insufficient": false,
+    "abstain_on_conflict": false,
+    "require_full_grounding": true,
+    "max_citations": 5
+  },
+  "caveat": "Lexical-only candidate generation. Retrieval figures here are lexical_candidate_recall and are NOT comparable with the Phase 6 hybrid results.",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "experiment_family": "simple_statutory_provision",
+      "selection_rationale": "first identifier question in file order; a single-provision Section lookup",
+      "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+      "query_family": "identifier",
+      "domain": "patents",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+          "citation": "Patents Act, 1970 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+          "citation": "Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+          "citation": "Designs Act, 2000 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+          "citation": "Trade Marks Act, 1999 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1",
+          "citation": "Biological Diversity Act, 2002 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "C"
+        }
+      ],
+      "evidence_fingerprint": "43209b458db575c4",
+      "latency_ms": 1504.5,
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "citation_validation_failed",
+            "detail": "1 citation rule(s) failed; the answer was not published",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "1 cited source(s) are at evidence level C: the publisher of the underlying PDF could not be established."
+        ],
+        "validation_failures": [
+          {
+            "code": "unsupported_locator_in_prose",
+            "detail": "the answer names section 3(P), which is neither a supplied provision nor named by any supplied passage",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "43209b458db575c4",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "C",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "1 cited source(s) are at evidence level C: the publisher of the underlying PDF could not be established."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": false,
+            "citations": [],
+            "failures": [
+              {
+                "code": "unsupported_locator_in_prose",
+                "detail": "the answer names section 3(P), which is neither a supplied provision nor named by any supplied passage",
+                "marker": null,
+                "chunk_id": null
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_diagnostics": {
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.1.0",
+            "requests": 1,
+            "retries": 0
+          },
+          "rejected_draft": "Section 3(p) of the Patents Act, 1970 bars from patentability any invention that is, in effect, **traditional knowledge** or that merely **aggregates or duplicates the known properties of components that are already traditionally known**【1】."
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- 1 citation rule(s) failed; the answer was not published\n- unsupported_locator_in_prose: the answer names section 3(P), which is neither a supplied provision nor named by any supplied passage\n",
+      "golden_target": {
+        "documents": [
+          "IN-PATENTS-ACT-1970"
+        ],
+        "locators": [
+          "Section 3"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": false,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      }
+    },
+    {
+      "question_id": "Q078",
+      "experiment_family": "conceptual_synthesis",
+      "selection_rationale": "the only Indian conceptual question whose golden target spans two chunks, so it cannot be answered by returning one provision",
+      "query": "What rights does a breeder get on registration of a plant variety?",
+      "query_family": "conceptual",
+      "domain": "plant_varieties",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Act, 2001 — Section 32",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Form 0",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "f50810e033df8644",
+      "latency_ms": 1372.8,
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "provider_abstained",
+            "detail": "the provider produced no answer from the supplied evidence",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": true,
+        "conflict_chunks": [
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15"
+        ],
+        "cautions": [
+          "Conflicting evidence was detected (ambiguous_citation, same_provision_divergence). This system does not decide which provision prevails; both are shown."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "f50810e033df8644",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "get",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [
+              {
+                "kind": "same_provision_divergence",
+                "chunk_ids": [
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8"
+                ],
+                "detail": "2 separate passages claim to be IN-PPVFR-RULES-2003 chapter=VIII, clause=B, item=9, schedule=SECOND, sub_rule=1"
+              },
+              {
+                "kind": "ambiguous_citation",
+                "chunk_ids": [
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8"
+                ],
+                "detail": "3 different passages both cite as \"Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9\"; a reader cannot tell them apart from the citation alone"
+              }
+            ],
+            "cautions": [
+              "Conflicting evidence was detected (ambiguous_citation, same_provision_divergence). This system does not decide which provision prevails; both are shown."
+            ],
+            "insufficient_reasons": []
+          },
+          "provider_diagnostics": {
+            "error": "rate_limited",
+            "detail": "Groq rate limit reached (429); the free plan has per-minute and per-day caps and this provider does not retry: Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01km2335s9e1j8jyq9f1dvtj9d` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3454, Requested 4854. Please try again in 2.31s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/",
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.1.0",
+            "requests": 1,
+            "retries": 0
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- the provider produced no answer from the supplied evidence\n",
+      "golden_target": {
+        "documents": [
+          "IN-PPVFR-ACT-2001"
+        ],
+        "locators": [
+          "Section 28"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 26,
+        "reranked_evidence_recall": false,
+        "reranked_evidence_rank": null,
+        "citation_valid": true,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      }
+    },
+    {
+      "question_id": "Q027",
+      "experiment_family": "identifier",
+      "selection_rationale": "first Rule-identifier question in file order whose document was not already selected",
+      "query": "Rule 23 of the Trade Marks Rules, 2017 — form and signing of an application",
+      "query_family": "identifier",
+      "domain": "trademarks",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+          "citation": "Trade Marks Rules, 2017 — Rule 23",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+          "citation": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+          "citation": "Designs Rules, 2001 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+          "citation": "Patents Rules, 2003 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "B"
+        }
+      ],
+      "evidence_fingerprint": "02813c7fcc2d8371",
+      "latency_ms": 1135.6,
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "ungrounded_answer",
+            "detail": "1 claim(s) in the answer carry no citation",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "4 of 5 cited sources are marked STALE and may have been amended.",
+          "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "02813c7fcc2d8371",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "rule",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "rules"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "4 of 5 cited sources are marked STALE and may have been amended.",
+              "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+                "document_id": "IN-TM-RULES-2017",
+                "locator": "Rule 23",
+                "pages": [
+                  59
+                ],
+                "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+                "source_evidence_level": "B",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-TM-RULES-2017",
+                  "filename": "Trademarks rules 2017.pdf",
+                  "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+                  "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+                  "source_version_id": "IN-TM-RULES-2017@undated",
+                  "consolidated_as_of": null
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": false,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 2,
+            "supported_claim_rate": 0.6667,
+            "unresolved_markers": [],
+            "unsupported_claims": [
+              "Rule 23 of the Trade Marks Rules, 2017 governs how a trademark application must be filed."
+            ],
+            "uncited_evidence": [
+              "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+              "IN-DESIGNS-RULES-2001::rule-23",
+              "IN-DC-RULES-1945::part-iv-rule-23",
+              "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "Rule 23 of the Trade Marks Rules, 2017 governs how a trademark application must be filed.",
+                "markers": [],
+                "is_claim": true,
+                "supported": false,
+                "weak": false,
+                "shared_terms": []
+              },
+              {
+                "sentence": "It requires that the application be made on the prescribed form TM‑A and that it be signed by the applicant or by the applicant’s authorised agent [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "agent",
+                  "applicant",
+                  "application",
+                  "form",
+                  "made",
+                  "signed"
+                ]
+              },
+              {
+                "sentence": "The rule also sets out the content requirements for the application (precise description, graphical representation, and statements where the mark is three‑dimensional or a colour combination) and the procedural steps for amendments, class specifications and the Registrar’s power to refuse or correct the filing [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "application",
+                  "class",
+                  "dimensional",
+                  "filing",
+                  "graphical",
+                  "refuse",
+                  "representation",
+                  "rule",
+                  "three"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_diagnostics": {
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.1.0",
+            "requests": 1,
+            "retries": 0
+          },
+          "rejected_draft": "Rule 23 of the Trade Marks Rules, 2017 governs how a trademark application must be filed. It requires that the application be made on the prescribed form TM‑A and that it be signed by the applicant or by the applicant’s authorised agent [1]. The rule also sets out the content requirements for the application (precise description, graphical representation, and statements where the mark is three‑dimensional or a colour combination) and the procedural steps for amendments, class specifications and the Registrar’s power to refuse or correct the filing [1]."
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- 1 claim(s) in the answer carry no citation\n",
+      "golden_target": {
+        "documents": [
+          "IN-TM-RULES-2017"
+        ],
+        "locators": [
+          "Rule 23"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": true,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      }
+    },
+    {
+      "question_id": "Q104",
+      "experiment_family": "treaty_international",
+      "selection_rationale": "first international-jurisdiction question over the Nagoya Protocol",
+      "query": "What capacity building does the Nagoya Protocol require of its parties?",
+      "query_family": "conceptual",
+      "domain": "biodiversity_abs",
+      "jurisdiction": "international",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+          "citation": "Nagoya Protocol — Article 22",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+          "citation": "Nagoya Protocol — Article 25",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-18",
+          "citation": "Nagoya Protocol — Article 18",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+          "citation": "Nagoya Protocol — unlocated text (physical p. 1)",
+          "citable": false,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+          "citation": "Nagoya Protocol — Article 32",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "486a8f7490b9a868",
+      "latency_ms": 289.3,
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "provider_abstained",
+            "detail": "the provider produced no answer from the supplied evidence",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "486a8f7490b9a868",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-18",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "nagoya",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": false,
+                "admissible_as_citation": false,
+                "role": "context_only",
+                "notes": [
+                  "not citable: locator unavailable"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [],
+            "cautions": [],
+            "insufficient_reasons": []
+          },
+          "provider_diagnostics": {
+            "error": "rate_limited",
+            "detail": "Groq rate limit reached (429); the free plan has per-minute and per-day caps and this provider does not retry: Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01km2335s9e1j8jyq9f1dvtj9d` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6074, Requested 3468. Please try again in 11.565s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/setting",
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.1.0",
+            "requests": 1,
+            "retries": 0
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- the provider produced no answer from the supplied evidence\n",
+      "golden_target": {
+        "documents": [
+          "UN-NAGOYA-PROTOCOL-2010"
+        ],
+        "locators": [
+          "Article 22"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": true,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      }
+    },
+    {
+      "question_id": "Q085",
+      "experiment_family": "stale_evidence",
+      "selection_rationale": "first drug-regulation question; every chunk of that instrument carries temporal_status STALE",
+      "query": "How does Indian drug law define an Ayurvedic, Siddha or Unani drug?",
+      "query_family": "conceptual",
+      "domain": "drug_regulation",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 162A",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 167",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+          "citation": "Drugs and Cosmetics Act, 1940 — Section 33EEC",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+          "citation": "Drugs and Cosmetics Act, 1940 — Section 3",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 164",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "a167a840c70e38d1",
+      "latency_ms": 373.0,
+      "answer": {
+        "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+        "citations": [],
+        "confidence": "NONE",
+        "grounded": false,
+        "insufficient_evidence": true,
+        "insufficient_evidence_reasons": [
+          {
+            "code": "provider_abstained",
+            "detail": "the provider produced no answer from the supplied evidence",
+            "marker": null,
+            "chunk_id": null
+          }
+        ],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "Every source cited here is marked STALE: the text may have been amended since the consolidated version held in the corpus. Verify against the current official text."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [],
+        "evidence_fingerprint": "a167a840c70e38d1",
+        "provider": "groq",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "indian",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "indian",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "Every source cited here is marked STALE: the text may have been amended since the consolidated version held in the corpus. Verify against the current official text."
+            ],
+            "insufficient_reasons": []
+          },
+          "provider_diagnostics": {
+            "error": "rate_limited",
+            "detail": "Groq rate limit reached (429); the free plan has per-minute and per-day caps and this provider does not retry: Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01km2335s9e1j8jyq9f1dvtj9d` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6021, Requested 2336. Please try again in 2.6775s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/setting",
+            "model": "openai/gpt-oss-120b",
+            "prompt_version": "0.1.0",
+            "requests": 1,
+            "retries": 0
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nI couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.\n\nWhy:\n- the provider produced no answer from the supplied evidence\n",
+      "golden_target": {
+        "documents": [
+          "IN-DC-ACT-1940"
+        ],
+        "locators": [
+          "Section 3"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 6,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 4,
+        "citation_valid": true,
+        "citation_count": 0,
+        "citation_markers": [],
+        "answer_grounded": false,
+        "insufficient_evidence": true
+      }
+    }
+  ],
+  "provider": "groq"
+}

@@ -1,0 +1,174 @@
+{
+  "document_id": "IN-PATENTS-RULES-2003",
+  "chunking_version": "0.2.0",
+  "units": 302,
+  "chunks": 279,
+  "rejected": 25,
+  "rejected_by_reason": {
+    "structural heading with no body text": 15,
+    "below the minimum retrievable length": 10
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 278,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 4,
+  "chunks_from_ocr": 133,
+  "characters": 187014,
+  "mean_chunk_characters": 670.3,
+  "max_chunk_characters": 4983,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 11,
+      "reason": "structural heading with no body text",
+      "character_count": 35
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 19,
+      "reason": "structural heading with no body text",
+      "character_count": 77
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 41,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 60,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 78,
+      "reason": "structural heading with no body text",
+      "character_count": 31
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 81,
+      "reason": "structural heading with no body text",
+      "character_count": 30
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 91,
+      "reason": "structural heading with no body text",
+      "character_count": 85
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 95,
+      "reason": "structural heading with no body text",
+      "character_count": 33
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 99,
+      "reason": "structural heading with no body text",
+      "character_count": 32
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 101,
+      "reason": "structural heading with no body text",
+      "character_count": 32
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 110,
+      "reason": "structural heading with no body text",
+      "character_count": 58
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 118,
+      "reason": "structural heading with no body text",
+      "character_count": 32
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 125,
+      "reason": "structural heading with no body text",
+      "character_count": 25
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 140,
+      "reason": "structural heading with no body text",
+      "character_count": 26
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 168,
+      "reason": "below the minimum retrievable length",
+      "character_count": 25
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 178,
+      "reason": "below the minimum retrievable length",
+      "character_count": 25
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 235,
+      "reason": "below the minimum retrievable length",
+      "character_count": 29
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 236,
+      "reason": "below the minimum retrievable length",
+      "character_count": 26
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 282,
+      "reason": "below the minimum retrievable length",
+      "character_count": 36
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 283,
+      "reason": "below the minimum retrievable length",
+      "character_count": 38
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 296,
+      "reason": "below the minimum retrievable length",
+      "character_count": 31
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 297,
+      "reason": "below the minimum retrievable length",
+      "character_count": 27
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 298,
+      "reason": "below the minimum retrievable length",
+      "character_count": 21
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "unit_order": 299,
+      "reason": "below the minimum retrievable length",
+      "character_count": 21
+    }
+  ]
+}

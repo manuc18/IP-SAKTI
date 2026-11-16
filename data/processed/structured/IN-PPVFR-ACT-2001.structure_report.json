@@ -1,0 +1,18 @@
+{
+  "document_id": "IN-PPVFR-ACT-2001",
+  "parser": "statutory",
+  "provision_label": "Section",
+  "pages_ingested": 49,
+  "pages_excluded": {
+    "empty": 1
+  },
+  "units": 109,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 11,
+    "provision": 97
+  },
+  "units_with_locator": 108,
+  "units_locator_downgraded": 0,
+  "characters": 121126
+}

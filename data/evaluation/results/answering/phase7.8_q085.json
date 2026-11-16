@@ -1,0 +1,546 @@
+{
+  "phase": "7.8",
+  "experiment_mode": "LEXICAL_ONLY",
+  "purpose": "one controlled live request on the stale-evidence question: does prompt 0.3.0 hold on a second question, and does the rewritten temporal caution count the sources actually cited?",
+  "requests_used": 1,
+  "retries": 0,
+  "requested_at": "2026-08-30T18:43:17+00:00",
+  "question_id": "Q085",
+  "query": "How does Indian drug law define an Ayurvedic, Siddha or Unani drug?",
+  "query_family": "conceptual",
+  "domain": "drug_regulation",
+  "jurisdiction": "india",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_completion_tokens": 800,
+  "timeout_seconds": 15.0,
+  "versions": {
+    "prompt": "0.3.0",
+    "policy": "0.3.0",
+    "validator": "0.2.0",
+    "grounding": "0.2.0"
+  },
+  "dense_arm": "disabled",
+  "reranker": "features",
+  "top_k": 5,
+  "policy": {
+    "policy_version": "0.3.0",
+    "minimum_evidence_level": "C",
+    "require_citable_authority": true,
+    "require_relevance": true,
+    "relevance_min_overlap": 1,
+    "stale_only_is_insufficient": false,
+    "abstain_on_conflict": false,
+    "require_full_grounding": true,
+    "max_citations": 5
+  },
+  "candidate_count": 50,
+  "supplied_evidence_count": 5,
+  "evidence_fingerprint": "a167a840c70e38d1",
+  "evidence": [
+    {
+      "marker": 1,
+      "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+      "citation": "Drugs and Cosmetics Rules, 1945 — Rule 162A",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 2,
+      "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+      "citation": "Drugs and Cosmetics Rules, 1945 — Rule 167",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 3,
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+      "citation": "Drugs and Cosmetics Act, 1940 — Section 33EEC",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 4,
+      "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+      "citation": "Drugs and Cosmetics Act, 1940 — Section 3",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    },
+    {
+      "marker": 5,
+      "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+      "citation": "Drugs and Cosmetics Rules, 1945 — Rule 164",
+      "citable": true,
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    }
+  ],
+  "provider_status": "completion returned",
+  "provider_calls": 1,
+  "provider_diagnostics": {
+    "model": "openai/gpt-oss-120b",
+    "prompt_version": "0.3.0",
+    "requests": 1,
+    "retries": 0,
+    "finish_reason": "stop",
+    "prompt_tokens": 1725,
+    "completion_tokens": 328,
+    "total_tokens": 2053,
+    "reasoning_tokens": 243
+  },
+  "latency_ms": 1546.3,
+  "model_text_raw": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+  "text_after_normalisation": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+  "marker_normalisation_applied": false,
+  "aliased_markers_in_raw": [],
+  "citation_markers": [
+    4
+  ],
+  "cited_sources": [
+    {
+      "marker": 4,
+      "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+      "citation_text": "Drugs and Cosmetics Act, 1940 — Section 3",
+      "pages": [
+        6
+      ],
+      "temporal_status": "STALE",
+      "source_evidence_level": "A"
+    }
+  ],
+  "cited_source_count": 1,
+  "cited_temporal_statuses": [
+    "STALE"
+  ],
+  "supplied_temporal_statuses": [
+    "STALE"
+  ],
+  "cautions": [
+    "The cited source is marked stale. The text may have been amended since the consolidated version held in the corpus; verify against the current official text."
+  ],
+  "shape": {
+    "sentences": 1,
+    "propositions": 1,
+    "cited_propositions": 1,
+    "uncited_propositions": [],
+    "sentence_rows": [
+      {
+        "n": 1,
+        "is_proposition": true,
+        "markers": [
+          4
+        ],
+        "sentence": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4]."
+      }
+    ],
+    "within_one_to_four_sentence_contract": true
+  },
+  "subdivision_observations": [],
+  "citation_validation": {
+    "ok": true,
+    "citations": [
+      {
+        "marker": 4,
+        "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+        "document_id": "IN-DC-ACT-1940",
+        "locator": "Section 3",
+        "pages": [
+          6
+        ],
+        "citation_text": "Drugs and Cosmetics Act, 1940 — Section 3",
+        "source_evidence_level": "A",
+        "temporal_status": "STALE",
+        "locator_unavailable": false,
+        "source_document": {
+          "document_id": "IN-DC-ACT-1940",
+          "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+          "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+          "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+          "source_version_id": "IN-DC-ACT-1940@2016-12-31",
+          "consolidated_as_of": "2016-12-31"
+        }
+      }
+    ],
+    "failures": [],
+    "version": "0.2.0"
+  },
+  "grounding": {
+    "grounded": true,
+    "citation_support": true,
+    "claims": 1,
+    "supported_claims": 1,
+    "supported_claim_rate": 1.0,
+    "unresolved_markers": [],
+    "unsupported_claims": [],
+    "uncited_evidence": [
+      "IN-DC-RULES-1945::part-xv-rule-162a",
+      "IN-DC-RULES-1945::part-xv-rule-167",
+      "IN-DC-ACT-1940::chapter-iv-section-33eec",
+      "IN-DC-RULES-1945::part-xv-rule-164"
+    ],
+    "weakly_grounded": [],
+    "sentences": [
+      {
+        "sentence": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+        "markers": [
+          4
+        ],
+        "is_claim": true,
+        "supported": true,
+        "weak": false,
+        "shared_terms": [
+          "accordance",
+          "animals",
+          "authoritative",
+          "ayurvedic",
+          "books",
+          "described",
+          "disease",
+          "disorder",
+          "drug",
+          "exclusively",
+          "external",
+          "first",
+          "formulae",
+          "intended",
+          "internal",
+          "means",
+          "medicine",
+          "mitigation",
+          "prevention",
+          "schedule",
+          "siddha",
+          "specified",
+          "systems",
+          "tibb",
+          "treatment",
+          "unani",
+          "use"
+        ]
+      }
+    ],
+    "version": "0.2.0"
+  },
+  "published": true,
+  "final_answer": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+  "abstention_reasons": [],
+  "answer": {
+    "answer": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+    "citations": [
+      {
+        "marker": 4,
+        "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+        "document_id": "IN-DC-ACT-1940",
+        "locator": "Section 3",
+        "pages": [
+          6
+        ],
+        "citation_text": "Drugs and Cosmetics Act, 1940 — Section 3",
+        "source_evidence_level": "A",
+        "temporal_status": "STALE",
+        "locator_unavailable": false,
+        "source_document": {
+          "document_id": "IN-DC-ACT-1940",
+          "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+          "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+          "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+          "source_version_id": "IN-DC-ACT-1940@2016-12-31",
+          "consolidated_as_of": "2016-12-31"
+        }
+      }
+    ],
+    "confidence": "LOW",
+    "grounded": true,
+    "insufficient_evidence": false,
+    "insufficient_evidence_reasons": [],
+    "conflict_detected": false,
+    "conflict_chunks": [],
+    "cautions": [
+      "The cited source is marked stale. The text may have been amended since the consolidated version held in the corpus; verify against the current official text."
+    ],
+    "validation_failures": [],
+    "unsupported_claims": [],
+    "uncited_evidence": [
+      "IN-DC-RULES-1945::part-xv-rule-162a",
+      "IN-DC-RULES-1945::part-xv-rule-167",
+      "IN-DC-ACT-1940::chapter-iv-section-33eec",
+      "IN-DC-RULES-1945::part-xv-rule-164"
+    ],
+    "evidence_fingerprint": "a167a840c70e38d1",
+    "provider": "groq",
+    "policy": {
+      "policy_version": "0.3.0",
+      "minimum_evidence_level": "C",
+      "require_citable_authority": true,
+      "require_relevance": true,
+      "relevance_min_overlap": 1,
+      "stale_only_is_insufficient": false,
+      "abstain_on_conflict": false,
+      "require_full_grounding": true,
+      "max_citations": 5
+    },
+    "diagnostics": {
+      "policy_report": {
+        "assessments": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+            "addresses_query": true,
+            "overlap_terms": [
+              "ayurvedic",
+              "drug",
+              "indian",
+              "siddha",
+              "unani"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 2,
+            "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+            "addresses_query": true,
+            "overlap_terms": [
+              "ayurvedic",
+              "drug",
+              "indian",
+              "siddha",
+              "unani"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+            "addresses_query": true,
+            "overlap_terms": [
+              "ayurvedic",
+              "drug",
+              "siddha",
+              "unani"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 4,
+            "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+            "addresses_query": true,
+            "overlap_terms": [
+              "ayurvedic",
+              "drug",
+              "siddha",
+              "unani"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          },
+          {
+            "marker": 5,
+            "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+            "addresses_query": true,
+            "overlap_terms": [
+              "ayurvedic",
+              "drug",
+              "siddha",
+              "unani"
+            ],
+            "authoritative": true,
+            "source_evidence_level": "A",
+            "current": false,
+            "temporal_status": "STALE",
+            "citable": true,
+            "admissible_as_citation": true,
+            "role": "citable_authority",
+            "notes": [
+              "temporal status STALE: this text may have been amended"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "cautions": [],
+        "insufficient_reasons": []
+      },
+      "validation": {
+        "ok": true,
+        "citations": [
+          {
+            "marker": 4,
+            "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+            "document_id": "IN-DC-ACT-1940",
+            "locator": "Section 3",
+            "pages": [
+              6
+            ],
+            "citation_text": "Drugs and Cosmetics Act, 1940 — Section 3",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DC-ACT-1940",
+              "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+              "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+              "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+              "source_version_id": "IN-DC-ACT-1940@2016-12-31",
+              "consolidated_as_of": "2016-12-31"
+            }
+          }
+        ],
+        "failures": [],
+        "version": "0.2.0"
+      },
+      "grounding": {
+        "grounded": true,
+        "citation_support": true,
+        "claims": 1,
+        "supported_claims": 1,
+        "supported_claim_rate": 1.0,
+        "unresolved_markers": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-DC-RULES-1945::part-xv-rule-162a",
+          "IN-DC-RULES-1945::part-xv-rule-167",
+          "IN-DC-ACT-1940::chapter-iv-section-33eec",
+          "IN-DC-RULES-1945::part-xv-rule-164"
+        ],
+        "weakly_grounded": [],
+        "sentences": [
+          {
+            "sentence": "An “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].",
+            "markers": [
+              4
+            ],
+            "is_claim": true,
+            "supported": true,
+            "weak": false,
+            "shared_terms": [
+              "accordance",
+              "animals",
+              "authoritative",
+              "ayurvedic",
+              "books",
+              "described",
+              "disease",
+              "disorder",
+              "drug",
+              "exclusively",
+              "external",
+              "first",
+              "formulae",
+              "intended",
+              "internal",
+              "means",
+              "medicine",
+              "mitigation",
+              "prevention",
+              "schedule",
+              "siddha",
+              "specified",
+              "systems",
+              "tibb",
+              "treatment",
+              "unani",
+              "use"
+            ]
+          }
+        ],
+        "version": "0.2.0"
+      },
+      "provider_config": {
+        "provider": "groq",
+        "version": "0.1.0",
+        "prompt_version": "0.3.0",
+        "requires_network": true,
+        "implemented": true,
+        "api_key_configured": true,
+        "model": "openai/gpt-oss-120b",
+        "timeout_seconds": 15.0,
+        "max_completion_tokens": 800,
+        "temperature": 0.0,
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "stream": false,
+        "retries": 0
+      },
+      "provider_diagnostics": {
+        "model": "openai/gpt-oss-120b",
+        "prompt_version": "0.3.0",
+        "requests": 1,
+        "retries": 0,
+        "finish_reason": "stop",
+        "prompt_tokens": 1725,
+        "completion_tokens": 328,
+        "total_tokens": 2053,
+        "reasoning_tokens": 243
+      },
+      "marker_normalisation_applied": false
+    },
+    "version": "0.1.0"
+  },
+  "rendered": "Answer\n\nAn “Ayurvedic, Siddha or Unani drug” means any medicine intended for internal or external use for diagnosis, treatment, mitigation or prevention of disease or disorder in humans or animals, and manufactured exclusively in accordance with the formulae described in the authoritative books of the Ayurvedic, Siddha and Unani Tibb systems of medicine specified in the First Schedule [4].\n\nSource(s)\n\n[4] Drugs and Cosmetics Act, 1940 — Section 3, p. 6, [STALE]\n\nCaution\n\n- The cited source is marked stale. The text may have been amended since the consolidated version held in the corpus; verify against the current official text.\n\nConfidence: LOW (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+  "golden_target": {
+    "documents": [
+      "IN-DC-ACT-1940"
+    ],
+    "locators": [
+      "Section 3"
+    ]
+  },
+  "scores": {
+    "lexical_candidate_recall": true,
+    "lexical_candidate_rank": 6,
+    "reranked_evidence_recall": true,
+    "reranked_evidence_rank": 4,
+    "citation_valid": true,
+    "citation_count": 1,
+    "citation_markers": [
+      4
+    ],
+    "answer_grounded": true,
+    "insufficient_evidence": false
+  },
+  "baseline_phase_7_3": {
+    "phase": "7.3",
+    "evidence_fingerprint": "a167a840c70e38d1",
+    "lexical_candidate_rank": 6,
+    "reranked_evidence_rank": 4,
+    "outcome": "rate_limited (429); no completion was ever returned"
+  },
+  "caveat": "Lexical-only candidate generation; retrieval figures are lexical_candidate_recall and are not comparable with Phase 6. Nothing here measures legal accuracy."
+}

@@ -1,0 +1,24 @@
+{
+  "document_id": "IN-PATENTS-RULES-2003",
+  "pages": 102,
+  "boilerplate_patterns": [
+    "IndiaCode",
+    "Page # of #"
+  ],
+  "table_of_contents_pages": [
+    2
+  ],
+  "pages_by_content_type": {
+    "front_matter": 1,
+    "table_of_contents": 1,
+    "content": 100
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 102
+  },
+  "amendment_notes_extracted": 1,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 1,
+  "characters_raw": 193313,
+  "characters_cleaned": 190374
+}

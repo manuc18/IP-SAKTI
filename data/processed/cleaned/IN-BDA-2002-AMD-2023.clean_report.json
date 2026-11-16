@@ -1,0 +1,25 @@
+{
+  "document_id": "IN-BDA-2002-AMD-2023",
+  "pages": 25,
+  "boilerplate_patterns": [
+    "#",
+    "#. Ins. by s. #, ibid. (w.e.f. #-#-#)."
+  ],
+  "table_of_contents_pages": [
+    1,
+    2,
+    3
+  ],
+  "pages_by_content_type": {
+    "table_of_contents": 3,
+    "content": 22
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 25
+  },
+  "amendment_notes_extracted": 81,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 88722,
+  "characters_cleaned": 81738
+}

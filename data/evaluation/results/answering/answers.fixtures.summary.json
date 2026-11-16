@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-30T15:41:43+00:00",
+  "python": "3.14.3",
+  "evidence_source": "fixtures",
+  "top_k": 10,
+  "engine": {
+    "engine": "grounded",
+    "version": "0.1.0",
+    "provider": {
+      "provider": "extractive_mock",
+      "version": "0.1.0",
+      "prompt_version": "0.1.0",
+      "requires_network": false,
+      "strategy": "extractive: quotes corpus sentences verbatim",
+      "max_sentences": 3,
+      "prefer_citable": true
+    },
+    "policy": {
+      "policy_version": "0.1.0",
+      "minimum_evidence_level": "C",
+      "require_citable_authority": true,
+      "require_relevance": true,
+      "relevance_min_overlap": 1,
+      "stale_only_is_insufficient": false,
+      "abstain_on_conflict": false,
+      "require_full_grounding": true,
+      "max_citations": 5
+    },
+    "retrieval_performed_here": false
+  },
+  "metrics": {
+    "questions": 7,
+    "answered": 4,
+    "abstained": 3,
+    "abstention_rate": 0.4286,
+    "citation_validity_rate": 0.8,
+    "citations_per_answer": 1.75,
+    "source_resolution_rate": 1.0,
+    "evidence_supported_claim_rate": 1.0,
+    "citation_completeness": 1.0,
+    "conflicts_detected": 1,
+    "not_a_legal_accuracy_measurement": "These metrics measure citation integrity and abstention behaviour against corpus-derived, human-unverified labels. They are not a measure of legal accuracy and must not be described as one.",
+    "unsupported_claim_rate": 0.0
+  }
+}

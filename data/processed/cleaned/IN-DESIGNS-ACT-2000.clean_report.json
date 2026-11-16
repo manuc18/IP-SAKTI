@@ -1,0 +1,25 @@
+{
+  "document_id": "IN-DESIGNS-ACT-2000",
+  "pages": 18,
+  "boilerplate_patterns": [
+    "#",
+    "IndiaCode"
+  ],
+  "table_of_contents_pages": [
+    3,
+    4
+  ],
+  "pages_by_content_type": {
+    "front_matter": 2,
+    "table_of_contents": 2,
+    "content": 14
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 18
+  },
+  "amendment_notes_extracted": 2,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 58678,
+  "characters_cleaned": 57988
+}

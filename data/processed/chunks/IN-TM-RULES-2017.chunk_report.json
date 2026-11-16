@@ -1,0 +1,113 @@
+{
+  "document_id": "IN-TM-RULES-2017",
+  "chunking_version": "0.2.0",
+  "units": 186,
+  "chunks": 180,
+  "rejected": 15,
+  "rejected_by_reason": {
+    "structural heading with no body text": 15
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 179,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "OFFICIAL_SOURCE_FOUND_LOCAL_COPY_NOT_MATCHED",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 178555,
+  "mean_chunk_characters": 992.0,
+  "max_chunk_characters": 4993,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 6
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 2,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 25,
+      "reason": "structural heading with no body text",
+      "character_count": 65
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 60,
+      "reason": "structural heading with no body text",
+      "character_count": 52
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 66,
+      "reason": "structural heading with no body text",
+      "character_count": 130
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 80,
+      "reason": "structural heading with no body text",
+      "character_count": 38
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 92,
+      "reason": "structural heading with no body text",
+      "character_count": 27
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 104,
+      "reason": "structural heading with no body text",
+      "character_count": 93
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 114,
+      "reason": "structural heading with no body text",
+      "character_count": 27
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 139,
+      "reason": "structural heading with no body text",
+      "character_count": 53
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 146,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 153,
+      "reason": "structural heading with no body text",
+      "character_count": 42
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 169,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 171,
+      "reason": "structural heading with no body text",
+      "character_count": 15
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "unit_order": 184,
+      "reason": "structural heading with no body text",
+      "character_count": 158
+    }
+  ]
+}

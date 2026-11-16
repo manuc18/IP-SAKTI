@@ -1,0 +1,18 @@
+{
+  "document_id": "IN-BDA-2002-AMD-2023",
+  "parser": "statutory",
+  "provision_label": "Section",
+  "pages_ingested": 22,
+  "pages_excluded": {
+    "table_of_contents": 3
+  },
+  "units": 86,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 11,
+    "provision": 74
+  },
+  "units_with_locator": 85,
+  "units_locator_downgraded": 0,
+  "characters": 76383
+}

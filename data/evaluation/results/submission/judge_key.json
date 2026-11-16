@@ -1,0 +1,3511 @@
+{
+  "manifest": {
+    "packets": 98,
+    "population": 960,
+    "stratified_by": [
+      "difficulty",
+      "rank bucket of the target"
+    ],
+    "strata_counts": {
+      "rank1": 70,
+      "rank2_5": 17,
+      "rank6_10": 6,
+      "missed": 5
+    },
+    "rank_hidden_from_judge": true,
+    "evidence_order": "sha256(question_id:index), deterministic and uncorrelated with rank",
+    "excerpt_chars": 700,
+    "judge_provider": "claude_code_session",
+    "claim_safety": "AI audit of retrieved evidence against an AI-generated expected answer. Not independent legal verification and not human-verified ground truth."
+  },
+  "key": [
+    {
+      "question_id": "S0001",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65b"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-55"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-52-c1"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65a"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65a"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65a"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "penalty",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0002",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-schedule-item-6-c4"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iii-rule-56"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-iii-rule-56"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-iii-rule-56"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "medium",
+      "answer_type": "procedure",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0003",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-30"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-28b"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33j"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-13"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-27a"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-30"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-30"
+      ],
+      "rank_of_target": 4,
+      "difficulty": "hard",
+      "answer_type": "penalty",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0006",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-4-article-25"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-36"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-28"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::article-25"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-NAGOYA-PROTOCOL-2010::article-25"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-25",
+        "UN-NAGOYA-PROTOCOL-2010::article-25"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0008",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-80"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vii-section-33"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-44"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-61"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-rule-129"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-vii-section-33"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-vii-section-33"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0016",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::rule-1"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-iii-section-11"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-iii-section-10a"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::front-matter-u0"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BD-RULES-2024::rule-8"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BD-RULES-2024::rule-8"
+      ],
+      "rank_of_target": 7,
+      "difficulty": "hard",
+      "answer_type": "conceptual",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0020",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xii-rule-143"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-vi-rule-66"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-viii-rule-93"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-52"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-v-rule-14"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-iv-rule-10",
+        "IN-COPYRIGHT-RULES-2013::chapter-ix-rule-37",
+        "IN-COPYRIGHT-RULES-2013::chapter-v-rule-14",
+        "IN-COPYRIGHT-RULES-2013::chapter-vi-rule-21",
+        "IN-COPYRIGHT-RULES-2013::chapter-x-rule-42"
+      ],
+      "rank_of_target": null,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0024",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-26"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-26"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-26"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vi-section-26"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-v-section-26"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PPVFR-RULES-2003::chapter-iv-rule-42"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-26",
+        "IN-PPVFR-RULES-2003::chapter-iv-rule-42"
+      ],
+      "rank_of_target": 9,
+      "difficulty": "easy",
+      "answer_type": "timeline",
+      "domain": "plant_varieties"
+    },
+    {
+      "question_id": "S0029",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-vii-article-71"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-vi-article-67"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::part-vii-article-68"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-vi-article-66"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-vii-article-69"
+        }
+      },
+      "target_chunk_ids": [
+        "WTO-TRIPS::part-vii-article-69"
+      ],
+      "acceptable_chunk_ids": [
+        "WTO-TRIPS::part-vii-article-69"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "international_ip"
+    },
+    {
+      "question_id": "S0041",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-90"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-89"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-92"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-88"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-84-c1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xv-section-88"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xv-section-88"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "exception",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0050",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-1"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iv-section-22"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-25"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-49"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-69",
+        "IN-DC-ACT-1940::chapter-iv-section-34",
+        "IN-GI-ACT-1999::chapter-viii-section-49",
+        "IN-PATENTS-ACT-1970::chapter-xx-section-124",
+        "IN-TM-ACT-1999::chapter-xii-section-114"
+      ],
+      "rank_of_target": null,
+      "difficulty": "easy",
+      "answer_type": "definition",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0052",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iv-section-22"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-i-rule-2-c2"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-46"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-46",
+        "IN-TM-ACT-1999::chapter-xii-section-111"
+      ],
+      "rank_of_target": 7,
+      "difficulty": "medium",
+      "answer_type": "definition",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0055",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-25"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-37b"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-23"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-6"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-37b"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-xii-section-52",
+        "IN-DC-RULES-1945::part-x-rule-122dc",
+        "IN-GI-ACT-1999::chapter-viii-section-37b",
+        "IN-GI-RULES-2002::part-ii-rule-116",
+        "IN-PATENTS-ACT-1970::chapter-xx-section-124b",
+        "IN-TM-ACT-1999::chapter-xii-section-112b",
+        "IN-TM-RULES-2017::part-iv-rule-156"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0057",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-11"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-87-c2"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::front-matter-u0"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-33"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-33",
+        "IN-PATENTS-ACT-1970::chapter-iv-section-12",
+        "IN-PATENTS-RULES-2003::chapter-iv-rule-24b"
+      ],
+      "rank_of_target": null,
+      "difficulty": "hard",
+      "answer_type": "timeline",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0058",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-30"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-29"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-31"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-32"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iv-rule-28"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-vi-section-29"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-vi-section-29"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0074",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-i-section-1"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-viii-rule-127"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-141"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-viii-rule-99"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-vi-first-schedule"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xiii-section-141"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xiii-section-141"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "eligibility",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0091",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-rule-30b"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-xii-rule-129f"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-10"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::front-matter-u0"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-i-rule-2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iii-section-10"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iii-section-10"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "definition",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0093",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-6"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-53"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vi-section-49"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-i-rule-1"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-i-rule-6"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-53"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-53"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0112",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-v-rule-64"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xi-rule-64"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-iv-rule-64"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-vi-rule-64-c1"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-vi-rule-64"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PPVFR-RULES-2003::chapter-v-rule-64"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PPVFR-RULES-2003::chapter-v-rule-64"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "plant_varieties"
+    },
+    {
+      "question_id": "S0119",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xi-section-97"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-71"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-ii-section-11"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xv-section-74"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-x-section-50"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-x-section-50"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-x-section-50"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "procedure",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0137",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xvii-section-102"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-v-section-25-c1"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c1"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xii-section-102"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-schedule-item-7"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xvii-section-102"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xvii-section-102"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0157",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vi-section-54"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-viii-section-54"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-54"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-54"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ix-section-54"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PPVFR-ACT-2001::chapter-viii-section-54"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PPVFR-ACT-2001::chapter-viii-section-54"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "plant_varieties"
+    },
+    {
+      "question_id": "S0158",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-4"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-i-rule-5"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-i-rule-17"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-143"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-74"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ix-section-74"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-RULES-2001::rule-4",
+        "IN-GI-ACT-1999::chapter-ix-section-74",
+        "IN-TM-ACT-1999::chapter-xiii-section-143",
+        "IN-TM-RULES-2017::part-i-chapter-i-rule-17"
+      ],
+      "rank_of_target": 3,
+      "difficulty": "hard",
+      "answer_type": "procedure",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0159",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-rule-121"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-159"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-1"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iv-section-11a"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-ii-rule-13"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-RULES-2003::chapter-xvi-rule-121"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-RULES-2003::chapter-xvi-rule-121"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "conceptual",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0165",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-62"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-xi-section-96-c1"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::article-31"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-12"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33n"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-CBD-1992::article-31"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-31"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "prohibition",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0166",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vii-section-59"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-schedule"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-5"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xi-section-98"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-6"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xi-section-98"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xi-section-98"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0183",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-14"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-iii-rule-31"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-42"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-43"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iii-section-21"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-42"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-42"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0201",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-ii-section-12"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ii-section-12"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iv-section-12"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-12"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-12"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-ii-section-12"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-ii-section-12"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0203",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-14"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::ii-article-14"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "UN-CBD-1992::article-14"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "UN-CBD-1992::article-42"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-1-article-14"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-CBD-1992::ii-article-14"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-14",
+        "UN-CBD-1992::ii-article-14",
+        "UN-NAGOYA-PROTOCOL-2010::article-14"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0217",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-68"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-67"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-65b"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-68"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-68"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0230",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-25"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-63"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-22"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-23"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-49"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-vi-section-22"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-vi-section-22"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "exception",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0252",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-viii-rule-91"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-viii-rule-91"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-i-rule-1"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-vi-rule-91"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xii-rule-91"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-vi-rule-91"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-vi-rule-91"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0253",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-18-c1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-18"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-18"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-18"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vi-rule-18"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-1-rule-18"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-1-rule-18"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0262",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-37"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-35"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-second-schedule-form-11"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-36"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-38"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-vii-section-36"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-vii-section-36"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "procedure",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0282",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-51"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-28"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-24"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-28a"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-17"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-v-section-28a"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-v-section-28a"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0287",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-30"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vi-section-30"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iii-section-15"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-5"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-10"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-10"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-10"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0308",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-x-section-44"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-70"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-x-section-47"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-x-section-45"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-69"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-69"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-69"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "medium",
+      "answer_type": "procedure",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0314",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-60"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-52-c1"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-61"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-51"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-55"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xi-section-55"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xi-section-55"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "prohibition",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0327",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-viii-rule-97"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-55"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xii-rule-129c"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-9"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-56"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-viii-rule-97"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-viii-rule-97"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0336",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-i-section-1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-i-section-1"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-1"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-schedule-item-7"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-i-section-1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-i-section-1"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-i-section-1",
+        "IN-PATENTS-ACT-1970::chapter-i-section-1-2"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "exception",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0341",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3-2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-i-section-7"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-i-section-3",
+        "IN-DC-ACT-1940::chapter-i-section-3-2",
+        "IN-DC-ACT-1940::chapter-i-section-7"
+      ],
+      "rank_of_target": null,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0345",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::rule-10"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-ii-rule-16"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ii-section-4"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::rule-11"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::rule-12"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PPVFR-RULES-2003::chapter-ii-rule-16"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PPVFR-RULES-2003::chapter-ii-rule-16"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "eligibility",
+      "domain": "plant_varieties"
+    },
+    {
+      "question_id": "S0365",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xi-rule-64"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-35"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-34"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xi-rule-59"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-33"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-vi-section-35"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-vi-section-35"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "fee",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0373",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-115"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-103"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-114"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-102"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-ii-rule-115"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-ii-rule-115"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0394",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxii-section-135"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxii-section-136"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-24"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-154"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-84"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ix-section-84"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ix-section-84"
+      ],
+      "rank_of_target": 3,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0398",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-25"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-63"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xi-section-43"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-viii-section-32"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-22"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-viii-section-32"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-viii-section-32"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "exception",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0409",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-61"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xi-section-61"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-61"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ix-section-61"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-viii-section-61"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-RULES-2003::chapter-x-rule-85"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xi-section-61",
+        "IN-PATENTS-RULES-2003::chapter-x-rule-85"
+      ],
+      "rank_of_target": 7,
+      "difficulty": "hard",
+      "answer_type": "timeline",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0411",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-19"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-18"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-19a"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-18-c2"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-i-section-1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iv-section-19"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iv-section-19"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "timeline",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0419",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-48"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-16"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-1"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-v-section-25"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xii-section-113"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-48"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-48",
+        "IN-TM-ACT-1999::chapter-xii-section-113"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "timeline",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0422",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-40"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-36"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iii-section-22"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-15"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-39"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-39"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-39"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0446",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-iv-section-28"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-v-section-28"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-28"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-28"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c2"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1",
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c2"
+      ],
+      "rank_of_target": 9,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "plant_varieties"
+    },
+    {
+      "question_id": "S0450",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-7"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-142"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-78"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-rule-139-c3"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-rule-122"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-RULES-2003::chapter-xvi-rule-122"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-RULES-2003::chapter-xvi-rule-122"
+      ],
+      "rank_of_target": 4,
+      "difficulty": "easy",
+      "answer_type": "fee",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0451",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-x-section-46-c1"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-2"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-157a"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-i-section-1"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::front-matter-u0"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-x-section-46-c1"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-x-section-46-c1",
+        "IN-DESIGNS-ACT-2000::chapter-x-section-46-c2",
+        "IN-DESIGNS-ACT-2000::chapter-x-section-46-c3"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "definition",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0462",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-147"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-137"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-127"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-69"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-60"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ix-section-69"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ix-section-69",
+        "IN-TM-ACT-1999::chapter-xiii-section-137"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "conceptual",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0472",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-104"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-76"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-107"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-102"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-114"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-ii-rule-102"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-ii-rule-102"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "eligibility",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0477",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-18"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iv-section-20"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iii-section-14"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vi-section-30"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-v-section-24"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iv-section-20"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iv-section-20"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "definition",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0495",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-52-c3"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-viii-rule-29"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-31d"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-viii-section-39"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xi-section-52-c2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-vi-section-31d"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-vi-section-31d"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "exception",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0501",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-5"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-6"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-vi-section-29"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-114"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ii-section-3"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-ii-section-3"
+      ],
+      "rank_of_target": 5,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0509",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vii-section-33"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-8"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-vii-section-32"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xiv-section-73"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-vii-section-32"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-vii-section-32"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0521",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iv-section-20"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-8"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iv-section-16"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iv-section-15"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-78"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-8"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-8"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "eligibility",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0531",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-iii-section-15"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-2"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-5"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-10"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-70"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-5"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-5"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "exception",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0544",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-9-c4"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-29-item-2"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-9-c5"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-d-schedule-annexure-c-item-10-c1"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-9-c2"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-RULES-1945::part-xv-rule-160"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-RULES-1945::part-xv-rule-160"
+      ],
+      "rank_of_target": 9,
+      "difficulty": "medium",
+      "answer_type": "timeline",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0553",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-27"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-28"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-29"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-34"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-31"
+        }
+      },
+      "target_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-5-article-34"
+      ],
+      "acceptable_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-5-article-27",
+        "WTO-TRIPS::part-ii-section-5-article-28",
+        "WTO-TRIPS::part-ii-section-5-article-29",
+        "WTO-TRIPS::part-ii-section-5-article-30",
+        "WTO-TRIPS::part-ii-section-5-article-31",
+        "WTO-TRIPS::part-ii-section-5-article-32",
+        "WTO-TRIPS::part-ii-section-5-article-33",
+        "WTO-TRIPS::part-ii-section-5-article-34",
+        "WTO-TRIPS::part-iii-section-5-article-61"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "international_ip"
+    },
+    {
+      "question_id": "S0567",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-iii-rule-57"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-ii-rule-133"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-TM-RULES-2017::part-iii-rule-139"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-33"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-TM-RULES-2017::part-c-third-schedule-c1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-RULES-2017::part-ii-rule-133"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-RULES-2017::part-ii-rule-133"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0569",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-1-article-12"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-6-article-38"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-vii-article-68"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-33"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-i-article-4"
+        }
+      },
+      "target_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-2-article-18"
+      ],
+      "acceptable_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-2-article-18"
+      ],
+      "rank_of_target": null,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "international_ip"
+    },
+    {
+      "question_id": "S0579",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::article-8"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::article-6"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ix-section-36"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "UN-CBD-1992::article-9"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-x-section-41"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-CBD-1992::article-6"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-6",
+        "UN-CBD-1992::ii-article-6",
+        "UN-CBD-1992::ii-article-6-2"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "conceptual",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0592",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-38"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-1"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-11-item-2"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::front-matter-u0"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-21a-item-1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-38"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-38"
+      ],
+      "rank_of_target": 5,
+      "difficulty": "easy",
+      "answer_type": "conceptual",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0603",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-27a"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-28b"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-13"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33j"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-36"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-36"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-36"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "penalty",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0604",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-13"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-24"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-DESIGNS-RULES-2001::first-schedule-item-4"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xi-section-61"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-iii-section-12"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-13"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-13"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "fee",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0618",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-k-schedule-item-5a"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-d-schedule-item-3-c1"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33-c2"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-24"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-18"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-24"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-24"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "conceptual",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0629",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::front-matter-u0"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-87-c2"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-1-rule-1"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-28"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-28"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-28"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "power",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0635",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ii-section-6"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xx-section-124a"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xiv-section-73"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-50"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-3"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+        "IN-PATENTS-ACT-1970::chapter-xiv-section-73"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "designs"
+    },
+    {
+      "question_id": "S0638",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xiii-section-151"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-81"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxi-section-132"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-xi-section-48"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vii-section-42"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xiii-section-151"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xiii-section-151"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0656",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "UN-CBD-1992::article-1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-1"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "UN-CBD-1992::ii-article-1-2"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-i-article-1"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::ii-article-1"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-NAGOYA-PROTOCOL-2010::article-1"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-1",
+        "UN-CBD-1992::ii-article-1",
+        "UN-CBD-1992::ii-article-1-2",
+        "UN-NAGOYA-PROTOCOL-2010::article-1"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0663",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-x-rule-84"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xi-section-61"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xi-section-60"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-142"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-7"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xi-section-60"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xi-section-60"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "fee",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0683",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-4"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-159"
+        },
+        "C": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xiv-section-74"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-xii-rule-88"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xiv-section-75"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xiv-section-74"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xiv-section-74"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0692",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vi-rule-19"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-x-rule-40"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-27"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-ix-rule-35"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-iv-rule-8"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-x-rule-40"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-x-rule-40"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "fee",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0701",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-ii-section-10"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xv-section-74"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-70"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-33"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-x-section-45"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-ii-section-10"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-ACT-1957::chapter-ii-section-10"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0721",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-34"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-31"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-27"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-iii-section-5-article-61"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-ii-section-5-article-29"
+        }
+      },
+      "target_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-5-article-31"
+      ],
+      "acceptable_chunk_ids": [
+        "WTO-TRIPS::part-ii-section-5-article-27",
+        "WTO-TRIPS::part-ii-section-5-article-28",
+        "WTO-TRIPS::part-ii-section-5-article-29",
+        "WTO-TRIPS::part-ii-section-5-article-30",
+        "WTO-TRIPS::part-ii-section-5-article-31",
+        "WTO-TRIPS::part-ii-section-5-article-32",
+        "WTO-TRIPS::part-ii-section-5-article-33",
+        "WTO-TRIPS::part-ii-section-5-article-34",
+        "WTO-TRIPS::part-iii-section-5-article-61"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "international_ip"
+    },
+    {
+      "question_id": "S0731",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xi-section-46"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-22"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::rule-11"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-29"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-viii-section-34"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-viii-section-34"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-viii-section-34"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0745",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-ix-rule-83"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-83"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-viii-rule-83"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-83"
+        },
+        "E": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-ii-rule-83"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-83"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-83"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0751",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33ee"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::front-matter-u0"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-26c-item-5"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-11-item-2"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-17a"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-33ee"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-33ee"
+      ],
+      "rank_of_target": 4,
+      "difficulty": "easy",
+      "answer_type": "prohibition",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0755",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vi-rule-18"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-18"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-18"
+        },
+        "D": {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::rule-18"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-18-c1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BD-RULES-2024::rule-18"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BD-RULES-2024::rule-18"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "identifier",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0760",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-147"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-i-section-1"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-159"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xiii-section-67"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-v-section-23"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xxiii-section-147"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-xxiii-section-147"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0771",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-53"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-49"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xii-section-119"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xii-section-114"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-iii-section-2-article-47"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xii-section-119"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-53",
+        "IN-TM-ACT-1999::chapter-xii-section-119"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0773",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iii-section-6"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ix-section-54"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-43"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c1"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-52"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-viii-section-52"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-viii-section-52"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "exception",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0786",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-xii-section-115"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c2"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-61"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-64"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-50"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-ACT-1999::chapter-xii-section-115"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-ACT-1999::chapter-viii-section-50",
+        "IN-TM-ACT-1999::chapter-xii-section-115"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "medium",
+      "answer_type": "timeline",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0798",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::article-39"
+        },
+        "B": {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-ii-section-7-article-39"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "UN-CBD-1992::ii-article-3"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "UN-CBD-1992::ii-article-13"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "UN-CBD-1992::ii-article-7"
+        }
+      },
+      "target_chunk_ids": [
+        "UN-CBD-1992::article-39"
+      ],
+      "acceptable_chunk_ids": [
+        "UN-CBD-1992::article-39"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0802",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-68b"
+        },
+        "B": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-xi-section-93"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-62"
+        },
+        "D": {
+          "rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-ix-section-60"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-vi-section-26"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-vi-section-26"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-vi-section-26"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0805",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33b"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33a"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-9-c13"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-ii-section-7a"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-33a"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iv-section-33a"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "exception",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0834",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-v-section-21"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-11"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-12"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-iv-rule-41"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-iv-rule-43"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-ABS-REGULATIONS-2025::regulation-11"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-ABS-REGULATIONS-2025::regulation-11"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "exception",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0845",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-i-section-1-2"
+        },
+        "B": {
+          "rank": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-i-section-2"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-i-rule-2"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-schedule-item-4"
+        },
+        "E": {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-i-section-1"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-i-section-1-2"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-PATENTS-ACT-1970::chapter-i-section-1",
+        "IN-PATENTS-ACT-1970::chapter-i-section-1-2"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "definition",
+      "domain": "patents"
+    },
+    {
+      "question_id": "S0852",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-17b"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-9d"
+        },
+        "C": {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-11-item-2"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-9b"
+        },
+        "E": {
+          "rank": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eea"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iii-section-9b"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-DC-ACT-1940::chapter-iii-section-9b"
+      ],
+      "rank_of_target": 4,
+      "difficulty": "easy",
+      "answer_type": "procedure",
+      "domain": "drug_regulation"
+    },
+    {
+      "question_id": "S0865",
+      "letter_to_rank": {
+        "A": {
+          "rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::rule-1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-BD-RULES-2024::rule-14"
+        },
+        "C": {
+          "rank": 3,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-1"
+        },
+        "D": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-7"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-BD-RULES-2024::rule-13"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BD-RULES-2024::rule-14"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BD-RULES-2024::rule-14"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "multi_part",
+      "domain": "biodiversity_abs"
+    },
+    {
+      "question_id": "S0871",
+      "letter_to_rank": {
+        "A": {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-78-c1"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-vii-rule-78"
+        },
+        "C": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-xv-rule-78"
+        },
+        "D": {
+          "rank": 4,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-v-rule-78"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-viii-rule-78"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-vii-rule-78"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-GI-RULES-2002::part-1-chapter-vii-rule-78"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "easy",
+      "answer_type": "identifier",
+      "domain": "geographical_indications"
+    },
+    {
+      "question_id": "S0890",
+      "letter_to_rank": {
+        "A": {
+          "rank": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-vii-rule-105"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-53"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-52"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-xi-section-95"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-TM-ACT-1999::chapter-vii-section-57"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-vii-rule-105"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-TM-RULES-2017::part-i-chapter-vii-rule-105"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "medium",
+      "answer_type": "power",
+      "domain": "trademarks"
+    },
+    {
+      "question_id": "S0899",
+      "letter_to_rank": {
+        "A": {
+          "rank": 5,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-26"
+        },
+        "B": {
+          "rank": 1,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-24"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-COPYRIGHT-ACT-1957::chapter-vi-section-31c"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-23"
+        },
+        "E": {
+          "rank": 2,
+          "chunk_id": "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-25"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-24"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-COPYRIGHT-RULES-2013::chapter-vii-rule-24"
+      ],
+      "rank_of_target": 1,
+      "difficulty": "hard",
+      "answer_type": "prohibition",
+      "domain": "copyright"
+    },
+    {
+      "question_id": "S0915",
+      "letter_to_rank": {
+        "A": {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ix-section-36a"
+        },
+        "B": {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-iii-section-15"
+        },
+        "C": {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-iii-section-8"
+        },
+        "D": {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-48"
+        },
+        "E": {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-iii-section-12"
+        }
+      },
+      "target_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-ix-section-36a"
+      ],
+      "acceptable_chunk_ids": [
+        "IN-BDA-2002-AMD-2023::chapter-ix-section-36a"
+      ],
+      "rank_of_target": 2,
+      "difficulty": "hard",
+      "answer_type": "power",
+      "domain": "biodiversity_abs"
+    }
+  ]
+}

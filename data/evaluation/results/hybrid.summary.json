@@ -1,0 +1,83 @@
+{
+  "experiment": "D",
+  "retriever": "hybrid",
+  "retriever_config": {
+    "retriever": "hybrid",
+    "version": "0.1.0",
+    "fusion": "reciprocal_rank_fusion",
+    "k": 60,
+    "depth": 50,
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "components": [
+      {
+        "retriever": "bm25",
+        "version": "0.1.0",
+        "k1": 1.2,
+        "b": 0.75,
+        "indexed_field": "text",
+        "stemming": false,
+        "stopwords": false,
+        "documents_indexed": 3073,
+        "vocabulary": 18699,
+        "mean_document_length_tokens": 207.91
+      },
+      {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      }
+    ]
+  },
+  "timestamp": "2026-08-29T19:39:22+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "none",
+  "python": "3.14.3",
+  "overall": {
+    "recall@1": 0.5766,
+    "recall@5": 0.8649,
+    "recall@10": 0.9459,
+    "mrr": 0.6995,
+    "ndcg@5": 0.7308,
+    "ndcg@10": 0.7561,
+    "document_recall@1": 0.8468,
+    "document_recall@5": 0.991,
+    "document_recall@10": 1.0
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.5806,
+      "recall@5": 0.8817,
+      "recall@10": 0.9785,
+      "mrr": 0.7139,
+      "ndcg@5": 0.7465,
+      "ndcg@10": 0.7766
+    },
+    "identifier": {
+      "recall@1": 0.5556,
+      "recall@5": 0.7778,
+      "recall@10": 0.7778,
+      "mrr": 0.625,
+      "ndcg@5": 0.6497,
+      "ndcg@10": 0.6497
+    }
+  }
+}

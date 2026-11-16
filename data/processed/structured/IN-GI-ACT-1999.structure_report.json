@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-GI-ACT-1999",
+  "parser": "statutory",
+  "provision_label": "Section",
+  "pages_ingested": 26,
+  "pages_excluded": {
+    "front_matter": 2,
+    "table_of_contents": 3
+  },
+  "units": 99,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 9,
+    "provision": 89
+  },
+  "units_with_locator": 98,
+  "units_locator_downgraded": 0,
+  "characters": 98426
+}

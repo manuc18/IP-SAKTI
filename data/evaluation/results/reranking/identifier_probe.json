@@ -1,0 +1,1605 @@
+{
+  "classes": [
+    "exact",
+    "parent",
+    "sibling",
+    "referenced",
+    "unrelated"
+  ],
+  "reports": [
+    {
+      "reranker": "identity",
+      "reranker_config": {
+        "reranker": "identity",
+        "version": "0.1.0",
+        "scoring": "1 / candidate_order \u2014 a restatement of the incoming order, not a relevance estimate"
+      },
+      "questions": 17,
+      "questions_with_an_exact_chunk_in_pool": 15,
+      "exact_at_rank_1": 10,
+      "exact_at_rank_1_rate": 0.6667,
+      "exact_in_top_k": 15,
+      "median_exact_rank": 1,
+      "questions_where_a_weaker_class_outranked_exact": 5,
+      "outranking_classes": {
+        "unrelated": 5
+      },
+      "rank_1_class_census": {
+        "unrelated": 6,
+        "exact": 10,
+        "parent": 1
+      },
+      "per_question": [
+        {
+          "question_id": "Q001",
+          "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+          "cited": [
+            "section 3(P)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 13,
+            "sibling": 0,
+            "referenced": 6,
+            "unrelated": 66
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 2,
+            "sibling": null,
+            "referenced": 23,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q005",
+          "query": "What does section 107A of the Patents Act treat as not an infringement?",
+          "cited": [
+            "section 107A"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 86
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q009",
+          "query": "What general principles apply to the working of patented inventions under section 83?",
+          "cited": [
+            "section 83"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 4,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 14,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q013",
+          "query": "What does rule 13 of the Patents Rules, 2003 require of a specification?",
+          "cited": [
+            "rule 13"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 7,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 5,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q015",
+          "query": "Rule 12 of the Patents Rules \u2014 statement and undertaking about foreign applications",
+          "cited": [
+            "rule 12"
+          ],
+          "pool_counts": {
+            "exact": 7,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 84
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 8,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q023",
+          "query": "What does section 2 of the Trade Marks Act, 1999 define as a 'trade mark'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 24,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 58
+          },
+          "best_rank": {
+            "exact": 2,
+            "parent": null,
+            "sibling": null,
+            "referenced": 13,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": true,
+          "exact_best_rank": 2,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": true,
+          "exact_outranked_by": [
+            {
+              "class": "unrelated",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "question_id": "Q027",
+          "query": "Rule 23 of the Trade Marks Rules, 2017 \u2014 form and signing of an application",
+          "cited": [
+            "rule 23"
+          ],
+          "pool_counts": {
+            "exact": 9,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 85,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q039",
+          "query": "Rule 56 of the GI Rules, 2002 \u2014 authorised user",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 79
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 5,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q044",
+          "query": "What does section 2 of the Designs Act, 2000 mean by 'design'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 50
+          },
+          "best_rank": {
+            "exact": 2,
+            "parent": null,
+            "sibling": null,
+            "referenced": 18,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": true,
+          "exact_best_rank": 2,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": true,
+          "exact_outranked_by": [
+            {
+              "class": "unrelated",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "question_id": "Q048",
+          "query": "Rule 24 of the Designs Rules, 2001 \u2014 restoration of designs",
+          "cited": [
+            "rule 24"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 71
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q057",
+          "query": "What is the statutory licence for broadcasting under section 31D of the Copyright Act?",
+          "cited": [
+            "section 31D"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 74
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 5
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q060",
+          "query": "Rule 56 of the Copyright Rules, 2013 \u2014 tariff scheme",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 73
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q067",
+          "query": "How does section 2 of the Biological Diversity Act, 2002 define 'access'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 53
+          },
+          "best_rank": {
+            "exact": 2,
+            "parent": null,
+            "sibling": null,
+            "referenced": 13,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": true,
+          "exact_best_rank": 2,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": true,
+          "exact_outranked_by": [
+            {
+              "class": "unrelated",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "question_id": "Q082",
+          "query": "Rule 41 of the PPV&FR Rules, 2003 \u2014 benefit sharing claim under section 26",
+          "cited": [
+            "rule 41",
+            "section 26"
+          ],
+          "pool_counts": {
+            "exact": 13,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 17,
+            "unrelated": 49
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 4
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q086",
+          "query": "What does section 33EEB of the Drugs and Cosmetics Act require before manufacturing Ayurvedic drugs?",
+          "cited": [
+            "section 33EEB"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 81
+          },
+          "best_rank": {
+            "exact": 2,
+            "parent": null,
+            "sibling": null,
+            "referenced": 3,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": true,
+          "exact_best_rank": 2,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": true,
+          "exact_outranked_by": [
+            {
+              "class": "unrelated",
+              "rank": 1
+            }
+          ]
+        },
+        {
+          "question_id": "Q095",
+          "query": "What does TRIPS Article 27.1 require about patentable subject matter?",
+          "cited": [
+            "article 27(1)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 3,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 78
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 1,
+            "sibling": null,
+            "referenced": 3,
+            "unrelated": 2
+          },
+          "rank_1_class": "parent",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q102",
+          "query": "What are the objectives stated in Article 7 of the TRIPS Agreement?",
+          "cited": [
+            "article 7"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 2,
+            "parent": null,
+            "sibling": null,
+            "referenced": 19,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": true,
+          "exact_best_rank": 2,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": true,
+          "exact_outranked_by": [
+            {
+              "class": "unrelated",
+              "rank": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reranker": "features",
+      "reranker_config": {
+        "reranker": "features",
+        "version": "0.1.0",
+        "trained": false,
+        "features": [
+          "dense_percentile",
+          "lexical_percentile",
+          "locator_exactness",
+          "locator_referenced",
+          "document_match",
+          "idf_coverage",
+          "phrase_overlap"
+        ],
+        "normalization": "min_max",
+        "normalization_rationale": "min-max within the candidate pool, selected over rank percentile on measured behaviour (Phase 6 section 7); BM25 and cosine scores are never added on a shared scale",
+        "weights": {
+          "IDENTIFIER": {
+            "locator_exactness": 0.5,
+            "lexical_percentile": 0.25,
+            "dense_percentile": 0.1,
+            "document_match": 0.1,
+            "phrase_overlap": 0.05,
+            "idf_coverage": 0.0,
+            "locator_referenced": 0.0
+          },
+          "CONCEPTUAL": {
+            "dense_percentile": 0.6,
+            "lexical_percentile": 0.15,
+            "phrase_overlap": 0.1,
+            "idf_coverage": 0.1,
+            "locator_exactness": 0.025,
+            "document_match": 0.025,
+            "locator_referenced": 0.0
+          },
+          "GENERAL": {
+            "dense_percentile": 0.6,
+            "lexical_percentile": 0.15,
+            "phrase_overlap": 0.1,
+            "idf_coverage": 0.1,
+            "locator_exactness": 0.025,
+            "document_match": 0.025,
+            "locator_referenced": 0.0
+          }
+        },
+        "weights_provenance": "declared a priori from the Phase 5 per-family Recall@1 tables; not fitted to the golden questions",
+        "authority": {
+          "kept_separate_from_relevance": true,
+          "evidence_level_score": {
+            "A": 1.0,
+            "B": 0.6,
+            "C": 0.3
+          },
+          "temporal_score": {
+            "CURRENT": 1.0,
+            "UNKNOWN": 0.5,
+            "STALE": 0.4
+          },
+          "weights": {
+            "evidence_level": 0.6,
+            "temporal": 0.4
+          }
+        },
+        "citability": "reported, never scored",
+        "query_family_classifier": "ai.retrieval.router.classify (deterministic)",
+        "idf_terms": 18699
+      },
+      "questions": 17,
+      "questions_with_an_exact_chunk_in_pool": 15,
+      "exact_at_rank_1": 15,
+      "exact_at_rank_1_rate": 1.0,
+      "exact_in_top_k": 15,
+      "median_exact_rank": 1,
+      "questions_where_a_weaker_class_outranked_exact": 0,
+      "outranking_classes": {},
+      "rank_1_class_census": {
+        "parent": 2,
+        "exact": 15
+      },
+      "per_question": [
+        {
+          "question_id": "Q001",
+          "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+          "cited": [
+            "section 3(P)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 13,
+            "sibling": 0,
+            "referenced": 6,
+            "unrelated": 66
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 1,
+            "sibling": null,
+            "referenced": 23,
+            "unrelated": 14
+          },
+          "rank_1_class": "parent",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q005",
+          "query": "What does section 107A of the Patents Act treat as not an infringement?",
+          "cited": [
+            "section 107A"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 86
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q009",
+          "query": "What general principles apply to the working of patented inventions under section 83?",
+          "cited": [
+            "section 83"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 4,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 15,
+            "unrelated": 5
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q013",
+          "query": "What does rule 13 of the Patents Rules, 2003 require of a specification?",
+          "cited": [
+            "rule 13"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 7,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 10,
+            "unrelated": 9
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q015",
+          "query": "Rule 12 of the Patents Rules \u2014 statement and undertaking about foreign applications",
+          "cited": [
+            "rule 12"
+          ],
+          "pool_counts": {
+            "exact": 7,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 84
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 8,
+            "unrelated": 10
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q023",
+          "query": "What does section 2 of the Trade Marks Act, 1999 define as a 'trade mark'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 24,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 58
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 64,
+            "unrelated": 25
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q027",
+          "query": "Rule 23 of the Trade Marks Rules, 2017 \u2014 form and signing of an application",
+          "cited": [
+            "rule 23"
+          ],
+          "pool_counts": {
+            "exact": 9,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 60,
+            "unrelated": 10
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q039",
+          "query": "Rule 56 of the GI Rules, 2002 \u2014 authorised user",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 79
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 7,
+            "unrelated": 9
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q044",
+          "query": "What does section 2 of the Designs Act, 2000 mean by 'design'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 50
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 57,
+            "unrelated": 31
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q048",
+          "query": "Rule 24 of the Designs Rules, 2001 \u2014 restoration of designs",
+          "cited": [
+            "rule 24"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 71
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 9
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q057",
+          "query": "What is the statutory licence for broadcasting under section 31D of the Copyright Act?",
+          "cited": [
+            "section 31D"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 74
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 3
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q060",
+          "query": "Rule 56 of the Copyright Rules, 2013 \u2014 tariff scheme",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 73
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 7
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q067",
+          "query": "How does section 2 of the Biological Diversity Act, 2002 define 'access'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 53
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 34,
+            "unrelated": 31
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q082",
+          "query": "Rule 41 of the PPV&FR Rules, 2003 \u2014 benefit sharing claim under section 26",
+          "cited": [
+            "rule 41",
+            "section 26"
+          ],
+          "pool_counts": {
+            "exact": 13,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 17,
+            "unrelated": 49
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 14,
+            "unrelated": 19
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q086",
+          "query": "What does section 33EEB of the Drugs and Cosmetics Act require before manufacturing Ayurvedic drugs?",
+          "cited": [
+            "section 33EEB"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 81
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 3,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q095",
+          "query": "What does TRIPS Article 27.1 require about patentable subject matter?",
+          "cited": [
+            "article 27(1)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 3,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 78
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 1,
+            "sibling": null,
+            "referenced": 4,
+            "unrelated": 5
+          },
+          "rank_1_class": "parent",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q102",
+          "query": "What are the objectives stated in Article 7 of the TRIPS Agreement?",
+          "cited": [
+            "article 7"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 52,
+            "unrelated": 5
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        }
+      ]
+    },
+    {
+      "reranker": "cross_encoder:bge-m3",
+      "reranker_config": {
+        "reranker": "cross_encoder:bge-m3",
+        "version": "0.1.0",
+        "trained_by_us": false,
+        "model_name": "BAAI/bge-reranker-v2-m3",
+        "model_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+        "license": "apache-2.0",
+        "parameters": "568M",
+        "languages": "multilingual (XLM-RoBERTa large)",
+        "selection_note": "The natural pair for the BGE-M3 retriever already in use: same family, same tokenizer lineage, trained for exactly this reranking step. Included because of that relationship, not its popularity.",
+        "device": "mps",
+        "max_seq_length": 512,
+        "batch_size": 16,
+        "truncation_strategy": "longest_first",
+        "truncation_note": "the pair is truncated, longest member first; the passage is longer than the query in every observed case, so the provision's tail is what is dropped",
+        "activation": "none \u2014 raw relevance logit; ranking is invariant to a monotone squashing, so none is applied",
+        "candidate_format": {
+          "representation": "labelled lines: Document / Locator / [Heading] / Text",
+          "fields": [
+            "document",
+            "locator",
+            "heading",
+            "text"
+          ],
+          "heading_omitted_when_absent": true,
+          "text_budget_chars": null,
+          "whitespace": "runs of spaces and tabs collapsed; line breaks preserved",
+          "excluded": [
+            "chunk_id",
+            "citable",
+            "source_evidence_level",
+            "temporal_status",
+            "source_status",
+            "physical_pages",
+            "retrieval scores",
+            "retrieval path",
+            "golden labels"
+          ]
+        },
+        "model_disk_bytes": 4586520751,
+        "model_disk_mb": 4586.5,
+        "rejected_alternatives": [
+          {
+            "model": "jinaai/jina-reranker-v2-base-multilingual",
+            "reason": "CC-BY-NC-4.0. Non-commercial licences are not a base this project can build on, independent of how the model performs."
+          },
+          {
+            "model": "Alibaba-NLP/gte-multilingual-reranker-base",
+            "reason": "Requires trust_remote_code=True, which executes code fetched from a model repository at load time. Not acceptable in a pipeline that handles a provenance-controlled corpus."
+          },
+          {
+            "model": "any hosted reranking API (Cohere Rerank, Voyage, Jina API)",
+            "reason": "Phase 6 forbids paid external APIs, and sending the corpus to a third party would breach the same rule that keeps embedding local."
+          }
+        ],
+        "truncation_observed": {
+          "pairs_scored": 1416,
+          "pairs_truncated": 408,
+          "truncated_fraction": 0.2881,
+          "longest_pair_tokens": 1538,
+          "tokens_dropped_total": 145857
+        }
+      },
+      "questions": 17,
+      "questions_with_an_exact_chunk_in_pool": 15,
+      "exact_at_rank_1": 15,
+      "exact_at_rank_1_rate": 1.0,
+      "exact_in_top_k": 15,
+      "median_exact_rank": 1,
+      "questions_where_a_weaker_class_outranked_exact": 0,
+      "outranking_classes": {},
+      "rank_1_class_census": {
+        "unrelated": 1,
+        "exact": 15,
+        "parent": 1
+      },
+      "per_question": [
+        {
+          "question_id": "Q001",
+          "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+          "cited": [
+            "section 3(P)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 13,
+            "sibling": 0,
+            "referenced": 6,
+            "unrelated": 66
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 2,
+            "sibling": null,
+            "referenced": 12,
+            "unrelated": 1
+          },
+          "rank_1_class": "unrelated",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q005",
+          "query": "What does section 107A of the Patents Act treat as not an infringement?",
+          "cited": [
+            "section 107A"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 86
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q009",
+          "query": "What general principles apply to the working of patented inventions under section 83?",
+          "cited": [
+            "section 83"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 4,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 4,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q013",
+          "query": "What does rule 13 of the Patents Rules, 2003 require of a specification?",
+          "cited": [
+            "rule 13"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 7,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 4
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q015",
+          "query": "Rule 12 of the Patents Rules \u2014 statement and undertaking about foreign applications",
+          "cited": [
+            "rule 12"
+          ],
+          "pool_counts": {
+            "exact": 7,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 84
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 3,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q023",
+          "query": "What does section 2 of the Trade Marks Act, 1999 define as a 'trade mark'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 24,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 58
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 29,
+            "unrelated": 4
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q027",
+          "query": "Rule 23 of the Trade Marks Rules, 2017 \u2014 form and signing of an application",
+          "cited": [
+            "rule 23"
+          ],
+          "pool_counts": {
+            "exact": 9,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 77
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 12,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q039",
+          "query": "Rule 56 of the GI Rules, 2002 \u2014 authorised user",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 79
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 5
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q044",
+          "query": "What does section 2 of the Designs Act, 2000 mean by 'design'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 50
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 35,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q048",
+          "query": "Rule 24 of the Designs Rules, 2001 \u2014 restoration of designs",
+          "cited": [
+            "rule 24"
+          ],
+          "pool_counts": {
+            "exact": 8,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 71
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q057",
+          "query": "What is the statutory licence for broadcasting under section 31D of the Copyright Act?",
+          "cited": [
+            "section 31D"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 3,
+            "unrelated": 74
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 4
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q060",
+          "query": "Rule 56 of the Copyright Rules, 2013 \u2014 tariff scheme",
+          "cited": [
+            "rule 56"
+          ],
+          "pool_counts": {
+            "exact": 6,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 0,
+            "unrelated": 73
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": null,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q067",
+          "query": "How does section 2 of the Biological Diversity Act, 2002 define 'access'?",
+          "cited": [
+            "section 2"
+          ],
+          "pool_counts": {
+            "exact": 30,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 53
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 3
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q082",
+          "query": "Rule 41 of the PPV&FR Rules, 2003 \u2014 benefit sharing claim under section 26",
+          "cited": [
+            "rule 41",
+            "section 26"
+          ],
+          "pool_counts": {
+            "exact": 13,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 17,
+            "unrelated": 49
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 15
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q086",
+          "query": "What does section 33EEB of the Drugs and Cosmetics Act require before manufacturing Ayurvedic drugs?",
+          "cited": [
+            "section 33EEB"
+          ],
+          "pool_counts": {
+            "exact": 1,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 1,
+            "unrelated": 81
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 11,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q095",
+          "query": "What does TRIPS Article 27.1 require about patentable subject matter?",
+          "cited": [
+            "article 27(1)"
+          ],
+          "pool_counts": {
+            "exact": 0,
+            "parent": 3,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 78
+          },
+          "best_rank": {
+            "exact": null,
+            "parent": 1,
+            "sibling": null,
+            "referenced": 2,
+            "unrelated": 3
+          },
+          "rank_1_class": "parent",
+          "exact_present": false,
+          "exact_best_rank": null,
+          "exact_at_rank_1": false,
+          "exact_in_top_k": false,
+          "exact_outranked_by": []
+        },
+        {
+          "question_id": "Q102",
+          "query": "What are the objectives stated in Article 7 of the TRIPS Agreement?",
+          "cited": [
+            "article 7"
+          ],
+          "pool_counts": {
+            "exact": 4,
+            "parent": 0,
+            "sibling": 0,
+            "referenced": 2,
+            "unrelated": 70
+          },
+          "best_rank": {
+            "exact": 1,
+            "parent": null,
+            "sibling": null,
+            "referenced": 18,
+            "unrelated": 2
+          },
+          "rank_1_class": "exact",
+          "exact_present": true,
+          "exact_best_rank": 1,
+          "exact_at_rank_1": true,
+          "exact_in_top_k": true,
+          "exact_outranked_by": []
+        }
+      ]
+    }
+  ]
+}

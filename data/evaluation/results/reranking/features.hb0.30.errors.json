@@ -1,0 +1,167 @@
+{
+  "reranker": "features",
+  "at": 5,
+  "summary": {
+    "at": 5,
+    "questions": 111,
+    "failures": 2,
+    "types": {
+      "A": 0,
+      "B": 2,
+      "C": 0
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 2,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 0,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": []
+  },
+  "failures": [
+    {
+      "question_id": "Q079",
+      "query": "When can a compulsory licence be granted over a registered plant variety?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 3 and the reranker placed it at 6",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-vii-section-47"
+      ],
+      "expected_locators": [
+        "Section 47"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 3,
+      "rank_of_expected": 6,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-v-rule-71",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Rule 71",
+          "citable": true,
+          "dense_rank": 1,
+          "lexical_rank": 6
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-51",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 51",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": 4
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vii-section-50",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 50",
+          "citable": true,
+          "dense_rank": 4,
+          "lexical_rank": 1
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xv-section-84-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 84",
+          "citable": true,
+          "dense_rank": 12,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c13",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 \u2014 Second Schedule, item 9",
+          "citable": true,
+          "dense_rank": 5,
+          "lexical_rank": 3
+        }
+      ]
+    },
+    {
+      "question_id": "Q093",
+      "query": "How does the Drugs and Cosmetics Rules define an Inspector?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 32 and the reranker placed it at 10",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "expected_locators": [
+        "Rule 2"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 32,
+      "rank_of_expected": 10,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 0.0,
+        "candidate_recall@30": 0.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c2",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21(4)",
+          "citable": true,
+          "dense_rank": 1,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c1",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21",
+          "citable": true,
+          "dense_rank": 4,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-49",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 49",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-52",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "citable": true,
+          "dense_rank": 2,
+          "lexical_rank": 3
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33g",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33G",
+          "citable": true,
+          "dense_rank": 8,
+          "lexical_rank": null
+        }
+      ]
+    }
+  ]
+}

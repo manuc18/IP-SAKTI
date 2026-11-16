@@ -1,0 +1,532 @@
+{
+  "reranker": "cross_encoder:minilm",
+  "at": 5,
+  "summary": {
+    "at": 5,
+    "questions": 111,
+    "failures": 7,
+    "types": {
+      "A": 0,
+      "B": 6,
+      "C": 1
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 7,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 1,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": [
+      {
+        "question_id": "Q029",
+        "flags": [
+          "query_family_disagreement"
+        ]
+      }
+    ]
+  },
+  "failures": [
+    {
+      "question_id": "Q001",
+      "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+      "type": "C",
+      "type_description": "competing chunks carrying the expected locator outranked the gold",
+      "detail": "the gold chunk sat at candidate position 2 and was outranked by 1 chunk(s) carrying the same expected locator \u2014 evidence is split or duplicated, not mis-ranked on relevance alone",
+      "label_review_flags": [],
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-ii-section-3"
+      ],
+      "expected_locators": [
+        "Section 3"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 2,
+      "rank_of_expected": null,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-34",
+          "locator": "Patents Act, 1970 \u2014 Section 34",
+          "citable": true
+        }
+      ],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c2",
+          "locator": "Patents Act, 1970 \u2014 Section 64(3)",
+          "citable": true,
+          "dense_rank": 20,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-4",
+          "locator": "Patents Act, 1970 \u2014 Section 4",
+          "citable": true,
+          "dense_rank": 22,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-5",
+          "locator": "Patents Act, 1970 \u2014 Section 5",
+          "citable": true,
+          "dense_rank": 4,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xviii-section-107a",
+          "locator": "Patents Act, 1970 \u2014 Section 107A",
+          "citable": true,
+          "dense_rank": 26,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-34",
+          "locator": "Patents Act, 1970 \u2014 Section 34",
+          "citable": true,
+          "dense_rank": 17,
+          "lexical_rank": null
+        }
+      ]
+    },
+    {
+      "question_id": "Q029",
+      "query": "How does the Geographical Indications Act, 1999 define a geographical indication?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 3 and the reranker placed it at outside the top 10",
+      "label_review_flags": [
+        {
+          "flag": "query_family_disagreement",
+          "detail": "the golden dataset labels this 'identifier' but the deterministic router reads it as CONCEPTUAL; one of the two is wrong about whether the query names a provision"
+        }
+      ],
+      "query_family": "identifier",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-i-section-2"
+      ],
+      "expected_locators": [
+        "Section 2"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 3,
+      "rank_of_expected": null,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-5",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 5",
+          "citable": true,
+          "dense_rank": 8,
+          "lexical_rank": 2
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-viii-section-37",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 37",
+          "citable": true,
+          "dense_rank": 10,
+          "lexical_rank": 18
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-i-section-1",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 1",
+          "citable": true,
+          "dense_rank": 6,
+          "lexical_rank": 20
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ix-section-59",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 59",
+          "citable": true,
+          "dense_rank": 27,
+          "lexical_rank": 38
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-GI-ACT-1999::front-matter-u0",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 unlocated text (physical p. 6)",
+          "citable": false,
+          "dense_rank": 1,
+          "lexical_rank": 4
+        }
+      ]
+    },
+    {
+      "question_id": "Q031",
+      "query": "Who may apply for the registration of a geographical indication?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 1 and the reranker placed it at outside the top 10",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iii-section-11"
+      ],
+      "expected_locators": [
+        "Section 11"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 1,
+      "rank_of_expected": null,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-GI-RULES-2002::part-ii-rule-107",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 107",
+          "citable": true,
+          "dense_rank": 5,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-36",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 36",
+          "citable": true,
+          "dense_rank": 25,
+          "lexical_rank": 4
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-GI-ACT-1999::chapter-iii-section-17",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Act, 1999 \u2014 Section 17",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": 2
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-vii-rule-78",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 78",
+          "citable": true,
+          "dense_rank": 7,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-iii-rule-56",
+          "locator": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 \u2014 Rule 56",
+          "citable": true,
+          "dense_rank": 15,
+          "lexical_rank": null
+        }
+      ]
+    },
+    {
+      "question_id": "Q062",
+      "query": "What approval must a foreign company obtain before accessing Indian biological resources?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 11 and the reranker placed it at 6",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-19"
+      ],
+      "expected_locators": [
+        "Section 19"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 11,
+      "rank_of_expected": 6,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii",
+          "locator": "Biological Diversity Act, 2002 \u2014 Chapter II",
+          "citable": true,
+          "dense_rank": 1,
+          "lexical_rank": 6
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-BD-RULES-2024::rule-16-c1",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 16",
+          "citable": true,
+          "dense_rank": 11,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::rule-20",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "citable": true,
+          "dense_rank": 8,
+          "lexical_rank": 1
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-13",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 13",
+          "citable": true,
+          "dense_rank": 15,
+          "lexical_rank": 4
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::rule-18",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": 40
+        }
+      ]
+    },
+    {
+      "question_id": "Q078",
+      "query": "What rights does a breeder get on registration of a plant variety?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 1 and the reranker placed it at 6",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1",
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c2"
+      ],
+      "expected_locators": [
+        "Section 28"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 1,
+      "rank_of_expected": 6,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-vi-section-40",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 40",
+          "citable": true,
+          "dense_rank": 8,
+          "lexical_rank": 38
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iii-section-16",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 16",
+          "citable": true,
+          "dense_rank": 7,
+          "lexical_rank": 15
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-v-section-37",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 37",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": 25
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-v-section-33",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 33",
+          "citable": true,
+          "dense_rank": 22,
+          "lexical_rank": 47
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-v-section-38",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 38",
+          "citable": true,
+          "dense_rank": 10,
+          "lexical_rank": 27
+        }
+      ]
+    },
+    {
+      "question_id": "Q093",
+      "query": "How does the Drugs and Cosmetics Rules define an Inspector?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 32 and the reranker placed it at outside the top 10",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "expected_locators": [
+        "Rule 2"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 32,
+      "rank_of_expected": null,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 0.0,
+        "candidate_recall@30": 0.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-52",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "citable": true,
+          "dense_rank": 2,
+          "lexical_rank": 3
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 167",
+          "citable": true,
+          "dense_rank": 5,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-xii-rule-145a",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 145A",
+          "citable": true,
+          "dense_rank": 16,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 162",
+          "citable": true,
+          "dense_rank": 12,
+          "lexical_rank": 36
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xii-rule-139aa",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 139AA",
+          "citable": true,
+          "dense_rank": 34,
+          "lexical_rank": null
+        }
+      ]
+    },
+    {
+      "question_id": "Q107",
+      "query": "Who is the depositary of the Convention on Biological Diversity?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 9 and the reranker placed it at outside the top 10",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "UN-CBD-1992::article-41"
+      ],
+      "expected_locators": [
+        "Article 41"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 9,
+      "rank_of_expected": null,
+      "candidate_recall": {
+        "candidate_recall@10": 1.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c2",
+          "locator": "CBD \u2014 unlocated text (physical p. 4)",
+          "citable": false,
+          "dense_rank": 2,
+          "lexical_rank": 2
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c1",
+          "locator": "CBD \u2014 unlocated text (physical p. 1)",
+          "citable": false,
+          "dense_rank": 1,
+          "lexical_rank": 1
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c2",
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 3)",
+          "citable": false,
+          "dense_rank": 5,
+          "lexical_rank": 27
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::front-matter-u0",
+          "locator": "Biological Diversity Act, 2002 \u2014 unlocated text (physical p. 4)",
+          "citable": false,
+          "dense_rank": 3,
+          "lexical_rank": 19
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::rule-18",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "citable": true,
+          "dense_rank": null,
+          "lexical_rank": 36
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "experiment": "F0",
+  "reranker": "identity",
+  "reranker_config": {
+    "reranker": "identity",
+    "version": "0.1.0",
+    "scoring": "1 / candidate_order \u2014 a restatement of the incoming order, not a relevance estimate"
+  },
+  "candidate_generator_config": {
+    "candidate_generator": "union",
+    "version": "0.1.0",
+    "mode": "routed",
+    "order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "rrf_k": null,
+    "deduplication": "by chunk_id, first appearance wins",
+    "components": {
+      "dense": {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      },
+      "lexical": {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18699,
+          "mean_document_length_tokens": 207.91
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      }
+    }
+  },
+  "timestamp": "2026-08-29T20:35:21+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "none",
+  "python": "3.14.3",
+  "candidate_recall": {
+    "candidate_recall@10": 0.964,
+    "candidate_recall@20": 0.982,
+    "candidate_recall@30": 0.991,
+    "candidate_recall@50": 0.991,
+    "candidate_recall@pool": 0.991
+  },
+  "pool_size": {
+    "mean": 50.0,
+    "min": 50,
+    "max": 50
+  },
+  "overall": {
+    "recall@1": 0.7658,
+    "recall@5": 0.9279,
+    "recall@10": 0.964,
+    "mrr": 0.8426,
+    "ndcg@5": 0.8568,
+    "ndcg@10": 0.8692,
+    "document_recall@1": 0.9099,
+    "document_recall@5": 1.0,
+    "document_recall@10": 1.0
+  },
+  "conditional": {
+    "questions": 110,
+    "mrr": 0.8503,
+    "recall@1": 0.7727,
+    "recall@5": 0.9364
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.7312,
+      "recall@5": 0.914,
+      "recall@10": 0.957,
+      "mrr": 0.8175,
+      "ndcg@5": 0.8331,
+      "ndcg@10": 0.8478,
+      "candidate_recall@10": 0.957,
+      "candidate_recall@20": 0.9785,
+      "candidate_recall@30": 0.9892,
+      "candidate_recall@50": 0.9892,
+      "candidate_recall@pool": 0.9892,
+      "questions": 93,
+      "conditional": {
+        "questions": 92,
+        "mrr": 0.8264,
+        "recall@1": 0.7391,
+        "recall@5": 0.9239
+      }
+    },
+    "identifier": {
+      "recall@1": 0.9444,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.9722,
+      "ndcg@5": 0.9795,
+      "ndcg@10": 0.9795,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 18,
+      "conditional": {
+        "questions": 18,
+        "mrr": 0.9722,
+        "recall@1": 0.9444,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "by_router_family": {
+    "CONCEPTUAL": {
+      "recall@1": 0.7432,
+      "recall@5": 0.9324,
+      "recall@10": 0.9595,
+      "mrr": 0.8311,
+      "ndcg@5": 0.8484,
+      "ndcg@10": 0.8581,
+      "candidate_recall@10": 0.9595,
+      "candidate_recall@20": 0.9865,
+      "candidate_recall@30": 0.9865,
+      "candidate_recall@50": 0.9865,
+      "candidate_recall@pool": 0.9865,
+      "questions": 74,
+      "conditional": {
+        "questions": 73,
+        "mrr": 0.8425,
+        "recall@1": 0.7534,
+        "recall@5": 0.9452
+      }
+    },
+    "GENERAL": {
+      "recall@1": 0.65,
+      "recall@5": 0.85,
+      "recall@10": 0.95,
+      "mrr": 0.7514,
+      "ndcg@5": 0.7662,
+      "ndcg@10": 0.799,
+      "candidate_recall@10": 0.95,
+      "candidate_recall@20": 0.95,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 20,
+      "conditional": {
+        "questions": 20,
+        "mrr": 0.7514,
+        "recall@1": 0.65,
+        "recall@5": 0.85
+      }
+    },
+    "IDENTIFIER": {
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 17,
+      "conditional": {
+        "questions": 17,
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "latency": {
+    "candidate_generation": {
+      "median_ms": 128.88,
+      "mean_ms": 1170.25,
+      "p95_ms": 2359.59,
+      "n": 111
+    },
+    "reranking": {
+      "median_ms": 0.01,
+      "mean_ms": 0.22,
+      "p95_ms": 0.32,
+      "n": 111
+    },
+    "total_pipeline": {
+      "median_ms": 128.89,
+      "mean_ms": 1170.47,
+      "p95_ms": 2359.6,
+      "n": 111
+    },
+    "measurement_note": "one process, fresh retriever and model instances, warmed with a throwaway query before the loop; each benchmark question is seen once, so no dense query-embedding cache hit is timed. Candidate pools are shared across rerankers in a run, so candidate latency is measured once and repeated in each summary."
+  },
+  "leakage_audit": {
+    "questions_audited": 111,
+    "clean": true,
+    "failing_questions": [],
+    "findings": [],
+    "checks": [
+      "chunk_id never rendered",
+      "forbidden metadata never rendered",
+      "no label outside Document/Locator/Heading/Text",
+      "expected chunk ids absent from query and candidates",
+      "expected document ids absent from query and candidates",
+      "golden `notes` absent from query and candidates"
+    ]
+  },
+  "cli": {
+    "candidate_mode": "routed",
+    "candidate_order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "normalization": "rank_percentile",
+    "cross_encoder": "bge-m3",
+    "batch_size": 16,
+    "max_length": 512,
+    "authority_lambda": 0.05,
+    "text_budget": null
+  },
+  "failure_analysis": {
+    "at": 5,
+    "questions": 111,
+    "failures": 8,
+    "types": {
+      "A": 1,
+      "B": 7,
+      "C": 0
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 1,
+    "reranking_failures": 7,
+    "candidate_generation_share": 0.125,
+    "reranking_share": 0.875,
+    "type_D_flagged": 0,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": []
+  }
+}

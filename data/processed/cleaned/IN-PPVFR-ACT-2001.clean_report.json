@@ -1,0 +1,21 @@
+{
+  "document_id": "IN-PPVFR-ACT-2001",
+  "pages": 50,
+  "boilerplate_patterns": [
+    "THE GAZETTE OF INDIA EXTRAORDINARY #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 49,
+    "empty": 1
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 49,
+    "UNKNOWN": 1
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 123280,
+  "characters_cleaned": 121260
+}

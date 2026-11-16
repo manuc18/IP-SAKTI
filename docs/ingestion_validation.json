@@ -1,0 +1,1598 @@
+{
+  "status": "PASS",
+  "documents": 22,
+  "totals": {
+    "pages": 1782,
+    "pages_ocr": 217,
+    "chunks": 3073,
+    "rejected": 756,
+    "units": 3418,
+    "missing_locator": 57,
+    "with_tables": 5,
+    "with_amendment_notes": 1039,
+    "from_ocr": 162,
+    "hindi_lines_excluded": 4847
+  },
+  "duplicate_groups": 2,
+  "duplicate_chunks": 4,
+  "duplicate_examples": [
+    [
+      "IN-DC-RULES-1945::part-xv-a-schedule-form-25a-item-1",
+      "IN-DC-RULES-1945::part-xv-a-schedule-form-28a-item-1"
+    ],
+    [
+      "IN-DC-RULES-1945::part-xv-a-schedule-form-25a-item-3",
+      "IN-DC-RULES-1945::part-xv-a-schedule-form-28-item-3"
+    ]
+  ],
+  "boilerplate_residue_chunks": 188,
+  "locator_downgrades": {
+    "IN-DC-RULES-1945": 4,
+    "IN-FSSAI-AYURVEDA-AAHARA-2022": 11,
+    "IN-PATENTS-RULES-2003": 88
+  },
+  "ocr_confidence": {
+    "IN-FSSAI-AYURVEDA-AAHARA-2022": {
+      "pages": 170,
+      "lang": "eng+hin",
+      "mean_confidence": 89.6,
+      "pages_with_no_recognised_text": 42
+    },
+    "IN-PATENTS-RULES-2003": {
+      "pages": 47,
+      "lang": "eng",
+      "mean_confidence": 81.94,
+      "pages_with_no_recognised_text": 0
+    }
+  },
+  "fatal": [],
+  "advisory": [
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-i-section-2-2",
+      "detail": "#. Ins. by Act # of #, s. # (w.e.f. #-#-#)."
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-i-section-4",
+      "detail": "#. Ins. by Act # of #, s. # (w.e.f. #-#-#)."
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iii-section-12",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-18",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-19",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-23",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-25",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-26",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-31",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-32",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33a",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33b",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33l",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33m",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-ACT-1940",
+      "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33n",
+      "detail": "#"
+    },
+    {
+      "check": "toc_contamination",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-vii-rule-73b",
+      "detail": "reads as a contents listing"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xii-rule-127",
+      "detail": "#"
+    },
+    {
+      "check": "toc_contamination",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xii-rule-141",
+      "detail": "reads as a contents listing"
+    },
+    {
+      "check": "toc_contamination",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xii-rule-145d",
+      "detail": "reads as a contents listing"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-rule-158-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-rule-158-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-40-c5",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-40-c6",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-d-schedule-annexure-c-item-10-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-f-schedule-item-7-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-f-schedule-item-23-c15",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-xv-f-schedule-item-23-c16",
+      "detail": "#"
+    },
+    {
+      "check": "toc_contamination",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-iv-k-schedule-item-36",
+      "detail": "reads as a contents listing"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-c32",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-c36",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-68",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-73",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-85-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-85-c4",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-85-c5",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-85-c11",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-annexure-vi-item-2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-annexure-vi-item-11",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-annexure-vi-item-18",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-c3-3",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-DC-RULES-1945",
+      "chunk_id": "IN-DC-RULES-1945::part-ii-c14-2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-BD-RULES-2024",
+      "chunk_id": "IN-BD-RULES-2024::first-schedule-form-12-item-4",
+      "detail": "IndiaCode"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-1",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-2",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-3",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-4",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-5",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-6",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-7",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-8",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-9",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-10",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-11",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-12",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-13",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-14",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-15",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-16",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-17",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-18",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-19",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-20",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-21",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-22",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-23",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-24",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-25",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-26",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-27",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-28",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-29",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-30",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-31",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-32",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-33",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-34",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-35",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-36",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-37",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-38",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-39",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-40",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-41",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "UN-CBD-1992",
+      "chunk_id": "UN-CBD-1992::article-42",
+      "detail": "Article"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::front-matter-u0",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c1",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c2",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c3",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c4",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c5",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c6",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c7",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c8",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c9",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c11",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c12",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c13",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c14",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c2",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c3",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c4",
+      "detail": "Special precautions"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u12",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-GI-RULES-2002",
+      "chunk_id": "IN-GI-RULES-2002::part-ii-first-schedule-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-GI-RULES-2002",
+      "chunk_id": "IN-GI-RULES-2002::part-ii-first-schedule-c3",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::front-matter-u0-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::front-matter-u0-c3",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-1-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-2-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-2-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-4-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-4-c2",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-5-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-6-c1",
+      "detail": "#"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "chunk_id": "IN-NATIONAL-IPR-POLICY-2016::paragraph-7",
+      "detail": "Government of India"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-1",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-2",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-3",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-4",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-5",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-6",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-7",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-i-article-8",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-9",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-10",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-11",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-12",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-13",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-1-article-14",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-15",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-16",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-17",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-18",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-19",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-20",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-2-article-21",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-3-article-22",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-3-article-23",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-3-article-24",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-4-article-25",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-4-article-26",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-27",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-28",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-29",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-30",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-31",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-32",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-33",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-5-article-34",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-6-article-35",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-6-article-36",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-6-article-37",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-6-article-38",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-7-article-39",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-ii-section-8-article-40",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-1-article-41",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-42",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-43",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-44",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-45",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-46",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-47",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-48",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-2-article-49",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-3-article-50",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-51",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-52",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-53",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-54",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-55",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-56",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-57",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-58",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-59",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-4-article-60",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iii-section-5-article-61",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-iv-article-62",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-v-article-63",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-v-article-64",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vi-article-65",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vi-article-66",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vi-article-67",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-68",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-69",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-70",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-71",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-72",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "WTO-TRIPS",
+      "chunk_id": "WTO-TRIPS::part-vii-article-73",
+      "detail": "Article #"
+    },
+    {
+      "check": "boilerplate_residue",
+      "document_id": "IN-PATENTS-RULES-2003",
+      "chunk_id": "IN-PATENTS-RULES-2003::chapter-xvi-rule-139-c1",
+      "detail": "Page # of #"
+    }
+  ],
+  "per_document": {
+    "IN-DC-ACT-1940": {
+      "pages": 38,
+      "pages_native": 38,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 2,
+        "table_of_contents": 3
+      },
+      "units": 92,
+      "chunks": 94,
+      "rejected": 3,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 91,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-DC-RULES-1945": {
+      "pages": 597,
+      "pages_native": 597,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 1198,
+      "chunks": 920,
+      "rejected": 558,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 1,
+      "chunks_with_amendment_notes": 395,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-BD-RULES-2024": {
+      "pages": 86,
+      "pages_native": 86,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "hindi_only": 38,
+        "thin_residue": 8
+      },
+      "units": 48,
+      "chunks": 61,
+      "rejected": 1,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 1647,
+      "hindi_pages_excluded": 38,
+      "fatal_findings": 0
+    },
+    "UN-CBD-1992": {
+      "pages": 36,
+      "pages_native": 36,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "empty": 2
+      },
+      "units": 68,
+      "chunks": 69,
+      "rejected": 1,
+      "chunks_missing_locator": 3,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-COPYRIGHT-RULES-2013": {
+      "pages": 77,
+      "pages_native": 77,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "empty": 1
+      },
+      "units": 143,
+      "chunks": 133,
+      "rejected": 20,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 1,
+      "chunks_with_amendment_notes": 8,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-DESIGNS-RULES-2001": {
+      "pages": 31,
+      "pages_native": 31,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 89,
+      "chunks": 94,
+      "rejected": 0,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 3,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-DESIGNS-ACT-2000": {
+      "pages": 18,
+      "pages_native": 18,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 2,
+        "table_of_contents": 2
+      },
+      "units": 59,
+      "chunks": 50,
+      "rejected": 11,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 8,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-FSSAI-AYURVEDA-AAHARA-2022": {
+      "pages": 172,
+      "pages_native": 2,
+      "pages_ocr": 170,
+      "pages_excluded": {
+        "empty": 42
+      },
+      "units": 13,
+      "chunks": 29,
+      "rejected": 0,
+      "chunks_missing_locator": 28,
+      "chunks_with_tables": 3,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 29,
+      "hindi_lines_excluded": 381,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-ABS-REGULATIONS-2025": {
+      "pages": 28,
+      "pages_native": 28,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "thin_residue": 3,
+        "hindi_only": 9
+      },
+      "units": 23,
+      "chunks": 25,
+      "rejected": 1,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 549,
+      "hindi_pages_excluded": 9,
+      "fatal_findings": 0
+    },
+    "IN-GI-RULES-2002": {
+      "pages": 71,
+      "pages_native": 71,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 139,
+      "chunks": 142,
+      "rejected": 8,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-PATENTS-ACT-1970": {
+      "pages": 72,
+      "pages_native": 72,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 2,
+        "table_of_contents": 6
+      },
+      "units": 225,
+      "chunks": 197,
+      "rejected": 31,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 176,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-NATIONAL-IPR-POLICY-2016": {
+      "pages": 36,
+      "pages_native": 36,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 10,
+        "table_of_contents": 1,
+        "empty": 1
+      },
+      "units": 9,
+      "chunks": 19,
+      "rejected": 0,
+      "chunks_missing_locator": 4,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-BDA-2002-AMD-2023": {
+      "pages": 25,
+      "pages_native": 25,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "table_of_contents": 3
+      },
+      "units": 86,
+      "chunks": 77,
+      "rejected": 10,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 77,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-COPYRIGHT-ACT-1957": {
+      "pages": 57,
+      "pages_native": 57,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 119,
+      "chunks": 114,
+      "rejected": 13,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 113,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "WTO-TRIPS": {
+      "pages": 31,
+      "pages_native": 31,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 94,
+      "chunks": 74,
+      "rejected": 20,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-GI-ACT-1999": {
+      "pages": 31,
+      "pages_native": 31,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 2,
+        "table_of_contents": 3
+      },
+      "units": 99,
+      "chunks": 91,
+      "rejected": 9,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 60,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-PATENTS-RULES-2003": {
+      "pages": 102,
+      "pages_native": 55,
+      "pages_ocr": 47,
+      "pages_excluded": {
+        "front_matter": 1,
+        "table_of_contents": 1
+      },
+      "units": 302,
+      "chunks": 279,
+      "rejected": 25,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 4,
+      "chunks_from_ocr": 133,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-TM-ACT-1999": {
+      "pages": 56,
+      "pages_native": 56,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "front_matter": 2,
+        "table_of_contents": 5
+      },
+      "units": 185,
+      "chunks": 179,
+      "rejected": 12,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 101,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-TM-RULES-2017": {
+      "pages": 97,
+      "pages_native": 97,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "hindi_only": 44,
+        "thin_residue": 3
+      },
+      "units": 186,
+      "chunks": 180,
+      "rejected": 15,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 2270,
+      "hindi_pages_excluded": 44,
+      "fatal_findings": 0
+    },
+    "UN-NAGOYA-PROTOCOL-2010": {
+      "pages": 15,
+      "pages_native": 15,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 38,
+      "chunks": 41,
+      "rejected": 0,
+      "chunks_missing_locator": 4,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-PPVFR-ACT-2001": {
+      "pages": 50,
+      "pages_native": 50,
+      "pages_ocr": 0,
+      "pages_excluded": {
+        "empty": 1
+      },
+      "units": 109,
+      "chunks": 102,
+      "rejected": 11,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 0,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    },
+    "IN-PPVFR-RULES-2003": {
+      "pages": 56,
+      "pages_native": 56,
+      "pages_ocr": 0,
+      "pages_excluded": {},
+      "units": 94,
+      "chunks": 103,
+      "rejected": 7,
+      "chunks_missing_locator": 1,
+      "chunks_with_tables": 0,
+      "chunks_with_amendment_notes": 3,
+      "chunks_from_ocr": 0,
+      "hindi_lines_excluded": 0,
+      "hindi_pages_excluded": 0,
+      "fatal_findings": 0
+    }
+  }
+}

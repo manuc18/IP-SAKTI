@@ -1,0 +1,1071 @@
+{
+  "retriever": "routed",
+  "at": 5,
+  "failures": 8,
+  "questions": 111,
+  "categories": [
+    "corpus evidence is missing",
+    "identifier parser failed",
+    "identifier metadata is wrong",
+    "router chose wrong family",
+    "chunking failed",
+    "corpus is stale",
+    "dense retrieval failed",
+    "BM25 failed",
+    "unclassified"
+  ],
+  "by_category": {
+    "dense retrieval failed": 5,
+    "router chose wrong family": 3
+  },
+  "cases": [
+    {
+      "question_id": "Q002",
+      "query": "Is the mere discovery of a new form of a known substance patentable in India?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-PATENTS-ACT-1970"
+      ],
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-ii-section-3"
+      ],
+      "expected_locators": [
+        "Section 3"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (patents); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [],
+        "matched_regimes": [
+          "patents"
+        ]
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Patents Act, 1970 \u2014 Section 46",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 2,
+          "locator": "Patents Act, 1970 \u2014 Section 7",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 3,
+          "locator": "Patents Act, 1970 \u2014 Section 120",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 4,
+          "locator": "Patents Act, 1970 \u2014 Section 64",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 5,
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 15",
+          "document_id": "IN-PPVFR-ACT-2001"
+        }
+      ],
+      "category": "router chose wrong family",
+      "evidence": "routed to dense via 'conceptual_dense' and missed; bm25_boost ranks the expected chunk 1",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-46",
+          "locator": "Patents Act, 1970 \u2014 Section 46",
+          "score": 0.62855,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-iii-section-7",
+          "locator": "Patents Act, 1970 \u2014 Section 7",
+          "score": 0.621685,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xx-section-120",
+          "locator": "Patents Act, 1970 \u2014 Section 120",
+          "score": 0.616514,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xii-section-64-c1",
+          "locator": "Patents Act, 1970 \u2014 Section 64",
+          "score": 0.615087,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iii-section-15",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 15",
+          "score": 0.614991,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-10",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 10",
+          "score": 0.614123,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-vi-section-29",
+          "locator": "Patents Act, 1970 \u2014 Section 29",
+          "score": 0.612806,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-49",
+          "locator": "Patents Act, 1970 \u2014 Section 49",
+          "score": 0.600795,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xviii-section-107a",
+          "locator": "Patents Act, 1970 \u2014 Section 107A",
+          "score": 0.599994,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-xxiii-section-157a",
+          "locator": "Patents Act, 1970 \u2014 Section 157A",
+          "score": 0.597728,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q062",
+      "query": "What approval must a foreign company obtain before accessing Indian biological resources?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-BDA-2002-AMD-2023"
+      ],
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-19"
+      ],
+      "expected_locators": [
+        "Section 19"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (biodiversity_abs); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [],
+        "matched_regimes": [
+          "biodiversity_abs"
+        ]
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Biological Diversity Act, 2002 \u2014 Chapter II",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 2,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 7",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 3,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 4,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 4",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 5,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 6",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        }
+      ],
+      "category": "dense retrieval failed",
+      "evidence": "dense missed at 5 and bm25_boost also missed",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii",
+          "locator": "Biological Diversity Act, 2002 \u2014 Chapter II",
+          "score": 0.653053,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-7",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 7",
+          "score": 0.642664,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::rule-18",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 18",
+          "score": 0.622539,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-4",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 4",
+          "score": 0.62057,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-6",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 6",
+          "score": 0.618461,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-v-section-19",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 19",
+          "score": 0.61352,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-5",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 5",
+          "score": 0.609901,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-BD-RULES-2024::rule-20",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "score": 0.603177,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c3",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 0.602736,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c10",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "score": 0.601321,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q066",
+      "query": "What penalty follows a contravention of the Biological Diversity Act?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-BDA-2002-AMD-2023"
+      ],
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-xii-section-55"
+      ],
+      "expected_locators": [
+        "Section 55"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (biodiversity_abs); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [
+          "IN-BDA-2002-AMD-2023"
+        ],
+        "matched_regimes": [
+          "biodiversity_abs"
+        ]
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 56",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 2,
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 2",
+          "document_id": "IN-ABS-REGULATIONS-2025"
+        },
+        {
+          "rank": 3,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 25",
+          "document_id": "IN-BD-RULES-2024"
+        },
+        {
+          "rank": 4,
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 1",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 5,
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 26",
+          "document_id": "IN-BD-RULES-2024"
+        }
+      ],
+      "category": "router chose wrong family",
+      "evidence": "routed to dense via 'conceptual_dense' and missed; bm25_boost ranks the expected chunk 3",
+      "flags": [],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-56",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 56",
+          "score": 0.64302,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-2",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 2",
+          "score": 0.572305,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::rule-25",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 25",
+          "score": 0.558008,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-1",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 1",
+          "score": 0.553812,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-BD-RULES-2024::rule-26",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 26",
+          "score": 0.553455,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-BDA-2002-AMD-2023::front-matter-u0",
+          "locator": "Biological Diversity Act, 2002 \u2014 unlocated text (physical p. 4)",
+          "score": 0.550394,
+          "citable": false
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-BD-RULES-2024::rule-2",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 2",
+          "score": 0.548613,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-xii-section-58",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 58",
+          "score": 0.544724,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-x-section-72",
+          "locator": "Protection of Plant Varieties and Farmers' Rights Act, 2001 \u2014 Section 72",
+          "score": 0.542864,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-v-section-21",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 21",
+          "score": 0.539959,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q093",
+      "query": "How does the Drugs and Cosmetics Rules define an Inspector?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-DC-RULES-1945"
+      ],
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "expected_locators": [
+        "Rule 2"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (IN-DC-RULES-1945); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [
+          "IN-DC-RULES-1945"
+        ],
+        "matched_regimes": []
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21(4)",
+          "document_id": "IN-DC-ACT-1940"
+        },
+        {
+          "rank": 2,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 3,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 49",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 4,
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21",
+          "document_id": "IN-DC-ACT-1940"
+        },
+        {
+          "rank": 5,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 167",
+          "document_id": "IN-DC-RULES-1945"
+        }
+      ],
+      "category": "dense retrieval failed",
+      "evidence": "dense missed at 5 and bm25_boost also missed",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c2",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21(4)",
+          "score": 0.679989,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-52",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "score": 0.663054,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-49",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 49",
+          "score": 0.662404,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c1",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21",
+          "score": 0.652522,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 167",
+          "score": 0.621375,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-51",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 51",
+          "score": 0.62128,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-23",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 23",
+          "score": 0.619293,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33g",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33G",
+          "score": 0.614098,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-7",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 7",
+          "score": 0.612234,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33-c2",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 33(2)",
+          "score": 0.602678,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q094",
+      "query": "How is a licence to manufacture homoeopathic medicines applied for?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-DC-RULES-1945"
+      ],
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-vii-rule-85b"
+      ],
+      "expected_locators": [
+        "Rule 85B"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": "general_dense",
+      "routing": {
+        "query_type": "GENERAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "the query names neither a provision nor a regime this lexicon recognises, so retrieval has to discover the body of law itself",
+        "matched_documents": [],
+        "matched_regimes": []
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85D",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 2,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85E",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 3,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 19B, item 1",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 4,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85C",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 5,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85A",
+          "document_id": "IN-DC-RULES-1945"
+        }
+      ],
+      "category": "router chose wrong family",
+      "evidence": "routed to dense via 'general_dense' and missed; bm25_boost ranks the expected chunk 2",
+      "flags": [
+        "expected evidence comes from a stale source"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85d",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85D",
+          "score": 0.773807,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85e",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85E",
+          "score": 0.713524,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-19b-item-1",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 19B, item 1",
+          "score": 0.706559,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85c",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85C",
+          "score": 0.70189,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85a",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85A",
+          "score": 0.70116,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85b",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85B",
+          "score": 0.694185,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-DC-RULES-1945::part-vi-rule-67f",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 67F",
+          "score": 0.692936,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-DC-RULES-1945::part-vii-rule-85h",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 85H",
+          "score": 0.68955,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-25a-item-5-c1",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 25A, item 5",
+          "score": 0.665426,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-26c",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 26C",
+          "score": 0.661565,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q098",
+      "query": "What is the minimum term of patent protection under the TRIPS Agreement?",
+      "retriever": "routed",
+      "expected_documents": [
+        "WTO-TRIPS"
+      ],
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-33"
+      ],
+      "expected_locators": [
+        "Article 33"
+      ],
+      "rank_of_expected": null,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (international_ip, patents); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [
+          "WTO-TRIPS"
+        ],
+        "matched_regimes": [
+          "international_ip",
+          "patents"
+        ]
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "TRIPS \u2014 unlocated text (physical p. 1)",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 2,
+          "locator": "TRIPS \u2014 Article 66",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 3,
+          "locator": "Patents Act, 1970 \u2014 Section 53",
+          "document_id": "IN-PATENTS-ACT-1970"
+        },
+        {
+          "rank": 4,
+          "locator": "TRIPS \u2014 Article 3",
+          "document_id": "WTO-TRIPS"
+        },
+        {
+          "rank": 5,
+          "locator": "TRIPS \u2014 Section 6",
+          "document_id": "WTO-TRIPS"
+        }
+      ],
+      "category": "dense retrieval failed",
+      "evidence": "dense missed at 5 and bm25_boost also missed",
+      "flags": [
+        "expected evidence comes from a stale source",
+        "a non-citable chunk appears in the evaluated window",
+        "rank 1 is not citable"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "WTO-TRIPS::preamble-u0",
+          "locator": "TRIPS \u2014 unlocated text (physical p. 1)",
+          "score": 0.605602,
+          "citable": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "WTO-TRIPS::part-vi-article-66",
+          "locator": "TRIPS \u2014 Article 66",
+          "score": 0.605299,
+          "citable": true
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-53",
+          "locator": "Patents Act, 1970 \u2014 Section 53",
+          "score": 0.573816,
+          "citable": true
+        },
+        {
+          "rank": 4,
+          "chunk_id": "WTO-TRIPS::part-i-article-3",
+          "locator": "TRIPS \u2014 Article 3",
+          "score": 0.556178,
+          "citable": true
+        },
+        {
+          "rank": 5,
+          "chunk_id": "WTO-TRIPS::part-ii-section-6-article-38",
+          "locator": "TRIPS \u2014 Section 6",
+          "score": 0.554563,
+          "citable": true
+        },
+        {
+          "rank": 6,
+          "chunk_id": "WTO-TRIPS::part-ii-section-2-article-18",
+          "locator": "TRIPS \u2014 Section 2",
+          "score": 0.549381,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ix-section-55",
+          "locator": "Patents Act, 1970 \u2014 Section 55",
+          "score": 0.538684,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "WTO-TRIPS::part-i-article-4",
+          "locator": "TRIPS \u2014 Article 4",
+          "score": 0.536184,
+          "citable": true
+        },
+        {
+          "rank": 9,
+          "chunk_id": "WTO-TRIPS::part-i-article-1",
+          "locator": "TRIPS \u2014 Article 1",
+          "score": 0.53396,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "WTO-TRIPS::part-ii-section-4-article-26",
+          "locator": "TRIPS \u2014 Section 4",
+          "score": 0.530516,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q107",
+      "query": "Who is the depositary of the Convention on Biological Diversity?",
+      "retriever": "routed",
+      "expected_documents": [
+        "UN-CBD-1992"
+      ],
+      "expected_chunks": [
+        "UN-CBD-1992::article-41"
+      ],
+      "expected_locators": [
+        "Article 41"
+      ],
+      "rank_of_expected": 6,
+      "retrieval_path": "conceptual_dense",
+      "routing": {
+        "query_type": "CONCEPTUAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "no provision named, but the query states its subject (biodiversity_abs); the answer is a passage about that regime, which is a semantic-similarity problem",
+        "matched_documents": [
+          "UN-CBD-1992"
+        ],
+        "matched_regimes": [
+          "biodiversity_abs"
+        ]
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "CBD \u2014 unlocated text (physical p. 1)",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 2,
+          "locator": "CBD \u2014 unlocated text (physical p. 4)",
+          "document_id": "UN-CBD-1992"
+        },
+        {
+          "rank": 3,
+          "locator": "Biological Diversity Act, 2002 \u2014 unlocated text (physical p. 4)",
+          "document_id": "IN-BDA-2002-AMD-2023"
+        },
+        {
+          "rank": 4,
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 1)",
+          "document_id": "UN-NAGOYA-PROTOCOL-2010"
+        },
+        {
+          "rank": 5,
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 3)",
+          "document_id": "UN-NAGOYA-PROTOCOL-2010"
+        }
+      ],
+      "category": "dense retrieval failed",
+      "evidence": "dense missed at 5 and bm25_boost ranked it 7",
+      "flags": [
+        "a non-citable chunk appears in the evaluated window",
+        "rank 1 is not citable"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c1",
+          "locator": "CBD \u2014 unlocated text (physical p. 1)",
+          "score": 0.570117,
+          "citable": false
+        },
+        {
+          "rank": 2,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c2",
+          "locator": "CBD \u2014 unlocated text (physical p. 4)",
+          "score": 0.560261,
+          "citable": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-BDA-2002-AMD-2023::front-matter-u0",
+          "locator": "Biological Diversity Act, 2002 \u2014 unlocated text (physical p. 4)",
+          "score": 0.553405,
+          "citable": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 1)",
+          "score": 0.533522,
+          "citable": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c2",
+          "locator": "Nagoya Protocol \u2014 unlocated text (physical p. 3)",
+          "score": 0.528366,
+          "citable": false
+        },
+        {
+          "rank": 6,
+          "chunk_id": "UN-CBD-1992::article-41",
+          "locator": "CBD \u2014 Article 41",
+          "score": 0.507502,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "UN-CBD-1992::article-2",
+          "locator": "CBD \u2014 Article 2",
+          "score": 0.48542,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "UN-CBD-1992::preamble-u0-c3",
+          "locator": "CBD \u2014 unlocated text (physical p. 7)",
+          "score": 0.482785,
+          "citable": false
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-ABS-REGULATIONS-2025::regulation-8-c3",
+          "locator": "Access and Benefit Sharing Regulations, 2025 \u2014 Regulation 8",
+          "score": 0.479199,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+          "locator": "Nagoya Protocol \u2014 Article 32",
+          "score": 0.474825,
+          "citable": true
+        }
+      ]
+    },
+    {
+      "question_id": "Q109",
+      "query": "In an Ayurveda Aahara recipe, what quantity is meant by Q.S.?",
+      "retriever": "routed",
+      "expected_documents": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022"
+      ],
+      "expected_chunks": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022::regulation-1"
+      ],
+      "expected_locators": [
+        "Regulation 1"
+      ],
+      "rank_of_expected": 9,
+      "retrieval_path": "general_dense",
+      "routing": {
+        "query_type": "GENERAL",
+        "confidence": "deterministic",
+        "matched_identifiers": [],
+        "reason": "the query names neither a provision nor a regime this lexicon recognises, so retrieval has to discover the body of law itself",
+        "matched_documents": [],
+        "matched_regimes": []
+      },
+      "document_mismatch": false,
+      "locator_mismatch": [
+        {
+          "rank": 1,
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 161",
+          "document_id": "IN-DC-RULES-1945"
+        },
+        {
+          "rank": 2,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 1)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 3,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 148)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 4,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 37)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        },
+        {
+          "rank": 5,
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 98)",
+          "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022"
+        }
+      ],
+      "category": "dense retrieval failed",
+      "evidence": "dense missed at 5 and bm25_boost ranked it 9",
+      "flags": [
+        "a non-citable chunk appears in the evaluated window"
+      ],
+      "top_10": [
+        {
+          "rank": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-161",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 161",
+          "score": 0.579686,
+          "citable": true
+        },
+        {
+          "rank": 2,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::front-matter-u0",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 1)",
+          "score": 0.556088,
+          "citable": false
+        },
+        {
+          "rank": 3,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c1",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 148)",
+          "score": 0.553037,
+          "citable": false
+        },
+        {
+          "rank": 4,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c4",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 37)",
+          "score": 0.550974,
+          "citable": false
+        },
+        {
+          "rank": 5,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c9",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 98)",
+          "score": 0.547981,
+          "citable": false
+        },
+        {
+          "rank": 6,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-169",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 169",
+          "score": 0.53413,
+          "citable": true
+        },
+        {
+          "rank": 7,
+          "chunk_id": "IN-DC-RULES-1945::part-ii-c8-2",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Part II",
+          "score": 0.527878,
+          "citable": true
+        },
+        {
+          "rank": 8,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u9-c3",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 30)",
+          "score": 0.527635,
+          "citable": false
+        },
+        {
+          "rank": 9,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::regulation-1",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 Regulation 1",
+          "score": 0.526762,
+          "citable": true
+        },
+        {
+          "rank": 10,
+          "chunk_id": "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u10-c2",
+          "locator": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022 \u2014 unlocated text (physical p. 159)",
+          "score": 0.526704,
+          "citable": false
+        }
+      ]
+    }
+  ]
+}

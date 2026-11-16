@@ -1,0 +1,143 @@
+{
+  "document_id": "WTO-TRIPS",
+  "chunking_version": "0.2.0",
+  "units": 94,
+  "chunks": 74,
+  "rejected": 20,
+  "rejected_by_reason": {
+    "structural heading with no body text": 20
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 73,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 86029,
+  "mean_chunk_characters": 1162.6,
+  "max_chunk_characters": 4508,
+  "rejected_chunks": [
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 49
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 10,
+      "reason": "structural heading with no body text",
+      "character_count": 96
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 11,
+      "reason": "structural heading with no body text",
+      "character_count": 39
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 18,
+      "reason": "structural heading with no body text",
+      "character_count": 21
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 26,
+      "reason": "structural heading with no body text",
+      "character_count": 35
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 30,
+      "reason": "structural heading with no body text",
+      "character_count": 29
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 33,
+      "reason": "structural heading with no body text",
+      "character_count": 18
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 42,
+      "reason": "structural heading with no body text",
+      "character_count": 63
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 47,
+      "reason": "structural heading with no body text",
+      "character_count": 48
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 49,
+      "reason": "structural heading with no body text",
+      "character_count": 74
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 51,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 52,
+      "reason": "structural heading with no body text",
+      "character_count": 30
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 54,
+      "reason": "structural heading with no body text",
+      "character_count": 59
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 63,
+      "reason": "structural heading with no body text",
+      "character_count": 31
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 65,
+      "reason": "structural heading with no body text",
+      "character_count": 60
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 76,
+      "reason": "structural heading with no body text",
+      "character_count": 30
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 78,
+      "reason": "structural heading with no body text",
+      "character_count": 109
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 80,
+      "reason": "structural heading with no body text",
+      "character_count": 43
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 83,
+      "reason": "structural heading with no body text",
+      "character_count": 36
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "unit_order": 87,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    }
+  ]
+}

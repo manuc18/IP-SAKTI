@@ -1,0 +1,24 @@
+{
+  "document_id": "IN-TM-RULES-2017",
+  "pages": 97,
+  "boilerplate_patterns": [
+    "# THE GAZETTE OF INDIA : EXTRAORDINARY [P ART II—S EC . #(i)]",
+    "IndiaCode",
+    "¹Hkkx II µ[k.M #(i) º Hkkjr dk jkti=k % vlk/kj.k #"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 50,
+    "hindi_only": 44,
+    "thin_residue": 3
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 53,
+    "HI_CORRUPT": 44
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 2270,
+  "pages_with_tables": 0,
+  "characters_raw": 344078,
+  "characters_cleaned": 179936
+}

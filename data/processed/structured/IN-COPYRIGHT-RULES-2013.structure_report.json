@@ -1,0 +1,20 @@
+{
+  "document_id": "IN-COPYRIGHT-RULES-2013",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 76,
+  "pages_excluded": {
+    "empty": 1
+  },
+  "units": 143,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 18,
+    "provision": 104,
+    "schedule": 1,
+    "schedule_item": 19
+  },
+  "units_with_locator": 142,
+  "units_locator_downgraded": 0,
+  "characters": 152357
+}

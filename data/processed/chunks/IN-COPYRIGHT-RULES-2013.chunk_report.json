@@ -1,0 +1,144 @@
+{
+  "document_id": "IN-COPYRIGHT-RULES-2013",
+  "chunking_version": "0.2.0",
+  "units": 143,
+  "chunks": 133,
+  "rejected": 20,
+  "rejected_by_reason": {
+    "structural heading with no body text": 18,
+    "below the minimum retrievable length": 2
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 132,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "VERIFIED_OFFICIAL",
+  "chunks_with_tables": 1,
+  "chunks_with_amendment_notes": 8,
+  "chunks_from_ocr": 0,
+  "characters": 151324,
+  "mean_chunk_characters": 1137.8,
+  "max_chunk_characters": 4971,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 4,
+      "reason": "structural heading with no body text",
+      "character_count": 31
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 6,
+      "reason": "structural heading with no body text",
+      "character_count": 40
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 9,
+      "reason": "structural heading with no body text",
+      "character_count": 61
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 15,
+      "reason": "structural heading with no body text",
+      "character_count": 102
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 22,
+      "reason": "structural heading with no body text",
+      "character_count": 54
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 29,
+      "reason": "structural heading with no body text",
+      "character_count": 49
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 36,
+      "reason": "structural heading with no body text",
+      "character_count": 100
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 40,
+      "reason": "structural heading with no body text",
+      "character_count": 37
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 47,
+      "reason": "structural heading with no body text",
+      "character_count": 73
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 54,
+      "reason": "structural heading with no body text",
+      "character_count": 31
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 79,
+      "reason": "structural heading with no body text",
+      "character_count": 32
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 81,
+      "reason": "structural heading with no body text",
+      "character_count": 39
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 88,
+      "reason": "structural heading with no body text",
+      "character_count": 63
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 90,
+      "reason": "structural heading with no body text",
+      "character_count": 110
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 94,
+      "reason": "structural heading with no body text",
+      "character_count": 45
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 96,
+      "reason": "structural heading with no body text",
+      "character_count": 47
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 98,
+      "reason": "structural heading with no body text",
+      "character_count": 28
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 114,
+      "reason": "below the minimum retrievable length",
+      "character_count": 20
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "unit_order": 120,
+      "reason": "below the minimum retrievable length",
+      "character_count": 20
+    }
+  ]
+}

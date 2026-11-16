@@ -1,0 +1,20 @@
+{
+  "document_id": "IN-DESIGNS-RULES-2001",
+  "chunking_version": "0.2.0",
+  "units": 89,
+  "chunks": 94,
+  "rejected": 0,
+  "rejected_by_reason": {},
+  "chunks_missing_locator": 1,
+  "chunks_citable": 93,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 3,
+  "chunks_from_ocr": 0,
+  "characters": 66103,
+  "mean_chunk_characters": 703.2,
+  "max_chunk_characters": 4930,
+  "rejected_chunks": []
+}

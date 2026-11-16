@@ -1,0 +1,26 @@
+{
+  "document_id": "IN-GI-ACT-1999",
+  "pages": 31,
+  "boilerplate_patterns": [
+    "#",
+    "IndiaCode"
+  ],
+  "table_of_contents_pages": [
+    3,
+    4,
+    5
+  ],
+  "pages_by_content_type": {
+    "front_matter": 2,
+    "table_of_contents": 3,
+    "content": 26
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 31
+  },
+  "amendment_notes_extracted": 21,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 106529,
+  "characters_cleaned": 104276
+}

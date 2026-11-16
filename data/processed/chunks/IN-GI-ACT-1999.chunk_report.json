@@ -1,0 +1,77 @@
+{
+  "document_id": "IN-GI-ACT-1999",
+  "chunking_version": "0.2.0",
+  "units": 99,
+  "chunks": 91,
+  "rejected": 9,
+  "rejected_by_reason": {
+    "structural heading with no body text": 9
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 90,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 60,
+  "chunks_from_ocr": 0,
+  "characters": 98036,
+  "mean_chunk_characters": 1077.3,
+  "max_chunk_characters": 4485,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 4,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 13,
+      "reason": "structural heading with no body text",
+      "character_count": 55
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 23,
+      "reason": "structural heading with no body text",
+      "character_count": 34
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 29,
+      "reason": "structural heading with no body text",
+      "character_count": 69
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 32,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 37,
+      "reason": "structural heading with no body text",
+      "character_count": 23
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 44,
+      "reason": "structural heading with no body text",
+      "character_count": 47
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "unit_order": 65,
+      "reason": "structural heading with no body text",
+      "character_count": 25
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "passed": 11,
+  "total": 11,
+  "scenarios": [
+    {
+      "scenario": "1. exact Rule question",
+      "question": "What does Rule 23 of the Trade Marks Rules, 2017 require?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 15.3,
+      "answer": "An application for trademark registration must be made in Form TM‑A and signed by the applicant or his agent [1]. It must contain a precise description of the mark, a graphical representation, and, where applicable, a statement that the mark is three‑dimensional or consists solely of a colour combination [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Trade Marks Rules, 2017 — Rule 23",
+          "excerpt": "(2) An application for the registration of a trademark, for goods or services shall— \n(a) explain with sufficient precision, a descriptio n by words, of the trademark, if necessary, to dete rmine the \nright of the applicant; \n(b) be able to depict the graphical representation of the trademark; \n(c) be considered as a three dimensional trademark only if the application contains a statement to that effect; \n(d) be considered as a trademark consisting of a co mbination of colours only if the application contai ns a \nstatement to that effect.",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "2. exact Section question",
+      "question": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 8.3,
+      "answer": "Section 3(p) of the Patents Act, 1970 excludes from patentability any invention that, in effect, is traditional knowledge or that merely aggregates or duplicates the known properties of traditionally known component(s)[1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Patents Act, 1970 — Section 3",
+          "excerpt": "2[(j) plants and animals in whole or any part thereof other than micro -organisms but including \nseeds, varieties and species and essentially biological processes for production or propagation of \nplants and animals; \n(k) a mathematical or business method or a computer programme per se or algorithms; \n(l) a literary, dramatic, musical or artistic work or any other aesthetic creation whatsoever \nincluding cinematographic works and television productions; \n(m) a mere scheme or rule or method of performing mental act or method of playing game; \n(n) a presentation of information; \n(o) topography of integrated circuits; \n(p) an invention which, in effect, is traditional knowledge or which is an aggregation or \nduplication of known properties of traditionally known component or components.]",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "3. conceptual legal question",
+      "question": "What is the term of copyright in a literary work published in the lifetime of the author?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 9.2,
+      "answer": "The copyright in a literary work published during the author's lifetime subsists until sixty years from the beginning of the calendar year next following the year in which the author dies [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Copyright Act, 1957 — Section 22",
+          "excerpt": "22. Term of copyright in published literary, dramatic, musical and artistic works. — Except as \notherwise hereinafter provided, copyright shall subsist in any literary, dramatic, musical or artistic work 3[***] \npublished within the lifetime of the author until 4[sixty years] from the beginning of the calendar year next \nfollowing the year in which the author dies.",
+          "strategy": "sentence",
+          "temporal_status": "STALE"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "4. ambiguous beginner question",
+      "question": "How can I trademark my own firm?",
+      "property": "inferred_not_interrupted",
+      "pass": true,
+      "detail": "status=ANSWERED; inferred and published safely",
+      "status": "ANSWERED",
+      "wall_ms": 6.2,
+      "answer": "You must file an application for the registration of a trademark with the Registrar [2]. If you are an individual, startup or small enterprise the fee is ₹20,000 for each class and each mark [2]. You may also apply to register the whole name of your firm and any distinct parts as separate trademarks, each enjoying the full rights of an independent mark [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Trade Marks Act, 1999 — Section 15",
+          "excerpt": "15. Registration of parts of trade marks and of trade marks as a s eries.—(1) Where the \nproprietor of a trade mark claims to be entitled to the exclusive use of any part thereof separately, he may \napply to register the whole and the part as separate trade marks. \n(2) Each such separate trade mark shall satisfy all the conditions applying to and have all the incidents \nof, an independent trade mark.",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        },
+        {
+          "marker": 2,
+          "citation": "Trade Marks Rules, 2017 — First Schedule",
+          "excerpt": "5,000 \nPlus continuation \nfee as mentioned \nin entry number \n20 \n4,500 \nPlus \ncontinuation fee \nas mentioned in \nentry number 20 \n22 On application for an alteration of any entry in the \nRegister of trademarks Agent under rule 154 \n1,000 900 \n23 Handling fee for certification and transmission of \ninternational application to International Bureau with \nMM2(E) \nNot \nallowed \n5,000 --",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "5. practitioner-style question",
+      "question": "Under which provision may a compulsory licence be granted over a registered plant variety?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 2.8,
+      "answer": "A compulsory licence over a registered plant variety may be granted under Section 47 of the Protection of Plant Varieties and Farmers’ Rights Act, 2001, as provided for in Rule 71 of the 2003 Rules [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Rule 71",
+          "excerpt": "(4) On receipt of an application for grant of compulsory licence under sub rule (1), the Authority shall serve \nnotice to the breeder of such variety or his assignee or registered agent inviting his opposition within one month from \nthe receipt of such notice.",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "6. cross-reference question",
+      "question": "How do the Patents Act and the Patents Rules divide the time limit for requesting examination?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 6.4,
+      "answer": "The Patents Act requires that a request for examination be made within the “prescribed period” but does not itself set the length of that period [1]. The Patents Rules divide the time limit by specifying a general 48‑month period from the priority date or filing date (whichever is earlier), a similar 48‑month period for requests under sub‑section (3) of section 11B, a period of 48 months or six months after revocation of a secrecy direction (whichever is later) for requests under sub‑section (4), and for applications filed before 1 January 2005 the longer of the statutory period before the 2005 amendment or the period prescribed in the Rules [2].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Patents Act, 1970 — Section 11B",
+          "excerpt": "Request for examination .—3[(1) No application for a patent shall be examined unless the \napplicant or any other interested person makes a request in the prescribed manner for such examination \nwithin the prescribed period.] \n4* * * * * \n5[(3) In case of an application in respect of a claim for a patent filed under sub-section (2) of section 5 \nbefore the 1st day of January, 2005 a request for its examination shall be made in the prescribed manner \nand within the prescribed period by the applicant or any other interested person.] \n(4) In case the applicant or any other interested person does not make a request for examination of the \napplication for a patent within the period as specified under sub -section (1) 6*** or sub -section (3), the \napplication shall be treated as withdrawn by the applicant: \n7[Provided that— \n(i) the applicant may, at any time after filing the application bu t before the grant of a patent , \nwithdraw the application by making a request in the prescribed manner; and \n(ii) in a case where secrecy direction has been issued under section 35, the request for \nexamination may be made within the prescribed period from the date of revocation of the secrecy \ndirection.]",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        },
+        {
+          "marker": 2,
+          "citation": "Patents Rules, 2003 — Rule 24B",
+          "excerpt": "24B. Examination of application. —(1) (i) A request for examination under section 11B shall \nbe made in Form 18 within forty-eight months from the date of priority of the application or \nfrom the date of filing of the application, whichever is earlier; \n(ii)The period within which the request for examination under sub -section (3) of \nsection 11B to be made shall be for ty-eight months from the date of priority if \napplicable, or",
+          "strategy": "window",
+          "temporal_status": "STALE"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "7. multi-part question",
+      "question": "Who may apply for registration of a geographical indication, and what must the application contain?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 5.5,
+      "answer": "Any association of persons or producers or any organisation or authority established by law representing the interest of the producers of the concerned goods may apply in writing to the Registrar for registration of a geographical indication [1]. The application must contain a statement describing how the indication designates the goods as originating from the specified territory with its specific quality, reputation or other characteristics, the class of goods, a map of the territory, details of the appearance of the indication, particulars of the producers to be initially registered, and any other particulars prescribed [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 11",
+          "excerpt": "(2) The application under sub-section (1) shall contain— \n(a) a statement as to how the geographical indication serves to designate the goods as originating \nfrom the concerned territory of the country or region or locality in the country, as the case may be, in \nrespect of specific quality, reputation or other characteristics of which are due exclusively or \nessentially to the geographical environment, with its inherent natural and human factors, and the \nproduction, processing or preparation of which takes place in such territory, region or locality, as the \ncase may be; \n(b) the class of goods to which the geographical indication shall apply;\n(c) the geographical map of the territory of the country or region or locality in the country in \nwhich the goods orginate or are being manufactured; \n(d) the particulars regarding the appearance of the geographical indication as to whether it is \ncomprised of the words or figurative elements or both; \n(e) a statement containing such particulars of the producers of the concerned goods, if any, \nproposed to be initially registered with the registration of the geographical indication as may be \nprescribed; and \n(f) such other particulars as may be prescribed.",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "8. stale-source question",
+      "question": "What fee is payable when filing documents at the patent office?",
+      "property": "stale_is_disclosed",
+      "pass": true,
+      "detail": "no stale source was cited; nothing to disclose",
+      "status": "ANSWERED",
+      "wall_ms": 5.6,
+      "answer": "A fee prescribed by the Central Government must be paid in respect of the filing of a document at the patent office, and it must be paid together with the document or within the prescribed time, otherwise the document is deemed not to have been filed [1].",
+      "cited": [
+        {
+          "marker": 1,
+          "citation": "Patents Act, 1970 — Section 142",
+          "excerpt": "2[(3) Where a fee is payable in respect of the filing of a document at the patent office, the fee shall be \npaid along with the document or within the prescribed time and the document shall be deemed not to have \nbeen filed at the office if the fee has not been paid within such time.] \n(4) Where a principal patent is granted later than two years from the date of filing of 3[the \napplication], the fees which have become due in the meantime may be paid within a term of three months \nfrom the date of the recording of the patent in the register 4[or within the extended period not later than \nnine months from the date of recording].",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "9. unsupported / off-topic question",
+      "question": "What is the best pizza topping in Naples?",
+      "property": "must_abstain",
+      "pass": true,
+      "detail": "status=ABSTAINED (required ABSTAINED)",
+      "status": "ABSTAINED",
+      "wall_ms": 92.4,
+      "answer": "I couldn't find sufficient authoritative evidence in the current corpus to answer this reliably.",
+      "cited": [],
+      "clarification": {
+        "question": "Which area of IP or regulatory law does your question concern? For example: patents, trade marks, copyright, designs.",
+        "reason": "no regime term, no instrument name and no provision number were found in the question, so there is nothing to retrieve against",
+        "stage": "post_abstention",
+        "regimes": [],
+        "options": [
+          "patents",
+          "trade marks",
+          "copyright",
+          "designs",
+          "geographical indications",
+          "plant varieties",
+          "biodiversity and benefit-sharing",
+          "drugs and cosmetics"
+        ],
+        "max_per_request": 1,
+        "version": "0.1.0"
+      }
+    },
+    {
+      "scenario": "10. best evidence not rank 1 before reranking",
+      "question": "Is the mere discovery of a new form of a known substance patentable in India?",
+      "property": "answered_or_abstained_cleanly",
+      "pass": true,
+      "detail": "ANSWERED, grounded, cited, excerpt verbatim",
+      "status": "ANSWERED",
+      "wall_ms": 12.8,
+      "answer": "No, the mere discovery of a new form of a known substance is not patentable in India because Section 3(d) of the Patents Act expressly states that such a discovery, unless it enhances the known efficacy of the substance, is not an invention within the meaning of the Act [4]. Consequently, a patent granted for such a claim could be revoked on the ground that the subject is not an invention under the Act [3].",
+      "cited": [
+        {
+          "marker": 3,
+          "citation": "Patents Act, 1970 — Section 64",
+          "excerpt": "say— \n(a) that the invention, so far as claimed in any claim of the complete specification, was claimed in \na valid claim of earlier priority date contained in the complete specification of another patent granted \nin India; \n(b) that the patent was granted on the application of a person not entitled under the provisions \nof this Act to apply therefor: \n6* * * * * \n(c) that the patent was obtained wrongfully in contravention of the",
+          "strategy": "window",
+          "temporal_status": "CURRENT"
+        },
+        {
+          "marker": 4,
+          "citation": "Patents Act, 1970 — Section 3",
+          "excerpt": "3. What are not inventions .—The following are not inventions within the meaning of this \nAct,— \n(a) an invention which is frivolous or which claims anything obviously contrary to well \nestablished natural laws; \n4[(b) an invention the primary or intended use or commercial exploitation of which would be \ncontrary to public order or morality or which causes serious prejudice to human, animal or plant life \nor health or to the environment;] \n(c) the mere discovery of a scientific principle or the formulation of an abstract theory 5[or \ndiscovery of any living thing or non-living substance occurring in nature]; \n6[(d) the mere discovery of a new form of a known substance which does not result in the \nenhancement of the known efficacy of that substance or the mere discovery of any new property or \nnew use for a known substance or of the mere use of a known process, machine or apparatus unless \nsuch known process results in a new product or employs at least one new reactant.",
+          "strategy": "sentence",
+          "temporal_status": "CURRENT"
+        }
+      ],
+      "clarification": null
+    },
+    {
+      "scenario": "11. vague question with no legal anchor",
+      "question": "How can I protect my idea?",
+      "property": "one_clarification_then_never_again",
+      "pass": true,
+      "detail": "first=NEEDS_CLARIFICATION, second=ANSWERED (bounded)",
+      "status": "NEEDS_CLARIFICATION",
+      "wall_ms": 5.9,
+      "answer": null,
+      "cited": [],
+      "clarification": {
+        "question": "Which area of IP or regulatory law does your question concern? For example: patents, trade marks, copyright, designs.",
+        "reason": "no regime term, no instrument name and no provision number were found in the question, so there is nothing to retrieve against",
+        "stage": "pre_retrieval",
+        "regimes": [],
+        "options": [
+          "patents",
+          "trade marks",
+          "copyright",
+          "designs",
+          "geographical indications",
+          "plant varieties",
+          "biodiversity and benefit-sharing",
+          "drugs and cosmetics"
+        ],
+        "max_per_request": 1,
+        "version": "0.1.0"
+      }
+    }
+  ]
+}

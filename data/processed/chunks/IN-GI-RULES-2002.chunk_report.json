@@ -1,0 +1,71 @@
+{
+  "document_id": "IN-GI-RULES-2002",
+  "chunking_version": "0.2.0",
+  "units": 139,
+  "chunks": 142,
+  "rejected": 8,
+  "rejected_by_reason": {
+    "structural heading with no body text": 8
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 141,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 182700,
+  "mean_chunk_characters": 1286.6,
+  "max_chunk_characters": 4991,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 6
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 2,
+      "reason": "structural heading with no body text",
+      "character_count": 51
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 24,
+      "reason": "structural heading with no body text",
+      "character_count": 66
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 56,
+      "reason": "structural heading with no body text",
+      "character_count": 27
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 61,
+      "reason": "structural heading with no body text",
+      "character_count": 50
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 67,
+      "reason": "structural heading with no body text",
+      "character_count": 90
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 78,
+      "reason": "structural heading with no body text",
+      "character_count": 171
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "unit_order": 102,
+      "reason": "structural heading with no body text",
+      "character_count": 56
+    }
+  ]
+}

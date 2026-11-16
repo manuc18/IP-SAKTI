@@ -1,0 +1,236 @@
+{
+  "reranker": "features",
+  "at": 5,
+  "summary": {
+    "at": 5,
+    "questions": 111,
+    "failures": 3,
+    "types": {
+      "A": 0,
+      "B": 3,
+      "C": 0
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 3,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 0,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": []
+  },
+  "failures": [
+    {
+      "question_id": "Q062",
+      "query": "What approval must a foreign company obtain before accessing Indian biological resources?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 11 and the reranker placed it at 6",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-19"
+      ],
+      "expected_locators": [
+        "Section 19"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 11,
+      "rank_of_expected": 6,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-7",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 7",
+          "citable": true,
+          "dense_rank": 2,
+          "lexical_rank": 27
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii",
+          "locator": "Biological Diversity Act, 2002 \u2014 Chapter II",
+          "citable": true,
+          "dense_rank": 1,
+          "lexical_rank": 6
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-BD-RULES-2024::rule-20",
+          "locator": "Biological Diversity Rules, 2024 \u2014 Rule 20",
+          "citable": true,
+          "dense_rank": 8,
+          "lexical_rank": 1
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-BD-RULES-2024::first-schedule-item-16-c10",
+          "locator": "Biological Diversity Rules, 2024 \u2014 First Schedule, item 16",
+          "citable": true,
+          "dense_rank": 10,
+          "lexical_rank": 3
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-ii-section-6",
+          "locator": "Biological Diversity Act, 2002 \u2014 Section 6",
+          "citable": true,
+          "dense_rank": 5,
+          "lexical_rank": 8
+        }
+      ]
+    },
+    {
+      "question_id": "Q093",
+      "query": "How does the Drugs and Cosmetics Rules define an Inspector?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 32 and the reranker placed it at 10",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "expected_locators": [
+        "Rule 2"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 32,
+      "rank_of_expected": 10,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 0.0,
+        "candidate_recall@30": 0.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c2",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21(4)",
+          "citable": true,
+          "dense_rank": 1,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-21-c1",
+          "locator": "Drugs and Cosmetics Act, 1940 \u2014 Section 21",
+          "citable": true,
+          "dense_rank": 4,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-52",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 52",
+          "citable": true,
+          "dense_rank": 2,
+          "lexical_rank": 3
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-v-rule-49",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Rule 49",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": null
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-a-schedule-form-30-item-7",
+          "locator": "Drugs and Cosmetics Rules, 1945 \u2014 Form 30, item 7",
+          "citable": true,
+          "dense_rank": 9,
+          "lexical_rank": 1
+        }
+      ]
+    },
+    {
+      "question_id": "Q098",
+      "query": "What is the minimum term of patent protection under the TRIPS Agreement?",
+      "type": "B",
+      "type_description": "gold evidence in the pool but ranked too low (reranking)",
+      "detail": "the gold chunk was in the pool at candidate position 18 and the reranker placed it at 7",
+      "label_review_flags": [],
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-33"
+      ],
+      "expected_locators": [
+        "Article 33"
+      ],
+      "gold_in_pool": true,
+      "gold_pool_rank": 18,
+      "rank_of_expected": 7,
+      "candidate_recall": {
+        "candidate_recall@10": 0.0,
+        "candidate_recall@20": 1.0,
+        "candidate_recall@30": 1.0,
+        "candidate_recall@50": 1.0,
+        "candidate_recall@pool": 1.0
+      },
+      "competing_chunks": [],
+      "top_5": [
+        {
+          "rerank_rank": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-viii-section-53",
+          "locator": "Patents Act, 1970 \u2014 Section 53",
+          "citable": true,
+          "dense_rank": 3,
+          "lexical_rank": 28
+        },
+        {
+          "rerank_rank": 2,
+          "chunk_id": "WTO-TRIPS::part-vi-article-66",
+          "locator": "TRIPS \u2014 Article 66",
+          "citable": true,
+          "dense_rank": 2,
+          "lexical_rank": 15
+        },
+        {
+          "rerank_rank": 3,
+          "chunk_id": "WTO-TRIPS::part-ii-section-6-article-38",
+          "locator": "TRIPS \u2014 Section 6",
+          "citable": true,
+          "dense_rank": 5,
+          "lexical_rank": 12
+        },
+        {
+          "rerank_rank": 4,
+          "chunk_id": "WTO-TRIPS::part-ii-section-2-article-18",
+          "locator": "TRIPS \u2014 Section 2",
+          "citable": true,
+          "dense_rank": 6,
+          "lexical_rank": 18
+        },
+        {
+          "rerank_rank": 5,
+          "chunk_id": "WTO-TRIPS::preamble-u0",
+          "locator": "TRIPS \u2014 unlocated text (physical p. 1)",
+          "citable": false,
+          "dense_rank": 1,
+          "lexical_rank": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-COPYRIGHT-RULES-2013",
+  "pages": 77,
+  "boilerplate_patterns": [],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "empty": 1,
+    "content": 76
+  },
+  "pages_by_language_status": {
+    "UNKNOWN": 1,
+    "EN_CLEAN": 76
+  },
+  "amendment_notes_extracted": 2,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 153159,
+  "characters_cleaned": 152575
+}

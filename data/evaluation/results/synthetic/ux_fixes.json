@@ -1,0 +1,207 @@
+{
+  "check": "ux_fixes",
+  "provider": "groq · openai/gpt-oss-120b",
+  "passed": 13,
+  "total": 13,
+  "denominator_note": "13 of 13 declared cases passed; each case asserts a property of the live response, not the wording of an answer",
+  "cases": [
+    {
+      "label": "SOCIAL/greeting",
+      "question": "hi",
+      "status": "SOCIAL",
+      "confidence": null,
+      "spelling": null,
+      "problems": [],
+      "passed": true,
+      "wall_ms": 4.4
+    },
+    {
+      "label": "SOCIAL/greeting",
+      "question": "hello",
+      "status": "SOCIAL",
+      "confidence": null,
+      "spelling": null,
+      "problems": [],
+      "passed": true,
+      "wall_ms": 0.3
+    },
+    {
+      "label": "SOCIAL/small talk",
+      "question": "how are you?",
+      "status": "SOCIAL",
+      "confidence": null,
+      "spelling": null,
+      "problems": [],
+      "passed": true,
+      "wall_ms": 1.0
+    },
+    {
+      "label": "SOCIAL/thanks",
+      "question": "thanks",
+      "status": "SOCIAL",
+      "confidence": null,
+      "spelling": null,
+      "problems": [],
+      "passed": true,
+      "wall_ms": 1.3
+    },
+    {
+      "label": "LEGAL",
+      "question": "How must an application for registration of a trade mark be signed?",
+      "status": "ANSWERED",
+      "confidence": "MODERATE",
+      "spelling": {
+        "original_query": "How must an application for registration of a trade mark be signed?",
+        "search_query": "How must an application for registration of a trade mark be signed?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 5.9
+    },
+    {
+      "label": "STRONG/identifier",
+      "question": "What does Rule 23 of the Trade Marks Rules, 2017 require?",
+      "status": "ANSWERED",
+      "confidence": "MODERATE",
+      "spelling": {
+        "original_query": "What does Rule 23 of the Trade Marks Rules, 2017 require?",
+        "search_query": "What does Rule 23 of the Trade Marks Rules, 2017 require?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 7.5
+    },
+    {
+      "label": "TYPO",
+      "question": "How do I register a tradmark?",
+      "status": "ANSWERED",
+      "confidence": "MODERATE",
+      "spelling": {
+        "original_query": "How do I register a tradmark?",
+        "search_query": "How do I register a trademark?",
+        "applied": true,
+        "replacements": [
+          {
+            "from": "tradmark",
+            "to": "trademark",
+            "rule": "skeleton_distance_1",
+            "document_frequency": 111
+          }
+        ],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 12.8
+    },
+    {
+      "label": "TYPO",
+      "question": "What are the requirements for a patant?",
+      "status": "ABSTAINED",
+      "confidence": "NONE",
+      "spelling": {
+        "original_query": "What are the requirements for a patant?",
+        "search_query": "What are the requirements for a patent?",
+        "applied": true,
+        "replacements": [
+          {
+            "from": "patant",
+            "to": "patent",
+            "rule": "skeleton_distance_1",
+            "document_frequency": 357
+          }
+        ],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 1303.0
+    },
+    {
+      "label": "AMBIGUOUS",
+      "question": "How can I protect my idea?",
+      "status": "NEEDS_CLARIFICATION",
+      "confidence": null,
+      "spelling": {
+        "original_query": "How can I protect my idea?",
+        "search_query": "How can I protect my idea?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 2.9
+    },
+    {
+      "label": "CONFLICT",
+      "question": "Is it permissible to carry out fees and surcharge under the Trade Marks Act, 1999?",
+      "status": "ANSWERED",
+      "confidence": "LOW",
+      "spelling": {
+        "original_query": "Is it permissible to carry out fees and surcharge under the Trade Marks Act, 1999?",
+        "search_query": "Is it permissible to carry out fees and surcharge under the Trade Marks Act, 1999?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 1565.8
+    },
+    {
+      "label": "STALE",
+      "question": "What does Rule 1 of the Geographical Indications of Goods (Registration and Protection) Rules, 2002 provide?",
+      "status": "ANSWERED",
+      "confidence": "LOW",
+      "spelling": {
+        "original_query": "What does Rule 1 of the Geographical Indications of Goods (Registration and Protection) Rules, 2002 provide?",
+        "search_query": "What does Rule 1 of the Geographical Indications of Goods (Registration and Protection) Rules, 2002 provide?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 0.8
+    },
+    {
+      "label": "GARBLED",
+      "question": "What must a licence to manufacture state under the Drugs and Cosmetics Rules, 1945?",
+      "status": "ANSWERED",
+      "confidence": "LOW",
+      "spelling": {
+        "original_query": "What must a licence to manufacture state under the Drugs and Cosmetics Rules, 1945?",
+        "search_query": "What must a licence to manufacture state under the Drugs and Cosmetics Rules, 1945?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 2.4
+    },
+    {
+      "label": "OFF-TOPIC",
+      "question": "What is the best pizza topping in Naples?",
+      "status": "ABSTAINED",
+      "confidence": "NONE",
+      "spelling": {
+        "original_query": "What is the best pizza topping in Naples?",
+        "search_query": "What is the best pizza topping in Naples?",
+        "applied": false,
+        "replacements": [],
+        "version": "0.1.0"
+      },
+      "problems": [],
+      "passed": true,
+      "wall_ms": 555.6
+    }
+  ]
+}

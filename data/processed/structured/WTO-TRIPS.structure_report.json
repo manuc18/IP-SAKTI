@@ -1,0 +1,16 @@
+{
+  "document_id": "WTO-TRIPS",
+  "parser": "treaty",
+  "provision_label": "Article",
+  "pages_ingested": 31,
+  "pages_excluded": {},
+  "units": 94,
+  "units_by_type": {
+    "preamble": 1,
+    "heading": 20,
+    "article": 73
+  },
+  "units_with_locator": 93,
+  "units_locator_downgraded": 0,
+  "characters": 87010
+}

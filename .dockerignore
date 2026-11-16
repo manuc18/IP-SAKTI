@@ -1,0 +1,42 @@
+# Docker build context exclusions for IP-SAKTI
+# Keeps the image lean — only corpus + source code goes in
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Dev / test artifacts
+tests/
+scripts/
+data/evaluation/
+data/raw/
+data/interim/
+data/source_updates/
+
+# Node / Turborepo (not needed in Python image)
+node_modules/
+apps/
+.turbo/
+.next/
+dist/
+
+# Git
+.git/
+.gitignore
+
+# Secrets — never bake into image
+.env
+
+# Docs
+docs/
+*.md
+DEMO.md
+PROJECT.md
+README.md
+
+# OS
+.DS_Store

@@ -1,0 +1,21 @@
+{
+  "document_id": "IN-BD-RULES-2024",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 40,
+  "pages_excluded": {
+    "hindi_only": 38,
+    "thin_residue": 8
+  },
+  "units": 48,
+  "units_by_type": {
+    "front_matter": 1,
+    "provision": 26,
+    "schedule": 1,
+    "schedule_item": 19,
+    "form": 1
+  },
+  "units_with_locator": 47,
+  "units_locator_downgraded": 0,
+  "characters": 101495
+}

@@ -1,0 +1,21 @@
+{
+  "document_id": "IN-DC-RULES-1945",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 597,
+  "pages_excluded": {},
+  "units": 1198,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 22,
+    "provision": 808,
+    "form": 32,
+    "unstructured": 4,
+    "schedule_item": 320,
+    "schedule": 4,
+    "annexure": 7
+  },
+  "units_with_locator": 1197,
+  "units_locator_downgraded": 4,
+  "characters": 1601700
+}

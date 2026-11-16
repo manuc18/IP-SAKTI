@@ -1,0 +1,326 @@
+{
+  "experiment": "F2",
+  "reranker": "cross_encoder:bge-base",
+  "reranker_config": {
+    "reranker": "cross_encoder:bge-base",
+    "version": "0.1.0",
+    "trained_by_us": false,
+    "model_name": "BAAI/bge-reranker-base",
+    "model_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+    "license": "mit",
+    "parameters": "278M",
+    "languages": "multilingual (XLM-RoBERTa base)",
+    "selection_note": "The middle of the range, and multilingual, which matters for a corpus whose questions will eventually arrive in Hindi.",
+    "device": "mps",
+    "max_seq_length": 512,
+    "batch_size": 16,
+    "truncation_strategy": "longest_first",
+    "truncation_note": "the pair is truncated, longest member first; the passage is longer than the query in every observed case, so the provision's tail is what is dropped",
+    "activation": "none \u2014 raw relevance logit; ranking is invariant to a monotone squashing, so none is applied",
+    "candidate_format": {
+      "representation": "labelled lines: Document / Locator / [Heading] / Text",
+      "fields": [
+        "document",
+        "locator",
+        "heading",
+        "text"
+      ],
+      "heading_omitted_when_absent": true,
+      "text_budget_chars": null,
+      "whitespace": "runs of spaces and tabs collapsed; line breaks preserved",
+      "excluded": [
+        "chunk_id",
+        "citable",
+        "source_evidence_level",
+        "temporal_status",
+        "source_status",
+        "physical_pages",
+        "retrieval scores",
+        "retrieval path",
+        "golden labels"
+      ]
+    },
+    "model_disk_bytes": 2268819966,
+    "model_disk_mb": 2268.8,
+    "rejected_alternatives": [
+      {
+        "model": "jinaai/jina-reranker-v2-base-multilingual",
+        "reason": "CC-BY-NC-4.0. Non-commercial licences are not a base this project can build on, independent of how the model performs."
+      },
+      {
+        "model": "Alibaba-NLP/gte-multilingual-reranker-base",
+        "reason": "Requires trust_remote_code=True, which executes code fetched from a model repository at load time. Not acceptable in a pipeline that handles a provenance-controlled corpus."
+      },
+      {
+        "model": "any hosted reranking API (Cohere Rerank, Voyage, Jina API)",
+        "reason": "Phase 6 forbids paid external APIs, and sending the corpus to a third party would breach the same rule that keeps embedding local."
+      }
+    ],
+    "truncation_observed": {
+      "pairs_scored": 8577,
+      "pairs_truncated": 3069,
+      "truncated_fraction": 0.3578,
+      "longest_pair_tokens": 1662,
+      "tokens_dropped_total": 1083751
+    }
+  },
+  "candidate_generator_config": {
+    "candidate_generator": "union",
+    "version": "0.1.0",
+    "mode": "expanded",
+    "order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "rrf_k": null,
+    "deduplication": "by chunk_id, first appearance wins",
+    "components": {
+      "dense": {
+        "retriever": "dense",
+        "version": "0.1.0",
+        "model_name": "BAAI/bge-m3",
+        "model_version": "5617a9f61b028005a4858fdac845db406aefb181",
+        "normalize_embeddings": true,
+        "embedding_dimension": 1024,
+        "max_seq_length": 1024,
+        "batch_size": 8,
+        "device": "mps",
+        "dtype": "float32",
+        "corpus_version": "0c94db57932c046d",
+        "chunking_version": "65e4770bc530156b",
+        "chunk_count": 3073
+      },
+      "lexical": {
+        "retriever": "bm25_boost",
+        "version": "0.1.0",
+        "base": {
+          "retriever": "bm25",
+          "version": "0.1.0",
+          "k1": 1.2,
+          "b": 0.75,
+          "indexed_field": "text",
+          "stemming": false,
+          "stopwords": false,
+          "documents_indexed": 3073,
+          "vocabulary": 18699,
+          "mean_document_length_tokens": 207.91
+        },
+        "boost_weight": 1.0,
+        "boost_scale": "max BM25 score for the same query",
+        "document_aliases": 70
+      }
+    }
+  },
+  "timestamp": "2026-08-29T20:19:40+00:00",
+  "corpus_version": "0c94db57932c046d",
+  "chunking_version": "65e4770bc530156b",
+  "chunker_version": "0.2.0",
+  "chunks_indexed": 3073,
+  "questions": 111,
+  "questions_human_verified": 0,
+  "top_k": 10,
+  "filter_mode": "none",
+  "python": "3.14.3",
+  "candidate_recall": {
+    "candidate_recall@10": 0.964,
+    "candidate_recall@20": 0.991,
+    "candidate_recall@30": 0.991,
+    "candidate_recall@50": 1.0,
+    "candidate_recall@pool": 1.0
+  },
+  "pool_size": {
+    "mean": 77.3,
+    "min": 58,
+    "max": 93
+  },
+  "overall": {
+    "recall@1": 0.7658,
+    "recall@5": 0.955,
+    "recall@10": 0.991,
+    "mrr": 0.8421,
+    "ndcg@5": 0.8664,
+    "ndcg@10": 0.8772,
+    "document_recall@1": 0.9459,
+    "document_recall@5": 1.0,
+    "document_recall@10": 1.0
+  },
+  "conditional": {
+    "questions": 111,
+    "mrr": 0.8421,
+    "recall@1": 0.7658,
+    "recall@5": 0.955
+  },
+  "by_family": {
+    "conceptual": {
+      "recall@1": 0.7204,
+      "recall@5": 0.9462,
+      "recall@10": 0.9892,
+      "mrr": 0.8116,
+      "ndcg@5": 0.8406,
+      "ndcg@10": 0.8535,
+      "candidate_recall@10": 0.957,
+      "candidate_recall@20": 0.9892,
+      "candidate_recall@30": 0.9892,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 93,
+      "conditional": {
+        "questions": 93,
+        "mrr": 0.8116,
+        "recall@1": 0.7204,
+        "recall@5": 0.9462
+      }
+    },
+    "identifier": {
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 18,
+      "conditional": {
+        "questions": 18,
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "by_router_family": {
+    "CONCEPTUAL": {
+      "recall@1": 0.7027,
+      "recall@5": 0.9459,
+      "recall@10": 1.0,
+      "mrr": 0.7992,
+      "ndcg@5": 0.8299,
+      "ndcg@10": 0.8461,
+      "candidate_recall@10": 0.973,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 74,
+      "conditional": {
+        "questions": 74,
+        "mrr": 0.7992,
+        "recall@1": 0.7027,
+        "recall@5": 0.9459
+      }
+    },
+    "GENERAL": {
+      "recall@1": 0.8,
+      "recall@5": 0.95,
+      "recall@10": 0.95,
+      "mrr": 0.8667,
+      "ndcg@5": 0.8881,
+      "ndcg@10": 0.8881,
+      "candidate_recall@10": 0.9,
+      "candidate_recall@20": 0.95,
+      "candidate_recall@30": 0.95,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 20,
+      "conditional": {
+        "questions": 20,
+        "mrr": 0.8667,
+        "recall@1": 0.8,
+        "recall@5": 0.95
+      }
+    },
+    "IDENTIFIER": {
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0,
+      "candidate_recall@10": 1.0,
+      "candidate_recall@20": 1.0,
+      "candidate_recall@30": 1.0,
+      "candidate_recall@50": 1.0,
+      "candidate_recall@pool": 1.0,
+      "questions": 17,
+      "conditional": {
+        "questions": 17,
+        "mrr": 1.0,
+        "recall@1": 1.0,
+        "recall@5": 1.0
+      }
+    }
+  },
+  "latency": {
+    "candidate_generation": {
+      "median_ms": 34.25,
+      "mean_ms": 39.6,
+      "p95_ms": 53.07,
+      "n": 111
+    },
+    "reranking": {
+      "median_ms": 3820.67,
+      "mean_ms": 3880.64,
+      "p95_ms": 4625.11,
+      "n": 111
+    },
+    "total_pipeline": {
+      "median_ms": 3853.63,
+      "mean_ms": 3920.23,
+      "p95_ms": 4663.9,
+      "n": 111
+    },
+    "measurement_note": "one process, fresh retriever and model instances, warmed with a throwaway query before the loop; each benchmark question is seen once, so no dense query-embedding cache hit is timed. Candidate pools are shared across rerankers in a run, so candidate latency is measured once and repeated in each summary."
+  },
+  "leakage_audit": {
+    "questions_audited": 111,
+    "clean": true,
+    "failing_questions": [],
+    "findings": [],
+    "checks": [
+      "chunk_id never rendered",
+      "forbidden metadata never rendered",
+      "no label outside Document/Locator/Heading/Text",
+      "expected chunk ids absent from query and candidates",
+      "expected document ids absent from query and candidates",
+      "golden `notes` absent from query and candidates"
+    ]
+  },
+  "cli": {
+    "candidate_mode": "expanded",
+    "candidate_order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "normalization": "rank_percentile",
+    "cross_encoder": "bge-base",
+    "batch_size": 16,
+    "max_length": 512,
+    "authority_lambda": 0.05,
+    "text_budget": null
+  },
+  "failure_analysis": {
+    "at": 5,
+    "questions": 111,
+    "failures": 5,
+    "types": {
+      "A": 0,
+      "B": 5,
+      "C": 0
+    },
+    "type_descriptions": {
+      "A": "gold evidence absent from the candidate pool (candidate generation)",
+      "B": "gold evidence in the pool but ranked too low (reranking)",
+      "C": "competing chunks carrying the expected locator outranked the gold",
+      "D": "the gold label itself looks questionable \u2014 flag for human review"
+    },
+    "candidate_generation_failures": 0,
+    "reranking_failures": 5,
+    "candidate_generation_share": 0.0,
+    "reranking_share": 1.0,
+    "type_D_flagged": 0,
+    "type_D_note": "Type D is an overlay, not a fourth bucket: a questionable label can coexist with either a pool miss or a ranking miss, and collapsing it into the partition would hide one of the two. Nothing is altered in the golden dataset; these are queued for human review.",
+    "type_D_questions": []
+  }
+}

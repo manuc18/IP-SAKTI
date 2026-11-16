@@ -1,0 +1,101 @@
+{
+  "document_id": "IN-COPYRIGHT-ACT-1957",
+  "chunking_version": "0.2.0",
+  "units": 119,
+  "chunks": 114,
+  "rejected": 13,
+  "rejected_by_reason": {
+    "structural heading with no body text": 13
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 113,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "C",
+  "source_status": "OFFICIAL_SOURCE_FOUND_LOCAL_COPY_NOT_MATCHED",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 113,
+  "chunks_from_ocr": 0,
+  "characters": 141299,
+  "mean_chunk_characters": 1239.5,
+  "max_chunk_characters": 4949,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 10,
+      "reason": "structural heading with no body text",
+      "character_count": 51
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 15,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 20,
+      "reason": "structural heading with no body text",
+      "character_count": 59
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 27,
+      "reason": "structural heading with no body text",
+      "character_count": 28
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 37,
+      "reason": "structural heading with no body text",
+      "character_count": 20
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 55,
+      "reason": "structural heading with no body text",
+      "character_count": 71
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 62,
+      "reason": "structural heading with no body text",
+      "character_count": 36
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 69,
+      "reason": "structural heading with no body text",
+      "character_count": 37
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 78,
+      "reason": "structural heading with no body text",
+      "character_count": 38
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 94,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 108,
+      "reason": "structural heading with no body text",
+      "character_count": 20
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "unit_order": 112,
+      "reason": "structural heading with no body text",
+      "character_count": 25
+    }
+  ]
+}

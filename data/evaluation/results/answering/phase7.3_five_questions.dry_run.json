@@ -1,0 +1,2791 @@
+{
+  "phase": "7.3",
+  "experiment_mode": "LEXICAL_ONLY",
+  "timestamp": "2026-08-30T16:44:48+00:00",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0.0,
+  "max_completion_tokens": 800,
+  "timeout_seconds": 15.0,
+  "retries": 0,
+  "requests_attempted": 5,
+  "dense_arm": "disabled",
+  "dense_calls_returning_empty": 5,
+  "reranker": "features",
+  "top_k": 5,
+  "policy": {
+    "policy_version": "0.1.0",
+    "minimum_evidence_level": "C",
+    "require_citable_authority": true,
+    "require_relevance": true,
+    "relevance_min_overlap": 1,
+    "stale_only_is_insufficient": false,
+    "abstain_on_conflict": false,
+    "require_full_grounding": true,
+    "max_citations": 5
+  },
+  "caveat": "Lexical-only candidate generation. Retrieval figures here are lexical_candidate_recall and are NOT comparable with the Phase 6 hybrid results.",
+  "questions": [
+    {
+      "question_id": "Q001",
+      "experiment_family": "simple_statutory_provision",
+      "selection_rationale": "first identifier question in file order; a single-provision Section lookup",
+      "query": "What does section 3(p) of the Patents Act, 1970 exclude from patentability?",
+      "query_family": "identifier",
+      "domain": "patents",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+          "citation": "Patents Act, 1970 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+          "citation": "Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+          "citation": "Designs Act, 2000 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+          "citation": "Trade Marks Act, 1999 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1",
+          "citation": "Biological Diversity Act, 2002 — Section 3",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "C"
+        }
+      ],
+      "evidence_fingerprint": "43209b458db575c4",
+      "latency_ms": 3.8,
+      "answer": {
+        "answer": "3. Registrar of Geographical Indications .—(1) The Controller -General of Patents, Designs and Trade Marks appointed under sub -section ( 1) of section 3 of the Trade Marks Act, 1999, shall be the Registrar of Geographical Indications [2]. 3. Controller and other officers.—(1) The Controller-General of Patents, Designs and Trade Marks appointed under sub-section (1) of section 4 of the Trade and Merchandise Marks Act, 1958 (43 of 1958) shall be the Controller of Designs for the purposes of this Act [3]. 3. Appointment o f Registrar and other officers .—(1) The Central Government may, by notification in the Official Gazette, appoint a perso n to be known as the Controller -General of Patents, Designs and Trade Marks, who shall be the Registrar of Trade Marks for the purposes of this Act [4].",
+        "citations": [
+          {
+            "marker": 2,
+            "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+            "document_id": "IN-GI-ACT-1999",
+            "locator": "Section 3",
+            "pages": [
+              7
+            ],
+            "citation_text": "Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 3",
+            "source_evidence_level": "B",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-GI-ACT-1999",
+              "filename": "The Geographical Indications of Goods (Registration and Protection) Act, 1999 Act No. 48 of 1999.pdf",
+              "sha256": "f627842df535a20bb531fea8bb228f59f04e36fe664bf1b2a36ca688331bccc5",
+              "official_source_url": "https://www.indiacode.nic.in/",
+              "source_version_id": "IN-GI-ACT-1999@2026-06-01",
+              "consolidated_as_of": "2026-06-01"
+            }
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+            "document_id": "IN-DESIGNS-ACT-2000",
+            "locator": "Section 3",
+            "pages": [
+              6
+            ],
+            "citation_text": "Designs Act, 2000 — Section 3",
+            "source_evidence_level": "B",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DESIGNS-ACT-2000",
+              "filename": "Designs Act, 2000.pdf",
+              "sha256": "daabef07f692fe28bcf11f4b61ecd3df1b888f394fa4f90e7b10f1948730eca0",
+              "official_source_url": "https://www.indiacode.nic.in/",
+              "source_version_id": "IN-DESIGNS-ACT-2000@2026-06-15",
+              "consolidated_as_of": "2026-06-15"
+            }
+          },
+          {
+            "marker": 4,
+            "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+            "document_id": "IN-TM-ACT-1999",
+            "locator": "Section 3",
+            "pages": [
+              12
+            ],
+            "citation_text": "Trade Marks Act, 1999 — Section 3",
+            "source_evidence_level": "B",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-TM-ACT-1999",
+              "filename": "Trade Marks Act, 1999.pdf",
+              "sha256": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+              "official_source_url": "https://www.indiacode.nic.in/",
+              "source_version_id": "IN-TM-ACT-1999@2026-06-01",
+              "consolidated_as_of": "2026-06-01"
+            }
+          }
+        ],
+        "confidence": "MODERATE",
+        "grounded": true,
+        "insufficient_evidence": false,
+        "insufficient_evidence_reasons": [],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "1 cited source(s) are at evidence level C: the publisher of the underlying PDF could not be established."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+          "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1"
+        ],
+        "evidence_fingerprint": "43209b458db575c4",
+        "provider": "extractive_mock",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "patents"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "3",
+                  "act",
+                  "section"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "C",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "1 cited source(s) are at evidence level C: the publisher of the underlying PDF could not be established."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-ACT-1999::chapter-ii-section-3",
+                "document_id": "IN-GI-ACT-1999",
+                "locator": "Section 3",
+                "pages": [
+                  7
+                ],
+                "citation_text": "Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 3",
+                "source_evidence_level": "B",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-GI-ACT-1999",
+                  "filename": "The Geographical Indications of Goods (Registration and Protection) Act, 1999 Act No. 48 of 1999.pdf",
+                  "sha256": "f627842df535a20bb531fea8bb228f59f04e36fe664bf1b2a36ca688331bccc5",
+                  "official_source_url": "https://www.indiacode.nic.in/",
+                  "source_version_id": "IN-GI-ACT-1999@2026-06-01",
+                  "consolidated_as_of": "2026-06-01"
+                }
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-ACT-2000::chapter-ii-section-3",
+                "document_id": "IN-DESIGNS-ACT-2000",
+                "locator": "Section 3",
+                "pages": [
+                  6
+                ],
+                "citation_text": "Designs Act, 2000 — Section 3",
+                "source_evidence_level": "B",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-DESIGNS-ACT-2000",
+                  "filename": "Designs Act, 2000.pdf",
+                  "sha256": "daabef07f692fe28bcf11f4b61ecd3df1b888f394fa4f90e7b10f1948730eca0",
+                  "official_source_url": "https://www.indiacode.nic.in/",
+                  "source_version_id": "IN-DESIGNS-ACT-2000@2026-06-15",
+                  "consolidated_as_of": "2026-06-15"
+                }
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-TM-ACT-1999::chapter-ii-section-3",
+                "document_id": "IN-TM-ACT-1999",
+                "locator": "Section 3",
+                "pages": [
+                  12
+                ],
+                "citation_text": "Trade Marks Act, 1999 — Section 3",
+                "source_evidence_level": "B",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-TM-ACT-1999",
+                  "filename": "Trade Marks Act, 1999.pdf",
+                  "sha256": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+                  "official_source_url": "https://www.indiacode.nic.in/",
+                  "source_version_id": "IN-TM-ACT-1999@2026-06-01",
+                  "consolidated_as_of": "2026-06-01"
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": true,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 3,
+            "supported_claim_rate": 1.0,
+            "unresolved_markers": [],
+            "unsupported_claims": [],
+            "uncited_evidence": [
+              "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+              "IN-BDA-2002-AMD-2023::chapter-i-section-3-c1"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "3. Registrar of Geographical Indications .—(1) The Controller -General of Patents, Designs and Trade Marks appointed under sub -section ( 1) of section 3 of the Trade Marks Act, 1999, shall be the Registrar of Geographical Indications [2].",
+                "markers": [
+                  2
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "1999",
+                  "3",
+                  "act",
+                  "appointed",
+                  "controller",
+                  "designs",
+                  "general",
+                  "geographical",
+                  "indications",
+                  "marks",
+                  "patents",
+                  "registrar",
+                  "section",
+                  "sub",
+                  "trade"
+                ]
+              },
+              {
+                "sentence": "3. Controller and other officers.—(1) The Controller-General of Patents, Designs and Trade Marks appointed under sub-section (1) of section 4 of the Trade and Merchandise Marks Act, 1958 (43 of 1958) shall be the Controller of Designs for the purposes of this Act [3].",
+                "markers": [
+                  3
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "1958",
+                  "3",
+                  "4",
+                  "43",
+                  "act",
+                  "appointed",
+                  "controller",
+                  "designs",
+                  "general",
+                  "marks",
+                  "merchandise",
+                  "officers",
+                  "other",
+                  "patents",
+                  "purposes",
+                  "section",
+                  "sub",
+                  "trade"
+                ]
+              },
+              {
+                "sentence": "3. Appointment o f Registrar and other officers .—(1) The Central Government may, by notification in the Official Gazette, appoint a perso n to be known as the Controller -General of Patents, Designs and Trade Marks, who shall be the Registrar of Trade Marks for the purposes of this Act [4].",
+                "markers": [
+                  4
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "3",
+                  "act",
+                  "appoint",
+                  "appointment",
+                  "central",
+                  "controller",
+                  "designs",
+                  "gazette",
+                  "general",
+                  "government",
+                  "known",
+                  "marks",
+                  "notification",
+                  "officers",
+                  "official",
+                  "other",
+                  "patents",
+                  "perso",
+                  "purposes",
+                  "registrar",
+                  "trade"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_config": {
+            "provider": "extractive_mock",
+            "version": "0.1.0",
+            "prompt_version": "0.1.0",
+            "requires_network": false,
+            "strategy": "extractive: quotes corpus sentences verbatim",
+            "max_sentences": 3,
+            "prefer_citable": true
+          },
+          "provider_diagnostics": {
+            "sentences": 3,
+            "markers": [
+              2,
+              3,
+              4
+            ]
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\n3. Registrar of Geographical Indications .—(1) The Controller -General of Patents, Designs and Trade Marks appointed under sub -section ( 1) of section 3 of the Trade Marks Act, 1999, shall be the Registrar of Geographical Indications [2]. 3. Controller and other officers.—(1) The Controller-General of Patents, Designs and Trade Marks appointed under sub-section (1) of section 4 of the Trade and Merchandise Marks Act, 1958 (43 of 1958) shall be the Controller of Designs for the purposes of this Act [3]. 3. Appointment o f Registrar and other officers .—(1) The Central Government may, by notification in the Official Gazette, appoint a perso n to be known as the Controller -General of Patents, Designs and Trade Marks, who shall be the Registrar of Trade Marks for the purposes of this Act [4].\n\nSource(s)\n\n[2] Geographical Indications of Goods (Registration and Protection) Act, 1999 — Section 3, p. 7\n[3] Designs Act, 2000 — Section 3, p. 6\n[4] Trade Marks Act, 1999 — Section 3, p. 12\n\nCaution\n\n- 1 cited source(s) are at evidence level C: the publisher of the underlying PDF could not be established.\n\nConfidence: MODERATE (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+      "golden_target": {
+        "documents": [
+          "IN-PATENTS-ACT-1970"
+        ],
+        "locators": [
+          "Section 3"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": true,
+        "citation_count": 3,
+        "citation_markers": [
+          2,
+          3,
+          4
+        ],
+        "answer_grounded": true,
+        "insufficient_evidence": false
+      }
+    },
+    {
+      "question_id": "Q078",
+      "experiment_family": "conceptual_synthesis",
+      "selection_rationale": "the only Indian conceptual question whose golden target spans two chunks, so it cannot be answered by returning one provision",
+      "query": "What rights does a breeder get on registration of a plant variety?",
+      "query_family": "conceptual",
+      "domain": "plant_varieties",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Act, 2001 — Section 32",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0",
+          "citation": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Form 0",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "f50810e033df8644",
+      "latency_ms": 9.0,
+      "answer": {
+        "answer": "Whereas ......................... has declared that he has developed .................................. plant variety/essentially derived plant variety and that he is the true breeder thereof (or the legal representative or assignee 6f the true breeder) and that he is entitled to a plant variety right on the said variety, having regard to the provis ions of the Protection of Plant Varieties and Farmer's Right Act, 2001 and that there is no objection to the registration of plant variety in favour of him .. And whereas he has, by an application, reque sted that registration of plant variety / essentially derived plant variety may be allowed to him for the said plant Variety; And whereas he has, by and in his applicat ion, particularly described the various distinctive features and mentioned the denomination of the said plant variety; Now, these presents that the above said ap plicant (including his legal representatives and assignees or any of them) shall, subject to the provisions of the Protection of Plant Varieties and Farmers Rights Act, 2001 and th e conditions specified in section 47 of the said Act, and to the conditions and provisi ons specified by any other law for the time being in force, have the exclusive right to produce, sell, market, distribute, import or export the variety for a term of ................................. years from the .............................. day of... ................... , 20 ........... and of authorising any other person to do so, subject to the conditions that the validity of this registrati on is not guaranteed and that the fee prescribed for the continuance of this registration are duly paid [1]. Signature…………….. To The Registrar The Plant Varieties Registry At. ........................ FORM PV-12 (See rule 50) THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 APPLICATION OF OFFER TO SURRENDER THE CERTIFICATE OF REGISTRATION BY THE REGISTERED BREEDER OF THE PLANT VARIETY In the matter of plant variety ................................. , of crop .............................. , having registration No ............................ registered in the name of ............................. application is hereby made by I/We 1 ……………………………..being the registered proprietor(s) or successor of the registered breeder2 of the above mentioned registered plant variety to surrender his certificate of registration in circumstances that are stated fully in the accompanying statement [3]. FORM PV-16 [See rule 53(2)] THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 NOTICE OF OPPOSITION TO OPPOSE THE REVO CA nON OF CERTIFICATE OF REGISTRA nON OF PLANT VARIETY In the matter of application for revocation of certificate of registration by .......................... lI/We2 .................... who is the registered breeder, hereby give notice of my intention to oppose the revocation of certificate, of plant variety ........................... , of crop ...................... , having registration No ......................... notice of which was received by me, dated the ............................. day of .......................... 20 ........................... sent by the Registrar of plant variety [4].",
+        "citations": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+            "document_id": "IN-PPVFR-RULES-2003",
+            "locator": "Second Schedule, item 9",
+            "pages": [
+              51,
+              52
+            ],
+            "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-PPVFR-RULES-2003",
+              "filename": "ppvfrarules2003.pdf",
+              "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+              "official_source_url": "https://plantauthority.gov.in/acts-rules",
+              "source_version_id": "IN-PPVFR-RULES-2003@undated",
+              "consolidated_as_of": null
+            }
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+            "document_id": "IN-PPVFR-RULES-2003",
+            "locator": "Second Schedule, item 9",
+            "pages": [
+              34,
+              35,
+              36,
+              37
+            ],
+            "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-PPVFR-RULES-2003",
+              "filename": "ppvfrarules2003.pdf",
+              "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+              "official_source_url": "https://plantauthority.gov.in/acts-rules",
+              "source_version_id": "IN-PPVFR-RULES-2003@undated",
+              "consolidated_as_of": null
+            }
+          },
+          {
+            "marker": 4,
+            "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+            "document_id": "IN-PPVFR-RULES-2003",
+            "locator": "Second Schedule, item 9",
+            "pages": [
+              37,
+              38,
+              39
+            ],
+            "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-PPVFR-RULES-2003",
+              "filename": "ppvfrarules2003.pdf",
+              "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+              "official_source_url": "https://plantauthority.gov.in/acts-rules",
+              "source_version_id": "IN-PPVFR-RULES-2003@undated",
+              "consolidated_as_of": null
+            }
+          }
+        ],
+        "confidence": "LOW",
+        "grounded": true,
+        "insufficient_evidence": false,
+        "insufficient_evidence_reasons": [],
+        "conflict_detected": true,
+        "conflict_chunks": [
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15"
+        ],
+        "cautions": [
+          "Conflicting evidence was detected (ambiguous_citation, same_provision_divergence). This system does not decide which provision prevails; both are shown."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+          "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0"
+        ],
+        "evidence_fingerprint": "f50810e033df8644",
+        "provider": "extractive_mock",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "get",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "breeder",
+                  "plant",
+                  "registration",
+                  "rights",
+                  "variety"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [
+              {
+                "kind": "same_provision_divergence",
+                "chunk_ids": [
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8"
+                ],
+                "detail": "2 separate passages claim to be IN-PPVFR-RULES-2003 chapter=VIII, clause=B, item=9, schedule=SECOND, sub_rule=1"
+              },
+              {
+                "kind": "ambiguous_citation",
+                "chunk_ids": [
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                  "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8"
+                ],
+                "detail": "3 different passages both cite as \"Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9\"; a reader cannot tell them apart from the citation alone"
+              }
+            ],
+            "cautions": [
+              "Conflicting evidence was detected (ambiguous_citation, same_provision_divergence). This system does not decide which provision prevails; both are shown."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15",
+                "document_id": "IN-PPVFR-RULES-2003",
+                "locator": "Second Schedule, item 9",
+                "pages": [
+                  51,
+                  52
+                ],
+                "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-PPVFR-RULES-2003",
+                  "filename": "ppvfrarules2003.pdf",
+                  "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+                  "official_source_url": "https://plantauthority.gov.in/acts-rules",
+                  "source_version_id": "IN-PPVFR-RULES-2003@undated",
+                  "consolidated_as_of": null
+                }
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7",
+                "document_id": "IN-PPVFR-RULES-2003",
+                "locator": "Second Schedule, item 9",
+                "pages": [
+                  34,
+                  35,
+                  36,
+                  37
+                ],
+                "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-PPVFR-RULES-2003",
+                  "filename": "ppvfrarules2003.pdf",
+                  "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+                  "official_source_url": "https://plantauthority.gov.in/acts-rules",
+                  "source_version_id": "IN-PPVFR-RULES-2003@undated",
+                  "consolidated_as_of": null
+                }
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8",
+                "document_id": "IN-PPVFR-RULES-2003",
+                "locator": "Second Schedule, item 9",
+                "pages": [
+                  37,
+                  38,
+                  39
+                ],
+                "citation_text": "Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-PPVFR-RULES-2003",
+                  "filename": "ppvfrarules2003.pdf",
+                  "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+                  "official_source_url": "https://plantauthority.gov.in/acts-rules",
+                  "source_version_id": "IN-PPVFR-RULES-2003@undated",
+                  "consolidated_as_of": null
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": true,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 3,
+            "supported_claim_rate": 1.0,
+            "unresolved_markers": [],
+            "unsupported_claims": [],
+            "uncited_evidence": [
+              "IN-PPVFR-ACT-2001::chapter-iv-section-32",
+              "IN-PPVFR-RULES-2003::chapter-viii-second-schedule-form-0"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "Whereas ......................... has declared that he has developed .................................. plant variety/essentially derived plant variety and that he is the true breeder thereof (or the legal representative or assignee 6f the true breeder) and that he is entitled to a plant variety right on the said variety, having regard to the provis ions of the Protection of Plant Varieties and Farmer's Right Act, 2001 and that there is no objection to the registration of plant variety in favour of him .. And whereas he has, by an application, reque sted that registration of plant variety / essentially derived plant variety may be allowed to him for the said plant Variety; And whereas he has, by and in his applicat ion, particularly described the various distinctive features and mentioned the denomination of the said plant variety; Now, these presents that the above said ap plicant (including his legal representatives and assignees or any of them) shall, subject to the provisions of the Protection of Plant Varieties and Farmers Rights Act, 2001 and th e conditions specified in section 47 of the said Act, and to the conditions and provisi ons specified by any other law for the time being in force, have the exclusive right to produce, sell, market, distribute, import or export the variety for a term of ................................. years from the .............................. day of... ................... , 20 ........... and of authorising any other person to do so, subject to the conditions that the validity of this registrati on is not guaranteed and that the fee prescribed for the continuance of this registration are duly paid [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "20",
+                  "2001",
+                  "47",
+                  "6",
+                  "6f",
+                  "above",
+                  "act",
+                  "allowed",
+                  "applicat",
+                  "application",
+                  "assignee",
+                  "assignees",
+                  "authorising",
+                  "breeder",
+                  "conditions",
+                  "continuance",
+                  "day",
+                  "declared",
+                  "denomination",
+                  "derived",
+                  "described",
+                  "developed",
+                  "distinctive",
+                  "distribute",
+                  "duly",
+                  "entitled",
+                  "essentially",
+                  "exclusive",
+                  "export",
+                  "farmers",
+                  "favour",
+                  "features",
+                  "fee",
+                  "force",
+                  "guaranteed",
+                  "having",
+                  "him",
+                  "his",
+                  "import",
+                  "including",
+                  "ion",
+                  "ions",
+                  "law",
+                  "legal",
+                  "market",
+                  "mentioned",
+                  "now",
+                  "objection",
+                  "ons",
+                  "other",
+                  "paid",
+                  "particularly",
+                  "person",
+                  "plant",
+                  "plicant",
+                  "prescribed",
+                  "presents",
+                  "produce",
+                  "protection",
+                  "provis",
+                  "provisi",
+                  "provisions",
+                  "regard",
+                  "registrati",
+                  "registration",
+                  "representative",
+                  "representatives",
+                  "reque",
+                  "right",
+                  "rights",
+                  "said",
+                  "section",
+                  "sell",
+                  "specified",
+                  "sted",
+                  "subject",
+                  "term",
+                  "them",
+                  "thereof",
+                  "time",
+                  "true",
+                  "validity",
+                  "varieties",
+                  "variety",
+                  "various",
+                  "whereas",
+                  "years"
+                ]
+              },
+              {
+                "sentence": "Signature…………….. To The Registrar The Plant Varieties Registry At. ........................ FORM PV-12 (See rule 50) THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 APPLICATION OF OFFER TO SURRENDER THE CERTIFICATE OF REGISTRATION BY THE REGISTERED BREEDER OF THE PLANT VARIETY In the matter of plant variety ................................. , of crop .............................. , having registration No ............................ registered in the name of ............................. application is hereby made by I/We 1 ……………………………..being the registered proprietor(s) or successor of the registered breeder2 of the above mentioned registered plant variety to surrender his certificate of registration in circumstances that are stated fully in the accompanying statement [3].",
+                "markers": [
+                  3
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "12",
+                  "2",
+                  "2001",
+                  "50",
+                  "above",
+                  "accompanying",
+                  "act",
+                  "application",
+                  "breeder",
+                  "certificate",
+                  "circumstances",
+                  "crop",
+                  "farmers",
+                  "form",
+                  "fully",
+                  "having",
+                  "hereby",
+                  "his",
+                  "made",
+                  "matter",
+                  "mentioned",
+                  "name",
+                  "offer",
+                  "plant",
+                  "proprietor",
+                  "protection",
+                  "registered",
+                  "registrar",
+                  "registration",
+                  "registry",
+                  "rights",
+                  "rule",
+                  "see",
+                  "signature",
+                  "stated",
+                  "statement",
+                  "successor",
+                  "surrender",
+                  "varieties",
+                  "variety"
+                ]
+              },
+              {
+                "sentence": "FORM PV-16 [See rule 53(2)] THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 NOTICE OF OPPOSITION TO OPPOSE THE REVO CA nON OF CERTIFICATE OF REGISTRA nON OF PLANT VARIETY In the matter of application for revocation of certificate of registration by .......................... lI/We2 .................... who is the registered breeder, hereby give notice of my intention to oppose the revocation of certificate, of plant variety ........................... , of crop ...................... , having registration No ......................... notice of which was received by me, dated the ............................. day of .......................... 20 ........................... sent by the Registrar of plant variety [4].",
+                "markers": [
+                  4
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "16",
+                  "2",
+                  "20",
+                  "2001",
+                  "53",
+                  "53(2)",
+                  "act",
+                  "application",
+                  "breeder",
+                  "certificate",
+                  "crop",
+                  "dated",
+                  "day",
+                  "farmers",
+                  "form",
+                  "give",
+                  "having",
+                  "hereby",
+                  "intention",
+                  "matter",
+                  "non",
+                  "notice",
+                  "oppose",
+                  "opposition",
+                  "plant",
+                  "protection",
+                  "received",
+                  "registered",
+                  "registra",
+                  "registrar",
+                  "registration",
+                  "revo",
+                  "revocation",
+                  "rights",
+                  "rule",
+                  "see",
+                  "sent",
+                  "varieties",
+                  "variety"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_config": {
+            "provider": "extractive_mock",
+            "version": "0.1.0",
+            "prompt_version": "0.1.0",
+            "requires_network": false,
+            "strategy": "extractive: quotes corpus sentences verbatim",
+            "max_sentences": 3,
+            "prefer_citable": true
+          },
+          "provider_diagnostics": {
+            "sentences": 3,
+            "markers": [
+              1,
+              3,
+              4
+            ]
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nWhereas ......................... has declared that he has developed .................................. plant variety/essentially derived plant variety and that he is the true breeder thereof (or the legal representative or assignee 6f the true breeder) and that he is entitled to a plant variety right on the said variety, having regard to the provis ions of the Protection of Plant Varieties and Farmer's Right Act, 2001 and that there is no objection to the registration of plant variety in favour of him .. And whereas he has, by an application, reque sted that registration of plant variety / essentially derived plant variety may be allowed to him for the said plant Variety; And whereas he has, by and in his applicat ion, particularly described the various distinctive features and mentioned the denomination of the said plant variety; Now, these presents that the above said ap plicant (including his legal representatives and assignees or any of them) shall, subject to the provisions of the Protection of Plant Varieties and Farmers Rights Act, 2001 and th e conditions specified in section 47 of the said Act, and to the conditions and provisi ons specified by any other law for the time being in force, have the exclusive right to produce, sell, market, distribute, import or export the variety for a term of ................................. years from the .............................. day of... ................... , 20 ........... and of authorising any other person to do so, subject to the conditions that the validity of this registrati on is not guaranteed and that the fee prescribed for the continuance of this registration are duly paid [1]. Signature…………….. To The Registrar The Plant Varieties Registry At. ........................ FORM PV-12 (See rule 50) THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 APPLICATION OF OFFER TO SURRENDER THE CERTIFICATE OF REGISTRATION BY THE REGISTERED BREEDER OF THE PLANT VARIETY In the matter of plant variety ................................. , of crop .............................. , having registration No ............................ registered in the name of ............................. application is hereby made by I/We 1 ……………………………..being the registered proprietor(s) or successor of the registered breeder2 of the above mentioned registered plant variety to surrender his certificate of registration in circumstances that are stated fully in the accompanying statement [3]. FORM PV-16 [See rule 53(2)] THE PROTECTION OF PLANT VARIETIES AND FARMERS' RIGHTS ACT, 2001 NOTICE OF OPPOSITION TO OPPOSE THE REVO CA nON OF CERTIFICATE OF REGISTRA nON OF PLANT VARIETY In the matter of application for revocation of certificate of registration by .......................... lI/We2 .................... who is the registered breeder, hereby give notice of my intention to oppose the revocation of certificate, of plant variety ........................... , of crop ...................... , having registration No ......................... notice of which was received by me, dated the ............................. day of .......................... 20 ........................... sent by the Registrar of plant variety [4].\n\nSource(s)\n\n[1] Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9, pp. 51–52\n[3] Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9, pp. 34–37\n[4] Protection of Plant Varieties and Farmers' Rights Rules, 2003 — Second Schedule, item 9, pp. 37–39\n\nConflicting evidence\n\nThese sources were flagged as conflicting or indistinguishable from one another. This system reports the disagreement and does not decide between them:\n- IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c7\n- IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c8\n- IN-PPVFR-RULES-2003::chapter-viii-second-schedule-item-9-c15\n\nCaution\n\n- Conflicting evidence was detected (ambiguous_citation, same_provision_divergence). This system does not decide which provision prevails; both are shown.\n\nConfidence: LOW (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+      "golden_target": {
+        "documents": [
+          "IN-PPVFR-ACT-2001"
+        ],
+        "locators": [
+          "Section 28"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 26,
+        "reranked_evidence_recall": false,
+        "reranked_evidence_rank": null,
+        "citation_valid": true,
+        "citation_count": 3,
+        "citation_markers": [
+          1,
+          3,
+          4
+        ],
+        "answer_grounded": true,
+        "insufficient_evidence": false
+      }
+    },
+    {
+      "question_id": "Q027",
+      "experiment_family": "identifier",
+      "selection_rationale": "first Rule-identifier question in file order whose document was not already selected",
+      "query": "Rule 23 of the Trade Marks Rules, 2017 — form and signing of an application",
+      "query_family": "identifier",
+      "domain": "trademarks",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+          "citation": "Trade Marks Rules, 2017 — Rule 23",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "B"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+          "citation": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+          "citation": "Designs Rules, 2001 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+          "citation": "Patents Rules, 2003 — Rule 23",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "B"
+        }
+      ],
+      "evidence_fingerprint": "02813c7fcc2d8371",
+      "latency_ms": 2.9,
+      "answer": {
+        "answer": "23. Form and signing of application.— (1) An application for the registration of a tradem ark in respect of specification of goods or services shall be made in TM-A and shall be signed by the applicant or his agent [1]. 23. Form and signing of application .- (1) Every application for the registration of a geographical indication shall be made in the prescribed form and shall be signed by the applicant or his agent and must be made in triplicate alongwith three copies of a Statement of Case [2]. 23. Manner of making an application under sub-section (2) of section 11. - An application under sub- section (2) of section 11 shall be made in Form -3 [3].",
+        "citations": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+            "document_id": "IN-TM-RULES-2017",
+            "locator": "Rule 23",
+            "pages": [
+              59
+            ],
+            "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+            "source_evidence_level": "B",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-TM-RULES-2017",
+              "filename": "Trademarks rules 2017.pdf",
+              "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+              "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+              "source_version_id": "IN-TM-RULES-2017@undated",
+              "consolidated_as_of": null
+            }
+          },
+          {
+            "marker": 2,
+            "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+            "document_id": "IN-GI-RULES-2002",
+            "locator": "Rule 23",
+            "pages": [
+              6,
+              7
+            ],
+            "citation_text": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-GI-RULES-2002",
+              "filename": "Geographical Indications.pdf",
+              "sha256": "81dc9dc2f864317cbc239d5870e7fd0b9614ab2dfe6bf8b80c7a0ede2458b8b4",
+              "official_source_url": "https://ipindia.gov.in/geographical-indications-resources-rules",
+              "source_version_id": "IN-GI-RULES-2002@2002-03-08",
+              "consolidated_as_of": "2002-03-08"
+            }
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+            "document_id": "IN-DESIGNS-RULES-2001",
+            "locator": "Rule 23",
+            "pages": [
+              6
+            ],
+            "citation_text": "Designs Rules, 2001 — Rule 23",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DESIGNS-RULES-2001",
+              "filename": "Design Rules, 2001.pdf",
+              "sha256": "9e9eb40667b288fa8aeb737616019c68d0c298f5077535620078faeea643fbd6",
+              "official_source_url": "https://ipindia.gov.in/designs-resources-rules",
+              "source_version_id": "IN-DESIGNS-RULES-2001@2001-05-11",
+              "consolidated_as_of": "2001-05-11"
+            }
+          }
+        ],
+        "confidence": "MODERATE",
+        "grounded": true,
+        "insufficient_evidence": false,
+        "insufficient_evidence_reasons": [],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "4 of 5 cited sources are marked STALE and may have been amended.",
+          "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-DC-RULES-1945::part-iv-rule-23",
+          "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+        ],
+        "evidence_fingerprint": "02813c7fcc2d8371",
+        "provider": "extractive_mock",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "rule",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form",
+                  "signing"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "application",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-DC-RULES-1945::part-iv-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "form"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-PATENTS-RULES-2003::chapter-iii-rule-23",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "23",
+                  "rules"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "B",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "4 of 5 cited sources are marked STALE and may have been amended.",
+              "The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-TM-RULES-2017::part-i-chapter-ii-rule-23",
+                "document_id": "IN-TM-RULES-2017",
+                "locator": "Rule 23",
+                "pages": [
+                  59
+                ],
+                "citation_text": "Trade Marks Rules, 2017 — Rule 23",
+                "source_evidence_level": "B",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-TM-RULES-2017",
+                  "filename": "Trademarks rules 2017.pdf",
+                  "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+                  "official_source_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+                  "source_version_id": "IN-TM-RULES-2017@undated",
+                  "consolidated_as_of": null
+                }
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-GI-RULES-2002::part-1-chapter-ii-rule-23",
+                "document_id": "IN-GI-RULES-2002",
+                "locator": "Rule 23",
+                "pages": [
+                  6,
+                  7
+                ],
+                "citation_text": "Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23",
+                "source_evidence_level": "A",
+                "temporal_status": "STALE",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-GI-RULES-2002",
+                  "filename": "Geographical Indications.pdf",
+                  "sha256": "81dc9dc2f864317cbc239d5870e7fd0b9614ab2dfe6bf8b80c7a0ede2458b8b4",
+                  "official_source_url": "https://ipindia.gov.in/geographical-indications-resources-rules",
+                  "source_version_id": "IN-GI-RULES-2002@2002-03-08",
+                  "consolidated_as_of": "2002-03-08"
+                }
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DESIGNS-RULES-2001::rule-23",
+                "document_id": "IN-DESIGNS-RULES-2001",
+                "locator": "Rule 23",
+                "pages": [
+                  6
+                ],
+                "citation_text": "Designs Rules, 2001 — Rule 23",
+                "source_evidence_level": "A",
+                "temporal_status": "STALE",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-DESIGNS-RULES-2001",
+                  "filename": "Design Rules, 2001.pdf",
+                  "sha256": "9e9eb40667b288fa8aeb737616019c68d0c298f5077535620078faeea643fbd6",
+                  "official_source_url": "https://ipindia.gov.in/designs-resources-rules",
+                  "source_version_id": "IN-DESIGNS-RULES-2001@2001-05-11",
+                  "consolidated_as_of": "2001-05-11"
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": true,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 3,
+            "supported_claim_rate": 1.0,
+            "unresolved_markers": [],
+            "unsupported_claims": [],
+            "uncited_evidence": [
+              "IN-DC-RULES-1945::part-iv-rule-23",
+              "IN-PATENTS-RULES-2003::chapter-iii-rule-23"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "23. Form and signing of application.— (1) An application for the registration of a tradem ark in respect of specification of goods or services shall be made in TM-A and shall be signed by the applicant or his agent [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "23",
+                  "agent",
+                  "applicant",
+                  "application",
+                  "ark",
+                  "form",
+                  "goods",
+                  "his",
+                  "made",
+                  "registration",
+                  "respect",
+                  "services",
+                  "signed",
+                  "signing",
+                  "specification",
+                  "tradem"
+                ]
+              },
+              {
+                "sentence": "23. Form and signing of application .- (1) Every application for the registration of a geographical indication shall be made in the prescribed form and shall be signed by the applicant or his agent and must be made in triplicate alongwith three copies of a Statement of Case [2].",
+                "markers": [
+                  2
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "23",
+                  "agent",
+                  "alongwith",
+                  "applicant",
+                  "application",
+                  "case",
+                  "copies",
+                  "every",
+                  "form",
+                  "geographical",
+                  "his",
+                  "indication",
+                  "made",
+                  "prescribed",
+                  "registration",
+                  "signed",
+                  "signing",
+                  "statement",
+                  "three",
+                  "triplicate"
+                ]
+              },
+              {
+                "sentence": "23. Manner of making an application under sub-section (2) of section 11. - An application under sub- section (2) of section 11 shall be made in Form -3 [3].",
+                "markers": [
+                  3
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "11",
+                  "2",
+                  "23",
+                  "3",
+                  "application",
+                  "form",
+                  "made",
+                  "making",
+                  "manner",
+                  "section",
+                  "sub"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_config": {
+            "provider": "extractive_mock",
+            "version": "0.1.0",
+            "prompt_version": "0.1.0",
+            "requires_network": false,
+            "strategy": "extractive: quotes corpus sentences verbatim",
+            "max_sentences": 3,
+            "prefer_citable": true
+          },
+          "provider_diagnostics": {
+            "sentences": 3,
+            "markers": [
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\n23. Form and signing of application.— (1) An application for the registration of a tradem ark in respect of specification of goods or services shall be made in TM-A and shall be signed by the applicant or his agent [1]. 23. Form and signing of application .- (1) Every application for the registration of a geographical indication shall be made in the prescribed form and shall be signed by the applicant or his agent and must be made in triplicate alongwith three copies of a Statement of Case [2]. 23. Manner of making an application under sub-section (2) of section 11. - An application under sub- section (2) of section 11 shall be made in Form -3 [3].\n\nSource(s)\n\n[1] Trade Marks Rules, 2017 — Rule 23, p. 59\n[2] Geographical Indications of Goods (Registration and Protection) Rules, 2002 — Rule 23, pp. 6–7, [STALE]\n[3] Designs Rules, 2001 — Rule 23, p. 6, [STALE]\n\nCaution\n\n- 4 of 5 cited sources are marked STALE and may have been amended.\n- The supplied evidence mixes current and superseded instruments; they address different provisions, so this is not flagged as a conflict.\n\nConfidence: MODERATE (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+      "golden_target": {
+        "documents": [
+          "IN-TM-RULES-2017"
+        ],
+        "locators": [
+          "Rule 23"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": true,
+        "citation_count": 3,
+        "citation_markers": [
+          1,
+          2,
+          3
+        ],
+        "answer_grounded": true,
+        "insufficient_evidence": false
+      }
+    },
+    {
+      "question_id": "Q104",
+      "experiment_family": "treaty_international",
+      "selection_rationale": "first international-jurisdiction question over the Nagoya Protocol",
+      "query": "What capacity building does the Nagoya Protocol require of its parties?",
+      "query_family": "conceptual",
+      "domain": "biodiversity_abs",
+      "jurisdiction": "international",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+          "citation": "Nagoya Protocol — Article 22",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+          "citation": "Nagoya Protocol — Article 25",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-18",
+          "citation": "Nagoya Protocol — Article 18",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+          "citation": "Nagoya Protocol — unlocated text (physical p. 1)",
+          "citable": false,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+          "citation": "Nagoya Protocol — Article 32",
+          "citable": true,
+          "temporal_status": "CURRENT",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "486a8f7490b9a868",
+      "latency_ms": 4.7,
+      "answer": {
+        "answer": "Article CAPACITY 1. The Parties shall cooperate in the capacity-building, capacity development and strengthening of human resources and institutional capacities to effectively implement this Protocol in developing country Parties, in particular the least developed countries and small island developing States among them, and Parties with economies in transition, including through existing global, regional, subregional and national institutions and organizations [1]. 3. Regarding the capacity-building and development referred to in Article 22 of this Protocol, the Conference of the Parties serving as the meeting of the Parties to this Protocol, in providing guidance with respect to the financial mechanism referred to in paragraph 2 above, for consideration by the Conference of the Parties, shall take into account the need of developing country Parties, in particular the least developed countries and small island developing States among them, and of Parties of its wish to be represented at a meeting of the Conference of the Parties serving as a meeting of the Parties to this Protocol as an observer, may be so admitted, unless at least one third of the Parties present object [2]. Article SIGNATURE This Protocol shall be open for signature by Parties to the Convention at the United Nations Headquarters in New Y ork, from 2 February 2011 to 1 February 2012. (c) Participation in product development; (d) Collaboration, cooperation and contribution in education and training; (e) Admittance to ex situ facilities of genetic resources and to databases; (f) Transfer to the provider of the genetic resources of knowledge and technology under fair and most favourable terms, including on concessional and preferential terms where agreed, in particular, knowledge and technology that make use of genetic resources, including biotechnology, or that are relevant to the conservation and sustainable utilization of biological diversity; (g) Strengthening capacities for technology transfer; (h) Institutional capacity-building; (i) Human and material resources to strengthen the capacities for the administration and enforcement of access regulations; (j) Training related to genetic resources with the full participation of countries providing genetic resources, and where possible, in such countries; (k) Access to scientific information relevant to conservation and sustainable use of biological diversity, including biological inventories and taxonomic studies; (l) Contributions to the local economy; (m) Research directed towards priority needs, such as health and food security, taking into account domestic uses of genetic resources in the Party providing genetic resources; (n) Institutional and professional relationships that can arise from an access and benefit-sharing agreement and subsequent collaborative activities; (o) Food and livelihood security benefits; (p) Social recognition; (q) Joint ownership of relevant intellectual property rights [5].",
+        "citations": [
+          {
+            "marker": 1,
+            "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+            "document_id": "UN-NAGOYA-PROTOCOL-2010",
+            "locator": "Article 22",
+            "pages": [
+              11,
+              12
+            ],
+            "citation_text": "Nagoya Protocol — Article 22",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "UN-NAGOYA-PROTOCOL-2010",
+              "filename": "nagoya-protocol-en.pdf",
+              "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+              "official_source_url": "https://www.cbd.int/abs/",
+              "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+              "consolidated_as_of": "2010-10-29"
+            }
+          },
+          {
+            "marker": 2,
+            "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+            "document_id": "UN-NAGOYA-PROTOCOL-2010",
+            "locator": "Article 25",
+            "pages": [
+              12,
+              13
+            ],
+            "citation_text": "Nagoya Protocol — Article 25",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "UN-NAGOYA-PROTOCOL-2010",
+              "filename": "nagoya-protocol-en.pdf",
+              "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+              "official_source_url": "https://www.cbd.int/abs/",
+              "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+              "consolidated_as_of": "2010-10-29"
+            }
+          },
+          {
+            "marker": 5,
+            "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+            "document_id": "UN-NAGOYA-PROTOCOL-2010",
+            "locator": "Article 32",
+            "pages": [
+              14,
+              15
+            ],
+            "citation_text": "Nagoya Protocol — Article 32",
+            "source_evidence_level": "A",
+            "temporal_status": "CURRENT",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "UN-NAGOYA-PROTOCOL-2010",
+              "filename": "nagoya-protocol-en.pdf",
+              "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+              "official_source_url": "https://www.cbd.int/abs/",
+              "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+              "consolidated_as_of": "2010-10-29"
+            }
+          }
+        ],
+        "confidence": "HIGH",
+        "grounded": true,
+        "insufficient_evidence": false,
+        "insufficient_evidence_reasons": [],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "UN-NAGOYA-PROTOCOL-2010::article-18",
+          "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1"
+        ],
+        "evidence_fingerprint": "486a8f7490b9a868",
+        "provider": "extractive_mock",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 2,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 3,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-18",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              },
+              {
+                "marker": 4,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "nagoya",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": false,
+                "admissible_as_citation": false,
+                "role": "context_only",
+                "notes": [
+                  "not citable: locator unavailable"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "building",
+                  "capacity",
+                  "parties",
+                  "protocol"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": true,
+                "temporal_status": "CURRENT",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": []
+              }
+            ],
+            "conflicts": [],
+            "cautions": [],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 1,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-22",
+                "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                "locator": "Article 22",
+                "pages": [
+                  11,
+                  12
+                ],
+                "citation_text": "Nagoya Protocol — Article 22",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                  "filename": "nagoya-protocol-en.pdf",
+                  "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+                  "official_source_url": "https://www.cbd.int/abs/",
+                  "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+                  "consolidated_as_of": "2010-10-29"
+                }
+              },
+              {
+                "marker": 2,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-25",
+                "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                "locator": "Article 25",
+                "pages": [
+                  12,
+                  13
+                ],
+                "citation_text": "Nagoya Protocol — Article 25",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                  "filename": "nagoya-protocol-en.pdf",
+                  "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+                  "official_source_url": "https://www.cbd.int/abs/",
+                  "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+                  "consolidated_as_of": "2010-10-29"
+                }
+              },
+              {
+                "marker": 5,
+                "chunk_id": "UN-NAGOYA-PROTOCOL-2010::article-32",
+                "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                "locator": "Article 32",
+                "pages": [
+                  14,
+                  15
+                ],
+                "citation_text": "Nagoya Protocol — Article 32",
+                "source_evidence_level": "A",
+                "temporal_status": "CURRENT",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "UN-NAGOYA-PROTOCOL-2010",
+                  "filename": "nagoya-protocol-en.pdf",
+                  "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+                  "official_source_url": "https://www.cbd.int/abs/",
+                  "source_version_id": "UN-NAGOYA-PROTOCOL-2010@2010-10-29",
+                  "consolidated_as_of": "2010-10-29"
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": true,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 3,
+            "supported_claim_rate": 1.0,
+            "unresolved_markers": [],
+            "unsupported_claims": [],
+            "uncited_evidence": [
+              "UN-NAGOYA-PROTOCOL-2010::article-18",
+              "UN-NAGOYA-PROTOCOL-2010::preamble-u0-c1"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "Article CAPACITY 1. The Parties shall cooperate in the capacity-building, capacity development and strengthening of human resources and institutional capacities to effectively implement this Protocol in developing country Parties, in particular the least developed countries and small island developing States among them, and Parties with economies in transition, including through existing global, regional, subregional and national institutions and organizations [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "among",
+                  "article",
+                  "building",
+                  "capacities",
+                  "capacity",
+                  "cooperate",
+                  "countries",
+                  "country",
+                  "developed",
+                  "developing",
+                  "development",
+                  "economies",
+                  "effectively",
+                  "existing",
+                  "global",
+                  "human",
+                  "implement",
+                  "including",
+                  "institutional",
+                  "institutions",
+                  "island",
+                  "least",
+                  "national",
+                  "organizations",
+                  "particular",
+                  "parties",
+                  "protocol",
+                  "regional",
+                  "resources",
+                  "small",
+                  "states",
+                  "strengthening",
+                  "subregional",
+                  "them",
+                  "through",
+                  "transition"
+                ]
+              },
+              {
+                "sentence": "3. Regarding the capacity-building and development referred to in Article 22 of this Protocol, the Conference of the Parties serving as the meeting of the Parties to this Protocol, in providing guidance with respect to the financial mechanism referred to in paragraph 2 above, for consideration by the Conference of the Parties, shall take into account the need of developing country Parties, in particular the least developed countries and small island developing States among them, and of Parties of its wish to be represented at a meeting of the Conference of the Parties serving as a meeting of the Parties to this Protocol as an observer, may be so admitted, unless at least one third of the Parties present object [2].",
+                "markers": [
+                  2
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "2",
+                  "22",
+                  "3",
+                  "above",
+                  "account",
+                  "admitted",
+                  "among",
+                  "article",
+                  "building",
+                  "capacity",
+                  "conference",
+                  "consideration",
+                  "countries",
+                  "country",
+                  "developed",
+                  "developing",
+                  "development",
+                  "financial",
+                  "guidance",
+                  "island",
+                  "least",
+                  "mechanism",
+                  "meeting",
+                  "need",
+                  "object",
+                  "observer",
+                  "one",
+                  "paragraph",
+                  "particular",
+                  "parties",
+                  "present",
+                  "protocol",
+                  "providing",
+                  "referred",
+                  "regarding",
+                  "represented",
+                  "respect",
+                  "serving",
+                  "small",
+                  "states",
+                  "take",
+                  "them",
+                  "third",
+                  "unless",
+                  "wish"
+                ]
+              },
+              {
+                "sentence": "Article SIGNATURE This Protocol shall be open for signature by Parties to the Convention at the United Nations Headquarters in New Y ork, from 2 February 2011 to 1 February 2012. (c) Participation in product development; (d) Collaboration, cooperation and contribution in education and training; (e) Admittance to ex situ facilities of genetic resources and to databases; (f) Transfer to the provider of the genetic resources of knowledge and technology under fair and most favourable terms, including on concessional and preferential terms where agreed, in particular, knowledge and technology that make use of genetic resources, including biotechnology, or that are relevant to the conservation and sustainable utilization of biological diversity; (g) Strengthening capacities for technology transfer; (h) Institutional capacity-building; (i) Human and material resources to strengthen the capacities for the administration and enforcement of access regulations; (j) Training related to genetic resources with the full participation of countries providing genetic resources, and where possible, in such countries; (k) Access to scientific information relevant to conservation and sustainable use of biological diversity, including biological inventories and taxonomic studies; (l) Contributions to the local economy; (m) Research directed towards priority needs, such as health and food security, taking into account domestic uses of genetic resources in the Party providing genetic resources; (n) Institutional and professional relationships that can arise from an access and benefit-sharing agreement and subsequent collaborative activities; (o) Food and livelihood security benefits; (p) Social recognition; (q) Joint ownership of relevant intellectual property rights [5].",
+                "markers": [
+                  5
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1",
+                  "2",
+                  "2011",
+                  "2012",
+                  "access",
+                  "account",
+                  "activities",
+                  "administration",
+                  "admittance",
+                  "agreed",
+                  "agreement",
+                  "arise",
+                  "article",
+                  "benefit",
+                  "benefits",
+                  "biological",
+                  "biotechnology",
+                  "building",
+                  "capacities",
+                  "capacity",
+                  "collaboration",
+                  "collaborative",
+                  "concessional",
+                  "conservation",
+                  "contribution",
+                  "contributions",
+                  "convention",
+                  "cooperation",
+                  "countries",
+                  "databases",
+                  "development",
+                  "directed",
+                  "diversity",
+                  "domestic",
+                  "economy",
+                  "education",
+                  "enforcement",
+                  "facilities",
+                  "fair",
+                  "favourable",
+                  "february",
+                  "food",
+                  "full",
+                  "genetic",
+                  "headquarters",
+                  "health",
+                  "human",
+                  "including",
+                  "information",
+                  "institutional",
+                  "intellectual",
+                  "inventories",
+                  "joint",
+                  "knowledge",
+                  "livelihood",
+                  "local",
+                  "make",
+                  "material",
+                  "most",
+                  "nations",
+                  "needs",
+                  "new",
+                  "open",
+                  "ork",
+                  "ownership",
+                  "participation",
+                  "particular",
+                  "parties",
+                  "party",
+                  "possible",
+                  "preferential",
+                  "priority",
+                  "product",
+                  "professional",
+                  "property",
+                  "protocol",
+                  "provider",
+                  "providing",
+                  "recognition",
+                  "regulations",
+                  "related",
+                  "relationships",
+                  "relevant",
+                  "research",
+                  "resources",
+                  "rights",
+                  "scientific",
+                  "security",
+                  "sharing",
+                  "signature",
+                  "situ",
+                  "social",
+                  "strengthen",
+                  "strengthening",
+                  "studies",
+                  "subsequent",
+                  "sustainable",
+                  "taking",
+                  "taxonomic",
+                  "technology",
+                  "terms",
+                  "towards",
+                  "training",
+                  "transfer",
+                  "united",
+                  "use",
+                  "uses",
+                  "utilization"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_config": {
+            "provider": "extractive_mock",
+            "version": "0.1.0",
+            "prompt_version": "0.1.0",
+            "requires_network": false,
+            "strategy": "extractive: quotes corpus sentences verbatim",
+            "max_sentences": 3,
+            "prefer_citable": true
+          },
+          "provider_diagnostics": {
+            "sentences": 3,
+            "markers": [
+              1,
+              2,
+              5
+            ]
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nArticle CAPACITY 1. The Parties shall cooperate in the capacity-building, capacity development and strengthening of human resources and institutional capacities to effectively implement this Protocol in developing country Parties, in particular the least developed countries and small island developing States among them, and Parties with economies in transition, including through existing global, regional, subregional and national institutions and organizations [1]. 3. Regarding the capacity-building and development referred to in Article 22 of this Protocol, the Conference of the Parties serving as the meeting of the Parties to this Protocol, in providing guidance with respect to the financial mechanism referred to in paragraph 2 above, for consideration by the Conference of the Parties, shall take into account the need of developing country Parties, in particular the least developed countries and small island developing States among them, and of Parties of its wish to be represented at a meeting of the Conference of the Parties serving as a meeting of the Parties to this Protocol as an observer, may be so admitted, unless at least one third of the Parties present object [2]. Article SIGNATURE This Protocol shall be open for signature by Parties to the Convention at the United Nations Headquarters in New Y ork, from 2 February 2011 to 1 February 2012. (c) Participation in product development; (d) Collaboration, cooperation and contribution in education and training; (e) Admittance to ex situ facilities of genetic resources and to databases; (f) Transfer to the provider of the genetic resources of knowledge and technology under fair and most favourable terms, including on concessional and preferential terms where agreed, in particular, knowledge and technology that make use of genetic resources, including biotechnology, or that are relevant to the conservation and sustainable utilization of biological diversity; (g) Strengthening capacities for technology transfer; (h) Institutional capacity-building; (i) Human and material resources to strengthen the capacities for the administration and enforcement of access regulations; (j) Training related to genetic resources with the full participation of countries providing genetic resources, and where possible, in such countries; (k) Access to scientific information relevant to conservation and sustainable use of biological diversity, including biological inventories and taxonomic studies; (l) Contributions to the local economy; (m) Research directed towards priority needs, such as health and food security, taking into account domestic uses of genetic resources in the Party providing genetic resources; (n) Institutional and professional relationships that can arise from an access and benefit-sharing agreement and subsequent collaborative activities; (o) Food and livelihood security benefits; (p) Social recognition; (q) Joint ownership of relevant intellectual property rights [5].\n\nSource(s)\n\n[1] Nagoya Protocol — Article 22, pp. 11–12\n[2] Nagoya Protocol — Article 25, pp. 12–13\n[5] Nagoya Protocol — Article 32, pp. 14–15\n\nConfidence: HIGH (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+      "golden_target": {
+        "documents": [
+          "UN-NAGOYA-PROTOCOL-2010"
+        ],
+        "locators": [
+          "Article 22"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 1,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 1,
+        "citation_valid": true,
+        "citation_count": 3,
+        "citation_markers": [
+          1,
+          2,
+          5
+        ],
+        "answer_grounded": true,
+        "insufficient_evidence": false
+      }
+    },
+    {
+      "question_id": "Q085",
+      "experiment_family": "stale_evidence",
+      "selection_rationale": "first drug-regulation question; every chunk of that instrument carries temporal_status STALE",
+      "query": "How does Indian drug law define an Ayurvedic, Siddha or Unani drug?",
+      "query_family": "conceptual",
+      "domain": "drug_regulation",
+      "jurisdiction": "india",
+      "candidate_count": 50,
+      "reranked_evidence_count": 5,
+      "evidence": [
+        {
+          "marker": 1,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 162A",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 2,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 167",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 3,
+          "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+          "citation": "Drugs and Cosmetics Act, 1940 — Section 33EEC",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 4,
+          "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+          "citation": "Drugs and Cosmetics Act, 1940 — Section 3",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        },
+        {
+          "marker": 5,
+          "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+          "citation": "Drugs and Cosmetics Rules, 1945 — Rule 164",
+          "citable": true,
+          "temporal_status": "STALE",
+          "source_evidence_level": "A"
+        }
+      ],
+      "evidence_fingerprint": "a167a840c70e38d1",
+      "latency_ms": 2.4,
+      "answer": {
+        "answer": "Qualifications of the State Drug Licensing Authority for L icensing of Ayurvdeda , Siddha and Unani drugs− (a) The Ayurvedic/ Siddha/ Unani qualifications as per Schedule II of the Indian Medicine Central Council Act, 1970 (84 of 1970)/ B Pharma (Ayurveda) of a recognized University [1]. Qualifications of Inspector.–A person who is appointed an Inspector under section 33G shall be a person who— (a) has the qualifications laid down under rule 49 and shall have undergone practical training in the manufacture of Ayurvedic (including Siddha) or Unani drug, as the case may be; or (b) has a degree in Ayurvedic or Siddha or Unani System or a degree in Ayurveda Pharmacy, as the case may be, conferred by a University or State Government or a Statutory Faculty, Council or Board of Indian Systems of Medicine recognized by the Central Government or the State Government for this purpose; or (c) has a diploma in Ayurveda, Siddha or Unani Systems, as the case may be, granted by a State Government or an Institution recognized by the Central Government or a State Government for this purpose [2]. Prohibition of manufacture and sale of certain Ayurvedic, Siddha and Unani drug.—From such date as the State Government may, by notification in the Official Gazette, specify in this behalf, no person, either by himself or by any other person on his behalf, shall— (a) manufacture for sale or for distribution— (i) any misbranded, adulterated or spurious Ayurvedic, Siddha or Unani drugs; (ii) any patent or proprietary medicine, unless there is displayed in the prescribed manner on the label or container thereof the true list of all the ingredients contained in it; and (iii) any Ayurvedic, Siddha or Unani drug in contravention of any of the provisions of this Chapter or any rule made thereunder; (b) sell, stock or exhibit or offer for sale or distribute, any Ayurvedic, Siddha or Unani drug which has been manufactured in contravention of any of the provisions of this Act, or any rule made thereunder; (c) manufacture for sale or for distribution, any Ayurvedic, Siddha or Unani drug, except under, and in accordance with the conditions of, a licence issued for such purpose under this Chapter by the prescribed authority: Provided that nothing in this section apply to Vaidyas and Hakims who manufacture Ayurvedic, Siddha or Unani drug for the use of their own patients: Provided further that nothing in this section shall apply to the manufacture, subject to the prescribed conditions, of small quantities of any Ayurvedic, Siddha or Unani drug for the purpose of examination, test or analysis [3].",
+        "citations": [
+          {
+            "marker": 1,
+            "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+            "document_id": "IN-DC-RULES-1945",
+            "locator": "Rule 162A",
+            "pages": [
+              195
+            ],
+            "citation_text": "Drugs and Cosmetics Rules, 1945 — Rule 162A",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DC-RULES-1945",
+              "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+              "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+              "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+              "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+              "consolidated_as_of": "2016-12-31"
+            }
+          },
+          {
+            "marker": 2,
+            "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+            "document_id": "IN-DC-RULES-1945",
+            "locator": "Rule 167",
+            "pages": [
+              197
+            ],
+            "citation_text": "Drugs and Cosmetics Rules, 1945 — Rule 167",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DC-RULES-1945",
+              "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+              "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+              "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+              "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+              "consolidated_as_of": "2016-12-31"
+            }
+          },
+          {
+            "marker": 3,
+            "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+            "document_id": "IN-DC-ACT-1940",
+            "locator": "Section 33EEC",
+            "pages": [
+              28,
+              29
+            ],
+            "citation_text": "Drugs and Cosmetics Act, 1940 — Section 33EEC",
+            "source_evidence_level": "A",
+            "temporal_status": "STALE",
+            "locator_unavailable": false,
+            "source_document": {
+              "document_id": "IN-DC-ACT-1940",
+              "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+              "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+              "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+              "source_version_id": "IN-DC-ACT-1940@2016-12-31",
+              "consolidated_as_of": "2016-12-31"
+            }
+          }
+        ],
+        "confidence": "LOW",
+        "grounded": true,
+        "insufficient_evidence": false,
+        "insufficient_evidence_reasons": [],
+        "conflict_detected": false,
+        "conflict_chunks": [],
+        "cautions": [
+          "Every source cited here is marked STALE: the text may have been amended since the consolidated version held in the corpus. Verify against the current official text."
+        ],
+        "validation_failures": [],
+        "unsupported_claims": [],
+        "uncited_evidence": [
+          "IN-DC-ACT-1940::chapter-i-section-3",
+          "IN-DC-RULES-1945::part-xv-rule-164"
+        ],
+        "evidence_fingerprint": "a167a840c70e38d1",
+        "provider": "extractive_mock",
+        "policy": {
+          "policy_version": "0.1.0",
+          "minimum_evidence_level": "C",
+          "require_citable_authority": true,
+          "require_relevance": true,
+          "relevance_min_overlap": 1,
+          "stale_only_is_insufficient": false,
+          "abstain_on_conflict": false,
+          "require_full_grounding": true,
+          "max_citations": 5
+        },
+        "diagnostics": {
+          "policy_report": {
+            "assessments": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "indian",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "indian",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 4,
+                "chunk_id": "IN-DC-ACT-1940::chapter-i-section-3",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              },
+              {
+                "marker": 5,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-164",
+                "addresses_query": true,
+                "overlap_terms": [
+                  "ayurvedic",
+                  "drug",
+                  "siddha",
+                  "unani"
+                ],
+                "authoritative": true,
+                "source_evidence_level": "A",
+                "current": false,
+                "temporal_status": "STALE",
+                "citable": true,
+                "admissible_as_citation": true,
+                "role": "citable_authority",
+                "notes": [
+                  "temporal status STALE: this text may have been amended"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "cautions": [
+              "Every source cited here is marked STALE: the text may have been amended since the consolidated version held in the corpus. Verify against the current official text."
+            ],
+            "insufficient_reasons": []
+          },
+          "validation": {
+            "ok": true,
+            "citations": [
+              {
+                "marker": 1,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-162a",
+                "document_id": "IN-DC-RULES-1945",
+                "locator": "Rule 162A",
+                "pages": [
+                  195
+                ],
+                "citation_text": "Drugs and Cosmetics Rules, 1945 — Rule 162A",
+                "source_evidence_level": "A",
+                "temporal_status": "STALE",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-DC-RULES-1945",
+                  "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+                  "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+                  "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+                  "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+                  "consolidated_as_of": "2016-12-31"
+                }
+              },
+              {
+                "marker": 2,
+                "chunk_id": "IN-DC-RULES-1945::part-xv-rule-167",
+                "document_id": "IN-DC-RULES-1945",
+                "locator": "Rule 167",
+                "pages": [
+                  197
+                ],
+                "citation_text": "Drugs and Cosmetics Rules, 1945 — Rule 167",
+                "source_evidence_level": "A",
+                "temporal_status": "STALE",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-DC-RULES-1945",
+                  "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+                  "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+                  "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+                  "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+                  "consolidated_as_of": "2016-12-31"
+                }
+              },
+              {
+                "marker": 3,
+                "chunk_id": "IN-DC-ACT-1940::chapter-iv-section-33eec",
+                "document_id": "IN-DC-ACT-1940",
+                "locator": "Section 33EEC",
+                "pages": [
+                  28,
+                  29
+                ],
+                "citation_text": "Drugs and Cosmetics Act, 1940 — Section 33EEC",
+                "source_evidence_level": "A",
+                "temporal_status": "STALE",
+                "locator_unavailable": false,
+                "source_document": {
+                  "document_id": "IN-DC-ACT-1940",
+                  "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+                  "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+                  "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+                  "source_version_id": "IN-DC-ACT-1940@2016-12-31",
+                  "consolidated_as_of": "2016-12-31"
+                }
+              }
+            ],
+            "failures": [],
+            "version": "0.1.0"
+          },
+          "grounding": {
+            "grounded": true,
+            "citation_support": true,
+            "claims": 3,
+            "supported_claims": 3,
+            "supported_claim_rate": 1.0,
+            "unresolved_markers": [],
+            "unsupported_claims": [],
+            "uncited_evidence": [
+              "IN-DC-ACT-1940::chapter-i-section-3",
+              "IN-DC-RULES-1945::part-xv-rule-164"
+            ],
+            "weakly_grounded": [],
+            "sentences": [
+              {
+                "sentence": "Qualifications of the State Drug Licensing Authority for L icensing of Ayurvdeda , Siddha and Unani drugs− (a) The Ayurvedic/ Siddha/ Unani qualifications as per Schedule II of the Indian Medicine Central Council Act, 1970 (84 of 1970)/ B Pharma (Ayurveda) of a recognized University [1].",
+                "markers": [
+                  1
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "1970",
+                  "84",
+                  "act",
+                  "authority",
+                  "ayurvdeda",
+                  "ayurveda",
+                  "ayurvedic",
+                  "central",
+                  "council",
+                  "drug",
+                  "drugs",
+                  "icensing",
+                  "indian",
+                  "licensing",
+                  "medicine",
+                  "per",
+                  "pharma",
+                  "qualifications",
+                  "recognized",
+                  "schedule",
+                  "siddha",
+                  "state",
+                  "unani",
+                  "university"
+                ]
+              },
+              {
+                "sentence": "Qualifications of Inspector.–A person who is appointed an Inspector under section 33G shall be a person who— (a) has the qualifications laid down under rule 49 and shall have undergone practical training in the manufacture of Ayurvedic (including Siddha) or Unani drug, as the case may be; or (b) has a degree in Ayurvedic or Siddha or Unani System or a degree in Ayurveda Pharmacy, as the case may be, conferred by a University or State Government or a Statutory Faculty, Council or Board of Indian Systems of Medicine recognized by the Central Government or the State Government for this purpose; or (c) has a diploma in Ayurveda, Siddha or Unani Systems, as the case may be, granted by a State Government or an Institution recognized by the Central Government or a State Government for this purpose [2].",
+                "markers": [
+                  2
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "33",
+                  "33g",
+                  "49",
+                  "appointed",
+                  "ayurveda",
+                  "ayurvedic",
+                  "board",
+                  "case",
+                  "central",
+                  "conferred",
+                  "council",
+                  "degree",
+                  "diploma",
+                  "down",
+                  "drug",
+                  "faculty",
+                  "government",
+                  "granted",
+                  "including",
+                  "indian",
+                  "inspector",
+                  "institution",
+                  "laid",
+                  "manufacture",
+                  "medicine",
+                  "person",
+                  "pharmacy",
+                  "practical",
+                  "purpose",
+                  "qualifications",
+                  "recognized",
+                  "rule",
+                  "section",
+                  "siddha",
+                  "state",
+                  "statutory",
+                  "system",
+                  "systems",
+                  "training",
+                  "unani",
+                  "undergone",
+                  "university"
+                ]
+              },
+              {
+                "sentence": "Prohibition of manufacture and sale of certain Ayurvedic, Siddha and Unani drug.—From such date as the State Government may, by notification in the Official Gazette, specify in this behalf, no person, either by himself or by any other person on his behalf, shall— (a) manufacture for sale or for distribution— (i) any misbranded, adulterated or spurious Ayurvedic, Siddha or Unani drugs; (ii) any patent or proprietary medicine, unless there is displayed in the prescribed manner on the label or container thereof the true list of all the ingredients contained in it; and (iii) any Ayurvedic, Siddha or Unani drug in contravention of any of the provisions of this Chapter or any rule made thereunder; (b) sell, stock or exhibit or offer for sale or distribute, any Ayurvedic, Siddha or Unani drug which has been manufactured in contravention of any of the provisions of this Act, or any rule made thereunder; (c) manufacture for sale or for distribution, any Ayurvedic, Siddha or Unani drug, except under, and in accordance with the conditions of, a licence issued for such purpose under this Chapter by the prescribed authority: Provided that nothing in this section apply to Vaidyas and Hakims who manufacture Ayurvedic, Siddha or Unani drug for the use of their own patients: Provided further that nothing in this section shall apply to the manufacture, subject to the prescribed conditions, of small quantities of any Ayurvedic, Siddha or Unani drug for the purpose of examination, test or analysis [3].",
+                "markers": [
+                  3
+                ],
+                "is_claim": true,
+                "supported": true,
+                "weak": false,
+                "shared_terms": [
+                  "accordance",
+                  "act",
+                  "adulterated",
+                  "all",
+                  "analysis",
+                  "apply",
+                  "authority",
+                  "ayurvedic",
+                  "behalf",
+                  "certain",
+                  "chapter",
+                  "conditions",
+                  "contained",
+                  "container",
+                  "contravention",
+                  "date",
+                  "displayed",
+                  "distribute",
+                  "distribution",
+                  "drug",
+                  "drugs",
+                  "either",
+                  "examination",
+                  "except",
+                  "exhibit",
+                  "further",
+                  "gazette",
+                  "government",
+                  "hakims",
+                  "himself",
+                  "his",
+                  "iii",
+                  "ingredients",
+                  "issued",
+                  "label",
+                  "licence",
+                  "list",
+                  "made",
+                  "manner",
+                  "manufacture",
+                  "manufactured",
+                  "medicine",
+                  "misbranded",
+                  "nothing",
+                  "notification",
+                  "offer",
+                  "official",
+                  "other",
+                  "own",
+                  "patent",
+                  "patients",
+                  "person",
+                  "prescribed",
+                  "prohibition",
+                  "proprietary",
+                  "provided",
+                  "provisions",
+                  "purpose",
+                  "quantities",
+                  "rule",
+                  "sale",
+                  "section",
+                  "sell",
+                  "siddha",
+                  "small",
+                  "specify",
+                  "spurious",
+                  "state",
+                  "stock",
+                  "subject",
+                  "test",
+                  "thereof",
+                  "thereunder",
+                  "true",
+                  "unani",
+                  "unless",
+                  "use",
+                  "vaidyas"
+                ]
+              }
+            ],
+            "version": "0.1.0"
+          },
+          "provider_config": {
+            "provider": "extractive_mock",
+            "version": "0.1.0",
+            "prompt_version": "0.1.0",
+            "requires_network": false,
+            "strategy": "extractive: quotes corpus sentences verbatim",
+            "max_sentences": 3,
+            "prefer_citable": true
+          },
+          "provider_diagnostics": {
+            "sentences": 3,
+            "markers": [
+              1,
+              2,
+              3
+            ]
+          }
+        },
+        "version": "0.1.0"
+      },
+      "rendered": "Answer\n\nQualifications of the State Drug Licensing Authority for L icensing of Ayurvdeda , Siddha and Unani drugs− (a) The Ayurvedic/ Siddha/ Unani qualifications as per Schedule II of the Indian Medicine Central Council Act, 1970 (84 of 1970)/ B Pharma (Ayurveda) of a recognized University [1]. Qualifications of Inspector.–A person who is appointed an Inspector under section 33G shall be a person who— (a) has the qualifications laid down under rule 49 and shall have undergone practical training in the manufacture of Ayurvedic (including Siddha) or Unani drug, as the case may be; or (b) has a degree in Ayurvedic or Siddha or Unani System or a degree in Ayurveda Pharmacy, as the case may be, conferred by a University or State Government or a Statutory Faculty, Council or Board of Indian Systems of Medicine recognized by the Central Government or the State Government for this purpose; or (c) has a diploma in Ayurveda, Siddha or Unani Systems, as the case may be, granted by a State Government or an Institution recognized by the Central Government or a State Government for this purpose [2]. Prohibition of manufacture and sale of certain Ayurvedic, Siddha and Unani drug.—From such date as the State Government may, by notification in the Official Gazette, specify in this behalf, no person, either by himself or by any other person on his behalf, shall— (a) manufacture for sale or for distribution— (i) any misbranded, adulterated or spurious Ayurvedic, Siddha or Unani drugs; (ii) any patent or proprietary medicine, unless there is displayed in the prescribed manner on the label or container thereof the true list of all the ingredients contained in it; and (iii) any Ayurvedic, Siddha or Unani drug in contravention of any of the provisions of this Chapter or any rule made thereunder; (b) sell, stock or exhibit or offer for sale or distribute, any Ayurvedic, Siddha or Unani drug which has been manufactured in contravention of any of the provisions of this Act, or any rule made thereunder; (c) manufacture for sale or for distribution, any Ayurvedic, Siddha or Unani drug, except under, and in accordance with the conditions of, a licence issued for such purpose under this Chapter by the prescribed authority: Provided that nothing in this section apply to Vaidyas and Hakims who manufacture Ayurvedic, Siddha or Unani drug for the use of their own patients: Provided further that nothing in this section shall apply to the manufacture, subject to the prescribed conditions, of small quantities of any Ayurvedic, Siddha or Unani drug for the purpose of examination, test or analysis [3].\n\nSource(s)\n\n[1] Drugs and Cosmetics Rules, 1945 — Rule 162A, p. 195, [STALE]\n[2] Drugs and Cosmetics Rules, 1945 — Rule 167, p. 197, [STALE]\n[3] Drugs and Cosmetics Act, 1940 — Section 33EEC, pp. 28–29, [STALE]\n\nCaution\n\n- Every source cited here is marked STALE: the text may have been amended since the consolidated version held in the corpus. Verify against the current official text.\n\nConfidence: LOW (ordinal, derived from evidence provenance — not a probability and not a measure of legal correctness)\n",
+      "golden_target": {
+        "documents": [
+          "IN-DC-ACT-1940"
+        ],
+        "locators": [
+          "Section 3"
+        ]
+      },
+      "scores": {
+        "lexical_candidate_recall": true,
+        "lexical_candidate_rank": 6,
+        "reranked_evidence_recall": true,
+        "reranked_evidence_rank": 4,
+        "citation_valid": true,
+        "citation_count": 3,
+        "citation_markers": [
+          1,
+          2,
+          3
+        ],
+        "answer_grounded": true,
+        "insufficient_evidence": false
+      }
+    }
+  ],
+  "provider": "extractive_mock"
+}

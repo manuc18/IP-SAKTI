@@ -1,0 +1,42 @@
+{
+  "metric": "B_answer_quality",
+  "judge_provider": "claude_code_session",
+  "judge_is_an_api_call": false,
+  "judged": 60,
+  "pass_threshold": 0.75,
+  "score_scheme": {
+    "correct": 1.0,
+    "partially_correct": 0.5,
+    "incorrect": 0.0,
+    "unsupported": 0.0,
+    "appropriate_abstention": 1.0,
+    "inappropriate_abstention": 0.0
+  },
+  "minor_omission_score": 0.75,
+  "classifications": {
+    "unsupported": 2,
+    "correct": 27,
+    "partially_correct": 8,
+    "appropriate_abstention": 15,
+    "incorrect": 4,
+    "inappropriate_abstention": 4
+  },
+  "pass_rate": {
+    "numerator": 42,
+    "denominator": 60
+  },
+  "mean_judge_score": 0.75,
+  "answer_correctness_rate": {
+    "numerator": 27,
+    "denominator": 41,
+    "note": "correct / substantive answers; abstentions are scored separately and are not in this denominator"
+  },
+  "mean_score_substantive_only": 0.7317,
+  "confidence_distribution": {
+    "0.00": 10,
+    "1.00": 38,
+    "0.50": 8,
+    "0.75": 4
+  },
+  "claim_safety": "Synthetic, AI-generated and AI-judged. The judge is a Claude Code session, not a lawyer, and shares the corpus's blind spots. Not human-verified legal ground truth."
+}

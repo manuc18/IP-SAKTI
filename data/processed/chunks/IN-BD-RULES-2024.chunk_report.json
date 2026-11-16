@@ -1,0 +1,29 @@
+{
+  "document_id": "IN-BD-RULES-2024",
+  "chunking_version": "0.2.0",
+  "units": 48,
+  "chunks": 61,
+  "rejected": 1,
+  "rejected_by_reason": {
+    "below the minimum retrievable length": 1
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 60,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "B",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 101408,
+  "mean_chunk_characters": 1662.4,
+  "max_chunk_characters": 4984,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-BD-RULES-2024",
+      "unit_order": 46,
+      "reason": "below the minimum retrievable length",
+      "character_count": 33
+    }
+  ]
+}

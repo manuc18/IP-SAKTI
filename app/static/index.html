@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IP-SAKTI — Grounded IP Legal Assistant</title>
+<style>
+  :root{
+    --ink:#12161f; --muted:#5b6472; --line:#e2e6ed; --bg:#f6f7f9; --card:#fff;
+    --accent:#2b4c8c; --accent-soft:#eef2fa;
+    --ok:#1d7a4c; --ok-soft:#e8f5ee;
+    --warn:#8a5a12; --warn-soft:#fdf3e2;
+    --stop:#8c2f39; --stop-soft:#fcecee;
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 80px}
+
+  header{border-bottom:1px solid var(--line);background:var(--card);margin-bottom:28px}
+  .head{max-width:880px;margin:0 auto;padding:22px 20px;
+        display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  h1{margin:0;font-size:21px;letter-spacing:-.2px}
+  h1 span{color:var(--accent)}
+  .tag{color:var(--muted);font-size:13.5px}
+  .status{margin-left:auto;font-size:12px;color:var(--muted);
+          display:flex;align-items:center;gap:7px}
+  .dot{width:8px;height:8px;border-radius:50%;background:#c6ccd6}
+  .dot.on{background:var(--ok)} .dot.warn{background:#d99b28}
+
+  .lede{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .lede b{color:var(--ink);font-weight:600}
+
+  form{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+       padding:18px}
+  label{display:block;font-weight:600;font-size:13px;margin-bottom:9px}
+  textarea{width:100%;min-height:76px;resize:vertical;padding:12px 13px;
+           border:1px solid var(--line);border-radius:8px;font:inherit;color:inherit;
+           background:#fcfdfe}
+  textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:transparent}
+  .row{display:flex;align-items:center;gap:12px;margin-top:12px;flex-wrap:wrap}
+  button{background:var(--accent);color:#fff;border:0;border-radius:8px;
+         padding:10px 20px;font:600 14px/1 inherit;cursor:pointer}
+  button:hover{background:#223f78}
+  button:disabled{background:#a9b3c4;cursor:not-allowed}
+  .hint{color:var(--muted);font-size:12.5px}
+
+  .samples{margin-top:16px}
+  .samples p{margin:0 0 8px;font-size:12px;color:var(--muted);
+             text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+  .chip{display:inline-block;margin:0 6px 6px 0;padding:6px 11px;background:var(--card);
+        border:1px solid var(--line);border-radius:20px;font-size:13px;cursor:pointer;
+        color:#334}
+  .chip:hover{border-color:var(--accent);color:var(--accent)}
+
+  section{margin-top:22px;background:var(--card);border:1px solid var(--line);
+          border-radius:var(--radius);overflow:hidden}
+  .sec-head{padding:12px 18px;border-bottom:1px solid var(--line);
+            font:600 11.5px/1 inherit;letter-spacing:.09em;text-transform:uppercase;
+            color:var(--muted);display:flex;align-items:center;gap:10px}
+  .sec-body{padding:18px}
+
+  .answer{font-size:16.5px;line-height:1.75}
+  .cite{display:inline-block;min-width:19px;height:19px;padding:0 5px;margin:0 1px;
+        background:var(--accent-soft);color:var(--accent);border:1px solid #cdd9ef;
+        border-radius:5px;font:600 11.5px/18px inherit;text-align:center;
+        cursor:pointer;vertical-align:1px}
+  .cite:hover{background:var(--accent);color:#fff}
+
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .badge{font:600 11.5px/1 inherit;padding:6px 10px;border-radius:6px;
+         background:#f1f3f7;color:#48505e}
+  .badge.ok{background:var(--ok-soft);color:var(--ok)}
+  .badge.warn{background:var(--warn-soft);color:var(--warn)}
+  .badge.stop{background:var(--stop-soft);color:var(--stop)}
+
+  .note{margin-top:16px;padding:12px 14px;border-radius:8px;font-size:13.5px;
+        background:var(--warn-soft);color:var(--warn);border:1px solid #f0dfc2}
+  .note ul{margin:6px 0 0;padding-left:18px} .note li{margin:3px 0}
+  .note.stop{background:var(--stop-soft);color:var(--stop);border-color:#f2d4d8}
+
+  .src{border-top:1px solid var(--line);padding:15px 18px}
+  .src:first-child{border-top:0}
+  .src.flash{animation:flash 1.4s ease-out}
+  @keyframes flash{0%,45%{background:var(--accent-soft)}100%{background:transparent}}
+  .src-top{display:flex;gap:11px;align-items:flex-start}
+  .marker{flex:none;width:24px;height:24px;border-radius:6px;background:var(--accent);
+          color:#fff;font:600 12px/24px inherit;text-align:center}
+  .marker.uncited{background:#c3cad6}
+  .src-name{font-weight:600;font-size:14.5px}
+  .src-loc{color:var(--muted);font-size:13px;margin-top:1px}
+  .src-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+  .mini{font:600 10.5px/1 inherit;letter-spacing:.03em;padding:5px 8px;border-radius:5px;
+        background:#f1f3f7;color:#5b6472;text-transform:uppercase}
+  .mini.ok{background:var(--ok-soft);color:var(--ok)}
+  .mini.warn{background:var(--warn-soft);color:var(--warn)}
+  details{margin-top:10px}
+  summary{cursor:pointer;color:var(--accent);font-size:13px;font-weight:600;
+          list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸ ";display:inline-block;transition:transform .15s}
+  details[open] summary::before{content:"▾ "}
+  .evidence{margin-top:10px;padding:13px 15px;background:#fafbfc;border:1px solid var(--line);
+            border-radius:8px;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,monospace;
+            white-space:pre-wrap;max-height:340px;overflow:auto;color:#2b323d}
+
+  .load{display:none;margin-top:22px;background:var(--card);border:1px solid var(--line);
+        border-radius:var(--radius);padding:20px}
+  .load.on{display:block}
+  .steps{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .step{font-size:12.5px;color:var(--muted);padding:5px 10px;border-radius:6px;
+        background:#f1f3f7}
+  .step.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+  .bar{height:3px;border-radius:2px;background:var(--line);overflow:hidden}
+  .bar i{display:block;height:100%;width:35%;background:var(--accent);
+         animation:slide 1.15s ease-in-out infinite}
+  @keyframes slide{0%{margin-left:-35%}100%{margin-left:100%}}
+
+  .err{display:none;margin-top:22px;padding:15px 18px;border-radius:var(--radius);
+       background:var(--stop-soft);border:1px solid #f2d4d8;color:var(--stop);font-size:14px}
+  .err.on{display:block}
+
+  footer{margin-top:26px;color:var(--muted);font-size:12.5px;line-height:1.65}
+  .timings{margin-top:10px;font:12px/1 ui-monospace,Menlo,monospace;color:#8b93a1}
+</style>
+</head>
+<body>
+<header>
+  <div class="head">
+    <h1>IP<span>-</span>SAKTI</h1>
+    <div class="tag">Grounded Intellectual Property legal assistant</div>
+    <div class="status"><span class="dot" id="dot"></span><span id="statusText">connecting…</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <p class="lede">Evidence-first. IP-SAKTI retrieves provisions from a fixed corpus of Indian IP
+  statutes, rules and treaties, and <b>publishes an answer only if it survives citation and
+  grounding validation</b> against that evidence. When it cannot, it abstains instead of guessing.</p>
+
+  <form id="form">
+    <label for="q">Ask an intellectual-property legal question</label>
+    <textarea id="q" placeholder="e.g. How must an application for registration of a trade mark be signed?"></textarea>
+    <div class="row">
+      <button type="submit" id="go">Ask IP-SAKTI</button>
+      <span class="hint" id="hint">Patents · Trade marks · Copyright · Designs · GI · Biodiversity</span>
+    </div>
+  </form>
+
+  <div class="samples">
+    <p>Try one</p>
+    <div id="chips"></div>
+  </div>
+
+  <div class="load" id="load">
+    <div class="bar"><i></i></div>
+    <div class="steps">
+      <span class="step" data-s="0">Retrieving evidence</span>
+      <span class="step" data-s="1">Reranking</span>
+      <span class="step" data-s="2">Generating grounded answer</span>
+      <span class="step" data-s="3">Validating citations</span>
+      <span class="step" data-s="4">Checking grounding</span>
+    </div>
+  </div>
+
+  <div class="err" id="err"></div>
+  <div id="out"></div>
+
+  <footer>
+    <div id="disclaimer"></div>
+    <div class="timings" id="timings"></div>
+  </footer>
+</div>
+
+<script>
+const SAMPLES = [
+  "How must an application for registration of a trade mark be signed?",
+  "Is the mere discovery of a new form of a known substance patentable in India?",
+  "What is the duration of the registration of a trade mark and when must it be renewed?",
+  "What is the term of copyright in a literary work published in the lifetime of the author?",
+  "Who may apply for the registration of a geographical indication?",
+  "What is the best pizza topping in Naples?"
+];
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// Turn [1] markers into controls that jump to the source they name. Escaping
+// happens first, so nothing in a model's prose can inject markup here.
+const linkCites = t => esc(t).replace(/\[(\d{1,2})\]/g,
+  (_, n) => `<span class="cite" data-m="${n}" title="Go to source ${n}">${n}</span>`);
+
+SAMPLES.forEach(s => {
+  const c = document.createElement("span");
+  c.className = "chip"; c.textContent = s.length > 62 ? s.slice(0, 60) + "…" : s;
+  c.title = s;
+  c.onclick = () => { $("q").value = s; $("q").focus(); };
+  $("chips").appendChild(c);
+});
+
+fetch("/api/health").then(r => r.json()).then(h => {
+  const degraded = (h.warnings || []).length > 0 || h.retrieval?.dense !== "ready";
+  $("dot").className = "dot " + (degraded ? "warn" : "on");
+  $("statusText").textContent =
+    `${h.corpus.chunks} chunks · ${h.corpus.documents} documents · ${h.answering.provider}`;
+}).catch(() => { $("statusText").textContent = "server unreachable"; });
+
+let timer = null;
+function startSteps() {
+  let i = 0;
+  const marks = [...document.querySelectorAll(".step")];
+  const tick = () => { marks.forEach((m, k) => m.classList.toggle("on", k === i));
+                       i = Math.min(i + 1, marks.length - 1); };
+  tick(); timer = setInterval(tick, 900);
+}
+function stopSteps() { clearInterval(timer);
+  document.querySelectorAll(".step").forEach(m => m.classList.remove("on")); }
+
+$("form").onsubmit = async e => {
+  e.preventDefault();
+  const question = $("q").value.trim();
+  if (!question) return;
+  $("out").innerHTML = ""; $("err").className = "err";
+  $("timings").textContent = ""; $("go").disabled = true;
+  $("load").className = "load on"; startSteps();
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({question})
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Request failed.");
+    render(data);
+  } catch (ex) {
+    $("err").textContent = ex.message === "Failed to fetch"
+      ? "Could not reach the IP-SAKTI server. Is it still running?" : ex.message;
+    $("err").className = "err on";
+  } finally {
+    $("load").className = "load"; stopSteps(); $("go").disabled = false;
+  }
+};
+
+function render(d) {
+  const a = d.answer, out = $("out");
+  // `a` is null for SOCIAL and NEEDS_CLARIFICATION — nothing was retrieved, so
+  // there is no answer object to read a confidence off. Both were falling
+  // through to the ANSWERED branch and throwing on `a.confidence`.
+  const conf = a ? ({HIGH:"ok", MODERATE:"", LOW:"warn", NONE:"stop"}[a.confidence] ?? "") : "";
+  let html = "";
+
+  if (d.status === "SOCIAL") {
+    html += `<section><div class="sec-head">Conversational reply</div><div class="sec-body">
+      <div class="answer">${esc(d.rendered || "")}</div>
+      <p style="color:var(--muted);font-size:13.5px;margin:14px 0 0">
+        No legal retrieval was performed, so this carries no citation and no
+        confidence rating. Ask an IP or regulatory-law question to run the
+        full pipeline.</p>
+      </div></section>`;
+    out.innerHTML = html;
+    return;
+  }
+
+  if (d.status === "NEEDS_CLARIFICATION") {
+    const c = d.clarification || {};
+    html += `<section><div class="sec-head">One question first</div><div class="sec-body">
+      <div class="answer">${esc(c.question || "")}</div>
+      ${c.reason ? `<p style="color:var(--muted);font-size:13.5px;margin:10px 0 0">${esc(c.reason)}.</p>` : ""}
+      ${(c.options || []).length ? `<p style="margin:12px 0 0;font-size:13.5px">
+        ${c.options.map(o => `<span class="mini">${esc(o)}</span>`).join(" ")}</p>` : ""}
+      <p style="color:var(--muted);font-size:13.5px;margin:14px 0 0">
+        Asked once. Send the question again with more detail and the pipeline
+        runs whatever it looks like.</p>
+      </div></section>`;
+    out.innerHTML = html;
+    return;
+  }
+
+  if (d.status === "UNAVAILABLE") {
+    const f = d.service_failure || {};
+    html += `<section><div class="sec-head">Answer unavailable</div><div class="sec-body">
+      <div class="note stop"><b>${esc(f.message || "The answer provider did not respond.")}</b>
+        <div style="margin-top:8px;font-size:12.5px;opacity:.85">provider error:
+          <code>${esc(f.code || "unknown")}</code></div></div>
+      <p style="color:var(--muted);font-size:13.5px;margin:14px 0 0">
+        The evidence below <b>was</b> retrieved and ranked — only answer generation
+        failed. This is a service limit, not a judgement about the sources.</p>
+      </div></section>`;
+  } else if (d.status === "ABSTAINED") {
+    const why = [...a.insufficient_evidence_reasons, ...a.validation_failures];
+    html += `<section><div class="sec-head">Safe abstention</div><div class="sec-body">
+      <div class="answer">${esc(a.answer) ||
+        "I couldn't produce a sufficiently supported answer from the available legal evidence."}</div>
+      <div class="note stop"><b>No answer was published.</b> The system found evidence but
+        it did not survive validation, so nothing is shown rather than something unverified.
+        ${why.length ? "<ul>" + why.map(f =>
+          `<li><code>${esc(f.code)}</code> — ${esc(f.detail)}</li>`).join("") + "</ul>" : ""}</div>
+      </div></section>`;
+  } else {
+    html += `<section><div class="sec-head">Answer</div><div class="sec-body">
+      <div class="answer">${linkCites(a.answer)}</div>
+      <div class="badges">
+        <span class="badge ${conf}">Confidence: ${esc(a.confidence)}</span>
+        <span class="badge ${a.grounded ? "ok" : "stop"}">
+          ${a.grounded ? "Grounded — every sentence cites evidence" : "Not grounded"}</span>
+        <span class="badge ok">Citations validated (${a.citations.length})</span>
+      </div>`;
+    if (a.conflict_detected)
+      html += `<div class="note"><b>Conflicting evidence.</b> These sources were flagged as
+        conflicting or indistinguishable. IP-SAKTI reports the disagreement and does not
+        decide between them: ${a.conflict_chunks.map(c => esc(c)).join(", ")}</div>`;
+    if (a.cautions.length)
+      html += `<div class="note"><b>Caution</b><ul>${
+        a.cautions.map(c => `<li>${esc(c)}</li>`).join("")}</ul></div>`;
+    html += `</div></section>`;
+  }
+
+  const cited = d.evidence.filter(e => e.cited), rest = d.evidence.filter(e => !e.cited);
+  html += `<section><div class="sec-head">Sources
+    <span class="mini">${cited.length} cited · ${rest.length} retrieved, not cited</span>
+    </div>${[...cited, ...rest].map(srcCard).join("")}</section>`;
+
+  out.innerHTML = html;
+  out.querySelectorAll(".cite").forEach(el => el.onclick = () => {
+    const card = document.getElementById("src-" + el.dataset.m);
+    if (!card) return;
+    card.scrollIntoView({behavior: "smooth", block: "center"});
+    card.classList.remove("flash"); void card.offsetWidth; card.classList.add("flash");
+    const det = card.querySelector("details"); if (det) det.open = true;
+  });
+
+  $("disclaimer").textContent = d.disclaimer;
+  const t = d.timings_ms;
+  $("timings").textContent =
+    `retrieval ${t.retrieval}ms · rerank ${t.reranking}ms · answer ${t.answering}ms ` +
+    `· total ${t.total}ms — ${d.pipeline.candidates} candidates → ` +
+    `${d.pipeline.evidence_count} evidence passages · ${d.pipeline.reranker} · ${d.pipeline.provider}`;
+}
+
+function srcCard(e) {
+  const stale = e.temporal_status !== "CURRENT";
+  return `<div class="src" id="src-${e.marker}">
+    <div class="src-top">
+      <div class="marker ${e.cited ? "" : "uncited"}">${e.marker}</div>
+      <div style="flex:1;min-width:0">
+        <div class="src-name">${esc(e.document_name)}</div>
+        <div class="src-loc">${esc(e.locator_text || e.citation)}${
+          e.heading ? " — " + esc(e.heading) : ""}</div>
+        <div class="src-meta">
+          <span class="mini ${e.cited ? "ok" : ""}">${e.cited ? "Cited" : "Retrieved"}</span>
+          <span class="mini ${stale ? "warn" : "ok"}">${esc(e.temporal_status)}</span>
+          <span class="mini">Provenance ${esc(e.source_evidence_level)}</span>
+          <span class="mini ${e.citable ? "" : "warn"}">${
+            e.citable ? "Citable" : "Not citable"}</span>
+          ${e.physical_pages.length ? `<span class="mini">p. ${
+            e.physical_pages[0]}${e.physical_pages.length > 1 ?
+            "–" + e.physical_pages[e.physical_pages.length - 1] : ""}</span>` : ""}
+        </div>
+        <details><summary>View evidence text</summary>
+          <div class="evidence">${esc(e.text)}</div>
+          <div class="src-loc" style="margin-top:8px">chunk <code>${esc(e.chunk_id)}</code></div>
+        </details>
+      </div>
+    </div></div>`;
+}
+</script>
+</body>
+</html>

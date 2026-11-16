@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-COPYRIGHT-ACT-1957",
+  "pages": 57,
+  "boilerplate_patterns": [
+    "# Ins. by Act # of #, s. # (w.e.f. #-#-#)."
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 57
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 57
+  },
+  "amendment_notes_extracted": 186,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 159170,
+  "characters_cleaned": 141957
+}

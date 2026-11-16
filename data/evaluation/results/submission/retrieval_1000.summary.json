@@ -1,0 +1,576 @@
+{
+  "metric": "offline_retrieval_and_evidence_sufficiency",
+  "deterministic": true,
+  "provider_calls": 0,
+  "questions_in_set": 1000,
+  "questions_evaluated": 1000,
+  "answerable": 960,
+  "expected_abstention": 40,
+  "wall_seconds": 59.6,
+  "denominator_note": "every retrieval rate below is out of 960 answerable questions; the 40 EXPECTED_ABSTENTION questions have no retrieval target and are excluded from the recall denominators",
+  "retrieval": {
+    "aggregate": {
+      "recall@1": 0.701,
+      "recall@5": 0.874,
+      "recall@10": 0.9406,
+      "mrr": 0.7784,
+      "ndcg@5": 0.7942,
+      "ndcg@10": 0.8159
+    },
+    "counts": {
+      "recall@1": 673,
+      "recall@5": 839,
+      "recall@10": 903
+    },
+    "equivalence_adjusted": {
+      "aggregate": {
+        "recall@1": 0.799,
+        "recall@5": 0.9344,
+        "recall@10": 0.9583,
+        "mrr": 0.8552,
+        "ndcg@5": 0.8269,
+        "ndcg@10": 0.8454
+      },
+      "counts": {
+        "recall@1": 767,
+        "recall@5": 897,
+        "recall@10": 920
+      },
+      "questions_widened": 255,
+      "chunks_added_by_rule": {
+        "R1_same_provision": 168,
+        "R2_same_heading": 212,
+        "R3_named_provision": 148
+      },
+      "config": {
+        "version": "0.1.0",
+        "rules": {
+          "R1_same_provision": "another chunk of the same provision in the same document (identical citation)",
+          "R2_same_heading": "a chunk with the same normalised heading, applied only when the question names no instrument",
+          "R3_named_provision": "a chunk whose locator matches a provision the question itself names, within the target's own regime or a document the question names"
+        },
+        "derived_from": "the question text and the corpus only; never from the run being scored",
+        "reporting": "strict and adjusted figures are always reported together"
+      }
+    },
+    "rank_buckets": {
+      "rank 1": 673,
+      "rank 2-5": 166,
+      "rank 6-10": 64,
+      ">10 / missing": 57
+    },
+    "target_in_top5_not_top1": 166
+  },
+  "evidence_sufficiency": {
+    "at_5": {
+      "denominator": 960,
+      "sufficient": 853,
+      "insufficient": 21,
+      "uncertain": 86,
+      "rate_sufficient": 0.8885,
+      "target_retrieved_but_insufficient": 44,
+      "target_not_retrieved": 63,
+      "sufficient_without_exact_target": 14
+    },
+    "at_10": {
+      "denominator": 960,
+      "sufficient": 911,
+      "insufficient": 5,
+      "uncertain": 44,
+      "rate_sufficient": 0.949,
+      "target_retrieved_but_insufficient": 9,
+      "target_not_retrieved": 40,
+      "sufficient_without_exact_target": 8
+    },
+    "config": {
+      "version": "0.1.0",
+      "deterministic": true,
+      "uses_model": false,
+      "provider": null,
+      "verdicts": [
+        "sufficient",
+        "insufficient",
+        "uncertain"
+      ],
+      "thresholds": {
+        "strong_coverage": 0.6,
+        "weak_coverage": 0.3,
+        "min_term_length": 4,
+        "min_span_length_chars": 40
+      },
+      "rule": "SUFFICIENT when a verbatim expected-answer span is present in the retrieved text, or when an acceptable target chunk is present and IDF-weighted key-term coverage is at least 0.6; INSUFFICIENT when coverage is below 0.3 with no acceptable target and no locator agreement; UNCERTAIN otherwise",
+      "claim_safety": "EVIDENCE SUFFICIENCY is a statement about the retrieved evidence set, not about legal correctness and not about any generated answer."
+    }
+  },
+  "latency_ms": {
+    "retrieval": {
+      "median": 35.09,
+      "mean": 35.86,
+      "p90": 39.32,
+      "p95": 41.94,
+      "max": 172.72
+    },
+    "reranking": {
+      "median": 20.8,
+      "mean": 21.43,
+      "p90": 25.84,
+      "p95": 27.82,
+      "max": 162.26
+    },
+    "retrieval_plus_reranking": {
+      "median": 56.14,
+      "mean": 57.29,
+      "p90": 63.55,
+      "p95": 67.01,
+      "max": 196.84
+    }
+  },
+  "pool": {
+    "median_candidates": 80,
+    "reranked_evidence_count": 10
+  },
+  "spelling": {
+    "questions_altered": 0,
+    "denominator": 1000
+  },
+  "intent_gate": {
+    "questions_captured": 0,
+    "denominator": 1000
+  },
+  "source_integrity": {
+    "questions_with_damaged_chunk_in_top5": 177,
+    "denominator": 1000
+  },
+  "by_difficulty": {
+    "easy": {
+      "n": 356,
+      "recall@1": 0.7107,
+      "recall@5": 0.8764,
+      "recall@10": 0.9438,
+      "mrr": 0.7819,
+      "ndcg@5": 0.7987,
+      "ndcg@10": 0.8205
+    },
+    "hard": {
+      "n": 303,
+      "recall@1": 0.6535,
+      "recall@5": 0.8581,
+      "recall@10": 0.9241,
+      "mrr": 0.7441,
+      "ndcg@5": 0.7608,
+      "ndcg@10": 0.7833
+    },
+    "medium": {
+      "n": 301,
+      "recall@1": 0.7375,
+      "recall@5": 0.887,
+      "recall@10": 0.9535,
+      "mrr": 0.8088,
+      "ndcg@5": 0.8227,
+      "ndcg@10": 0.8433
+    }
+  },
+  "by_answer_type": {
+    "conceptual": {
+      "n": 117,
+      "recall@1": 0.7265,
+      "recall@5": 0.8974,
+      "recall@10": 0.9487,
+      "mrr": 0.8046,
+      "ndcg@5": 0.8234,
+      "ndcg@10": 0.8395
+    },
+    "cross_reference": {
+      "n": 30,
+      "recall@1": 0.8667,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.925,
+      "ndcg@5": 0.883,
+      "ndcg@10": 0.9026
+    },
+    "definition": {
+      "n": 49,
+      "recall@1": 0.6939,
+      "recall@5": 0.8163,
+      "recall@10": 0.8776,
+      "mrr": 0.7558,
+      "ndcg@5": 0.7658,
+      "ndcg@10": 0.7849
+    },
+    "eligibility": {
+      "n": 30,
+      "recall@1": 0.6667,
+      "recall@5": 0.9,
+      "recall@10": 0.9333,
+      "mrr": 0.7442,
+      "ndcg@5": 0.7793,
+      "ndcg@10": 0.7898
+    },
+    "exception": {
+      "n": 54,
+      "recall@1": 0.7407,
+      "recall@5": 0.8519,
+      "recall@10": 0.9074,
+      "mrr": 0.801,
+      "ndcg@5": 0.8084,
+      "ndcg@10": 0.8268
+    },
+    "fee": {
+      "n": 51,
+      "recall@1": 0.5686,
+      "recall@5": 0.7647,
+      "recall@10": 0.9412,
+      "mrr": 0.667,
+      "ndcg@5": 0.6754,
+      "ndcg@10": 0.7305
+    },
+    "identifier": {
+      "n": 173,
+      "recall@1": 0.8035,
+      "recall@5": 0.9711,
+      "recall@10": 0.9942,
+      "mrr": 0.8786,
+      "ndcg@5": 0.8998,
+      "ndcg@10": 0.9074
+    },
+    "multi_part": {
+      "n": 54,
+      "recall@1": 0.6111,
+      "recall@5": 0.7593,
+      "recall@10": 0.8519,
+      "mrr": 0.6762,
+      "ndcg@5": 0.6886,
+      "ndcg@10": 0.7173
+    },
+    "penalty": {
+      "n": 32,
+      "recall@1": 0.6875,
+      "recall@5": 0.9062,
+      "recall@10": 0.9688,
+      "mrr": 0.7693,
+      "ndcg@5": 0.7972,
+      "ndcg@10": 0.8169
+    },
+    "power": {
+      "n": 98,
+      "recall@1": 0.6633,
+      "recall@5": 0.8878,
+      "recall@10": 0.9694,
+      "mrr": 0.7703,
+      "ndcg@5": 0.7916,
+      "ndcg@10": 0.8186
+    },
+    "procedure": {
+      "n": 66,
+      "recall@1": 0.5758,
+      "recall@5": 0.803,
+      "recall@10": 0.8939,
+      "mrr": 0.6655,
+      "ndcg@5": 0.6917,
+      "ndcg@10": 0.7194
+    },
+    "prohibition": {
+      "n": 94,
+      "recall@1": 0.7447,
+      "recall@5": 0.9362,
+      "recall@10": 0.9468,
+      "mrr": 0.8104,
+      "ndcg@5": 0.8403,
+      "ndcg@10": 0.8436
+    },
+    "timeline": {
+      "n": 112,
+      "recall@1": 0.6429,
+      "recall@5": 0.7679,
+      "recall@10": 0.9107,
+      "mrr": 0.7143,
+      "ndcg@5": 0.7149,
+      "ndcg@10": 0.7596
+    }
+  },
+  "by_domain": {
+    "biodiversity_abs": {
+      "n": 132,
+      "recall@1": 0.8561,
+      "recall@5": 0.9697,
+      "recall@10": 0.9924,
+      "mrr": 0.9111,
+      "ndcg@5": 0.9235,
+      "ndcg@10": 0.9308
+    },
+    "copyright": {
+      "n": 133,
+      "recall@1": 0.7444,
+      "recall@5": 0.9098,
+      "recall@10": 0.9474,
+      "mrr": 0.8198,
+      "ndcg@5": 0.838,
+      "ndcg@10": 0.8502
+    },
+    "designs": {
+      "n": 78,
+      "recall@1": 0.8462,
+      "recall@5": 0.9359,
+      "recall@10": 0.9615,
+      "mrr": 0.8853,
+      "ndcg@5": 0.896,
+      "ndcg@10": 0.9037
+    },
+    "drug_regulation": {
+      "n": 100,
+      "recall@1": 0.61,
+      "recall@5": 0.82,
+      "recall@10": 0.88,
+      "mrr": 0.6886,
+      "ndcg@5": 0.7148,
+      "ndcg@10": 0.7343
+    },
+    "geographical_indications": {
+      "n": 130,
+      "recall@1": 0.5615,
+      "recall@5": 0.7846,
+      "recall@10": 0.8462,
+      "mrr": 0.658,
+      "ndcg@5": 0.682,
+      "ndcg@10": 0.7028
+    },
+    "international_ip": {
+      "n": 51,
+      "recall@1": 0.7647,
+      "recall@5": 0.9804,
+      "recall@10": 0.9804,
+      "mrr": 0.8487,
+      "ndcg@5": 0.8818,
+      "ndcg@10": 0.8818
+    },
+    "ip_policy": {
+      "n": 2,
+      "recall@1": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.75,
+      "ndcg@5": 0.8155,
+      "ndcg@10": 0.8155
+    },
+    "patents": {
+      "n": 132,
+      "recall@1": 0.8106,
+      "recall@5": 0.9697,
+      "recall@10": 0.9924,
+      "mrr": 0.8673,
+      "ndcg@5": 0.8902,
+      "ndcg@10": 0.8977
+    },
+    "plant_varieties": {
+      "n": 77,
+      "recall@1": 0.2338,
+      "recall@5": 0.4675,
+      "recall@10": 0.9221,
+      "mrr": 0.3843,
+      "ndcg@5": 0.3469,
+      "ndcg@10": 0.4946
+    },
+    "trademarks": {
+      "n": 125,
+      "recall@1": 0.768,
+      "recall@5": 0.936,
+      "recall@10": 0.952,
+      "mrr": 0.8451,
+      "ndcg@5": 0.8661,
+      "ndcg@10": 0.8709
+    }
+  },
+  "by_document": {
+    "IN-ABS-REGULATIONS-2025": {
+      "n": 9,
+      "recall@1": 0.8889,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.9111,
+      "ndcg@5": 0.9319,
+      "ndcg@10": 0.9319
+    },
+    "IN-BD-RULES-2024": {
+      "n": 25,
+      "recall@1": 0.76,
+      "recall@5": 0.88,
+      "recall@10": 1.0,
+      "mrr": 0.8357,
+      "ndcg@5": 0.8357,
+      "ndcg@10": 0.8743
+    },
+    "IN-BDA-2002-AMD-2023": {
+      "n": 54,
+      "recall@1": 0.8704,
+      "recall@5": 0.9815,
+      "recall@10": 0.9815,
+      "mrr": 0.9228,
+      "ndcg@5": 0.938,
+      "ndcg@10": 0.938
+    },
+    "IN-COPYRIGHT-ACT-1957": {
+      "n": 74,
+      "recall@1": 0.8514,
+      "recall@5": 0.9595,
+      "recall@10": 0.9865,
+      "mrr": 0.906,
+      "ndcg@5": 0.9161,
+      "ndcg@10": 0.9241
+    },
+    "IN-COPYRIGHT-RULES-2013": {
+      "n": 59,
+      "recall@1": 0.6102,
+      "recall@5": 0.8475,
+      "recall@10": 0.8983,
+      "mrr": 0.7116,
+      "ndcg@5": 0.7401,
+      "ndcg@10": 0.7574
+    },
+    "IN-DC-ACT-1940": {
+      "n": 51,
+      "recall@1": 0.7059,
+      "recall@5": 0.9216,
+      "recall@10": 0.9608,
+      "mrr": 0.7752,
+      "ndcg@5": 0.8068,
+      "ndcg@10": 0.8195
+    },
+    "IN-DC-RULES-1945": {
+      "n": 49,
+      "recall@1": 0.5102,
+      "recall@5": 0.7143,
+      "recall@10": 0.7959,
+      "mrr": 0.5986,
+      "ndcg@5": 0.6191,
+      "ndcg@10": 0.6457
+    },
+    "IN-DESIGNS-ACT-2000": {
+      "n": 43,
+      "recall@1": 0.8372,
+      "recall@5": 0.9535,
+      "recall@10": 0.9535,
+      "mrr": 0.8857,
+      "ndcg@5": 0.9029,
+      "ndcg@10": 0.9029
+    },
+    "IN-DESIGNS-RULES-2001": {
+      "n": 35,
+      "recall@1": 0.8571,
+      "recall@5": 0.9143,
+      "recall@10": 0.9714,
+      "mrr": 0.8849,
+      "ndcg@5": 0.8875,
+      "ndcg@10": 0.9047
+    },
+    "IN-GI-ACT-1999": {
+      "n": 72,
+      "recall@1": 0.5972,
+      "recall@5": 0.7917,
+      "recall@10": 0.8333,
+      "mrr": 0.6758,
+      "ndcg@5": 0.6997,
+      "ndcg@10": 0.7142
+    },
+    "IN-GI-RULES-2002": {
+      "n": 58,
+      "recall@1": 0.5172,
+      "recall@5": 0.7759,
+      "recall@10": 0.8621,
+      "mrr": 0.6358,
+      "ndcg@5": 0.6601,
+      "ndcg@10": 0.6887
+    },
+    "IN-NATIONAL-IPR-POLICY-2016": {
+      "n": 2,
+      "recall@1": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.75,
+      "ndcg@5": 0.8155,
+      "ndcg@10": 0.8155
+    },
+    "IN-PATENTS-ACT-1970": {
+      "n": 65,
+      "recall@1": 0.8769,
+      "recall@5": 0.9846,
+      "recall@10": 1.0,
+      "mrr": 0.9138,
+      "ndcg@5": 0.93,
+      "ndcg@10": 0.9346
+    },
+    "IN-PATENTS-RULES-2003": {
+      "n": 67,
+      "recall@1": 0.7463,
+      "recall@5": 0.9552,
+      "recall@10": 0.9851,
+      "mrr": 0.8223,
+      "ndcg@5": 0.8517,
+      "ndcg@10": 0.862
+    },
+    "IN-PPVFR-ACT-2001": {
+      "n": 18,
+      "recall@1": 0.2778,
+      "recall@5": 0.7222,
+      "recall@10": 0.9444,
+      "mrr": 0.4915,
+      "ndcg@5": 0.498,
+      "ndcg@10": 0.5809
+    },
+    "IN-PPVFR-RULES-2003": {
+      "n": 59,
+      "recall@1": 0.2203,
+      "recall@5": 0.3898,
+      "recall@10": 0.9153,
+      "mrr": 0.3516,
+      "ndcg@5": 0.3008,
+      "ndcg@10": 0.4682
+    },
+    "IN-TM-ACT-1999": {
+      "n": 64,
+      "recall@1": 0.8125,
+      "recall@5": 0.9375,
+      "recall@10": 0.9688,
+      "mrr": 0.8785,
+      "ndcg@5": 0.8894,
+      "ndcg@10": 0.8989
+    },
+    "IN-TM-RULES-2017": {
+      "n": 61,
+      "recall@1": 0.7213,
+      "recall@5": 0.9344,
+      "recall@10": 0.9344,
+      "mrr": 0.8101,
+      "ndcg@5": 0.8416,
+      "ndcg@10": 0.8416
+    },
+    "UN-CBD-1992": {
+      "n": 36,
+      "recall@1": 0.8611,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.9259,
+      "ndcg@5": 0.9434,
+      "ndcg@10": 0.9434
+    },
+    "UN-NAGOYA-PROTOCOL-2010": {
+      "n": 8,
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0
+    },
+    "WTO-TRIPS": {
+      "n": 51,
+      "recall@1": 0.7647,
+      "recall@5": 0.9804,
+      "recall@10": 0.9804,
+      "mrr": 0.8487,
+      "ndcg@5": 0.8818,
+      "ndcg@10": 0.8818
+    }
+  },
+  "claim_safety": "AI-generated corpus-grounded evaluation set, scored deterministically offline. Questions and expected answers are derived from the fixed corpus by template over verbatim spans; they are not human-verified legal ground truth. Evidence sufficiency is a property of the retrieved evidence, not a measure of legal accuracy."
+}

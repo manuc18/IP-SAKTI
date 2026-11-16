@@ -1,0 +1,89 @@
+{
+  "document_id": "IN-PPVFR-ACT-2001",
+  "chunking_version": "0.2.0",
+  "units": 109,
+  "chunks": 102,
+  "rejected": 11,
+  "rejected_by_reason": {
+    "structural heading with no body text": 11
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 101,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "VERIFIED_OFFICIAL",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 120386,
+  "mean_chunk_characters": 1180.3,
+  "max_chunk_characters": 4890,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 71
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 4,
+      "reason": "structural heading with no body text",
+      "character_count": 143
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 16,
+      "reason": "structural heading with no body text",
+      "character_count": 104
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 27,
+      "reason": "structural heading with no body text",
+      "character_count": 66
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 37,
+      "reason": "structural heading with no body text",
+      "character_count": 94
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 44,
+      "reason": "structural heading with no body text",
+      "character_count": 26
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 53,
+      "reason": "structural heading with no body text",
+      "character_count": 30
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 61,
+      "reason": "structural heading with no body text",
+      "character_count": 58
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 68,
+      "reason": "structural heading with no body text",
+      "character_count": 38
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 73,
+      "reason": "structural heading with no body text",
+      "character_count": 58
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "unit_order": 88,
+      "reason": "structural heading with no body text",
+      "character_count": 24
+    }
+  ]
+}

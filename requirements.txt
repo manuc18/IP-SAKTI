@@ -1,0 +1,40 @@
+# IP-SAKTI — Phase 2 (ingestion and structural preprocessing) only.
+# Nothing here is an ML framework: no embeddings, vector store or retrieval
+# component is part of this phase.
+
+pypdf==6.16.2        # text-layer extraction; also used by the Phase 1 audit
+pypdfium2==5.13.0    # renders scanned pages to images for OCR (self-contained wheel)
+pytesseract==0.3.13  # thin wrapper over the Tesseract binary
+pillow==12.3.0       # image buffer between pypdfium2 and pytesseract
+pytest==9.1.1        # test suite
+
+# System dependency, not installable via pip:
+#   tesseract 5.5.3 with the 'eng' and 'hin' language data
+#   macOS:  brew install tesseract tesseract-lang
+#   Debian: apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-hin
+#
+# pdfplumber is deliberately NOT a dependency. Phase 2 only needs to *detect*
+# table-bearing pages, which is done on the text layer; reconstructing column
+# relationships is deferred rather than guessed.
+
+# --- Phase 4 (retrieval laboratory) -----------------------------------------
+# Dense retrieval only. No vector database: the baseline index is a .npy matrix
+# with a JSON sidecar (see ai/retrieval/dense.py), and the Retriever interface
+# is the same one pgvector would satisfy later.
+numpy==2.5.2
+torch==2.13.0                # CPU/MPS inference for BGE-M3; no training here
+sentence-transformers==6.0.0  # loads BAAI/bge-m3 from the local HF cache
+
+# --- Phase 7 (grounded answer engine) ---------------------------------------
+# Adds nothing. ai/answering/ is standard library plus the existing ai.retrieval
+# tokenizer and identifier parser; it imports no ML framework and opens no
+# network connection. There is no LLM client here and no paid API dependency:
+# the project's ₹0 operating-cost requirement means a provider must remain
+# optional, so the system runs today on the deterministic extractive provider.
+
+# --- API layer (app/) -------------------------------------------------------
+# The demo UI server (app/server.py) is standard library only. The HTTP API the
+# development team integrates against (app/api_server.py) is Flask, and Flask is
+# the only reason this line exists: routing, JSON and error handling, nothing
+# more. No ORM, no task queue, no auth framework. See docs/API_HANDOVER.md.
+flask==3.1.3

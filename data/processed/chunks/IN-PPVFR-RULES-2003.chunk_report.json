@@ -1,0 +1,66 @@
+{
+  "document_id": "IN-PPVFR-RULES-2003",
+  "chunking_version": "0.2.0",
+  "units": 94,
+  "chunks": 103,
+  "rejected": 7,
+  "rejected_by_reason": {
+    "structural heading with no body text": 6,
+    "below the minimum retrievable length": 1
+  },
+  "chunks_missing_locator": 1,
+  "chunks_citable": 102,
+  "chunks_not_citable": 1,
+  "source_evidence_level": "A",
+  "source_status": "VERIFIED_OFFICIAL",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 3,
+  "chunks_from_ocr": 0,
+  "characters": 143050,
+  "mean_chunk_characters": 1388.8,
+  "max_chunk_characters": 4992,
+  "rejected_chunks": [
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 1,
+      "reason": "structural heading with no body text",
+      "character_count": 22
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 12,
+      "reason": "structural heading with no body text",
+      "character_count": 69
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 26,
+      "reason": "structural heading with no body text",
+      "character_count": 43
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 40,
+      "reason": "structural heading with no body text",
+      "character_count": 44
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 54,
+      "reason": "structural heading with no body text",
+      "character_count": 113
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 79,
+      "reason": "structural heading with no body text",
+      "character_count": 42
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "unit_order": 92,
+      "reason": "below the minimum retrievable length",
+      "character_count": 3
+    }
+  ]
+}

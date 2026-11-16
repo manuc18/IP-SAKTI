@@ -1,0 +1,107 @@
+{
+  "check": "typo_tolerance",
+  "questions": 111,
+  "seed": 20260916,
+  "denominator_note": "every rate is out of 111 benchmark questions; 111 of them received an injected misspelling and 0 had no word long enough to break",
+  "injection": {
+    "questions_injected": 111,
+    "edits": [
+      "patentability->paatentability",
+      "patentable->patentabble",
+      "patent->ptent",
+      "compulsory->complusory",
+      "infringement->infringemment",
+      "application->applicatioon",
+      "infringement->infringemeent",
+      "Government->Goverrnment",
+      "principles->priciples",
+      "inventions->invenitons",
+      "patentee->patenteee",
+      "documents->documenst",
+      "specification->specificatino",
+      "examination->examinatino",
+      "applications->appilcations",
+      "accompanying->accompanyying",
+      "registration->regstration",
+      "identical->identcial",
+      "registered->registerde",
+      "infringement->ifringement"
+    ],
+    "policy": "one edit (drop/swap/double) in the longest content word of at least six letters; identifiers and structural words are never touched"
+  },
+  "repair": {
+    "restored_to_original": 89,
+    "of_injected": 111,
+    "clean_questions_altered_by_correction": 0,
+    "clean_rank1_unchanged": "111/111"
+  },
+  "clarifier_interceptions": {
+    "clean": 0,
+    "typo_uncorrected": 0,
+    "typo_corrected": 0,
+    "denominator": 111,
+    "note": "questions app/clarify.py would answer with a clarifying question instead of running the pipeline; a misspelled regime name anchors on nothing, which Recall@k cannot see because the benchmark harness does not run the clarifier"
+  },
+  "runs": {
+    "clean": {
+      "aggregate": {
+        "recall@1": 0.8468,
+        "recall@5": 0.991,
+        "recall@10": 1.0,
+        "mrr": 0.8995,
+        "ndcg@5": 0.918,
+        "ndcg@10": 0.9206
+      },
+      "counts": {
+        "recall@1": 94,
+        "recall@5": 110,
+        "recall@10": 111
+      }
+    },
+    "clean_corrected": {
+      "aggregate": {
+        "recall@1": 0.8468,
+        "recall@5": 0.991,
+        "recall@10": 1.0,
+        "mrr": 0.8995,
+        "ndcg@5": 0.918,
+        "ndcg@10": 0.9206
+      },
+      "counts": {
+        "recall@1": 94,
+        "recall@5": 110,
+        "recall@10": 111
+      }
+    },
+    "typo_uncorrected": {
+      "aggregate": {
+        "recall@1": 0.8198,
+        "recall@5": 0.9459,
+        "recall@10": 0.982,
+        "mrr": 0.877,
+        "ndcg@5": 0.8872,
+        "ndcg@10": 0.8991
+      },
+      "counts": {
+        "recall@1": 91,
+        "recall@5": 105,
+        "recall@10": 109
+      }
+    },
+    "typo_corrected": {
+      "aggregate": {
+        "recall@1": 0.8108,
+        "recall@5": 0.982,
+        "recall@10": 0.991,
+        "mrr": 0.8785,
+        "ndcg@5": 0.9002,
+        "ndcg@10": 0.9028
+      },
+      "counts": {
+        "recall@1": 90,
+        "recall@5": 109,
+        "recall@10": 110
+      }
+    }
+  }
+}

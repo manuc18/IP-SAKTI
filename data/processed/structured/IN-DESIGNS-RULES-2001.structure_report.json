@@ -1,0 +1,17 @@
+{
+  "document_id": "IN-DESIGNS-RULES-2001",
+  "parser": "statutory",
+  "provision_label": "Rule",
+  "pages_ingested": 31,
+  "pages_excluded": {},
+  "units": 89,
+  "units_by_type": {
+    "front_matter": 1,
+    "provision": 46,
+    "schedule": 4,
+    "schedule_item": 38
+  },
+  "units_with_locator": 88,
+  "units_locator_downgraded": 0,
+  "characters": 66108
+}

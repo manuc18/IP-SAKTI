@@ -1,0 +1,512 @@
+{
+  "metric": "A_retrieval",
+  "deterministic": true,
+  "questions_evaluated": 960,
+  "denominator_note": "every rate below is out of 960 answerable questions; the 40 EXPECTED_ABSTENTION questions have no retrieval target and are excluded from Metric A entirely",
+  "reranker": "features",
+  "instrument_name_discount": 1.0,
+  "top_k": 10,
+  "aggregate": {
+    "recall@1": 0.7021,
+    "recall@5": 0.876,
+    "recall@10": 0.9458,
+    "mrr": 0.7813,
+    "ndcg@5": 0.7968,
+    "ndcg@10": 0.8193
+  },
+  "counts": {
+    "recall@1": 674,
+    "recall@5": 841,
+    "recall@10": 908
+  },
+  "rank_buckets": {
+    "rank 1": 674,
+    "rank 2-5": 167,
+    ">10 / missing": 52,
+    "rank 6-10": 67
+  },
+  "by_difficulty": {
+    "easy": {
+      "n": 356,
+      "recall@1": 0.7107,
+      "recall@5": 0.8792,
+      "recall@10": 0.9494,
+      "mrr": 0.7852,
+      "ndcg@5": 0.8018,
+      "ndcg@10": 0.8244
+    },
+    "hard": {
+      "n": 303,
+      "recall@1": 0.6535,
+      "recall@5": 0.8614,
+      "recall@10": 0.9241,
+      "mrr": 0.7464,
+      "ndcg@5": 0.7638,
+      "ndcg@10": 0.7852
+    },
+    "medium": {
+      "n": 301,
+      "recall@1": 0.7409,
+      "recall@5": 0.887,
+      "recall@10": 0.9635,
+      "mrr": 0.8117,
+      "ndcg@5": 0.824,
+      "ndcg@10": 0.8477
+    }
+  },
+  "by_answer_type": {
+    "conceptual": {
+      "n": 117,
+      "recall@1": 0.7265,
+      "recall@5": 0.906,
+      "recall@10": 0.9487,
+      "mrr": 0.8079,
+      "ndcg@5": 0.8288,
+      "ndcg@10": 0.8422
+    },
+    "cross_reference": {
+      "n": 30,
+      "recall@1": 0.8667,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.925,
+      "ndcg@5": 0.883,
+      "ndcg@10": 0.9026
+    },
+    "definition": {
+      "n": 49,
+      "recall@1": 0.6939,
+      "recall@5": 0.8163,
+      "recall@10": 0.8776,
+      "mrr": 0.7592,
+      "ndcg@5": 0.7685,
+      "ndcg@10": 0.7876
+    },
+    "eligibility": {
+      "n": 30,
+      "recall@1": 0.6667,
+      "recall@5": 0.9,
+      "recall@10": 0.9333,
+      "mrr": 0.7442,
+      "ndcg@5": 0.7793,
+      "ndcg@10": 0.7898
+    },
+    "exception": {
+      "n": 54,
+      "recall@1": 0.7407,
+      "recall@5": 0.8519,
+      "recall@10": 0.9074,
+      "mrr": 0.801,
+      "ndcg@5": 0.8084,
+      "ndcg@10": 0.8268
+    },
+    "fee": {
+      "n": 51,
+      "recall@1": 0.5686,
+      "recall@5": 0.7647,
+      "recall@10": 0.9608,
+      "mrr": 0.6706,
+      "ndcg@5": 0.6768,
+      "ndcg@10": 0.7376
+    },
+    "identifier": {
+      "n": 173,
+      "recall@1": 0.8035,
+      "recall@5": 0.9711,
+      "recall@10": 0.9942,
+      "mrr": 0.8786,
+      "ndcg@5": 0.8998,
+      "ndcg@10": 0.9074
+    },
+    "multi_part": {
+      "n": 54,
+      "recall@1": 0.6111,
+      "recall@5": 0.7593,
+      "recall@10": 0.8519,
+      "mrr": 0.684,
+      "ndcg@5": 0.6947,
+      "ndcg@10": 0.7234
+    },
+    "penalty": {
+      "n": 32,
+      "recall@1": 0.6875,
+      "recall@5": 0.9062,
+      "recall@10": 0.9688,
+      "mrr": 0.7698,
+      "ndcg@5": 0.7972,
+      "ndcg@10": 0.8175
+    },
+    "power": {
+      "n": 98,
+      "recall@1": 0.6633,
+      "recall@5": 0.8878,
+      "recall@10": 0.9694,
+      "mrr": 0.7703,
+      "ndcg@5": 0.7916,
+      "ndcg@10": 0.8186
+    },
+    "procedure": {
+      "n": 66,
+      "recall@1": 0.5758,
+      "recall@5": 0.803,
+      "recall@10": 0.9394,
+      "mrr": 0.6733,
+      "ndcg@5": 0.6941,
+      "ndcg@10": 0.7355
+    },
+    "prohibition": {
+      "n": 94,
+      "recall@1": 0.7553,
+      "recall@5": 0.9362,
+      "recall@10": 0.9468,
+      "mrr": 0.8198,
+      "ndcg@5": 0.8475,
+      "ndcg@10": 0.8509
+    },
+    "timeline": {
+      "n": 112,
+      "recall@1": 0.6429,
+      "recall@5": 0.7768,
+      "recall@10": 0.9196,
+      "mrr": 0.7162,
+      "ndcg@5": 0.7187,
+      "ndcg@10": 0.7631
+    }
+  },
+  "by_register": {
+    "beginner": {
+      "n": 127,
+      "recall@1": 0.6929,
+      "recall@5": 0.8819,
+      "recall@10": 0.937,
+      "mrr": 0.7735,
+      "ndcg@5": 0.7958,
+      "ndcg@10": 0.8129
+    },
+    "neutral": {
+      "n": 419,
+      "recall@1": 0.7041,
+      "recall@5": 0.8759,
+      "recall@10": 0.9523,
+      "mrr": 0.7822,
+      "ndcg@5": 0.7985,
+      "ndcg@10": 0.8227
+    },
+    "practitioner": {
+      "n": 414,
+      "recall@1": 0.7029,
+      "recall@5": 0.8744,
+      "recall@10": 0.942,
+      "mrr": 0.7827,
+      "ndcg@5": 0.7954,
+      "ndcg@10": 0.8179
+    }
+  },
+  "by_domain": {
+    "biodiversity_abs": {
+      "n": 132,
+      "recall@1": 0.8561,
+      "recall@5": 0.9773,
+      "recall@10": 0.9924,
+      "mrr": 0.9116,
+      "ndcg@5": 0.9264,
+      "ndcg@10": 0.9313
+    },
+    "copyright": {
+      "n": 133,
+      "recall@1": 0.7444,
+      "recall@5": 0.9098,
+      "recall@10": 0.9549,
+      "mrr": 0.8205,
+      "ndcg@5": 0.838,
+      "ndcg@10": 0.8523
+    },
+    "designs": {
+      "n": 78,
+      "recall@1": 0.8333,
+      "recall@5": 0.9359,
+      "recall@10": 0.9615,
+      "mrr": 0.8789,
+      "ndcg@5": 0.8912,
+      "ndcg@10": 0.8989
+    },
+    "drug_regulation": {
+      "n": 100,
+      "recall@1": 0.61,
+      "recall@5": 0.83,
+      "recall@10": 0.89,
+      "mrr": 0.7004,
+      "ndcg@5": 0.7267,
+      "ndcg@10": 0.7462
+    },
+    "geographical_indications": {
+      "n": 130,
+      "recall@1": 0.5615,
+      "recall@5": 0.7846,
+      "recall@10": 0.8462,
+      "mrr": 0.658,
+      "ndcg@5": 0.682,
+      "ndcg@10": 0.7028
+    },
+    "international_ip": {
+      "n": 51,
+      "recall@1": 0.7843,
+      "recall@5": 0.9804,
+      "recall@10": 0.9804,
+      "mrr": 0.866,
+      "ndcg@5": 0.895,
+      "ndcg@10": 0.895
+    },
+    "ip_policy": {
+      "n": 2,
+      "recall@1": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.75,
+      "ndcg@5": 0.8155,
+      "ndcg@10": 0.8155
+    },
+    "patents": {
+      "n": 132,
+      "recall@1": 0.8106,
+      "recall@5": 0.9697,
+      "recall@10": 1.0,
+      "mrr": 0.8697,
+      "ndcg@5": 0.8916,
+      "ndcg@10": 0.9013
+    },
+    "plant_varieties": {
+      "n": 77,
+      "recall@1": 0.2338,
+      "recall@5": 0.4675,
+      "recall@10": 0.9221,
+      "mrr": 0.3843,
+      "ndcg@5": 0.3469,
+      "ndcg@10": 0.4946
+    },
+    "trademarks": {
+      "n": 125,
+      "recall@1": 0.776,
+      "recall@5": 0.936,
+      "recall@10": 0.968,
+      "mrr": 0.8509,
+      "ndcg@5": 0.8691,
+      "ndcg@10": 0.8787
+    }
+  },
+  "by_document": {
+    "IN-ABS-REGULATIONS-2025": {
+      "n": 9,
+      "recall@1": 0.8889,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.9111,
+      "ndcg@5": 0.9319,
+      "ndcg@10": 0.9319
+    },
+    "IN-BD-RULES-2024": {
+      "n": 25,
+      "recall@1": 0.76,
+      "recall@5": 0.92,
+      "recall@10": 1.0,
+      "mrr": 0.8387,
+      "ndcg@5": 0.8512,
+      "ndcg@10": 0.8771
+    },
+    "IN-BDA-2002-AMD-2023": {
+      "n": 54,
+      "recall@1": 0.8704,
+      "recall@5": 0.9815,
+      "recall@10": 0.9815,
+      "mrr": 0.9228,
+      "ndcg@5": 0.938,
+      "ndcg@10": 0.938
+    },
+    "IN-COPYRIGHT-ACT-1957": {
+      "n": 74,
+      "recall@1": 0.8514,
+      "recall@5": 0.9595,
+      "recall@10": 0.9865,
+      "mrr": 0.906,
+      "ndcg@5": 0.9161,
+      "ndcg@10": 0.9241
+    },
+    "IN-COPYRIGHT-RULES-2013": {
+      "n": 59,
+      "recall@1": 0.6102,
+      "recall@5": 0.8475,
+      "recall@10": 0.9153,
+      "mrr": 0.7133,
+      "ndcg@5": 0.7401,
+      "ndcg@10": 0.7623
+    },
+    "IN-DC-ACT-1940": {
+      "n": 51,
+      "recall@1": 0.7059,
+      "recall@5": 0.9216,
+      "recall@10": 0.9608,
+      "mrr": 0.7842,
+      "ndcg@5": 0.8138,
+      "ndcg@10": 0.8269
+    },
+    "IN-DC-RULES-1945": {
+      "n": 49,
+      "recall@1": 0.5102,
+      "recall@5": 0.7347,
+      "recall@10": 0.8163,
+      "mrr": 0.6133,
+      "ndcg@5": 0.636,
+      "ndcg@10": 0.6621
+    },
+    "IN-DESIGNS-ACT-2000": {
+      "n": 43,
+      "recall@1": 0.814,
+      "recall@5": 0.9535,
+      "recall@10": 0.9535,
+      "mrr": 0.874,
+      "ndcg@5": 0.8943,
+      "ndcg@10": 0.8943
+    },
+    "IN-DESIGNS-RULES-2001": {
+      "n": 35,
+      "recall@1": 0.8571,
+      "recall@5": 0.9143,
+      "recall@10": 0.9714,
+      "mrr": 0.8849,
+      "ndcg@5": 0.8875,
+      "ndcg@10": 0.9047
+    },
+    "IN-GI-ACT-1999": {
+      "n": 72,
+      "recall@1": 0.5972,
+      "recall@5": 0.7917,
+      "recall@10": 0.8333,
+      "mrr": 0.6758,
+      "ndcg@5": 0.6997,
+      "ndcg@10": 0.7142
+    },
+    "IN-GI-RULES-2002": {
+      "n": 58,
+      "recall@1": 0.5172,
+      "recall@5": 0.7759,
+      "recall@10": 0.8621,
+      "mrr": 0.6358,
+      "ndcg@5": 0.6601,
+      "ndcg@10": 0.6887
+    },
+    "IN-NATIONAL-IPR-POLICY-2016": {
+      "n": 2,
+      "recall@1": 0.5,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.75,
+      "ndcg@5": 0.8155,
+      "ndcg@10": 0.8155
+    },
+    "IN-PATENTS-ACT-1970": {
+      "n": 65,
+      "recall@1": 0.8769,
+      "recall@5": 0.9846,
+      "recall@10": 1.0,
+      "mrr": 0.9158,
+      "ndcg@5": 0.9317,
+      "ndcg@10": 0.9363
+    },
+    "IN-PATENTS-RULES-2003": {
+      "n": 67,
+      "recall@1": 0.7463,
+      "recall@5": 0.9552,
+      "recall@10": 1.0,
+      "mrr": 0.825,
+      "ndcg@5": 0.8527,
+      "ndcg@10": 0.8673
+    },
+    "IN-PPVFR-ACT-2001": {
+      "n": 18,
+      "recall@1": 0.2778,
+      "recall@5": 0.7222,
+      "recall@10": 0.9444,
+      "mrr": 0.4915,
+      "ndcg@5": 0.498,
+      "ndcg@10": 0.5809
+    },
+    "IN-PPVFR-RULES-2003": {
+      "n": 59,
+      "recall@1": 0.2203,
+      "recall@5": 0.3898,
+      "recall@10": 0.9153,
+      "mrr": 0.3516,
+      "ndcg@5": 0.3008,
+      "ndcg@10": 0.4682
+    },
+    "IN-TM-ACT-1999": {
+      "n": 64,
+      "recall@1": 0.8125,
+      "recall@5": 0.9375,
+      "recall@10": 0.9688,
+      "mrr": 0.8785,
+      "ndcg@5": 0.8894,
+      "ndcg@10": 0.8989
+    },
+    "IN-TM-RULES-2017": {
+      "n": 61,
+      "recall@1": 0.7377,
+      "recall@5": 0.9344,
+      "recall@10": 0.9672,
+      "mrr": 0.8219,
+      "ndcg@5": 0.8477,
+      "ndcg@10": 0.8576
+    },
+    "UN-CBD-1992": {
+      "n": 36,
+      "recall@1": 0.8611,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 0.9259,
+      "ndcg@5": 0.9434,
+      "ndcg@10": 0.9434
+    },
+    "UN-NAGOYA-PROTOCOL-2010": {
+      "n": 8,
+      "recall@1": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0,
+      "mrr": 1.0,
+      "ndcg@5": 1.0,
+      "ndcg@10": 1.0
+    },
+    "WTO-TRIPS": {
+      "n": 51,
+      "recall@1": 0.7843,
+      "recall@5": 0.9804,
+      "recall@10": 0.9804,
+      "mrr": 0.866,
+      "ndcg@5": 0.895,
+      "ndcg@10": 0.895
+    }
+  },
+  "latency_ms": {
+    "retrieval": {
+      "median": 39.09,
+      "mean": 40.93,
+      "p90": 49.76,
+      "p95": 52.12,
+      "max": 139.9
+    },
+    "reranking": {
+      "median": 20.75,
+      "mean": 20.85,
+      "p90": 25.64,
+      "p95": 27.15,
+      "max": 45.35
+    },
+    "retrieval_plus_reranking": {
+      "median": 60.68,
+      "mean": 61.78,
+      "p90": 71.87,
+      "p95": 75.44,
+      "max": 162.93
+    }
+  },
+  "claim_safety": "Evaluation uses a synthetic, AI-generated and AI-judged benchmark derived from the fixed corpus. It is an engineering evaluation and not human-verified legal ground truth."
+}

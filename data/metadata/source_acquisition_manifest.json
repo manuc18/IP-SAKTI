@@ -1,0 +1,437 @@
+{
+  "manifest_version": "0.2.0",
+  "generated_at": "2026-08-30",
+  "policy": "No file in ~/Downloads/IP-SAKTI Corpus is ever replaced in place. Acquired copies land in data/source_updates/ under content-addressed names and supersede a local source only after an explicit approval step and a fresh ingestion run.",
+  "priority_key": {
+    "1": "missing and required",
+    "2": "replacement required (stale, wrong content, or unresolved provenance)",
+    "3": "accepted for use"
+  },
+  "candidates_held_but_not_accepted": [
+    {
+      "for_document_id": "IN-FSSAI-AYURVEDA-AAHARA-REGS-2022",
+      "staged_file": "data/source_updates/a690fc8c03db07c1-fssai-ayurveda-aahara-regulations-2022-legitquest.pdf",
+      "sha256": "a690fc8c03db07c1446fd4532b4ff93d3a2e49130e14750776849008a51d2980",
+      "origin": "LegitQuest (commercial legal database)",
+      "evidence_level": "C",
+      "accepted": false,
+      "assessment": "Contains the right text: Regulations 1 to 14 and Schedules A, B, C and D of the Food Safety and Standards (Ayurveda Aahara) Regulations, 2022, including the definition of Ayurveda Aahara, the Schedule A list of 71 authoritative books and the Schedule B category table. Rejected as a source of record on two grounds. First, provenance: the file is an mPDF/Laravel print-to-PDF stamped 'Printed For: 29-08-2026' and carrying the LegitQuest logo on every page — a commercial database, which §2 excludes. Second, completeness: it ends inside Schedule D, so Schedule E (the AYURVEDA AAHARA logo, which regulation 13(a) makes mandatory on every label) is referenced but never reproduced, and there is no gazette masthead or signature block. Useful as a cross-check while the official text is sought; not admissible as the citable source."
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-REGS-2022",
+      "acquisition_priority": 1,
+      "source_evidence_level": "D",
+      "existing_source": {
+        "filename": null,
+        "sha256": null,
+        "status": "ABSENT_FROM_CORPUS"
+      },
+      "recommended_source": {
+        "title": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022",
+        "official_url": "https://www.fssai.gov.in/",
+        "official_document_url": null,
+        "publisher": "Food Safety and Standards Authority of India, Ministry of Health and Family Welfare",
+        "status": "MISSING_AND_REQUIRED"
+      },
+      "reason": "The most Ayurveda-specific instrument on the expected list, and the corpus does not contain it. What the corpus has instead is the FSSAI covering Order of 25 July 2025 (registered as IN-FSSAI-AYURVEDA-AAHARA-2022) whose filename claims to be these Regulations. Made under section 92(2)(v) of the Food Safety and Standards Act, 2006; draft published 30 June 2021, gazette copies released to the public 5 July 2021, final notification dated 5 May 2022. The FSSAI gazette URL located in this phase serves the site's JavaScript shell rather than a PDF, and the FSSAI 'Ayurveda Aahara Compendium' turns out to be another recipe index. Acquisition probably needs a browser session against the FSSAI portal or a request to FSSAI directly."
+    },
+    {
+      "document_id": "IN-BDA-2002-AMD-2023",
+      "acquisition_priority": 2,
+      "source_evidence_level": "C",
+      "existing_source": {
+        "filename": "THE BIOLOGICAL DIVERSITY ACT, 2002.pdf",
+        "sha256": "99b686937291f0d63154e5564bc95118e8525f0937333969d6273031484028c5",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Biological Diversity Act, 2002 (Act No. 18 of 2003)",
+        "official_url": "https://www.nbaindia.nic.in/",
+        "official_document_url": null,
+        "publisher": null,
+        "status": "REPLACEMENT_IDENTIFIED_URL_UNRESOLVED"
+      },
+      "reason": "The amending Act the local copy claims to incorporate was confirmed directly from the Gazette: the Biological Diversity (Amendment) Act, 2023 is Act 10 of 2023, assented 3 August 2023 (egazette.gov.in). The consolidation looks right; only its publisher is unknown. nbaindia.org now redirects to nbaindia.nic.in and the old PDF paths are dead — re-acquire through the NBA site's own navigation."
+    },
+    {
+      "document_id": "IN-COPYRIGHT-ACT-1957",
+      "acquisition_priority": 2,
+      "source_evidence_level": "C",
+      "existing_source": {
+        "filename": "THE COPYRIGHT ACT, 1957.pdf",
+        "sha256": "ba980f11b42e4d1d840d1305636b1030c976b7e66bb461116281f5349ed152bf",
+        "status": "PROVENANCE_UNRESOLVED"
+      },
+      "recommended_source": {
+        "title": "The Copyright Act, 1957 (Act No. 14 of 1957)",
+        "official_url": "https://copyright.gov.in/",
+        "official_document_url": "https://copyright.gov.in/Documents/Copyright_Act_1957.pdf",
+        "publisher": "Copyright Office, Department for Promotion of Industry and Internal Trade, Ministry of Commerce and Industry",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "Both copies predate a passed amendment. The Jan Vishwas (Amendment of Provisions) Act, 2026, Serial 23 of its Schedule, omits section 67; section 67 ('Penalty for making false entries in register') is still present in full in the local copy AND in the Copyright Office copy. Commencement is by notification under section 1(2) and no commencement notification was located, so the amendment's in-force date is unconfirmed. Replace with the Copyright Office copy for provenance, and re-check once a post-commencement consolidation appears."
+    },
+    {
+      "document_id": "IN-DC-ACT-1940",
+      "acquisition_priority": 2,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+        "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Drugs and Cosmetics Act, 1940 (Act 23 of 1940)",
+        "official_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/",
+        "official_document_url": "https://cdsco.gov.in/opencms/export/sites/CDSCO_WEB/Pdf-documents/acts_rules/2016DrugsandCosmeticsAct1940Rules1945.pdf",
+        "publisher": "Central Drugs Standard Control Organisation, Directorate General of Health Services, Ministry of Health and Family Welfare",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "STALE by nine years, and amended since: the Jan Vishwas (Amendment of Provisions) Act, 2026 amends section 27A of this Act (confirmed in the Gazette text at Serial 22 of its Schedule). CDSCO publishes the Act separately, released 22 November 2022."
+    },
+    {
+      "document_id": "IN-DC-RULES-1945",
+      "acquisition_priority": 2,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+        "sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Drugs Rules, 1945",
+        "official_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+        "official_document_url": "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/drug_rules/Drugs%20Rules%201945_2024%2009.pdf",
+        "publisher": "CDSCO, Ministry of Health and Family Welfare",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "STALE by eight years, and the replacement has been acquired and its currency read from the document itself: the CDSCO consolidated Drugs Rules, 1945 runs to 963 pages and its front matter states '[As amended vide G.S.R. 360(E) dated 01-07-2024 (w.e.f. 01-07-2024)]'. That is 366 pages more than the local Rules. Note also that the New Drugs and Clinical Trials Rules, 2019 and the Cosmetics Rules, 2020 have since carved subject matter out of the 1945 Rules."
+    },
+    {
+      "document_id": "IN-DESIGNS-RULES-2001",
+      "acquisition_priority": 2,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "Design Rules, 2001.pdf",
+        "sha256": "9e9eb40667b288fa8aeb737616019c68d0c298f5077535620078faeea643fbd6",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Designs Rules, 2001",
+        "official_url": "https://ipindia.gov.in/designs-resources-rules",
+        "official_document_url": "https://ipindia.gov.in/storage/uploads/docs-operator/87a7da10-66ad-4d75-a9ff-60f2fde67143.pdf",
+        "publisher": "DPIIT / IP India",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "Verified as the original 2001 Rules and therefore superseded: IP India separately publishes Designs (Amendment) Rules of 2008, 2014 and 2021, and a consolidated e-version incorporating amendments through 25 January 2021. The local copy predates all three."
+    },
+    {
+      "document_id": "IN-GI-RULES-2002",
+      "acquisition_priority": 2,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "Geographical Indications.pdf",
+        "sha256": "81dc9dc2f864317cbc239d5870e7fd0b9614ab2dfe6bf8b80c7a0ede2458b8b4",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Geographical Indications of Goods (Registration and Protection) Rules, 2002",
+        "official_url": "https://ipindia.gov.in/geographical-indications-resources-rules",
+        "official_document_url": "https://ipindia.gov.in/storage/uploads/docs-operator/c22590d2-e1ad-41c6-af6c-f29253810b2c.pdf",
+        "publisher": "DPIIT / IP India",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "Verified but superseded: the IP India GI rules page also publishes Amendment Rules of 2020 and 2025, neither of which is in the local copy. The base 2002 text is sound; the amendments must be acquired."
+    },
+    {
+      "document_id": "IN-PATENTS-RULES-2003",
+      "acquisition_priority": 2,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "The-Patents-Rules-2003-Updated-till-23-June-2017.pdf",
+        "sha256": "c283a729302f8efc8a611515f8c761a80a7c04c5b892edff43f5fcc5956893df",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "The Patents Rules, 2003",
+        "official_url": "https://ipindia.gov.in/pages/patents/rules-patents-2003",
+        "official_document_url": null,
+        "publisher": "Office of the Controller General of Patents, Designs and Trade Marks (IP India), DPIIT — republished through India Code",
+        "status": "REPLACEMENT_IDENTIFIED_URL_UNRESOLVED"
+      },
+      "reason": "STALE by nine years. The IP India landing page states its e-version is 'updated till 15-03-2024'; the resolved PDF behind that page could not be captured, so the replacement is identified but not yet acquired. Reports of a Patents (Amendment) Rules, 2025 rest only on secondary sources and are recorded as unconfirmed."
+    },
+    {
+      "document_id": "WTO-TRIPS",
+      "acquisition_priority": 2,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "TRIPS Agreement.pdf",
+        "sha256": "96fea4ef7589ceb62fffee1aff042706392e32b865c9f6fe5266b7fa37005198",
+        "status": "SUPERSEDED"
+      },
+      "recommended_source": {
+        "title": "Agreement on Trade-Related Aspects of Intellectual Property Rights (Annex 1C to the Marrakesh Agreement Establishing the World Trade Organization)",
+        "official_url": "https://www.wto.org/english/docs_e/legal_e/31bis_trips_01_e.htm",
+        "official_document_url": "https://www.wto.org/english/docs_e/legal_e/31bis_trips_e.pdf",
+        "publisher": "World Trade Organization",
+        "status": "REPLACEMENT_AVAILABLE"
+      },
+      "reason": "SUBSTANTIVELY OUT OF DATE, and this is the finding that shows why 'treaties do not go stale' is the wrong rule. The local copy states on its own face that it is the 1994 unamended text. It therefore lacks Article 31bis and the Annex and Appendix inserted by the 2005 Protocol, which entered into force on 23 January 2017 — the compulsory-licensing-for-export provisions most relevant to public health and pharmaceutical patents. The WTO now serves the amended text as the default. Whether India has accepted the Protocol was not confirmed from a WTO source in this phase and must be established before the amended text is treated as binding on India."
+    },
+    {
+      "document_id": "IN-ABS-REGULATIONS-2025",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "GNABSREG_2025.pdf",
+        "sha256": "a15f057ecbde515d5d0ce273523240cf71863469f3422ab113bb51b6041e6236",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "Biological Diversity (Access to Biological Resources and Associated Knowledge and Fair and Equitable Sharing of Benefits) Regulations, 2025",
+        "official_url": "https://www.nbaindia.nic.in/",
+        "official_document_url": null,
+        "publisher": "National Biodiversity Authority, Chennai",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Current instrument; replaces the 2014 ABS Guidelines. Only the publisher's own hosted copy is missing, not the document's identity."
+    },
+    {
+      "document_id": "IN-BD-RULES-2024",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "Biological Diversity Rules, 2024.pdf",
+        "sha256": "424116a0b6c86b67937a0433e74f89edb7cf30518d9de6b4ec123690a9d122cb",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Biological Diversity Rules, 2024",
+        "official_url": "https://www.indiacode.nic.in/",
+        "official_document_url": null,
+        "publisher": "Ministry of Environment, Forest and Climate Change — republished through India Code",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "The notification date could not be confirmed from a publisher of record and is left null: secondary sources give 22, 25 and 28 October 2024 inconsistently, and MoEFCC deep links return 404. The G.S.R. number here is taken from the local document itself, not from secondary reporting. These Rules supersede the Biological Diversity Rules, 2004."
+    },
+    {
+      "document_id": "IN-COPYRIGHT-RULES-2013",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "Copyright Rules 2013.pdf",
+        "sha256": "7268d65ce3ba4d9a6836e0c8875cfe5c7c958ddcad2208d755fa0f66a1125856",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Copyright Rules, 2013",
+        "official_url": "https://copyright.gov.in/",
+        "official_document_url": "https://copyright.gov.in/Documents/Copyright_Rules_2013_and_Forms.pdf",
+        "publisher": "Copyright Office, DPIIT",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "The local copy is the file the Copyright Office serves today. A Copyright (Amendment) Rules, 2021 exists and is published separately by IP India; it is not incorporated here and should be acquired as a supplementary instrument. Its G.S.R. number is disputed between 225(E) and 226(E) across secondary sources and is recorded as unresolved — no primary gazette copy was obtained."
+    },
+    {
+      "document_id": "IN-DESIGNS-ACT-2000",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "Designs Act, 2000.pdf",
+        "sha256": "daabef07f692fe28bcf11f4b61ecd3df1b888f394fa4f90e7b10f1948730eca0",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Designs Act, 2000 (Act No. 16 of 2000)",
+        "official_url": "https://www.indiacode.nic.in/",
+        "official_document_url": null,
+        "publisher": "India Code, Legislative Department, Ministry of Law and Justice",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Absent from the Jan Vishwas 2026 Schedule. The local PDF carries the India Code per-page stamp on every page, which identifies the publisher beyond doubt. It could not be matched against a fetched copy because indiacode.nic.in refuses automated retrieval (handle pages 404, bitstream PDFs 302 to an error page) and indiacode.gov.in serves a JavaScript shell with no content. Verified by direct probe on 2026-08-30, not merely reported."
+    },
+    {
+      "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "Food Safety and Standards (Ayurveda Aahara) Regulations, 2022.pdf",
+        "sha256": "83eadc2a444ff092ef9c2bfdd5b4b24973ef537d483af7a47b766e3b37aed02e",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "FSSAI Order dated 25 July 2025 — Ayurveda Aahara covered under the Food Safety and Standards (Ayurveda Aahara) Regulations, 2022, with enclosures",
+        "official_url": "https://www.fssai.gov.in/",
+        "official_document_url": "https://www.fssai.gov.in/upload/advisories/2025/07/68835f872eaf4Order%20dated%2025-07-2025%20enclosing%20Ayurveda%20Aahara.pdf",
+        "publisher": "Food Safety and Standards Authority of India, Science and Standards Division, Ministry of Health and Family Welfare",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "VERIFIED AS WHAT IT IS, NOT AS WHAT IT WAS FILED UNDER. This file is the FSSAI Order of 25 July 2025 plus a 170-page scanned index of Ayurveda Aahara preparations and their textual references. It is not the Regulations. Its filename in the corpus asserts otherwise and must not be trusted; the Regulations are registered separately as IN-FSSAI-AYURVEDA-AAHARA-REGS-2022, status MISSING. Confirmed again in this phase: the FSSAI 'Ayurveda Aahara Compendium' (647 pages, fetched from fssai.gov.in) is likewise a recipe index containing no regulatory prose."
+    },
+    {
+      "document_id": "IN-GI-ACT-1999",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "The Geographical Indications of Goods (Registration and Protection) Act, 1999 Act No. 48 of 1999.pdf",
+        "sha256": "f627842df535a20bb531fea8bb228f59f04e36fe664bf1b2a36ca688331bccc5",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Geographical Indications of Goods (Registration and Protection) Act, 1999 (Act No. 48 of 1999)",
+        "official_url": "https://www.indiacode.nic.in/",
+        "official_document_url": null,
+        "publisher": "India Code, Legislative Department, Ministry of Law and Justice",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Absent from the Jan Vishwas 2026 Schedule. A DPIIT consultation on a GI amendment Bill was reported in 2024; no enacted amendment was found, and the Bill's status is unconfirmed. The local PDF carries the India Code per-page stamp on every page, which identifies the publisher beyond doubt. It could not be matched against a fetched copy because indiacode.nic.in refuses automated retrieval (handle pages 404, bitstream PDFs 302 to an error page) and indiacode.gov.in serves a JavaScript shell with no content. Verified by direct probe on 2026-08-30, not merely reported."
+    },
+    {
+      "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "NIPRP.pdf",
+        "sha256": "39dfc6257c087cd78a2f96253fbcfeffd01145d44ce712f632a48af44ce2a4e6",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "National Intellectual Property Rights Policy — 'Creative India; Innovative India'",
+        "official_url": "https://cipam.gov.in/en/about/national-IPR-policy",
+        "official_document_url": "https://www.dpiit.gov.in/static/uploads/2025/07/442648f225695b31b259e9d9edd0a8b1.pdf",
+        "publisher": "Department for Promotion of Industry and Internal Trade, Ministry of Commerce and Industry",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "A policy document, not legislation. No supersession was found; the policy's own five-yearly review requirement fell due around 2021 and no revised edition was located. Prefer the local native-text copy over the DPIIT OCR scan for retrieval quality."
+    },
+    {
+      "document_id": "IN-PATENTS-ACT-1970",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "IN-PAT-ACT-1970.pdf",
+        "sha256": "583f2461d79572692d9046e5ac13bb7cff82eedb7863c565da02d9a0893cb8f6",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Patents Act, 1970 (Act No. 39 of 1970)",
+        "official_url": "https://www.indiacode.nic.in/",
+        "official_document_url": null,
+        "publisher": "India Code, Legislative Department, Ministry of Law and Justice",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Current. The Jan Vishwas (Amendment of Provisions) Act, 2026 (Act 8 of 2026, assented 8 April 2026, fetched from egazette.gov.in) amends this Act at Serial 35 of its Schedule — Chapter XX heading 'PENALTIES' to 'PUNISHMENTS', a new proviso after section 118, and section 119 omitted. The local copy already reads 'CHAPTER XX 2[PUNISHMENTS]' and '119. [Omitted.]', so it incorporates that amendment. The local PDF carries the India Code per-page stamp on every page, which identifies the publisher beyond doubt. It could not be matched against a fetched copy because indiacode.nic.in refuses automated retrieval (handle pages 404, bitstream PDFs 302 to an error page) and indiacode.gov.in serves a JavaScript shell with no content. Verified by direct probe on 2026-08-30, not merely reported."
+    },
+    {
+      "document_id": "IN-PPVFR-ACT-2001",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "ppvfract2001.pdf",
+        "sha256": "2c80f42cc7ca1e7e7b153747a518ac8fcf3c94792fe237ce7fca8710745847ef",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Protection of Plant Varieties and Farmers' Rights Act, 2001 (Act No. 53 of 2001)",
+        "official_url": "https://plantauthority.gov.in/protection-plant-varieties-and-farmers-rights-act-2001",
+        "official_document_url": "https://plantauthority.gov.in/sites/default/files/ppvfract2001.pdf",
+        "publisher": "Protection of Plant Varieties and Farmers' Rights Authority, Ministry of Agriculture and Farmers' Welfare",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Phase 2 recorded no Act number for this document; the Gazette text establishes it as Act 53 of 2001, now recorded. Original enactment, not a periodically refreshed consolidation."
+    },
+    {
+      "document_id": "IN-PPVFR-RULES-2003",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "ppvfrarules2003.pdf",
+        "sha256": "6ade91fb97c6a56a8bc882017fc59c9962de4eabf9b683ae2dcc59bbac72a9cf",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Protection of Plant Varieties and Farmers' Rights Rules, 2003",
+        "official_url": "https://plantauthority.gov.in/acts-rules",
+        "official_document_url": "https://plantauthority.gov.in/sites/default/files/ppvfrarules2003.pdf",
+        "publisher": "PPV&FR Authority, Ministry of Agriculture and Farmers' Welfare",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "The local copy is the file the Authority serves today. Amendments to the Rules are reported for 2004 and 2008 from secondary sources only and are recorded as unconfirmed. A 2025 instrument found in search is an amendment to the Authority's Regulations, a different instrument from these Rules, and must not be conflated with them."
+    },
+    {
+      "document_id": "IN-TM-ACT-1999",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "Trade Marks Act, 1999.pdf",
+        "sha256": "3ee682af4ec4701a00aa27842e0add2321a6aed75808aa1c5ca33591e85d4986",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Trade Marks Act, 1999 (Act No. 47 of 1999)",
+        "official_url": "https://www.indiacode.nic.in/",
+        "official_document_url": null,
+        "publisher": "India Code, Legislative Department, Ministry of Law and Justice",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "No amendment found after the stated consolidation date. The Act is absent from the Schedule to the Jan Vishwas (Amendment of Provisions) Act, 2026, checked directly against the Gazette text. The local PDF carries the India Code per-page stamp on every page, which identifies the publisher beyond doubt. It could not be matched against a fetched copy because indiacode.nic.in refuses automated retrieval (handle pages 404, bitstream PDFs 302 to an error page) and indiacode.gov.in serves a JavaScript shell with no content. Verified by direct probe on 2026-08-30, not merely reported."
+    },
+    {
+      "document_id": "IN-TM-RULES-2017",
+      "acquisition_priority": 3,
+      "source_evidence_level": "B",
+      "existing_source": {
+        "filename": "Trademarks rules 2017.pdf",
+        "sha256": "da70044e401f8113ed18f19dd5380b60a18e4b0ed37bf82718fff77dc8cd4de1",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "The Trade Marks Rules, 2017",
+        "official_url": "https://ipindia.gov.in/trade-marks-resources-rules",
+        "official_document_url": null,
+        "publisher": "DPIIT / IP India — republished through India Code",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "No amendment to the 2017 Rules has been found as notified. A draft Trade Marks (1st Amendment) Rules, 2024 went out for comment; no final notification was located, and it is recorded as unconfirmed."
+    },
+    {
+      "document_id": "UN-CBD-1992",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "Convention on Biological Diversity (CBD).pdf",
+        "sha256": "048d90266f836b698240ab0c6f3535f5281201ab59cb42fc73ebebfe0cc84844",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "Convention on Biological Diversity — Text and Annexes",
+        "official_url": "https://www.cbd.int/convention/text/",
+        "official_document_url": "https://www.cbd.int/doc/legal/cbd-en.pdf",
+        "publisher": "Secretariat of the Convention on Biological Diversity",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Genuinely static: the Cartagena and Nagoya Protocols are separate supplementary instruments, not amendments to this text. Entered into force 29 December 1993."
+    },
+    {
+      "document_id": "UN-NAGOYA-PROTOCOL-2010",
+      "acquisition_priority": 3,
+      "source_evidence_level": "A",
+      "existing_source": {
+        "filename": "nagoya-protocol-en.pdf",
+        "sha256": "12d3097a4e218e6264ccb873470c0edc3118ca65a480342eba1fecc7ec421173",
+        "status": "ACCEPTED_FOR_USE"
+      },
+      "recommended_source": {
+        "title": "Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization to the Convention on Biological Diversity",
+        "official_url": "https://www.cbd.int/abs/",
+        "official_document_url": "https://www.cbd.int/abs/doc/protocol/nagoya-protocol-en.pdf",
+        "publisher": "Secretariat of the Convention on Biological Diversity",
+        "status": "NO_ACTION_REQUIRED"
+      },
+      "reason": "Static treaty text; entered into force 12 October 2014."
+    }
+  ]
+}

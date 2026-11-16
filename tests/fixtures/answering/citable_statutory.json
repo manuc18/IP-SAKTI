@@ -1,0 +1,57 @@
+{
+  "name": "citable_statutory",
+  "description": "One citable, CURRENT, level-B statutory provision. The ordinary case: the engine should answer and cite it.",
+  "query": "What are not inventions under the Patents Act?",
+  "results": [
+    {
+      "chunk_id": "IN-PATENTS-ACT-1970::chapter-ii-section-3",
+      "document_id": "IN-PATENTS-ACT-1970",
+      "score": 0.91,
+      "rank": 1,
+      "text": "3. What are not inventions .—The following are not inventions within the meaning of this Act,— (a) an invention which is frivolous or which claims anything obviously contrary to well established natural laws; 4[(b) an invention the primary or intended use or commercial exploitation of which would be contrary to public order or morality or which causes serious prejudice to human, animal or plant life or health or to the environment;] (c) the mere discovery of a scientific principle or the formulation of an abstract theory 5[or discovery of any living thing or non-living substance occurring in nature]; 6[(d) the mere discovery of a new form of a known substance which does not result in the enh",
+      "locator": "Patents Act, 1970 — Section 3",
+      "citable": true,
+      "metadata": {
+        "domain": "patents",
+        "jurisdiction": "IN",
+        "document_type": "act",
+        "temporal_status": "CURRENT",
+        "source_evidence_level": "B",
+        "source_status": "SOURCE_UNAVAILABLE",
+        "citability_reason": null,
+        "locator_unavailable": false,
+        "locator_fields": {
+          "part": null,
+          "chapter": "II",
+          "section": "3",
+          "subsection": null,
+          "clause": null,
+          "rule": null,
+          "sub_rule": null,
+          "regulation": null,
+          "article": null,
+          "paragraph": null,
+          "subparagraph": null,
+          "schedule": null,
+          "form": null,
+          "annexure": null,
+          "item": null
+        },
+        "physical_pages": [
+          11,
+          12
+        ],
+        "title": "The Patents Act, 1970 (Act No. 39 of 1970) [As on the 5th May, 2026]",
+        "short_title": "Patents Act, 1970",
+        "heading": "What are not inventions",
+        "unit_type": "provision",
+        "structural_path": "Chapter II > Section 3",
+        "official_source_url": "https://www.indiacode.nic.in/",
+        "consolidated_as_of": "2026-05-05",
+        "source_version_id": "IN-PATENTS-ACT-1970@2026-05-05",
+        "source_filename": "IN-PAT-ACT-1970.pdf",
+        "source_sha256": "583f2461d79572692d9046e5ac13bb7cff82eedb7863c565da02d9a0893cb8f6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "document_id": "IN-COPYRIGHT-ACT-1957",
+  "parser": "statutory",
+  "provision_label": "Section",
+  "pages_ingested": 57,
+  "pages_excluded": {},
+  "units": 119,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 13,
+    "provision": 105
+  },
+  "units_with_locator": 118,
+  "units_locator_downgraded": 0,
+  "characters": 141769
+}

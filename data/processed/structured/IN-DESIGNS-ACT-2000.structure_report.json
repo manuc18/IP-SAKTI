@@ -1,0 +1,19 @@
+{
+  "document_id": "IN-DESIGNS-ACT-2000",
+  "parser": "statutory",
+  "provision_label": "Section",
+  "pages_ingested": 14,
+  "pages_excluded": {
+    "front_matter": 2,
+    "table_of_contents": 2
+  },
+  "units": 59,
+  "units_by_type": {
+    "front_matter": 1,
+    "heading": 11,
+    "provision": 47
+  },
+  "units_with_locator": 58,
+  "units_locator_downgraded": 0,
+  "characters": 54724
+}

@@ -1,0 +1,20 @@
+{
+  "document_id": "UN-NAGOYA-PROTOCOL-2010",
+  "chunking_version": "0.2.0",
+  "units": 38,
+  "chunks": 41,
+  "rejected": 0,
+  "rejected_by_reason": {},
+  "chunks_missing_locator": 4,
+  "chunks_citable": 37,
+  "chunks_not_citable": 4,
+  "source_evidence_level": "A",
+  "source_status": "VERIFIED_OFFICIAL",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 55441,
+  "mean_chunk_characters": 1352.2,
+  "max_chunk_characters": 4988,
+  "rejected_chunks": []
+}

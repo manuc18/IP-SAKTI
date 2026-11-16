@@ -1,0 +1,46 @@
+{
+  "judge_provider": "claude_code_session",
+  "judgements": 98,
+  "packets_issued": 98,
+  "packets_unjudged": 0,
+  "population": 960,
+  "expected_answer_supported": {
+    "yes": 87,
+    "partial": 1,
+    "no": 10,
+    "denominator": 98
+  },
+  "evidence_sufficient_judged": {
+    "yes": 69,
+    "no": 24,
+    "uncertain": 5,
+    "denominator": 98
+  },
+  "top1_supported": {
+    "count": 72,
+    "denominator": 98
+  },
+  "top5_supported": {
+    "count": 88,
+    "denominator": 98
+  },
+  "unsupported_claim": {
+    "count": 10,
+    "denominator": 98
+  },
+  "contradiction": {
+    "count": 0,
+    "denominator": 98
+  },
+  "missing_key_requirement": {
+    "count": 18,
+    "denominator": 98
+  },
+  "agreement_with_deterministic_rank": {
+    "judge_supports_top1_and_target_was_rank1": 70,
+    "judge_supports_top1_but_target_was_not_rank1": 2,
+    "note": "the second figure counts questions where the judge found rank 1 supporting although the benchmark's single label sat lower; those are labelling width, not ranking failure"
+  },
+  "rank_hidden_from_judge": true,
+  "claim_safety": "AI audit of retrieved evidence against an AI-generated expected answer. Not independent legal verification and not human-verified ground truth."
+}

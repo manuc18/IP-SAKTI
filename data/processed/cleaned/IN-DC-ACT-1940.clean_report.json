@@ -1,0 +1,27 @@
+{
+  "document_id": "IN-DC-ACT-1940",
+  "pages": 38,
+  "boilerplate_patterns": [
+    "#",
+    "#. Ins. by Act # of #, s. # (w.e.f. #-#-#).",
+    "Drugs and Cosmetics Act, #"
+  ],
+  "table_of_contents_pages": [
+    3,
+    4,
+    5
+  ],
+  "pages_by_content_type": {
+    "front_matter": 2,
+    "table_of_contents": 3,
+    "content": 33
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 38
+  },
+  "amendment_notes_extracted": 201,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 142138,
+  "characters_cleaned": 123267
+}

@@ -1,0 +1,106 @@
+{
+  "name": "conflicting",
+  "description": "Two passages from the Drugs and Cosmetics Rules, 1945 that render the identical citation string 'Drugs and Cosmetics Rules, 1945 — Rule 65' while being different provisions — Part VI rule 65 (conditions of licence) and Part II rule 65 (a schedule entry). Real corpus data, found while building these fixtures, not a constructed conflict. It is what `ambiguous_citation` was written to surface: the citation objects resolve correctly by chunk_id and page, but the rendered footnotes do not distinguish them.",
+  "query": "What does Rule 65 of the Drugs and Cosmetics Rules require?",
+  "results": [
+    {
+      "chunk_id": "IN-DC-RULES-1945::part-vi-rule-65-c1",
+      "document_id": "IN-DC-RULES-1945",
+      "score": 0.9,
+      "rank": 1,
+      "text": "65. Condition of licences. Licences in 2[Forms 20, 20-A, 20-B, 20-F, 20-G, 21 and 21-B] shall be subject to the conditions stated therein and to the following general conditions 2[(1) Any drug shall, if compounded or made on the licensee‘s premises be compounded or made by or under the direct and personal supervision of a 3[registered Pharmacist].] (2) The supply, otherwise than by way of wholesale dealing, 4[* * *] of any drug supplied on the prescription of a Registered Medical Practitioner shall be effected only by or under the personal supervision of a 3[registered Pharmacist]. 5[(3) (1) The supply of any drug 6[other than those specified in Schedule X] on a prescription of a Registered ",
+      "locator": "Drugs and Cosmetics Rules, 1945 — Rule 65",
+      "citable": true,
+      "metadata": {
+        "domain": "drug_regulation",
+        "jurisdiction": "IN",
+        "document_type": "rules",
+        "temporal_status": "STALE",
+        "source_evidence_level": "A",
+        "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+        "citability_reason": null,
+        "locator_unavailable": false,
+        "locator_fields": {
+          "part": "VI",
+          "chapter": null,
+          "section": null,
+          "subsection": null,
+          "clause": null,
+          "rule": "65",
+          "sub_rule": null,
+          "regulation": null,
+          "article": null,
+          "paragraph": null,
+          "subparagraph": null,
+          "schedule": null,
+          "form": null,
+          "annexure": null,
+          "item": null
+        },
+        "physical_pages": [
+          71,
+          72
+        ],
+        "title": "The Drugs and Cosmetics Rules, 1945, as amended up to 31 December 2016",
+        "short_title": "Drugs and Cosmetics Rules, 1945",
+        "heading": "Condition of licences",
+        "unit_type": "provision",
+        "structural_path": "Part VI > Rule 65",
+        "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+        "consolidated_as_of": "2016-12-31",
+        "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+        "source_filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+        "source_sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7"
+      }
+    },
+    {
+      "chunk_id": "IN-DC-RULES-1945::part-ii-rule-65",
+      "document_id": "IN-DC-RULES-1945",
+      "score": 0.71,
+      "rank": 2,
+      "text": "65. Oxytetracycline Hydrochloride Ointment 36",
+      "locator": "Drugs and Cosmetics Rules, 1945 — Rule 65",
+      "citable": true,
+      "metadata": {
+        "domain": "drug_regulation",
+        "jurisdiction": "IN",
+        "document_type": "rules",
+        "temporal_status": "STALE",
+        "source_evidence_level": "A",
+        "source_status": "OFFICIAL_SOURCE_FOUND_REPLACEMENT_AVAILABLE",
+        "citability_reason": null,
+        "locator_unavailable": false,
+        "locator_fields": {
+          "part": "II",
+          "chapter": null,
+          "section": null,
+          "subsection": null,
+          "clause": null,
+          "rule": "65",
+          "sub_rule": null,
+          "regulation": null,
+          "article": null,
+          "paragraph": null,
+          "subparagraph": null,
+          "schedule": null,
+          "form": null,
+          "annexure": null,
+          "item": null
+        },
+        "physical_pages": [
+          533
+        ],
+        "title": "The Drugs and Cosmetics Rules, 1945, as amended up to 31 December 2016",
+        "short_title": "Drugs and Cosmetics Rules, 1945",
+        "heading": null,
+        "unit_type": "provision",
+        "structural_path": "Part II > Rule 65",
+        "official_source_url": "https://cdsco.gov.in/opencms/opencms/en/Acts-and-rules/Drugs-Rules/",
+        "consolidated_as_of": "2016-12-31",
+        "source_version_id": "IN-DC-RULES-1945@2016-12-31",
+        "source_filename": "2016DrugsandCosmeticsAct1940Rules1945.pdf",
+        "source_sha256": "d54f6fc944e27e93201bcf93587ee5e790611177a4ef85f21e3ae0809026ebc7"
+      }
+    }
+  ]
+}

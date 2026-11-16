@@ -1,0 +1,18 @@
+{
+  "document_id": "IN-ABS-REGULATIONS-2025",
+  "parser": "statutory",
+  "provision_label": "Regulation",
+  "pages_ingested": 16,
+  "pages_excluded": {
+    "thin_residue": 3,
+    "hindi_only": 9
+  },
+  "units": 23,
+  "units_by_type": {
+    "front_matter": 1,
+    "provision": 22
+  },
+  "units_with_locator": 22,
+  "units_locator_downgraded": 0,
+  "characters": 44019
+}

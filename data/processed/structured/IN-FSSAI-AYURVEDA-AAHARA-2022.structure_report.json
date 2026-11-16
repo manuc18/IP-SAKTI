@@ -1,0 +1,18 @@
+{
+  "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+  "parser": "statutory",
+  "provision_label": "Regulation",
+  "pages_ingested": 130,
+  "pages_excluded": {
+    "empty": 42
+  },
+  "units": 13,
+  "units_by_type": {
+    "front_matter": 1,
+    "unstructured": 11,
+    "provision": 1
+  },
+  "units_with_locator": 1,
+  "units_locator_downgraded": 11,
+  "characters": 94746
+}

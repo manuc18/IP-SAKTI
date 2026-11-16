@@ -1,0 +1,22 @@
+{
+  "document_id": "IN-FSSAI-AYURVEDA-AAHARA-2022",
+  "pages": 172,
+  "boilerplate_patterns": [
+    "#",
+    "Special precautions"
+  ],
+  "table_of_contents_pages": [],
+  "pages_by_content_type": {
+    "content": 130,
+    "empty": 42
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 130,
+    "UNKNOWN": 42
+  },
+  "amendment_notes_extracted": 0,
+  "hindi_lines_removed": 381,
+  "pages_with_tables": 28,
+  "characters_raw": 99301,
+  "characters_cleaned": 94636
+}

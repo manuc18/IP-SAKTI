@@ -1,0 +1,20 @@
+{
+  "document_id": "IN-NATIONAL-IPR-POLICY-2016",
+  "chunking_version": "0.2.0",
+  "units": 9,
+  "chunks": 19,
+  "rejected": 0,
+  "rejected_by_reason": {},
+  "chunks_missing_locator": 4,
+  "chunks_citable": 15,
+  "chunks_not_citable": 4,
+  "source_evidence_level": "B",
+  "source_status": "OFFICIAL_SOURCE_FOUND_LOCAL_COPY_NOT_MATCHED",
+  "chunks_with_tables": 0,
+  "chunks_with_amendment_notes": 0,
+  "chunks_from_ocr": 0,
+  "characters": 65226,
+  "mean_chunk_characters": 3432.9,
+  "max_chunk_characters": 4997,
+  "rejected_chunks": []
+}

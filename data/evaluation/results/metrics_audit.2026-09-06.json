@@ -1,0 +1,2010 @@
+{
+  "audit": "metrics_audit",
+  "audit_version": "1.0.0",
+  "generated_utc": "2026-09-06T21:12:16+00:00",
+  "python": "3.14.3",
+  "source_artifacts": {
+    "reranked_runs": "data/evaluation/results/reranking/features.jsonl",
+    "reranked_summary": "data/evaluation/results/reranking/features.summary.json",
+    "candidate_only_summary": "data/evaluation/results/reranking/identity.summary.json",
+    "golden_dataset": "data/evaluation/golden_questions.jsonl",
+    "golden_dataset_sha256": "23024a3dbbf92e3e32086c762fd3a99ab9ae60bcdf08dda26ca05dea558fe2f1",
+    "artifact_timestamp": "2026-08-29T21:14:26+00:00",
+    "recomputed_from_stored_runs": true,
+    "retrieval_executed": false,
+    "model_loaded": false,
+    "network_used": false
+  },
+  "compatibility": {
+    "artifact_matches_live_corpus": true,
+    "live": {
+      "chunking_version": "65e4770bc530156b",
+      "corpus_version": "0c94db57932c046d",
+      "chunks": 3073
+    },
+    "artifact": {
+      "chunking_version": "65e4770bc530156b",
+      "corpus_version": "0c94db57932c046d",
+      "chunks": 3073
+    },
+    "checks": [
+      "corpus_version and chunking_version recomputed from data/processed/chunks",
+      "BM25 vocabulary and document count reproduced from the live index",
+      "FeatureReranker.config() compared field-by-field with the artifact",
+      "parse_identifiers compared old-vs-new over all 111 golden queries"
+    ]
+  },
+  "configuration": {
+    "candidate_generator": "union",
+    "mode": "expanded",
+    "order": "interleaved",
+    "dense_depth": 50,
+    "lexical_depth": 50,
+    "dense_model": "BAAI/bge-m3",
+    "lexical": "BM25 + identifier boost",
+    "reranker": "features",
+    "reranker_trained": false,
+    "final_evidence_window": 5,
+    "stored_rank_depth": 10,
+    "pool_size": {
+      "mean": 77.3,
+      "min": 58,
+      "max": 93
+    }
+  },
+  "definitions": {
+    "recall@k": "hit-rate — at least ONE expected chunk in the top k",
+    "all_target_recall@k": "every expected chunk in the top k",
+    "mrr": "mean reciprocal rank of the FIRST expected chunk; a miss contributes 0",
+    "candidate_rank": "position in the interleaved dense∪lexical pool, searched to pool end",
+    "reranked_rank": "position after the feature reranker, searched to 10",
+    "relevance": "binary; graded relevance is not supported by this corpus"
+  },
+  "candidate_retrieval": {
+    "recall@1": 0.7117,
+    "recall@5": 0.9459,
+    "recall@10": 0.964,
+    "recall@20": 0.991,
+    "recall@50": 1.0,
+    "mrr": 0.8204,
+    "median_rank_of_first_correct": 1,
+    "mean_rank_of_first_correct": 2.1,
+    "rank_statistics_over": 111,
+    "questions": 111,
+    "not_found": 0,
+    "recall@pool": 1.0,
+    "cross_check_identity_reranker": {
+      "recall@1": 0.7117,
+      "recall@5": 0.9459,
+      "recall@10": 0.964,
+      "mrr": 0.8182,
+      "ndcg@5": 0.8466,
+      "ndcg@10": 0.8523,
+      "document_recall@1": 0.8829,
+      "document_recall@5": 1.0,
+      "document_recall@10": 1.0
+    },
+    "cross_check_note": "the identity reranker restates the candidate order; its recall@1/5/10 must equal the figures above"
+  },
+  "after_reranking": {
+    "recall@1": 0.7838,
+    "recall@5": 0.9459,
+    "recall@10": 0.973,
+    "mrr": 0.852,
+    "median_rank_of_first_correct": 1.0,
+    "mean_rank_of_first_correct": 1.45,
+    "rank_statistics_over": 108,
+    "questions": 111,
+    "not_found": 3,
+    "censored_at": 10
+  },
+  "reranking_effect": {
+    "improved": 19,
+    "unchanged": 82,
+    "worsened": 8,
+    "movement_unknown": 2,
+    "mean_rank_movement": 0.19,
+    "median_rank_movement": 0.0,
+    "movement_measured_over": 108,
+    "movement_convention": "positive = the first correct chunk moved up",
+    "improved_questions": [
+      "Q001",
+      "Q011",
+      "Q023",
+      "Q029",
+      "Q036",
+      "Q040",
+      "Q044",
+      "Q050",
+      "Q061",
+      "Q062",
+      "Q067",
+      "Q076",
+      "Q077",
+      "Q086",
+      "Q091",
+      "Q101",
+      "Q102",
+      "Q107",
+      "Q109"
+    ],
+    "worsened_questions": [
+      "Q002",
+      "Q022",
+      "Q037",
+      "Q045",
+      "Q066",
+      "Q079",
+      "Q088",
+      "Q099"
+    ],
+    "movement_unknown_questions": [
+      "Q093",
+      "Q098"
+    ]
+  },
+  "final_evidence_window": {
+    "window": 5,
+    "evidence_recall@5": 0.9459,
+    "questions_with_a_target_in_the_window": 105,
+    "questions_with_no_target_in_the_window": 6,
+    "missed_questions": [
+      "Q062",
+      "Q066",
+      "Q093",
+      "Q098",
+      "Q107",
+      "Q109"
+    ]
+  },
+  "failure_analysis": {
+    "at": 5,
+    "questions": 111,
+    "misses": 6,
+    "gold_absent_from_candidate_pool": 0,
+    "gold_in_pool_but_ranked_below_the_window": 6,
+    "attribution": "every miss is a ranking miss; candidate generation lost nothing",
+    "patterns": {
+      "non_operative_chunk_at_rank_1": {
+        "in_misses": 4,
+        "across_all_questions": 6,
+        "description": "a preamble, title page or chapter heading of the right instrument outranked the provision that answers the question"
+      },
+      "non_operative_chunk_in_top_3_of_a_miss": 5,
+      "adjacent_provision_of_the_right_instrument_at_rank_1": 2,
+      "label_flagged_by_the_ai_judge": [
+        "Q093"
+      ],
+      "stale_target": [
+        "Q093",
+        "Q098"
+      ],
+      "deep_in_the_candidate_pool": [
+        "Q062",
+        "Q093",
+        "Q098",
+        "Q109"
+      ],
+      "reranking_regression_that_cost_the_window": [
+        "Q066"
+      ]
+    },
+    "wrong_document_entirely": 0
+  },
+  "multi_chunk": {
+    "multi_chunk_questions": 2,
+    "single_chunk_questions": 109,
+    "target_chunk_instances": 114,
+    "project_semantics": "ANY-target (hit-rate). Every earlier artifact uses it.",
+    "any_target_reranked": {
+      "recall@1": 0.7838,
+      "recall@5": 0.9459,
+      "recall@10": 0.973
+    },
+    "all_target_reranked": {
+      "all_target_recall@1": 0.7658,
+      "all_target_recall@5": 0.9369,
+      "all_target_recall@10": 0.964
+    },
+    "all_target_note": "computed over the stored top 10; deeper ALL-target recall is not recoverable from these artifacts"
+  },
+  "breakdowns": {
+    "query_family": {
+      "conceptual": {
+        "questions": 93,
+        "candidate": {
+          "recall@1": 0.7312,
+          "recall@5": 0.9355,
+          "recall@10": 0.957,
+          "mrr": 0.8251,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 2.23
+        },
+        "reranked": {
+          "recall@1": 0.7527,
+          "recall@5": 0.9355,
+          "recall@10": 0.9677,
+          "mrr": 0.8288,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.53
+        }
+      },
+      "identifier": {
+        "questions": 18,
+        "candidate": {
+          "recall@1": 0.6111,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.7963,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.44
+        },
+        "reranked": {
+          "recall@1": 0.9444,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.9722,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.06
+        }
+      }
+    },
+    "router_family": {
+      "CONCEPTUAL": {
+        "questions": 74,
+        "candidate": {
+          "recall@1": 0.7432,
+          "recall@5": 0.9459,
+          "recall@10": 0.973,
+          "mrr": 0.8351,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.88
+        },
+        "reranked": {
+          "recall@1": 0.7568,
+          "recall@5": 0.9459,
+          "recall@10": 0.973,
+          "mrr": 0.8327,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.51
+        }
+      },
+      "GENERAL": {
+        "questions": 20,
+        "candidate": {
+          "recall@1": 0.65,
+          "recall@5": 0.9,
+          "recall@10": 0.9,
+          "mrr": 0.7635,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 3.55
+        },
+        "reranked": {
+          "recall@1": 0.7,
+          "recall@5": 0.9,
+          "recall@10": 0.95,
+          "mrr": 0.7979,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.63
+        }
+      },
+      "IDENTIFIER": {
+        "questions": 17,
+        "candidate": {
+          "recall@1": 0.6471,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.8235,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.35
+        },
+        "reranked": {
+          "recall@1": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.0
+        }
+      }
+    },
+    "chunk_cardinality": {
+      "multi_chunk": {
+        "questions": 2,
+        "candidate": {
+          "recall@1": 0.5,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 0.75,
+          "median_rank_of_first_correct": 1.5,
+          "mean_rank_of_first_correct": 1.5
+        },
+        "reranked": {
+          "recall@1": 1.0,
+          "recall@5": 1.0,
+          "recall@10": 1.0,
+          "mrr": 1.0,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.0
+        }
+      },
+      "single_chunk": {
+        "questions": 109,
+        "candidate": {
+          "recall@1": 0.7156,
+          "recall@5": 0.945,
+          "recall@10": 0.9633,
+          "mrr": 0.8217,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 2.11
+        },
+        "reranked": {
+          "recall@1": 0.7798,
+          "recall@5": 0.945,
+          "recall@10": 0.9725,
+          "mrr": 0.8493,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.46
+        }
+      }
+    },
+    "jurisdiction": {
+      "india": {
+        "questions": 97,
+        "candidate": {
+          "recall@1": 0.732,
+          "recall@5": 0.9588,
+          "recall@10": 0.9691,
+          "mrr": 0.8341,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.96
+        },
+        "reranked": {
+          "recall@1": 0.7938,
+          "recall@5": 0.9588,
+          "recall@10": 0.9794,
+          "mrr": 0.8616,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.43
+        }
+      },
+      "international": {
+        "questions": 14,
+        "candidate": {
+          "recall@1": 0.5714,
+          "recall@5": 0.8571,
+          "recall@10": 0.9286,
+          "mrr": 0.7262,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 3.07
+        },
+        "reranked": {
+          "recall@1": 0.7143,
+          "recall@5": 0.8571,
+          "recall@10": 0.9286,
+          "mrr": 0.7857,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.62
+        }
+      }
+    },
+    "target_temporal_status": {
+      "CURRENT": {
+        "questions": 72,
+        "candidate": {
+          "recall@1": 0.75,
+          "recall@5": 0.9583,
+          "recall@10": 0.9722,
+          "mrr": 0.8404,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.78
+        },
+        "reranked": {
+          "recall@1": 0.8194,
+          "recall@5": 0.9444,
+          "recall@10": 0.9861,
+          "mrr": 0.8726,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.49
+        }
+      },
+      "STALE": {
+        "questions": 39,
+        "candidate": {
+          "recall@1": 0.641,
+          "recall@5": 0.9231,
+          "recall@10": 0.9487,
+          "mrr": 0.7837,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 2.69
+        },
+        "reranked": {
+          "recall@1": 0.7179,
+          "recall@5": 0.9487,
+          "recall@10": 0.9487,
+          "mrr": 0.8141,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.38
+        }
+      }
+    },
+    "target_evidence_level": {
+      "A": {
+        "questions": 37,
+        "candidate": {
+          "recall@1": 0.6757,
+          "recall@5": 0.9189,
+          "recall@10": 0.9459,
+          "mrr": 0.7815,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 2.81
+        },
+        "reranked": {
+          "recall@1": 0.7027,
+          "recall@5": 0.9189,
+          "recall@10": 0.973,
+          "mrr": 0.7948,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.75
+        }
+      },
+      "B": {
+        "questions": 58,
+        "candidate": {
+          "recall@1": 0.7586,
+          "recall@5": 0.9828,
+          "recall@10": 0.9828,
+          "mrr": 0.8659,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 1.55
+        },
+        "reranked": {
+          "recall@1": 0.8448,
+          "recall@5": 0.9828,
+          "recall@10": 0.9828,
+          "mrr": 0.9009,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.23
+        }
+      },
+      "C": {
+        "questions": 16,
+        "candidate": {
+          "recall@1": 0.625,
+          "recall@5": 0.875,
+          "recall@10": 0.9375,
+          "mrr": 0.7459,
+          "median_rank_of_first_correct": 1.0,
+          "mean_rank_of_first_correct": 2.44
+        },
+        "reranked": {
+          "recall@1": 0.75,
+          "recall@5": 0.875,
+          "recall@10": 0.9375,
+          "mrr": 0.8073,
+          "median_rank_of_first_correct": 1,
+          "mean_rank_of_first_correct": 1.6
+        }
+      }
+    }
+  },
+  "dataset_status": {
+    "golden_questions": 111,
+    "query_family": {
+      "identifier": 18,
+      "conceptual": 93
+    },
+    "jurisdiction": {
+      "india": 97,
+      "international": 14
+    },
+    "domain": {
+      "patents": 16,
+      "trademarks": 12,
+      "geographical_indications": 11,
+      "designs": 9,
+      "copyright": 12,
+      "biodiversity_abs": 18,
+      "plant_varieties": 11,
+      "drug_regulation": 10,
+      "international_ip": 9,
+      "food_safety_ayurveda": 2,
+      "ip_policy": 1
+    },
+    "ground_truth_method": {
+      "corpus_derived": 111
+    },
+    "source_documents": 22,
+    "corpus_chunks": 3073,
+    "target_chunk_instances": 114,
+    "multi_chunk_questions": 2,
+    "target_evidence_level": {
+      "B": 58,
+      "A": 37,
+      "C": 16
+    }
+  },
+  "ground_truth_verification": {
+    "human_verified": 0,
+    "human_verification_status": {
+      "UNREVIEWED": 111
+    },
+    "ai_judged": 111,
+    "ai_judge_status": {
+      "AI_VERIFIED": 105,
+      "AI_NEEDS_REVIEW": 6
+    },
+    "ai_judge_confidence": {
+      "HIGH": 96,
+      "MODERATE": 15
+    },
+    "ai_judge_temporal_status": {
+      "CURRENT": 72,
+      "STALE": 39
+    },
+    "ai_judge_evidence_sufficient": {
+      "true": 105,
+      "false": 6
+    },
+    "ai_judge_anchors_supported": {
+      "true": 92,
+      "false": 19
+    },
+    "ai_judge_current_source_available": {
+      "true": 72,
+      "false": 39
+    },
+    "label_corrections_applied": 0,
+    "judge_provider": "claude_code_session",
+    "judge_model": "claude-opus-5",
+    "note": "Ground-truth verification status is not retrieval performance, and neither is legal accuracy. No answer in this project has been independently evaluated for legal correctness."
+  },
+  "per_question": [
+    {
+      "question_id": "Q001",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-ii-section-3"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q002",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-ii-section-3"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 4,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q003",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-viii-section-53"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q004",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xv-section-84-c1"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q005",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xviii-section-107a"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q006",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-vii-section-39"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q007",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xviii-section-104a"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q008",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xii-section-66"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q009",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-xv-section-83"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q010",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-ii-section-4"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q011",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-ACT-1970::chapter-viii-section-48"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q012",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-RULES-2003::chapter-i-rule-7"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q013",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-RULES-2003::chapter-ii-rule-13"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q014",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-RULES-2003::chapter-iv-rule-24b"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q015",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PATENTS-RULES-2003::chapter-ii-rule-12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q016",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PATENTS-RULES-2003::chapter-ii-rule-15"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q017",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-ii-section-9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q018",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-ii-section-11-c1"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q019",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-iii-section-25"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q020",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-iv-section-29"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q021",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-iv-section-28"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q022",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-iv-section-35"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 3,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q023",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-i-section-2-c1",
+        "IN-TM-ACT-1999::chapter-i-section-2-c2",
+        "IN-TM-ACT-1999::chapter-i-section-2-c3"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q024",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-ACT-1999::chapter-ii-section-12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q025",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-42"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q026",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-viii-rule-124"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q027",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-ii-rule-23"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q028",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-TM-RULES-2017::part-i-chapter-i-rule-10"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q029",
+      "query_family": "identifier",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-i-section-2"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q030",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-ii-section-9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q031",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iii-section-11"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q032",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iii-section-18"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q033",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iv-section-21"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q034",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-iv-section-22"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q035",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-v-section-25"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q036",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-ACT-1999::chapter-viii-section-39"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q037",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-26"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q038",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-GI-RULES-2002::part-1-chapter-ii-rule-29"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q039",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-GI-RULES-2002::part-1-chapter-iii-rule-56"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q040",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-ii-section-4"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q041",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-11"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q042",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-19"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q043",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-v-section-22"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q044",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-i-section-2"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q045",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-DESIGNS-ACT-2000::chapter-iii-section-12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 3,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q046",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DESIGNS-RULES-2001::rule-10"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q047",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DESIGNS-RULES-2001::rule-12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q048",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-DESIGNS-RULES-2001::rule-24"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q049",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iii-section-13"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q050",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iii-section-14"
+      ],
+      "candidate_rank": 7,
+      "reranked_rank": 4,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q051",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-iv-section-17"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q052",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-v-section-22"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q053",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xi-section-51"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q054",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xi-section-52-c1"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q055",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xi-section-57"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q056",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-xiii-section-63"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q057",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-COPYRIGHT-ACT-1957::chapter-vi-section-31d"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q058",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xiii-rule-70"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q059",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xviii-rule-83"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q060",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-COPYRIGHT-RULES-2013::chapter-xi-rule-56"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q061",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-ii-section-6"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q062",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-19"
+      ],
+      "candidate_rank": 11,
+      "reranked_rank": 6,
+      "in_evidence_window": false,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q063",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-v-section-20"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q064",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-ix-section-37"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q065",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-x-section-41"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q066",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-xii-section-55"
+      ],
+      "candidate_rank": 5,
+      "reranked_rank": null,
+      "in_evidence_window": false,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q067",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-BDA-2002-AMD-2023::chapter-i-section-2"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "C"
+    },
+    {
+      "question_id": "Q068",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-BD-RULES-2024::rule-13"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q069",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BD-RULES-2024::rule-21"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q070",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-BD-RULES-2024::rule-25"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q071",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-ABS-REGULATIONS-2025::regulation-11"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q072",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-ABS-REGULATIONS-2025::regulation-6"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q073",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-ABS-REGULATIONS-2025::regulation-12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q074",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iii-section-15"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q075",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-vi-section-39"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q076",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-24"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q077",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-26"
+      ],
+      "candidate_rank": 5,
+      "reranked_rank": 4,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q078",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c1",
+        "IN-PPVFR-ACT-2001::chapter-iv-section-28-c2"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q079",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-vii-section-47"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 5,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q080",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-x-section-64"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q081",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-ACT-2001::chapter-vi-section-45"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q082",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-PPVFR-RULES-2003::chapter-iv-rule-41"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q083",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-RULES-2003::chapter-v-rule-71"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q084",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-PPVFR-RULES-2003::chapter-ii-rule-23"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q085",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-i-section-3"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q086",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-iv-section-33eeb"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q087",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-iv-section-33eec"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q088",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-iv-section-17b"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 3,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q089",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-iv-section-33d"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q090",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-ACT-1940::chapter-iv-section-27a"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q091",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-vi-rule-61"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q092",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-xv-rule-154"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q093",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-i-rule-2"
+      ],
+      "candidate_rank": 32,
+      "reranked_rank": null,
+      "in_evidence_window": false,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q094",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-DC-RULES-1945::part-vii-rule-85b"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 3,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q095",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-27"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q096",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-27"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q097",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-31"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q098",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-5-article-33"
+      ],
+      "candidate_rank": 18,
+      "reranked_rank": null,
+      "in_evidence_window": false,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q099",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-3-article-22"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 3,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q100",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-3-article-23"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q101",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-ii-section-7-article-39"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q102",
+      "query_family": "identifier",
+      "router_family": "IDENTIFIER",
+      "expected_chunks": [
+        "WTO-TRIPS::part-i-article-7"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q103",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "WTO-TRIPS::part-vi-article-66"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "STALE",
+      "target_evidence_level": "B"
+    },
+    {
+      "question_id": "Q104",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "UN-NAGOYA-PROTOCOL-2010::article-22"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q105",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "UN-NAGOYA-PROTOCOL-2010::article-33"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q106",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "UN-NAGOYA-PROTOCOL-2010::article-34"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q107",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "UN-CBD-1992::article-41"
+      ],
+      "candidate_rank": 9,
+      "reranked_rank": 6,
+      "in_evidence_window": false,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q108",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "UN-CBD-1992::ii-article-2"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q109",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022::regulation-1"
+      ],
+      "candidate_rank": 14,
+      "reranked_rank": 8,
+      "in_evidence_window": false,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q110",
+      "query_family": "conceptual",
+      "router_family": "GENERAL",
+      "expected_chunks": [
+        "IN-FSSAI-AYURVEDA-AAHARA-2022::unstructured-u12"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "A"
+    },
+    {
+      "question_id": "Q111",
+      "query_family": "conceptual",
+      "router_family": "CONCEPTUAL",
+      "expected_chunks": [
+        "IN-NATIONAL-IPR-POLICY-2016::paragraph-1-c2"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "in_evidence_window": true,
+      "target_temporal_status": "CURRENT",
+      "target_evidence_level": "B"
+    }
+  ]
+}

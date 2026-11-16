@@ -1,0 +1,28 @@
+{
+  "document_id": "IN-TM-ACT-1999",
+  "pages": 56,
+  "boilerplate_patterns": [
+    "#",
+    "IndiaCode"
+  ],
+  "table_of_contents_pages": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pages_by_content_type": {
+    "front_matter": 2,
+    "table_of_contents": 5,
+    "content": 49
+  },
+  "pages_by_language_status": {
+    "EN_CLEAN": 56
+  },
+  "amendment_notes_extracted": 43,
+  "hindi_lines_removed": 0,
+  "pages_with_tables": 0,
+  "characters_raw": 198981,
+  "characters_cleaned": 194809
+}
